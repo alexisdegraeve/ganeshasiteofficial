@@ -1,9 +1,22 @@
 h1 {
-    font-family: 'Plane Crash';
+    font-family: 'Galantis';
     font-size: 12rem;
     background: -webkit-linear-gradient(#f7022d, #390e16);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 0;
+    height: 22rem;
+}
+
+.hr-sep {
+    width: 50%;
+    height: 4px;
+    background: rgba(200, 0, 0, 0.7);
+    border: unset;
+}
+
+.subtitle {
+    font-size: 14px;
 }
 
 .sep {

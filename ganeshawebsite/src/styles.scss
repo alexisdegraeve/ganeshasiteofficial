@@ -22,6 +22,12 @@ body {
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Galantis';
+    src: url('/assets/fonts/Galantis.otf') format('truetype');
+    font-weight: bold;
+}
+
 .copyright {
     display: none;
 }
