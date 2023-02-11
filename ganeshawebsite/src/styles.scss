@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #fff;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+@font-face {
+    font-family: 'January';
+    src: url('/assets/fonts/January_Shine.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Plane Crash';
+    src: url('/assets/fonts/Plane_Crash.ttf') format('truetype');
+    font-weight: bold;
+}
+
+.copyright {
+    display: none;
+}
