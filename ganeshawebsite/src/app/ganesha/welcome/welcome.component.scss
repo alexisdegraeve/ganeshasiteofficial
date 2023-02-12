@@ -1,22 +1,15 @@
 h1 {
     font-family: 'Galantis';
-    font-size: 12rem;
-    background: -webkit-linear-gradient(#f7022d, #390e16);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     margin: 0;
-    height: 22rem;
-}
-
-.hr-sep {
-    width: 50%;
-    height: 4px;
-    background: rgba(200, 0, 0, 0.7);
-    border: unset;
+    color: #fff;
+    text-align: center;
+    font-size: 16rem;
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
+    color: #ccc;
 }
 
 .sep {
@@ -25,18 +18,8 @@ h1 {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.container {
-    height: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 .container-inside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 4rem;
 }
 
 .info {
@@ -48,5 +31,23 @@ h1 {
     align-items: center;
     svg {
         opacity: 0.8;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 12rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 6rem;
     }
 }
