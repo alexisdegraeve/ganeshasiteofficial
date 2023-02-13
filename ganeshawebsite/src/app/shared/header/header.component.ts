@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  darkTheme  = false;
+
+  constructor(private themeService: ThemeService) {
+    this.themeService.darkTheme$.subscribe( dark =>
+      this.darkTheme = dark
+    );
+  }
+
+  switchTheme() {
+    this.themeService.setDarkTheme(!this.darkTheme) ;
+  }
 
 }
