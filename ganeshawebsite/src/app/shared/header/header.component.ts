@@ -17,6 +17,7 @@ export class HeaderComponent {
 
   switchTheme() {
     this.themeService.setDarkTheme(!this.darkTheme) ;
+    this.themeService.toggleDarkTheme();
   }
 
 }

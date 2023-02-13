@@ -1,14 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "./light-theme.scss";
+@import "./dark-theme.scss";
 html {
     height: 100%;
-}
-
-body {
-    color: #fff;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #111822 0%, #4575A3 100%);
 }
 
 @font-face {

@@ -15,4 +15,8 @@ export class ThemeService {
 
   constructor() { }
 
+  toggleDarkTheme(): void {
+    document.body.classList.toggle('dark-theme');
+ }
+
 }

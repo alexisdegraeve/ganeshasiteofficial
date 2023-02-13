@@ -1,4 +1,8 @@
 .copyright-txt {
-    color: #444;
+    color: var(--txt-grey);
     font-size: 12px;
+}
+
+.bg-footer {
+    background-color: var(--bg-footer);
 }
