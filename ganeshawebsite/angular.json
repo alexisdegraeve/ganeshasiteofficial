@@ -68,10 +68,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "ganeshawebsite:build:production"
+                          "buildTarget": "ganeshawebsite:build:production"
                         },
                         "development": {
-                            "browserTarget": "ganeshawebsite:build:development"
+                          "buildTarget": "ganeshawebsite:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "ganeshawebsite:build"
+                      "buildTarget": "ganeshawebsite:build"
                     }
                 },
                 "test": {
