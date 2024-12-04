@@ -7,16 +7,15 @@ import { ThemeService } from './theme.service';
 
 
 @NgModule({
-  declarations: [
+  imports: [
+    CommonModule,
     HeaderComponent,
     FooterComponent
-  ],
-  imports: [
-    CommonModule
   ],
   exports : [
     HeaderComponent,
     FooterComponent,
+    CommonModule
   ],
   providers: [
     ThemeService

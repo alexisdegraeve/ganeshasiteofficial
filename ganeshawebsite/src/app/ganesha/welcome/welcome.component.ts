@@ -3,6 +3,7 @@ import { ThemeService } from 'src/app/shared/theme.service';
 
 @Component({
   selector: 'app-welcome',
+  standalone: false,
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.scss']
 })
