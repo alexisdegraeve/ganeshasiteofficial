@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#"> <img src="/assets/favicon.svg" alt="Ganesha logo" class="logo"> Ganesha</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="bi bi-three-dots-vertical"></i>
+      <i class="bi bi-three-dots-vertical"></i>
     </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -10,7 +10,10 @@
                 <a class="nav-link" href="#">Portfolio</a>
                 <a class="nav-link" href="#">About</a>
             </div>
-            <button type="button" class="ms-auto btn btn-lg" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-danger'" (click)="switchTheme()"> <i class="fa" [ngClass]="!darkTheme ? 'fa-moon-o' : 'fa-sun-o'"></i></button>
+            <button type="button" class="ms-auto btn btn-lg" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-warning'" (click)="switchTheme()">
+              <i class="fa" [ngClass]="!darkTheme ? 'fa-moon-o' : 'fa-sun-o'"></i>
+            </button>
+
         </div>
 
     </div>
