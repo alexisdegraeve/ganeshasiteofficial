@@ -1,7 +1,9 @@
 .card-info {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
 }
 
 .sun-container {
@@ -303,4 +305,12 @@ span:nth-child(10) {
     left: initial;
     animation-delay: 2.75s;
     animation-duration: 2.25s;
+}
+
+.rounded-circle {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    .fa {
+        color: #ccc;
+    }
 }

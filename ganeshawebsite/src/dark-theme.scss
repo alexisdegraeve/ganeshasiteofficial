@@ -1,8 +1,10 @@
 body.dark-theme {
     color: #fff;
     background-color: #0093E9;
-    --txt-grey: #ddd;
     background-image: linear-gradient(160deg, #111822 0%, #4575A3 100%);
+    background-repeat: no-repeat;
+    background-color: #3b648b;
+    --txt-grey: #ddd;
     --title-ganesha: #fff;
     --bg-footer: #1a2839;
     --bg-header: #252728;

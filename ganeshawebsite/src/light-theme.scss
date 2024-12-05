@@ -1,9 +1,11 @@
 body {
     color: #000;
     background-color: white;
+    background-image: linear-gradient(to bottom, #bf52a5 0, #fe5c8a 69%, #ff9e53 80%, #ff9e53 100%);
+    background-repeat: no-repeat;
+    background-color: #ff9e53;
     --title-ganesha: #fff;
     --txt-grey: #ddd;
-    background-image: linear-gradient(to bottom, #bf52a5 0, #fe5c8a 69%, #ff9e53 80%, #ff9e53 100%);
     --bg-footer: #a14381;
     --bg-header: #dc3545;
     --bs-body-color: black;
