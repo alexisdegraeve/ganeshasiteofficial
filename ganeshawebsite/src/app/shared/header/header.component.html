@@ -12,7 +12,7 @@
        </a>
         </div>
         <button type="button" class="ms-auto btn btn-lg d-none d-lg-flex border-0" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-link'" (click)="switchTheme()">
-          <i class="fa" [ngClass]="!darkTheme ? 'fa-moon-o' : 'fa-sun-o'"></i>
+          <i class="fa-solid" [ngClass]="!darkTheme ? 'fa-moon' : 'fa-sun'"></i>
         </button>
 
 
@@ -41,7 +41,7 @@
                 </div>
                 <!-- Bouton avec icône et texte pour le mode dark/light -->
                 <button type="button" class="mt-2 ms-auto btn btn-lg w-100" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-link-warning border-0'" (click)="switchTheme()">
-                  <i class="fa me-2" [ngClass]="!darkTheme ? 'fa-moon-o' : 'fa-sun-o'"></i>
+                  <i class="fa-solid me-2" [ngClass]="!darkTheme ? 'fa-moon' : 'fa-sun'"></i>
               </button>
             </div>
         </div>
