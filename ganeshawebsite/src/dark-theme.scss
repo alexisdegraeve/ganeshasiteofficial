@@ -6,4 +6,12 @@ body.dark-theme {
     --title-ganesha: #fff;
     --bg-footer: rgba(0, 0, 0, 0.2);
     --bg-header: #252728;
+    --bs-body-color: #fff;
+    --bs-body-bg: #252728;
+    .navbar-nav .nav-link {
+        --bs-nav-link-color: #ddd;
+    }
+    .navbar-nav .nav-link:hover {
+        --bs-nav-link-hover-color: #fff;
+    }
 }
