@@ -38,11 +38,16 @@
                         </div>
                     </a>
 
+                    <a class="nav-link mb-3 d-flex align-items-center" (click)="switchTheme()">
+                        <i class="bi icon-menu" [ngClass]="!darkTheme ? 'bi-moon' : 'bi-sun' "></i>
+                        <div>
+                            <div class="fw-bold ">Theme</div>
+                            <div>{{ !darkTheme ? 'Change to dark mode' : 'Change to light mode' }} </div>
+                        </div>
+                    </a>
+
                 </div>
-                <!-- Bouton avec icône et texte pour le mode dark/light -->
-                <button type="button" class="mt-2 ms-auto btn btn-lg w-100" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-link-warning border-0'" (click)="switchTheme()">
-                  <i class="fa-solid me-2" [ngClass]="!darkTheme ? 'fa-moon' : 'fa-sun'"></i>
-              </button>
+
             </div>
         </div>
     </div>
