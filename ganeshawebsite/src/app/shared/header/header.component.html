@@ -7,14 +7,8 @@
 
         <!-- Menu classique (horizontal), visible uniquement en mode desktop -->
         <div class="navbar-nav d-none d-lg-flex">
-            <a class="nav-link" href="#">
-                Home
-            </a>
-            <a class="nav-link" href="#">
-                Portfolio
-            </a>
-            <a class="nav-link" href="#">
-                About
+            <a *ngFor="let item of menuItems" class="nav-link" [href]="item.url">
+                 {{ item.title}}
             </a>
         </div>
         <button type="button" class="ms-auto btn btn-lg d-none d-lg-flex border-0" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-outline-warning'" (click)="switchTheme()">
@@ -35,27 +29,15 @@
             </div>
             <div class="offcanvas-body">
                 <div>
-                    <a class="nav-link mb-3" href="#" style="display: flex; align-items: center;">
-                        <i class="bi bi-house-door icon-menu"></i>
+
+                    <a *ngFor="let item of menuItems" class="nav-link mb-3 d-flex align-items-center" [href]="item.url">
+                        <i *ngIf="item.icon" class="bi icon-menu" [ngClass]="item.icon"></i>
                         <div>
-                            <div class="fw-bold">Home</div>
-                            <div>Explore our home page</div>
+                            <div class="fw-bold">{{ item.title }}</div>
+                            <div *ngIf="item.description">{{ item.description }}</div>
                         </div>
                     </a>
-                    <a class="nav-link mb-3" href="#" style="display: flex; align-items: center;">
-                        <i class="bi bi-briefcase icon-menu"></i>
-                        <div>
-                            <div class="fw-bold">Portfolio</div>
-                            <div>Check our amazing projects</div>
-                        </div>
-                    </a>
-                    <a class="nav-link mb-3" href="#" style="display: flex; align-items: center;">
-                        <i class="bi bi-person icon-menu"></i>
-                        <div>
-                            <div class="fw-bold">About</div>
-                            <div>Learn more about us</div>
-                        </div>
-                    </a>
+
                 </div>
                 <!-- Bouton avec icône et texte pour le mode dark/light -->
                 <button type="button" class="mt-2 ms-auto btn btn-lg w-100" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-outline-warning border-0'" (click)="switchTheme()">
