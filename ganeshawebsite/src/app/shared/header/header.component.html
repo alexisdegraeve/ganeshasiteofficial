@@ -11,7 +11,7 @@
                  {{ item.title}}
             </a>
         </div>
-        <button type="button" class="ms-auto btn btn-lg d-none d-lg-flex border-0" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-outline-warning'" (click)="switchTheme()">
+        <button type="button" class="ms-auto btn btn-lg d-none d-lg-flex border-0" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-link'" (click)="switchTheme()">
           <i class="fa" [ngClass]="!darkTheme ? 'fa-moon-o' : 'fa-sun-o'"></i>
         </button>
 
@@ -24,7 +24,7 @@
         <!-- Menu contextuel (offcanvas), visible uniquement en mode tablette/smartphone -->
         <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="menuContextuel" aria-labelledby="menuContextuelLabel">
             <div class="offcanvas-header">
-                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="ps-0 border-0 btn" [ngClass]="!darkTheme ? 'btn-outline-danger' : 'btn-outline-warning'"><i class="bi bi-chevron-left fs-3 fw-bold icon-menu"></i></button>
+                <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="ps-0 border-0 btn btn-link"><i class="bi bi-chevron-left fs-3 fw-bold icon-menu"></i></button>
                 <h5 id="menuContextuelLabel">Menu</h5>
             </div>
             <div class="offcanvas-body">
@@ -40,7 +40,7 @@
 
                 </div>
                 <!-- Bouton avec icône et texte pour le mode dark/light -->
-                <button type="button" class="mt-2 ms-auto btn btn-lg w-100" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-outline-warning border-0'" (click)="switchTheme()">
+                <button type="button" class="mt-2 ms-auto btn btn-lg w-100" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-link-warning border-0'" (click)="switchTheme()">
                   <i class="fa me-2" [ngClass]="!darkTheme ? 'fa-moon-o' : 'fa-sun-o'"></i>
               </button>
             </div>
