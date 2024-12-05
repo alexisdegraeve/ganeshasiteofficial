@@ -15,11 +15,12 @@ body.dark-theme {
     --bs-link-hover-color: #e1a100;
     --bs-link-decoration: none;
     /* Jaune plus foncé pour le survol des liens */
-    .navbar-nav .nav-link {
+    --bs-nav-link-hover-color: #f8c200;
+    navbar-nav .nav-link {
         --bs-nav-link-color: #ddd;
     }
     .navbar-nav .nav-link:hover {
-        --bs-nav-link-hover-color: #fff;
+        --bs-nav-link-hover-color: #f8c200;
     }
     .btn-link {
         text-decoration: none;

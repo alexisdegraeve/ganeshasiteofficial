@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ThemeService } from '../theme.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
@@ -8,31 +9,38 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule, RouterModule]
 })
 export class HeaderComponent {
   protected darkTheme: boolean = false;
 
   menuItems = [
     {
-      url: '#',
+      url: '/welcome',  // Chemin vers la page d'accueil
       icon: 'bi-house-door',
       title: 'Home',
       description: 'Explore our home page',
-      visibleOn: 'both'  // 'both' means visible on both desktop and mobile
+      visibleOn: 'both'  // 'both' signifie visible sur desktop et mobile
     },
     {
-      url: '#',
+      url: '/portfolio',  // Chemin vers la page portfolio
       icon: 'bi-briefcase',
       title: 'Portfolio',
       description: 'Check our amazing projects',
       visibleOn: 'both'
     },
     {
-      url: '#',
+      url: '/about',  // Chemin vers la page about
       icon: 'bi-person',
       title: 'About',
       description: 'Learn more about us',
+      visibleOn: 'both'
+    },
+    {
+      url: '/contact',  // Chemin vers la page contact
+      icon: 'bi-envelope',
+      title: 'Contact',
+      description: 'Get in touch with us',
       visibleOn: 'both'
     }
   ];
