@@ -1,20 +1,31 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"> <img src="/assets/logo_ganesha.svg" alt="Ganesha logo" class="logo"> Ganesha</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/logo_ganesha.svg" alt="Ganesha logo" class="logo"> Ganesha
+        </a>
+
+        <!-- Bouton pour ouvrir le menu contextuel -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuContextuel" aria-controls="menuContextuel" aria-expanded="false" aria-label="Toggle navigation">
       <i class="bi bi-three-dots-vertical"></i>
     </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Portfolio</a>
-                <a class="nav-link" href="#">About</a>
+
+        <!-- Menu contextuel (offcanvas) qui apparaît à droite -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="menuContextuel" aria-labelledby="menuContextuelLabel">
+            <div class="offcanvas-header">
+                <h5 id="menuContextuelLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <button type="button" class="ms-auto btn btn-lg" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-outline-warning border-0'" (click)="switchTheme()">
-              <i class="fa" [ngClass]="!darkTheme ? 'fa-moon-o' : 'fa-sun-o'"></i>
-            </button>
-
+            <div class="offcanvas-body">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#">About</a>
+                </div>
+                <!-- Bouton avec icône et texte -->
+                <button type="button" class="ms-auto btn btn-lg w-100" [ngClass]="!darkTheme ? 'btn-danger' : 'btn-outline-warning border-0'" (click)="switchTheme()">
+          <i class="fa me-2" [ngClass]="!darkTheme ? 'fa-moon-o' : 'fa-sun-o'"></i>
+        </button>
+            </div>
         </div>
-
     </div>
 </nav>
