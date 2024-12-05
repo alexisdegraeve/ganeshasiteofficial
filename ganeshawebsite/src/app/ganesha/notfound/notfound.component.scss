@@ -1,0 +1,75 @@
+/* Container pour centrer la page, aligner vers le haut et ajouter un fond moderne */
+
+.container {
+    background-color: #6c757d;
+    /* Fond rouge */
+    color: #fff;
+    /* Texte blanc pour contraster avec le fond rouge */
+    position: relative;
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.1);
+    /* Ombre interne pour profondeur */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+/* Texte 404 avec style simple */
+
+h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+
+/* Icône */
+
+.bi-search-heart {
+    color: #fff;
+}
+
+
+/* Bouton outline pour un design plus léger */
+
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+
+/* Position du contenu, alignement vers le haut */
+
+.min-vh-100 {
+    min-height: calc(100vh - 60px);
+    /* Ajuster pour laisser de l'espace pour le footer fixe */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Aligner vers le haut */
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Mobile responsiveness */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+        /* Réduire la taille du texte 404 sur les petits écrans */
+    }
+}
