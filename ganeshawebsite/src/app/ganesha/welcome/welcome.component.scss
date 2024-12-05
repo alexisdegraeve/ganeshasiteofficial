@@ -6,6 +6,13 @@
     margin-top: 3rem;
 }
 
+.card-black {
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .sun-container {
     display: flex;
     justify-content: center;
@@ -295,9 +302,14 @@ span:nth-child(10) {
     animation-duration: 2.25s;
 }
 
-.rounded-circle {
+.icon-info {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
     .fa {
         color: #ccc;
     }
