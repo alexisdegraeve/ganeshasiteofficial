@@ -1,36 +1,41 @@
-.navbar {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    z-index: 200;
-}
-
-.logo {
-    height: 3rem;
-    width: 3rem;
-    margin-right: 0.5rem;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 0rem 0.75rem;
-}
-
-nav {
-    background-color: var(--bg-header);
-}
-
-.navbar-toggler {
-    margin-left: auto !important;
-    margin-right: 1rem !important;
-}
-
-@media screen and (max-width: 700px) {
     .navbar {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        z-index: 200;
     }
+    
+    .logo {
+        height: 3rem;
+        width: 3rem;
+        margin-right: 0.5rem;
+    }
+    
+    .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 0rem 0.75rem;
+    }
+    
+    .icon-menu {
+        font-size: 32px;
+        margin-right: 1rem;
+    }
+    
+    nav {
+        background-color: var(--bg-header);
+    }
+    
     .navbar-toggler {
-        margin-right: 0 !important;
+        margin-left: auto !important;
+        margin-right: 1rem !important;
     }
-}
+    
+    @media screen and (max-width: 700px) {
+        .navbar {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .navbar-toggler {
+            margin-right: 0 !important;
+        }
+    }
