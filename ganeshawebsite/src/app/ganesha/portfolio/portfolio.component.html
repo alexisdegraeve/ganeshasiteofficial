@@ -1,1 +1,51 @@
-<p>portfolio works!</p>
+<div class="container py-5">
+    <!-- Page Title -->
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Portfolio</h1>
+        <p class="text-muted">Explore our latest projects and works.</p>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="row g-4">
+        <!-- Architecture Gallery -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <img src="../../assets/img/architecture.jpg" class="card-img-top" alt="Architecture Gallery" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Architecture</h5>
+                    <p class="card-text text-muted">
+                        Discover our modern architectural designs and 3D models.
+                    </p>
+                    <button class="btn btn-outline-primary w-100" (click)="showGallery('architecture')">
+            <i class="bi bi-images"></i> View Gallery
+          </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visit Card Gallery -->
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <img src="../../assets/img/visit_card.jpg" class="card-img-top" alt="Visit Card Gallery" />
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Visit Cards</h5>
+                    <p class="card-text text-muted">
+                        Professional and creative visit card designs for clients.
+                    </p>
+                    <button class="btn btn-outline-primary w-100" (click)="showGallery('visit-card')">
+            <i class="bi bi-card-heading"></i> View Gallery
+          </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Download Section -->
+    <div class="text-center mt-5">
+        <h4 class="fw-bold mb-3">Download Portfolio</h4>
+        <p class="text-muted">Get our full portfolio as a downloadable PDF file.</p>
+        <a href="../../assets/portfolio_adg.pdf" target="_blank" download class="btn btn-primary">
+            <i class="bi bi-file-earmark-arrow-down"></i> Download PDF
+        </a>
+    </div>
+</div>
