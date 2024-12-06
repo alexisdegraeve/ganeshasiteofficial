@@ -1,4 +1,4 @@
-
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
@@ -6,11 +6,12 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  imports:[ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule]
 })
 export class ContactComponent {
   contactForm: FormGroup;
   remainingCharacters = 500;
+  isSubmitted = false;
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -18,7 +19,7 @@ export class ContactComponent {
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
-      message: ['', [Validators.required, Validators.maxLength(500)]],
+      message: ['', [Validators.required, Validators.minLength(20), Validators.maxLength(500)]],
     });
   }
 
@@ -29,13 +30,16 @@ export class ContactComponent {
 
   onSubmit(): void {
     if (this.contactForm.valid) {
-      // Simulation de l'appel API
-      console.log('Form submitted', this.contactForm.value);
-      alert('Message sent successfully!');
-      this.contactForm.reset();
-      this.remainingCharacters = 500;
-    } else {
-      alert('Please fill out the form correctly.');
+      // Simuler un appel API avec un délai
+      setTimeout(() => {
+        this.isSubmitted = true;
+      }, 1000);
     }
+  }
+
+  resetForm(): void {
+    this.contactForm.reset();
+    this.remainingCharacters = 500;
+    this.isSubmitted = false;
   }
 }
