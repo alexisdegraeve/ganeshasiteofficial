@@ -1,40 +1,44 @@
-<!-- Cartes avec galerie -->
-<div class="row">
-    <div class="col-md-4" *ngFor="let category of categories">
-        <div class="card shadow">
-            <img [src]="category.image" class="card-img-top" alt="{{ category.title }}" />
-            <div class="card-body">
-                <h5 class="card-title">{{ category.title }}</h5>
-                <p class="card-text">{{ category.description }}</p>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal" (click)="loadGallery(category)">
+<div class="container d-flex flex-column justify-content-start align-items-center text-center mt-4">
+    <div class="row g-4">
+        <!-- Card Template -->
+        <div class="col-md-4" *ngFor="let category of categories">
+            <div class="card shadow">
+                <img [src]="category.image" class="card-img-top" alt="{{ category.title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ category.title }}</h5>
+                    <p class="card-text">{{ category.description }}</p>
+                    <button *ngIf="category.gallery" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal" (click)="loadGallery(category)">
           View Gallery
         </button>
+                    <a *ngIf="category.link" [href]="category.link" class="btn btn-primary" target="_blank">
+          Visit
+        </a>
+                    <a *ngIf="category.download" [href]="category.download" class="btn btn-primary" download>
+          Download
+        </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal pour afficher la galerie -->
-<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="galleryModalLabel">
-                    {{ selectedCategory?.title }} Gallery
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-6 col-md-4 mb-3" *ngFor="let image of selectedCategory?.gallery">
-                        <img [src]="image" class="img-fluid rounded" alt="Gallery image" />
+    <!-- Modal for Gallery -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">{{ selectedCategory?.title }} Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6 col-md-4 mb-3" *ngFor="let image of selectedCategory?.gallery">
+                            <img [src]="image" class="img-fluid rounded" alt="Gallery Image">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Close
-        </button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
