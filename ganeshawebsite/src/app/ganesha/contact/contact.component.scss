@@ -1,0 +1,19 @@
+.card {
+    border-radius: 10px;
+    background: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+textarea.form-control {
+    resize: none;
+}
