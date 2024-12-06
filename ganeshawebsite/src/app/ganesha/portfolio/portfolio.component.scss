@@ -1,23 +1,13 @@
-.container {
-    .card {
-        border-radius: 10px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-        img {
-            border-radius: 10px 10px 0 0;
-        }
-        .btn {
-            font-weight: bold;
-        }
-    }
-    .btn-primary {
-        display: inline-flex;
-        align-items: center;
-        i {
-            margin-right: 5px;
-        }
-    }
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.modal-body img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.modal-body img:hover {
+    transform: scale(1.05);
 }

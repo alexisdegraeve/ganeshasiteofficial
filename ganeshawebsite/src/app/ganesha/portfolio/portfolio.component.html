@@ -1,51 +1,41 @@
-<div class="container py-5">
-    <!-- Page Title -->
-    <div class="text-center mb-5">
-        <h1 class="fw-bold">Portfolio</h1>
-        <p class="text-muted">Explore our latest projects and works.</p>
-    </div>
-
-    <!-- Gallery Section -->
-    <div class="row g-4">
-        <!-- Architecture Gallery -->
-        <div class="col-md-6">
-            <div class="card h-100 shadow-sm">
-                <img src="../../assets/img/architecture.jpg" class="card-img-top" alt="Architecture Gallery" />
-                <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Architecture</h5>
-                    <p class="card-text text-muted">
-                        Discover our modern architectural designs and 3D models.
-                    </p>
-                    <button class="btn btn-outline-primary w-100" (click)="showGallery('architecture')">
-            <i class="bi bi-images"></i> View Gallery
-          </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Visit Card Gallery -->
-        <div class="col-md-6">
-            <div class="card h-100 shadow-sm">
-                <img src="../../assets/img/visit_card.jpg" class="card-img-top" alt="Visit Card Gallery" />
-                <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Visit Cards</h5>
-                    <p class="card-text text-muted">
-                        Professional and creative visit card designs for clients.
-                    </p>
-                    <button class="btn btn-outline-primary w-100" (click)="showGallery('visit-card')">
-            <i class="bi bi-card-heading"></i> View Gallery
-          </button>
-                </div>
+<!-- Cartes avec galerie -->
+<div class="row">
+    <div class="col-md-4" *ngFor="let category of categories">
+        <div class="card shadow">
+            <img [src]="category.image" class="card-img-top" alt="{{ category.title }}" />
+            <div class="card-body">
+                <h5 class="card-title">{{ category.title }}</h5>
+                <p class="card-text">{{ category.description }}</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal" (click)="loadGallery(category)">
+          View Gallery
+        </button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- PDF Download Section -->
-    <div class="text-center mt-5">
-        <h4 class="fw-bold mb-3">Download Portfolio</h4>
-        <p class="text-muted">Get our full portfolio as a downloadable PDF file.</p>
-        <a href="../../assets/portfolio_adg.pdf" target="_blank" download class="btn btn-primary">
-            <i class="bi bi-file-earmark-arrow-down"></i> Download PDF
-        </a>
+<!-- Modal pour afficher la galerie -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="galleryModalLabel">
+                    {{ selectedCategory?.title }} Gallery
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3" *ngFor="let image of selectedCategory?.gallery">
+                        <img [src]="image" class="img-fluid rounded" alt="Gallery image" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+            </div>
+        </div>
     </div>
 </div>
