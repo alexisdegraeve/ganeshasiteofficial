@@ -9,14 +9,23 @@ export class ThemeService {
 
   darkTheme$ = this.darkThemeSource.asObservable();
 
-  setDarkTheme(dark: boolean) {
-    this.darkThemeSource.next(dark);
+  constructor() {
+    // Charger le thème depuis le sessionStorage au chargement du service
+    const storedTheme = sessionStorage.getItem('theme');
+    if (storedTheme) {
+      this.setDarkTheme(storedTheme === 'dark');
+    }
   }
 
-  constructor() { }
+  setDarkTheme(dark: boolean) {
+    this.darkThemeSource.next(dark);
+    sessionStorage.setItem('theme', dark ? 'dark' : 'light');  // Sauvegarder le thème dans le sessionStorage
+    document.body.classList.toggle('dark-theme', dark);  // Mettre à jour le body class en fonction du thème
+  }
 
   toggleDarkTheme(): void {
-    document.body.classList.toggle('dark-theme');
- }
-
+    const currentTheme = sessionStorage.getItem('theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    this.setDarkTheme(newTheme === 'dark');
+  }
 }

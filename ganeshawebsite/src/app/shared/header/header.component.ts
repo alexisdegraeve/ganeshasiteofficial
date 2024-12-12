@@ -45,15 +45,15 @@ export class HeaderComponent {
     }
   ];
 
-  constructor(private themeService: ThemeService, private router: Router) {  // Injectez le router
-    this.themeService.darkTheme$.subscribe(dark =>
-      this.darkTheme = dark
-    );
+  constructor(private themeService: ThemeService, private router: Router) {  // Injectez le router et le ThemeService
+    this.themeService.darkTheme$.subscribe(dark => {
+      this.darkTheme = dark;
+    });
   }
 
   switchTheme() {
-    this.themeService.setDarkTheme(!this.darkTheme);
     this.themeService.toggleDarkTheme();
   }
+
 
 }
