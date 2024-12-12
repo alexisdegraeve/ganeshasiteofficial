@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ThemeService } from '../theme.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-
+import { Router } from '@angular/router';  // Importez Router
 
 @Component({
   selector: 'app-header',
@@ -45,14 +45,14 @@ export class HeaderComponent {
     }
   ];
 
-  constructor(private themeService: ThemeService) {
-    this.themeService.darkTheme$.subscribe( dark =>
+  constructor(private themeService: ThemeService, private router: Router) {  // Injectez le router
+    this.themeService.darkTheme$.subscribe(dark =>
       this.darkTheme = dark
     );
   }
 
   switchTheme() {
-    this.themeService.setDarkTheme(!this.darkTheme) ;
+    this.themeService.setDarkTheme(!this.darkTheme);
     this.themeService.toggleDarkTheme();
   }
 

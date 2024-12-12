@@ -12,7 +12,8 @@ export class AboutComponent {
   languages = [
     { name: 'French', level: 'Native', stars: 5 },
     { name: 'English', level: 'C1', stars: 4 },
-    { name: 'Dutch', level: 'B2.3', stars: 4 },
+    { name: 'Dutch', level: 'B2.3', stars: 3 },
+    { name: 'Spanish', level: 'A1', stars: 1 },
   ];
 
 }
