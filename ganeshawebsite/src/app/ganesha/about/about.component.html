@@ -27,22 +27,17 @@
         <!-- Languages -->
         <div class="col-lg-4 col-sm-6">
             <div class="card h-100 shadow border-0">
+
                 <div class="card-body">
                     <h5 class="card-title">Languages</h5>
-                    <ul class="list-unstyled">
-                        <li class="d-flex justify-content-between align-items-center">
-                            French
-                            <span class="text-warning">★★★★★</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            English
-                            <span class="text-warning">★★★★☆</span>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            Dutch
-                            <span class="text-warning">★★★★☆</span>
-                        </li>
-                    </ul>
+                    <div class="d-flex flex-column">
+                        <div *ngFor="let lang of languages" class="d-flex justify-content-between align-items-center py-2">
+                            <span class="col text-start">{{ lang.name }}</span>
+                            <span class="col text-end ms-auto">
+                              {{ lang.level }} - {{ '★'.repeat(lang.stars) }}{{ '☆'.repeat(5 - lang.stars) }}
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,10 +48,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Social Media</h5>
                     <div class="d-grid gap-2">
-                        <a href="https://www.linkedin.com/in/degraevealexis" target="_blank" class="btn btn-outline-primary">
+                        <a href="https://www.linkedin.com/in/degraevealexis" target="_blank" class="btn btn-outline-light">
                             <i class="fab fa-linkedin me-2"></i>LinkedIn
                         </a>
-                        <a href="https://www.instagram.com/alexisdegraeve" target="_blank" class="btn btn-outline-danger">
+                        <a href="https://www.instagram.com/alexisdegraeve" target="_blank" class="btn btn-outline-warning">
                             <i class="fab fa-instagram me-2"></i>Instagram
                         </a>
                     </div>
@@ -72,13 +67,13 @@
                     <ul class="list-unstyled">
                         <li>
                             <i class="fa fa-music me-2"></i> Piano -
-                            <a href="https://imaginarium-asbl.be/index.php/author/anais/" target="_blank" class="text-decoration-none">
+                            <a href="https://imaginarium-asbl.be/index.php/author/anais/" target="_blank" class="link-warning  text-decoration-none">
                 Imaginarium
               </a>
                         </li>
                         <li>
                             <i class="fa fa-music me-2"></i> Singing -
-                            <a href="https://jmomusique.blog/tag/aurore-rinchon/" target="_blank" class="text-decoration-none">
+                            <a href="https://jmomusique.blog/tag/aurore-rinchon/" target="_blank" class="link-warning text-decoration-none">
                 En avant la musique!
               </a>
                         </li>

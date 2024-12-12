@@ -37,3 +37,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+blockquote {
+    font-size: 1.2rem;
+    border-left: 4px solid #ddd;
+    color: #ddd;
+    padding-left: 1rem;
+    .blockquote-footer {
+        color: #fff;
+    }
+}
+
+h2 {
+    color: var(--title-ganesha);
+}
