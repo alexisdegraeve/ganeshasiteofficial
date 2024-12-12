@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule, RouterModule]
 })
 export class PortfolioComponent {
   categories = [
@@ -13,7 +14,7 @@ export class PortfolioComponent {
       title: 'Architecture',
       description: 'Explore our stunning architecture projects.',
       image: 'assets/img/flat_02.jpg',
-      gallery: Array(10).fill('assets/flat_02-sample.jpg'), // Exemple de 10 images
+      linkInternal: '/galleryarch'
     },
     {
       title: 'Visit Cards',

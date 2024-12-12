@@ -20,6 +20,9 @@
                     <button *ngIf="category.gallery" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#galleryModal" (click)="loadGallery(category)">
           View Gallery
         </button>
+                    <a *ngIf="category.linkInternal" [routerLink]="category.linkInternal" class="btn btn-danger">
+          Visit
+        </a>
                     <a *ngIf="category.link" [href]="category.link" class="btn btn-danger" target="_blank">
           Visit
         </a>
