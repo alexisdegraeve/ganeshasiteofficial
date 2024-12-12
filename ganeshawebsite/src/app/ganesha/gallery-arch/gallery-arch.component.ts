@@ -14,9 +14,8 @@ export class GalleryArchComponent {
     {
       title: 'Outside View',
       images: [
-        { url: 'assets/outside1.jpg', alt: 'Outside View 1' },
-        { url: 'assets/outside2.jpg', alt: 'Outside View 2' },
-        { url: 'assets/outside3.jpg', alt: 'Outside View 3' }
+        { url: 'assets/img/outside/flat_01.jpg', alt: 'Outside View 1' },
+        { url: 'assets/img/outside/flat_02.jpg', alt: 'Outside View 2' },
       ]
     },
     {

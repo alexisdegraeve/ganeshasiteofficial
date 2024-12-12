@@ -5,6 +5,8 @@
         border-bottom: 2px solid transparent;
         border-radius: 0;
         color: #eee;
+        width: 8rem;
+        text-wrap: nowrap;
         &:hover {
             border-bottom: 2px solid #ffebb1;
             color: #ffebb1 !important;
