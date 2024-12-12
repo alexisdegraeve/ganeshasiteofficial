@@ -25,7 +25,7 @@
             <img src="assets/img/portrait_alexis02.jpeg" alt="Alexis Degraeve" class="img-fluid shadow portrait-contact">
         </div>
         <div *ngIf="!isSubmitted" class="card-body">
-            <h5 class="card-title text-center mb-4">Contact Me</h5>
+            <h5 class="card-title mb-4">Contact Me</h5>
             <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" novalidate>
                 <div class="row g-2">
                     <!-- First Name et Last Name -->

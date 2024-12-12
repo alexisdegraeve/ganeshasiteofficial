@@ -14,7 +14,9 @@ ul {
 }
 
 .portrait {
-    border-radius: 2rem;
-    max-width: max-content;
-    width: 10rem;
+    border-radius: 1rem;
+    height: 12rem;
+    width: 21rem;
+    object-fit: cover;
+    object-position: 0rem 35%;
 }
