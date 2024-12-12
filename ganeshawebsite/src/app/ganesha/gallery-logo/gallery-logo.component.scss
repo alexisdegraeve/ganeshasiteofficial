@@ -21,9 +21,19 @@
 
 .card {
     position: relative;
+    .card-body {
+        min-height: 10rem;
+        align-items: center;
+        display: flex;
+    }
     .card-img-top {
-        border-radius: 1rem;
         transition: none;
+        height: auto;
+        width: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
     .overlay {
         position: absolute;
@@ -34,6 +44,7 @@
         background-color: rgba(255, 255, 255, 0.2);
         opacity: 0;
         transition: opacity 0.3s ease;
+        border-radius: 10px;
     }
     &:hover .overlay {
         opacity: 1;
