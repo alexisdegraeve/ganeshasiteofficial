@@ -42,7 +42,7 @@ export class GalleryArchComponent {
 
   openImageInModal(image: { url: string; alt: string }) {
     this.selectedImage = image;
-    const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
-    modal.show();
+    // const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
+    // modal.show();
   }
 }
