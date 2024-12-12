@@ -24,16 +24,23 @@ export class GalleryArchComponent {
     {
       title: 'Flat A',
       images: [
-        { url: 'assets/flatA1.jpg', alt: 'Flat A 1' },
-        { url: 'assets/flatA2.jpg', alt: 'Flat A 2' }
+        { url: 'assets/img/flata/flat_04.jpg', alt: 'Flat A' },
+        { url: 'assets/img/flata/flat_05.jpg', alt: 'Flat A' },
+        { url: 'assets/img/flata/flat_06.jpg', alt: 'Flat A' },
+        { url: 'assets/img/flata/flat_07.jpg', alt: 'Flat A' },
       ]
     },
     {
       title: 'Flat B',
       images: [
-        { url: 'assets/flatB1.jpg', alt: 'Flat B 1' },
-        { url: 'assets/flatB2.jpg', alt: 'Flat B 2' },
-        { url: 'assets/flatB3.jpg', alt: 'Flat B 3' }
+        { url: 'assets/img/flatb/flat_08.jpg', alt: 'Flat B' },
+        { url: 'assets/img/flatb/flat_09.jpg', alt: 'Flat B' },
+        { url: 'assets/img/flatb/flat_10.jpg', alt: 'Flat B' },
+        { url: 'assets/img/flatb/flat_11.jpg', alt: 'Flat B' },
+        { url: 'assets/img/flatb/flat_12.jpg', alt: 'Flat B' },
+        { url: 'assets/img/flatb/flat_13.jpg', alt: 'Flat B' },
+        { url: 'assets/img/flatb/flat_14.jpg', alt: 'Flat B' },
+        { url: 'assets/img/flatb/flat_15.jpg', alt: 'Flat B' },
       ]
     }
   ];

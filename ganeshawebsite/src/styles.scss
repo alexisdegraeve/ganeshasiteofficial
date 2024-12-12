@@ -51,3 +51,7 @@ blockquote {
 h2 {
     color: var(--title-ganesha);
 }
+
+.modal-backdrop {
+    --bs-backdrop-zindex: 200;
+}
