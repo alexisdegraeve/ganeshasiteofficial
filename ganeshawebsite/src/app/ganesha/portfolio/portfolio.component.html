@@ -11,24 +11,29 @@
     </div>
     <div class="row g-4">
         <!-- Card Template -->
-        <div class="col-md-4" *ngFor="let category of categories">
+        <div class="col-md-4" *ngFor="let category of categories; let i = index">
             <div class="card shadow">
-                <img [src]="category.image" class="card-img-top" alt="{{ category.title }}">
+                <!-- Placeholder while image is loading -->
+                <div *ngIf="!category.imageLoaded" class="placeholder-glow">
+                    <div class="placeholder rounded" style="width: 100%; height: 200px;"></div>
+                </div>
+                <!-- Image -->
+                <img [hidden]="!category.imageLoaded" [src]="category.image" class="card-img-top" [alt]="category.title" (load)="onImageLoad(i)">
                 <div class="card-body">
                     <h5 class="card-title">{{ category.title }}</h5>
                     <p class="card-text">{{ category.description }}</p>
                     <button *ngIf="category.gallery" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#galleryModal" (click)="loadGallery(category)">
-          View Gallery
-        </button>
+                      View Gallery
+                  </button>
                     <a *ngIf="category.linkInternal" [routerLink]="category.linkInternal" class="btn btn-danger">
-          Visit
-        </a>
+                      Visit
+                  </a>
                     <a *ngIf="category.link" [href]="category.link" class="btn btn-danger" target="_blank">
-          Visit
-        </a>
+                      Visit
+                  </a>
                     <a *ngIf="category.download" [href]="category.download" class="btn btn-danger" download>
-          Download
-        </a>
+                      Download
+                  </a>
                 </div>
             </div>
         </div>
