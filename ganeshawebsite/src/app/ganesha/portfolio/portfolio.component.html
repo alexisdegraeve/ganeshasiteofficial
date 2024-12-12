@@ -18,7 +18,7 @@
                     <div class="placeholder rounded" style="width: 100%; height: 200px;"></div>
                 </div>
                 <!-- Image -->
-                <img [hidden]="!category.imageLoaded" [src]="category.image" class="card-img-top" [alt]="category.title" (load)="onImageLoad(i)">
+                <img [hidden]="!category.imageLoaded" [src]="category.image" [class]="category.class" class="card-img-top" [alt]="category.title" (load)="onImageLoad(i)">
                 <div class="card-body">
                     <h5 class="card-title">{{ category.title }}</h5>
                     <p class="card-text">{{ category.description }}</p>

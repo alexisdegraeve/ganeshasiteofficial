@@ -47,8 +47,9 @@ export class PortfolioComponent {
     {
       title: 'Logo Design',
       description: 'Creative logo designs for your brand.',
-      image: 'assets/img/logo_01.png',
+      image: 'assets/img/logos/logo_folder.png',
       linkInternal: '/gallerylogo',
+      class: 'logo',
       imageLoaded: false
     },
   ];
