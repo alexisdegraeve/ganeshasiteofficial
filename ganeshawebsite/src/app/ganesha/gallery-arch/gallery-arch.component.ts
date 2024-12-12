@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-gallery-arch',
   templateUrl: './gallery-arch.component.html',
-  styleUrl: './gallery-arch.component.scss',
+  styleUrls: ['./gallery-arch.component.scss'],
   imports: [CommonModule]
 })
 export class GalleryArchComponent {
   selectedTab = 0;
+  selectedImage: { url: string; alt: string } | null = null;
 
   archGallery = [
     {
@@ -37,5 +38,11 @@ export class GalleryArchComponent {
 
   selectTab(index: number) {
     this.selectedTab = index;
+  }
+
+  openImageInModal(image: { url: string; alt: string }) {
+    this.selectedImage = image;
+    const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
+    modal.show();
   }
 }
