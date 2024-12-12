@@ -13,15 +13,19 @@
 
     <!-- Profile Section -->
     <div class="row align-items-start mb-3">
-        <div class="col-12 col-md-6 col-xl-4">
-            <img src="assets/img/portrait_alexis03.jpeg" alt="Alexis Degraeve" class="shadow portrait">
+        <div class="col-12 col-md-6 col-xl-4 position-relative">
+            <!-- Placeholder while image is loading -->
+            <div *ngIf="!imageLoaded" class="placeholder-glow">
+                <div class="placeholder rounded portrait"></div>
+            </div>
+            <!-- Image -->
+            <img [hidden]="!imageLoaded" src="assets/img/portrait_alexis03.jpeg" alt="Alexis Degraeve" class="shadow portrait" (load)="onImageLoad($event)">
         </div>
         <div class="col-12 col-md-6 col-xl-8">
             <h2 class="fw-bold">Alexis Degraeve</h2>
             <p class="text-muted">Webdesigner / Infographist / Developer</p>
         </div>
     </div>
-
     <!-- Skills and Interests -->
     <div class="row g-4">
         <!-- Languages -->

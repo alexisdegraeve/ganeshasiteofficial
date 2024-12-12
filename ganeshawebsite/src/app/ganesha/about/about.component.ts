@@ -15,5 +15,9 @@ export class AboutComponent {
     { name: 'Dutch', level: 'B2.3', stars: 3 },
     { name: 'Spanish', level: 'A1', stars: 1 },
   ];
+  imageLoaded: boolean = false;
 
+  onImageLoad(event: Event): void {
+    this.imageLoaded = true; // Passe l'état à true une fois l'image chargée
+  }
 }
