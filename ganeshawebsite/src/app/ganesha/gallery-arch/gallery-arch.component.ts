@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
+
 @Component({
   selector: 'app-gallery-arch',
   templateUrl: './gallery-arch.component.html',
@@ -42,7 +44,12 @@ export class GalleryArchComponent {
 
   openImageInModal(image: { url: string; alt: string }) {
     this.selectedImage = image;
-    // const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
-    // modal.show();
+
+    // Bootstrap modal logic
+    const modalElement = document.getElementById('galleryModal');
+    if (modalElement) {
+      const modal = new bootstrap.Modal(modalElement);
+      modal.show();
+    }
   }
 }

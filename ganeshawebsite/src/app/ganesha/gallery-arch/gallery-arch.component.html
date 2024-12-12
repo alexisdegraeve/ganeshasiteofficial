@@ -14,16 +14,18 @@
     <ul class="nav nav-tabs mb-4">
         <li class="nav-item" *ngFor="let tab of archGallery; let i = index">
             <button class="nav-link bg-transparent" [class.active]="selectedTab === i" (click)="selectTab(i)">
-              {{ tab.title }}
-          </button>
+            {{ tab.title }}
+        </button>
         </li>
     </ul>
 
     <!-- Galerie d'images -->
     <div class="row g-4">
         <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
-            <div class="card shadow-sm">
-                <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded" style="border-radius: 1rem;" (click)="openImageInModal(image)">
+            <div class="card shadow-sm position-relative" (click)="openImageInModal(image)">
+                <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded">
+                <div class="overlay"></div>
+                <!-- Overlay pour l'effet hover -->
                 <div class="card-body p-2">
                     <p class="card-text text-center">{{ image.alt }}</p>
                 </div>
@@ -40,11 +42,8 @@
                 <h5 class="modal-title" id="galleryModalLabel">{{ selectedImage?.alt }}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 <img *ngIf="selectedImage" [src]="selectedImage.url" class="img-fluid rounded" alt="{{ selectedImage.alt }}">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
