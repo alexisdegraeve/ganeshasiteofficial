@@ -16,10 +16,10 @@ export class GalleryArchComponent {
 
   archGallery = [
     {
-      title: 'Outside View',
+      title: 'Building View',
       images: [
-        { img: 'assets/img/outside/flat_01.jpg', alt: 'Outside View 1' },
-        { img: 'assets/img/outside/flat_02.jpg', alt: 'Outside View 2' },
+        { img: 'assets/img/outside/flat_01.jpg', alt: 'Building View 1' },
+        { img: 'assets/img/outside/flat_02.jpg', alt: 'Building View 2' },
       ]
     },
     {

@@ -17,8 +17,11 @@ export class GalleryLogoComponent {
     {
       title: 'Logos',
       images: [
+        { url: 'assets/img/logos/logo_vigna_2024.svg', alt: 'Vigna 2024' },
+        { url: 'assets/img/logos/ganesha_new_logo.svg', alt: 'Ganesha 2024' },
+        { url: 'assets/img/logos/container_vigna.svg', alt: 'Icon container Vigna 2024' },
         { url: 'assets/img/logos/cameleon.png', alt: 'Cameleon Logo' },
-        { url: 'assets/img/logos/marco_vigna.png', alt: 'Marco Vigna' },
+        { url: 'assets/img/logos/marco_vigna.png', alt: 'Marco Vigna 2000' },
       ]
     }
   ];
