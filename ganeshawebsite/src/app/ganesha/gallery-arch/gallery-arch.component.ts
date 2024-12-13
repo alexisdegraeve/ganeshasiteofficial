@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
 
@@ -7,40 +8,40 @@ declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstra
   selector: 'app-gallery-arch',
   templateUrl: './gallery-arch.component.html',
   styleUrls: ['./gallery-arch.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule, RouterModule]
 })
 export class GalleryArchComponent {
   selectedTab = 0;
-  selectedImage: { url: string; alt: string } | null = null;
+  selectedImage: { img: string; alt: string; url?: string} | null = null;
 
   archGallery = [
     {
       title: 'Outside View',
       images: [
-        { url: 'assets/img/outside/flat_01.jpg', alt: 'Outside View 1' },
-        { url: 'assets/img/outside/flat_02.jpg', alt: 'Outside View 2' },
+        { img: 'assets/img/outside/flat_01.jpg', alt: 'Outside View 1' },
+        { img: 'assets/img/outside/flat_02.jpg', alt: 'Outside View 2' },
       ]
     },
     {
       title: 'Flat A',
       images: [
-        { url: 'assets/img/flata/flat_04.jpg', alt: 'Flat A' },
-        { url: 'assets/img/flata/flat_05.jpg', alt: 'Flat A' },
-        { url: 'assets/img/flata/flat_06.jpg', alt: 'Flat A' },
-        { url: 'assets/img/flata/flat_07.jpg', alt: 'Flat A' },
+        { img: 'assets/img/flata/flat_04.jpg', alt: 'Flat A', url: 'https://ganesha.ovh/flats/360degre/flat01/bedroom/' },
+        { img: 'assets/img/flata/flat_05.jpg', alt: 'Flat A' },
+        { img: 'assets/img/flata/flat_06.jpg', alt: 'Flat A' },
+        { img: 'assets/img/flata/flat_07.jpg', alt: 'Flat A' },
       ]
     },
     {
       title: 'Flat B',
       images: [
-        { url: 'assets/img/flatb/flat_08.jpg', alt: 'Flat B' },
-        { url: 'assets/img/flatb/flat_09.jpg', alt: 'Flat B' },
-        { url: 'assets/img/flatb/flat_10.jpg', alt: 'Flat B' },
-        { url: 'assets/img/flatb/flat_11.jpg', alt: 'Flat B' },
-        { url: 'assets/img/flatb/flat_12.jpg', alt: 'Flat B' },
-        { url: 'assets/img/flatb/flat_13.jpg', alt: 'Flat B' },
-        { url: 'assets/img/flatb/flat_14.jpg', alt: 'Flat B' },
-        { url: 'assets/img/flatb/flat_15.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_08.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_09.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_10.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_11.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_12.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_13.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_14.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_15.jpg', alt: 'Flat B' },
       ]
     }
   ];
@@ -49,7 +50,7 @@ export class GalleryArchComponent {
     this.selectedTab = index;
   }
 
-  openImageInModal(image: { url: string; alt: string }) {
+  openImageInModal(image: { img: string; alt: string; url?: string }) {
     this.selectedImage = image;
 
     // Bootstrap modal logic

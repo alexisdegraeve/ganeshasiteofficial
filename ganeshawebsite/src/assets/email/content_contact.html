@@ -1,0 +1,127 @@
+<script language ="JavaScript">
+
+    function clearform()
+    {        
+        document.getElementById('e_name').value="";
+	      document.getElementById('e_prenom').value="";
+	      document.getElementById('e_email').value="";
+	      document.getElementById('e_subject').value="";
+	      document.getElementById('e_texte').value="";
+        document.getElementById('msgerror').innerHTML="";
+        document.getElementById('msgerror').style.display = "none";
+
+    }
+        
+    
+	  function sendmail_ok()
+	  {
+        document.getElementById('msgerror').style.display = "block";
+
+          var inputs = [];
+          $(':input', this).each(function() {
+            inputs.push(this.name + '=' + escape(this.value));
+          })
+
+          $.ajax({
+            data: inputs.join('&'),
+	    url: "do_sendform.php",
+            timeout: 8000,
+            error: function() {
+	      document.getElementById('msgerror').innerHTML="<br><strong>Sorry but the message cannot be send now. Please try it later!</strong>";		
+            },
+            success: function(r) { 
+	      document.getElementById('msgerror').innerHTML="<br><strong>Thank you for your message! I will answer as soon as possible.</strong>";
+	      document.getElementById('e_name').value="";
+	      document.getElementById('e_prenom').value="";
+	      document.getElementById('e_email').value="";
+	      document.getElementById('e_subject').value="";
+	      document.getElementById('e_texte').value="";
+
+            }
+          }) 
+	  }
+</script>
+
+
+
+<br><br><br>
+
+
+<div id="content_middle_main_header">
+      <div id="sticker">
+      <div id="sticker_header"></div>
+      <div id="sticker_content"><p style="color:#a60000">"Only the knowledge<br>that makes us better<br>is useful"<br><font text-align="right" style="color:black">Socrates</font></p></div>
+      </div>
+  <div class="content_middle_main">  
+      <br>
+      <br>
+      <p class="BigTitleRed">Contact</p><br>
+      <hr class="hr_title" /> 		
+      <br>
+			<p class="text_main">
+		  Choose your option to contact me:
+      <br>
+      <br>
+			</p>
+
+      <a href="mailto:alexis.degraeve@hotmail.com" target="_blank"><div id="button_webdesign" class="btnGanesha">Directly by e-mail<div class="btnTriangle"/></div></a> 
+      <a onclick="javascript:pageemail();"><div id="button_webdesign" class="btnGanesha">Through the Website<div class="btnTriangle"/></div></a> 
+      <br>
+      <br>
+      <br>
+      
+      		  <div id="content_email" style="display:none">
+		 
+
+
+     <div class="backBlockGrey">
+    <div class="rectRed"/>
+        <p class="SubBigTitleRed" style="display: inline-block;">Email</p>
+        <br>   
+        <div class="content_middle_main">   
+           <br>
+           <p>Write to me with the website:</p>
+           <br>
+	    <form id="myform" method="POST">
+      
+             <p class="labelEmail">Name<span class="asterisk">*</span></p>
+             <p><input id="e_name" name="e_name" type="text" tabindex="1" size="90" placeholder="Write your name here..."" /></p>
+             
+             <p class="labelEmail">Firstname<span class="asterisk">*</span></p>
+             <p><input id="e_prenom" name="e_prenom" type="text" tabindex="1" size="90" placeholder="Write your firstname here..."" /></p>
+             
+             <p class="labelEmail">E-mail<span class="asterisk">*</span></p>
+             <p><input id="e_email" name="e_email" type="text" tabindex="1" size="90" placeholder="Write your email here (ex: amanda@hotmail.com) ..."" /></p>
+             
+             <p class="labelEmail">Subject<span class="asterisk">*</span></p>
+             <p><input id="e_subject" name="e_subject" type="text" tabindex="1" size="90" placeholder="Write your subject here (ex: Question) ..."" /></p>
+             
+             <p class="labelEmail">Message<span class="asterisk">*</span></p>
+             <p><textarea id="e_texte" name="e_texte" cols="38" rows="4" placeholder="Write your message here..."" /></p>
+             <br>
+             <div id="replaceme"></div>
+		         <div id="sackdata"></div>
+             <a  href="javascript: submitcheck();"><div id="button_webdesign" class="btnGanesha"><div class="btnEmailSend"/>Submit</div></a> 
+             <a  href="javascript: clearform();"><div id="button_webdesign" class="btnGanesha"><div class="btnEmailClear"/>Clear</div></a> 
+             <br />
+             <br />
+
+
+			       <div id="msgerror" class="msg_error" style="display:none"></div>
+             <br />
+             <br />
+             <br />
+        </div>
+      
+        </div>
+           
+      </div>
+      
+      
+      <br>
+      <br>
+      <br>      
+  </div>
+</div>
+
+
