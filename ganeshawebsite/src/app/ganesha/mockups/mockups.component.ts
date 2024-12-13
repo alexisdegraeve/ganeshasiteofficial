@@ -15,15 +15,20 @@ export class MockupsComponent {
 
   archGallery = [
     {
-      title: 'Enterprises',
+      title: 'Mockups',
       images: [
-        { url: 'assets/img/logos/logo_vigna_2024.svg', alt: 'Vigna 2024' },
-        { url: 'assets/img/logos/ganesha_new_logo.svg', alt: 'Ganesha 2024' },
-        { url: 'assets/img/logos/container_vigna.svg', alt: 'Icon container Vigna 2024' },
-        { url: 'assets/img/logos/cameleon.png', alt: 'Cameleon Logo' },
-        { url: 'assets/img/logos/marco_vigna.png', alt: 'Marco Vigna 2000' },
+        { url: 'assets/img/mockups/hackaton2024/priflex.jpeg', alt: 'Hackaton 2024' },
+        // { url: 'assets/img/mockups/iba_pridex/pridex_logo.svg', alt: 'IBA Pridex' },
       ]
-    }
+    },
+    // {
+    //   title: 'MYQA Ion',
+    //   images: [
+    //     { url: 'assets/img/mockups/myqaion/my_qa_ion_portal.png', alt: 'IBA MyQAIon'},
+    //     { url: 'assets/img/mockups/myqaion/my_qa_ion_list_patient.png', alt: 'IBA MyQAIon'},
+    //     { url: 'assets/img/mockups/myqaion/my_qa_ion_gantry_angle_sensor.png', alt: 'IBA MyQAIon'},
+    //   ]
+    // }
   ];
 
   selectTab(index: number) {
