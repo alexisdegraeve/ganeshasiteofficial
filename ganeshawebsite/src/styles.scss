@@ -55,3 +55,11 @@ h2 {
 .modal-backdrop {
     --bs-backdrop-zindex: 200;
 }
+
+.modal-header {
+    border-bottom: unset;
+}
+
+.modal-footer {
+    border-top: unset;
+}

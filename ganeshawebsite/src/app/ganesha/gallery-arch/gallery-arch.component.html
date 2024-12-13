@@ -1,5 +1,11 @@
 <div class="container py-5">
-    <div class="mb-5">
+    <!-- Bloc de skeleton pour les images -->
+    <div *ngIf="!imageLoaded" class="skeleton-container">
+        <div class="skeleton-image"></div>
+        <div class="skeleton-text"></div>
+    </div>
+
+    <div *ngIf="imageLoaded" class="mb-5">
         <blockquote class="blockquote">
             <p class="mb-3 fst-italic">
                 "Form follows function - that has been misunderstood. Form and function should be one, joined in a spiritual union."
@@ -13,7 +19,7 @@
     <div class="mb-4">
         <p>Discover this building at Rue des Ateliers 50/2, 7100 La Louvière, Belgium, transformed into apartments under the direction of Marco Vigna for the 3D rendering.</p>
         <a href="https://www.google.com/maps/@50.465529,4.2078345,3a,75y,250.82h,90t/data=!3m7!1e1!3m5!1siXjCQhyH2bYTP-jffOcD8Q!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DiXjCQhyH2bYTP-jffOcD8Q%26yaw%3D250.82364!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI0MTIxMC4wIKXMDSoASAFQAw%3D%3D"
-            class="btn  btn-danger  align-items-start justify-content-center" target="_blank">
+            class="btn btn-danger align-items-start justify-content-center" target="_blank">
             <i class="bi bi-geo-alt-fill me-2"></i> View on Google Maps
         </a>
     </div>
@@ -31,7 +37,10 @@
     <div class="row g-4">
         <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
             <div class="card shadow-sm position-relative" (click)="openImageInModal(image)">
-                <img [src]="image.img" [alt]="image.alt" class="card-img-top rounded">
+                <div *ngIf="!imageLoaded" class="skeleton-container">
+                    <div class="skeleton-image"></div>
+                </div>
+                <img *ngIf="imageLoaded" [src]="image.img" [alt]="image.alt" class="card-img-top rounded-bottom-0 img-container" (load)="onImageLoad()">
                 <div class="overlay"></div>
                 <!-- Overlay pour l'effet hover -->
                 <div class="card-body p-2">
@@ -55,7 +64,7 @@
                     <span class="me-2">360° Panoramic View</span>
                     <i class="bi bi-eye fs-5"></i>
                 </a>
-                <img *ngIf="selectedImage" [src]="selectedImage.img" [class]="selectedImage.url ? 'rounded-bottom' : 'rounded' " class="img-fluid" alt="{{ selectedImage.alt }}">
+                <img *ngIf="selectedImage" [src]="selectedImage.img" [class]="selectedImage.url ? 'rounded-bottom' : 'rounded'" class="img-fluid" alt="{{ selectedImage.alt }}">
             </div>
         </div>
     </div>
