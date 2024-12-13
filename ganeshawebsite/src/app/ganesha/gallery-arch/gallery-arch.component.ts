@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { fromEvent, from, Observable } from 'rxjs';
-import { switchMap, tap } from 'rxjs/operators';
+import { fromEvent, from } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 declare var bootstrap: any; // Déclarez Bootstrap JS pour utilisation
 
@@ -11,7 +11,7 @@ declare var bootstrap: any; // Déclarez Bootstrap JS pour utilisation
   styleUrls: ['./gallery-arch.component.scss'],
   imports: [CommonModule]
 })
-export class GalleryArchComponent implements OnInit {
+export class GalleryArchComponent implements OnInit, AfterViewInit {
   selectedTab = 0;
   selectedImage: { img: string; alt: string; url?: string } | null = null;
   imageLoaded = false; // Etat pour déterminer si les images sont chargées
@@ -36,20 +36,24 @@ export class GalleryArchComponent implements OnInit {
     {
       title: 'Flat B',
       images: [
-        { img: 'assets/img/flatb/flat_08.jpg', alt: 'Flat B - Living room', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom/'  },
-        { img: 'assets/img/flatb/flat_09.jpg', alt: 'Flat B - Living room', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom02/'  },
-        { img: 'assets/img/flatb/flat_10.jpg', alt: 'Flat B - Living room - Kitchen', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom03/'  },
-        { img: 'assets/img/flatb/flat_11.jpg', alt: 'Flat B - Bath room', url: 'https://ganesha.ovh/flats/360degre/flat02/bathroom/'  },
-        { img: 'assets/img/flatb/flat_12.jpg', alt: 'Flat B - Shower room', url: 'https://ganesha.ovh/flats/360degre/flat02/showerroom/'  },
-        { img: 'assets/img/flatb/flat_13.jpg', alt: 'Flat B - Utility room', url: 'https://ganesha.ovh/flats/360degre/flat02/utilityroom/'  },
-        { img: 'assets/img/flatb/flat_14.jpg', alt: 'Flat B - Wc room', url: 'https://ganesha.ovh/flats/360degre/flat02/wcroom/'  },
-        { img: 'assets/img/flatb/flat_15.jpg', alt: 'Flat B - Work room', url: 'https://ganesha.ovh/flats/360degre/flat02/workroom/'  },
+        { img: 'assets/img/flatb/flat_08.jpg', alt: 'Flat B - Living room', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom/' },
+        { img: 'assets/img/flatb/flat_09.jpg', alt: 'Flat B - Living room', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom02/' },
+        { img: 'assets/img/flatb/flat_10.jpg', alt: 'Flat B - Living room - Kitchen', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom03/' },
+        { img: 'assets/img/flatb/flat_11.jpg', alt: 'Flat B - Bath room', url: 'https://ganesha.ovh/flats/360degre/flat02/bathroom/' },
+        { img: 'assets/img/flatb/flat_12.jpg', alt: 'Flat B - Shower room', url: 'https://ganesha.ovh/flats/360degre/flat02/showerroom/' },
+        { img: 'assets/img/flatb/flat_13.jpg', alt: 'Flat B - Utility room', url: 'https://ganesha.ovh/flats/360degre/flat02/utilityroom/' },
+        { img: 'assets/img/flatb/flat_14.jpg', alt: 'Flat B - Wc room', url: 'https://ganesha.ovh/flats/360degre/flat02/wcroom/' },
+        { img: 'assets/img/flatb/flat_15.jpg', alt: 'Flat B - Work room', url: 'https://ganesha.ovh/flats/360degre/flat02/workroom/' },
       ]
     }
   ];
 
   ngOnInit() {
     this.loadImages(); // Charger les images immédiatement lors de l'initialisation du composant
+  }
+
+  ngAfterViewInit() {
+    this.loadImages(); // Charge les images immédiatement après le rendu du composant
   }
 
   selectTab(index: number) {
@@ -77,14 +81,16 @@ export class GalleryArchComponent implements OnInit {
     fromEvent(window, 'load')
       .pipe(
         switchMap(() =>
-          from(currentImages.map(image => new Promise((resolve, reject) => {
+          from(currentImages.map(image => new Promise<void>((resolve, reject) => { // Ajout du type void à la Promise
             const img = new Image();
-            img.onload = resolve;
+            img.onload = () => {
+              this.imageLoaded = true; // Met à jour l'état `imageLoaded` après le chargement de chaque image
+              resolve(); // Fonction de résolution de la Promise correctement formée
+            };
             img.onerror = reject;
             img.src = image.img;
           })))
-        ),
-        tap(() => this.imageLoaded = true) // Met à jour l'état `imageLoaded` lorsque toutes les images sont chargées
+        )
       )
       .subscribe({
         error: (error) => console.error('Erreur de chargement de l\'image:', error)
@@ -94,6 +100,6 @@ export class GalleryArchComponent implements OnInit {
   // Cette méthode est appelée lorsque chaque image est chargée
   onImageLoad() {
     // Maintient `imageLoaded` à `false` jusqu'à ce que toutes les images de l'onglet soient chargées
-    this.imageLoaded = false; // Mise à jour correcte du skeleton
+    this.imageLoaded = true; // Mise à jour correcte du skeleton
   }
 }
