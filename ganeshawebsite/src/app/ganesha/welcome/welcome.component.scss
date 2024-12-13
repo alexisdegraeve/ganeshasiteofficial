@@ -12,12 +12,12 @@
 }
 
 .sun {
-    width: 200px;
-    height: 100px;
+    width: 12.5rem;
+    height: 6.25rem;
     background-color: rgb(255, 252, 234);
     border-top-left-radius: 110px;
     border-top-right-radius: 110px;
-    border: 10px solid gray;
+    border: 0.625rem solid gray;
     border-bottom: 0;
     outline: none;
     border-color: #fffdee;
@@ -26,13 +26,13 @@
 
 @keyframes mymove {
     0% {
-        box-shadow: 0 0 100px 100px rgba(255, 236, 201, 0.2)
+        box-shadow: 0 0 6.25rem 6.25rem rgba(255, 236, 201, 0.2)
     }
     50% {
-        box-shadow: 0 0 125px 200px rgba(255, 236, 201, 0.4)
+        box-shadow: 0 0 7rem 12.5rem rgba(255, 236, 201, 0.4)
     }
     100% {
-        box-shadow: 0 0 100px 100px rgba(255, 236, 201, 0.2)
+        box-shadow: 0 0 6.25rem 6.25rem rgba(255, 236, 201, 0.2)
     }
 }
 
