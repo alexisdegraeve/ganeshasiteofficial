@@ -44,13 +44,13 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="galleryModalLabel">{{ selectedCategory?.title }} Gallery</h5>
+                    <h5 class="modal-title" id="galleryModalLabel">{{ selectedCategory?.title }}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-6 col-md-4 mb-3" *ngFor="let image of selectedCategory?.gallery">
-                            <img [src]="image" class="img-fluid rounded" alt="Gallery Image">
+                            <img [src]="image" class="img-fluid rounded gallery" alt="Gallery Image">
                         </div>
                     </div>
                 </div>

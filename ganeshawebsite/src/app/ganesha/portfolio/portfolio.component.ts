@@ -18,10 +18,12 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
-      title: 'Visit Cards',
-      description: 'Creative visit card designs.',
+      title: 'Business cards',
+      description: 'Design business cards.',
       image: 'assets/img/card_visit_bert02.jpg',
-      gallery: Array(10).fill('assets/visit-card-sample.jpg'), // Exemple de 10 images
+      gallery: [
+        'assets/img/card_visit_bert.jpg',
+      ],
       imageLoaded: false
     },
     {
