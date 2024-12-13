@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { HttpClient, HttpHeaders } from '@angular/common/http'; // Importez HttpClient
+import { HttpClient } from '@angular/common/http'; // Importez HttpClient
 import { CommonModule } from '@angular/common';
+import emailjs  from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,6 @@ export class ContactComponent {
   contactForm: FormGroup;
   remainingCharacters = 500;
   isSubmitted = false;
-  private serverUrl = 'https://ganesha.ovh/contact-form/send.php';
 
   constructor(private fb: FormBuilder, private http: HttpClient) { // Injectez HttpClient
     this.contactForm = this.fb.group({
@@ -50,16 +50,27 @@ export class ContactComponent {
       message: this.contactForm.get('message')?.value,
     };
 
-    this.http.post(this.serverUrl, formData, {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-    }).subscribe(
-      response => {
-        console.log('Message envoyé avec succès:', response);
-      },
-      error => {
-        console.error('Erreur lors de l\'envoi du message:', error);
-      }
-    );
+    // Utilisez EmailJS avec un try-catch pour capturer les erreurs
+    try {
+      emailjs.init('5MiMPyULOmdyKe92o');
+      emailjs.send("service_pvbdhsy", "template_cmgvgtk", {
+        from_name: "Ganesha OVH",
+        to_name: "Alexis Degraeve",
+        firstname: formData.firstName,
+        lastname: formData.lastName,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      })
+      .then(response => {
+        console.log('Message sent successfully:', response);
+      })
+      .catch(error => {
+        console.error('Error sending message with EmailJS:', error);
+      });
+    } catch (error) {
+      console.error('Error processing with EmailJS:', error);
+    }
   }
 
   resetForm(): void {
