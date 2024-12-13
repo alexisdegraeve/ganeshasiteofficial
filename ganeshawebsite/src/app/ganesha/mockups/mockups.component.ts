@@ -15,7 +15,7 @@ export class MockupsComponent {
 
   archGallery = [
     {
-      title: 'Logos',
+      title: 'Enterprises',
       images: [
         { url: 'assets/img/logos/logo_vigna_2024.svg', alt: 'Vigna 2024' },
         { url: 'assets/img/logos/ganesha_new_logo.svg', alt: 'Ganesha 2024' },
