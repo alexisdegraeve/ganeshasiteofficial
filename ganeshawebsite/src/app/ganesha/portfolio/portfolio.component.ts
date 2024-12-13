@@ -62,6 +62,13 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
+      title: 'Mockups',
+      description: 'Creative mockups with Figma, Zeplin',
+      image: 'assets/img/mockups.jpeg',
+      linkInternal: '/mockups',
+      imageLoaded: false
+    },
+    {
       title: 'Ganesha learning',
       description: '🌟 In this channel, we provide comprehensive tutorials on Angular 19 and other essential frontend topics. Master HTML, CSS, and Angular\'s robust framework to build modern web applications.',
       image: 'assets/img/youtube_ganesha_learning.jpg',

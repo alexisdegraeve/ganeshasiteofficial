@@ -14,8 +14,8 @@
     <ul class="nav nav-tabs mb-4">
         <li class="nav-item" *ngFor="let tab of archGallery; let i = index">
             <button class="nav-link bg-transparent" [class.active]="selectedTab === i" (click)="selectTab(i)">
-          {{ tab.title }}
-      </button>
+        {{ tab.title }}
+    </button>
         </li>
     </ul>
 

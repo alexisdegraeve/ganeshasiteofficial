@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
 declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
 
 @Component({
-  selector: 'app-gallery-logo',
-  templateUrl: './gallery-logo.component.html',
-  styleUrls: ['./gallery-logo.component.scss'],
+  selector: 'app-mockups',
+  templateUrl: './mockups.component.html',
+  styleUrls: ['./mockups.component.scss'],
   imports: [CommonModule]
 })
-export class GalleryLogoComponent {
+export class MockupsComponent {
   selectedTab = 0;
   selectedImage: { url: string; alt: string } | null = null;
 
@@ -21,7 +21,7 @@ export class GalleryLogoComponent {
         { url: 'assets/img/logos/ganesha_new_logo.svg', alt: 'Ganesha 2024' },
         { url: 'assets/img/logos/container_vigna.svg', alt: 'Icon container Vigna 2024' },
         { url: 'assets/img/logos/cameleon.png', alt: 'Cameleon Logo' },
-        { url: 'assets/img/logos/marco_vigna.png', alt: 'Vigna 2020' },
+        { url: 'assets/img/logos/marco_vigna.png', alt: 'Marco Vigna 2000' },
       ]
     }
   ];

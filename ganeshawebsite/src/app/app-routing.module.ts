@@ -9,6 +9,7 @@ import { GalleryArchComponent } from './ganesha/gallery-arch/gallery-arch.compon
 import { GalleryLogoComponent } from './ganesha/gallery-logo/gallery-logo.component';
 import { Gallery3dComponent } from './ganesha/gallery3d/gallery3d.component';
 import { BusinessCardComponent } from './ganesha/business-card/business-card.component';
+import { MockupsComponent } from './ganesha/mockups/mockups.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'gallerylogo', component: GalleryLogoComponent },
   { path: 'gallery3D', component: Gallery3dComponent },
   { path: 'businessCard', component: BusinessCardComponent },
+  { path: 'mockups', component: MockupsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: NotfoundComponent } // Route 404 pour URL incorrecte
