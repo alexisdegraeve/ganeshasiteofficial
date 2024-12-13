@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {  // Assurez-vous que la requête es
   $message .= "Email: " . htmlspecialchars($_POST['email']) . "\n";
   $message .= "Subject: " . htmlspecialchars($_POST['subject']) . "\n";
   $message .= "Message: \n" . htmlspecialchars($_POST['message']);
-  $headers = 'From: contact_form@yourdomain.com';
+  $headers = 'From: contact_form@ganesha.ovh';
 
   if (mail($to, $subject, $message, $headers)) {
     echo json_encode(['status' => 'success', 'message' => 'Your message has been sent.']);

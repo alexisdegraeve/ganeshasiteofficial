@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http'; // Importez HttpClient
+import { HttpClient, HttpHeaders } from '@angular/common/http'; // Importez HttpClient
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -50,7 +50,9 @@ export class ContactComponent {
       message: this.contactForm.get('message')?.value,
     };
 
-    this.http.post(this.serverUrl, formData).subscribe(
+    this.http.post(this.serverUrl, formData, {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    }).subscribe(
       response => {
         console.log('Message envoyé avec succès:', response);
       },
