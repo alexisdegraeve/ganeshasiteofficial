@@ -13,7 +13,7 @@ export class ContactComponent {
   contactForm: FormGroup;
   remainingCharacters = 500;
   isSubmitted = false;
-  private serverUrl = 'http://ganesha.ovh/contact-form/send.php';
+  private serverUrl = 'https://ganesha.ovh/contact-form/send.php';
 
   constructor(private fb: FormBuilder, private http: HttpClient) { // Injectez HttpClient
     this.contactForm = this.fb.group({
