@@ -43,7 +43,7 @@ export class PortfolioComponent {
       title: 'Professional Mockup',
       description: 'Find professional mockups for your projects.',
       image: 'assets/img/portfolio.jpg',
-      download: 'assets/portfolio_adg.pdf', // Lien pour télécharger le PDF
+      download: 'assets/pdf/portfolio_adg.pdf', // Lien pour télécharger le PDF
       imageLoaded: false
     },
     {
