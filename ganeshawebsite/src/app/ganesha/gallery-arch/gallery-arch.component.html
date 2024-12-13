@@ -47,7 +47,7 @@
                     <span class="me-2">360° Panoramic View</span>
                     <i class="bi bi-eye fs-5"></i>
                 </a>
-                <img *ngIf="selectedImage" [src]="selectedImage.img" [class]="selectedImage?.url ? 'rounded-bottom' : 'rounded' " class="img-fluid" alt="{{ selectedImage.alt }}">
+                <img *ngIf="selectedImage" [src]="selectedImage.img" [class]="selectedImage.url ? 'rounded-bottom' : 'rounded' " class="img-fluid" alt="{{ selectedImage.alt }}">
             </div>
         </div>
     </div>

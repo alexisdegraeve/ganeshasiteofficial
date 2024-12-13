@@ -25,23 +25,23 @@ export class GalleryArchComponent {
     {
       title: 'Flat A',
       images: [
-        { img: 'assets/img/flata/flat_04.jpg', alt: 'Flat A', url: 'https://ganesha.ovh/flats/360degre/flat01/bedroom/' },
-        { img: 'assets/img/flata/flat_05.jpg', alt: 'Flat A' },
-        { img: 'assets/img/flata/flat_06.jpg', alt: 'Flat A' },
-        { img: 'assets/img/flata/flat_07.jpg', alt: 'Flat A' },
+        { img: 'assets/img/flata/flat_04.jpg', alt: 'Flat A - Bed room', url: 'https://ganesha.ovh/flats/360degre/flat01/bedroom/' },
+        { img: 'assets/img/flata/flat_05.jpg', alt: 'Flat A - Living room', url: 'https://ganesha.ovh/flats/360degre/flat01/livingroom/' },
+        { img: 'assets/img/flata/flat_06.jpg', alt: 'Flat A - Shower room', url: 'https://ganesha.ovh/flats/360degre/flat01/showerroom/' },
+        { img: 'assets/img/flata/flat_07.jpg', alt: 'Flat A - Toilet room', url: 'https://ganesha.ovh/flats/360degre/flat01/wcroom/' },
       ]
     },
     {
       title: 'Flat B',
       images: [
-        { img: 'assets/img/flatb/flat_08.jpg', alt: 'Flat B' },
-        { img: 'assets/img/flatb/flat_09.jpg', alt: 'Flat B' },
-        { img: 'assets/img/flatb/flat_10.jpg', alt: 'Flat B' },
-        { img: 'assets/img/flatb/flat_11.jpg', alt: 'Flat B' },
-        { img: 'assets/img/flatb/flat_12.jpg', alt: 'Flat B' },
-        { img: 'assets/img/flatb/flat_13.jpg', alt: 'Flat B' },
-        { img: 'assets/img/flatb/flat_14.jpg', alt: 'Flat B' },
-        { img: 'assets/img/flatb/flat_15.jpg', alt: 'Flat B' },
+        { img: 'assets/img/flatb/flat_08.jpg', alt: 'Flat B - Living room', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom/'  },
+        { img: 'assets/img/flatb/flat_09.jpg', alt: 'Flat B - Living room', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom02/'  },
+        { img: 'assets/img/flatb/flat_10.jpg', alt: 'Flat B - Living room - Kitchen', url: 'https://ganesha.ovh/flats/360degre/flat02/livingroom03/'  },
+        { img: 'assets/img/flatb/flat_11.jpg', alt: 'Flat B - Bath room', url: 'https://ganesha.ovh/flats/360degre/flat02/bathroom/'  },
+        { img: 'assets/img/flatb/flat_12.jpg', alt: 'Flat B - Shower room', url: 'https://ganesha.ovh/flats/360degre/flat02/showerroom/'  },
+        { img: 'assets/img/flatb/flat_13.jpg', alt: 'Flat B - Utility room', url: 'https://ganesha.ovh/flats/360degre/flat02/utilityroom/'  },
+        { img: 'assets/img/flatb/flat_14.jpg', alt: 'Flat B - Wc room', url: 'https://ganesha.ovh/flats/360degre/flat02/wcroom/'  },
+        { img: 'assets/img/flatb/flat_15.jpg', alt: 'Flat B - Work room', url: 'https://ganesha.ovh/flats/360degre/flat02/workroom/'  },
       ]
     }
   ];
