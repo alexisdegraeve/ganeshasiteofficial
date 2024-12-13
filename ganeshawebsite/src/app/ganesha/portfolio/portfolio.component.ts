@@ -45,11 +45,25 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
+      title: '3D',
+      description: 'Creative 3D with 3DS Max.',
+      image: 'assets/img/3d_elephant.jpeg',
+      linkInternal: '/gallery3D',
+      imageLoaded: false
+    },
+    {
       title: 'Logo Design',
       description: 'Creative logo designs for your brand.',
       image: 'assets/img/logos/logo_folder.png',
       linkInternal: '/gallerylogo',
       class: 'logo',
+      imageLoaded: false
+    },
+    {
+      title: 'Ganesha learning',
+      description: '🌟 In this channel, we provide comprehensive tutorials on Angular 19 and other essential frontend topics. Master HTML, CSS, and Angular\'s robust framework to build modern web applications.',
+      image: 'assets/img/youtube_ganesha_learning.jpg',
+      link: 'https://www.youtube.com/@alexisdegraeve5',
       imageLoaded: false
     },
   ];
