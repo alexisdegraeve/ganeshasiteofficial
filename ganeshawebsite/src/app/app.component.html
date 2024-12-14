@@ -6,7 +6,12 @@
     <app-footer></app-footer>
 </div>
 
-<div class="stars" *ngIf="darkTheme">
+<!-- Neige ou étoiles en fonction de la saison -->
+<div *ngIf="isWinterSeason" class="snowflakes">
+    <i class="fas fa-snowflake snowflake" *ngFor="let flake of [].constructor(50)"></i>
+</div>
+
+<div class="stars" *ngIf="darkTheme && !isWinterSeason">
     <div id="stars-group-1"></div>
     <div id="stars-group-2"></div>
     <div id="stars-group-3"></div>
@@ -15,7 +20,7 @@
     <div id="stars-group-6"></div>
 </div>
 
-<section *ngIf="darkTheme">
+<section *ngIf="darkTheme && !isWinterSeason">
     <span></span>
     <span></span>
     <span></span>
