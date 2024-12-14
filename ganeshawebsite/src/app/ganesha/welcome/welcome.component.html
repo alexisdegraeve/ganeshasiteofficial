@@ -3,7 +3,10 @@
     <div class="mt-4">
 
         <div class="sun-container">
-            <div class="sun">
+            <div class="sun" *ngIf="!isWinterSeason">
+            </div>
+            <div class="christmas-tree" *ngIf="isWinterSeason">
+                <i class="fas fa-tree"></i>
             </div>
         </div>
         <h1 class="mb-4 pb-4">Alexis Degraeve</h1>

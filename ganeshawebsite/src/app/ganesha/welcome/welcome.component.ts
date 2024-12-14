@@ -9,10 +9,15 @@ import { ThemeService } from 'src/app/shared/theme.service';
 })
 export class WelcomeComponent {
   darkTheme  = false;
+  isWinterSeason = false;
 
   constructor(private themeService: ThemeService) {
     this.themeService.darkTheme$.subscribe( dark =>
       this.darkTheme = dark
     );
+    const currentDate = new Date();
+    const startDate = new Date(currentDate.getFullYear(), 11, 1); // 1er décembre
+    const endDate = new Date(currentDate.getFullYear() + 1, 0, 10); // 10 janvier
+    this.isWinterSeason = (currentDate >= startDate && currentDate <= endDate);
   }
 }

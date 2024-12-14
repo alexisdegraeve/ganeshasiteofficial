@@ -36,6 +36,29 @@
     }
 }
 
+.christmas-tree {
+    font-size: 8rem;
+    /* Augmenter la taille pour une meilleure visibilité */
+    color: #228B22;
+    /* Couleur du sapin vert */
+    text-align: center;
+    /* Ajouter une ombre plus prononcée pour un effet de glow visible sur fond clair */
+    text-shadow: 0 0 3px rgba(34, 139, 34, 0.8);
+    animation: mymove2 13s infinite;
+}
+
+@keyframes mymove2 {
+    0% {
+        text-shadow: 0 0 23px rgba(255, 255, 255, 0.9);
+    }
+    50% {
+        text-shadow: 0 0 125px rgb(255, 255, 255);
+    }
+    100% {
+        text-shadow: 0 0 23px rgba(255, 255, 255, 0.9);
+    }
+}
+
 h1 {
     font-family: 'Galantis';
     margin: 0;
