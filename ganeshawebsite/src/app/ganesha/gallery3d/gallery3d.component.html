@@ -1,5 +1,8 @@
 <div class="container py-5">
-    <div class="mb-5">
+    <div *ngIf="!imageLoaded" class="placeholder-glow">
+        <div class="placeholder rounded" style="width: 100%; height:105px;"></div>
+    </div>
+    <div *ngIf="imageLoaded" class="mb-5">
         <blockquote class="blockquote">
             <p class="mb-3 fst-italic">
                 "Design is intelligence made visible."
@@ -27,7 +30,10 @@
     <div class="row g-4">
         <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
             <div class="card shadow-sm position-relative" (click)="openImageInModal(image)">
-                <img [src]="image.img" [alt]="image.alt" class="card-img-top rounded">
+                <div *ngIf="!imageLoaded" class="placeholder-glow">
+                    <div class="placeholder rounded-bottom-0" style="width: 100%; height: 200px;"></div>
+                </div>
+                <img [hidden]="!imageLoaded" [src]="image.img" [alt]="image.alt" class="card-img-top  rounded-bottom-0 img-container" (load)="onImageLoad()">
                 <div class="overlay"></div>
                 <!-- Overlay pour l'effet hover -->
                 <div class="card-body p-2">
