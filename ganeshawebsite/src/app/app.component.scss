@@ -212,15 +212,15 @@ span:nth-child(10) {
 
 .snowflakes {
     position: fixed;
-    top: -200px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 100;
     .snowflake {
-        position: initial;
+        position: relative;
         font-size: 0.8rem; // Taille de base
         opacity: 0.1;
         animation: fall linear infinite;
@@ -231,7 +231,7 @@ span:nth-child(10) {
 // Générer des flocons aléatoires
 @for $i from 1 through 50 {
     .snowflakes .snowflake:nth-child(#{$i}) {
-        left: random(100) + '%';
+        left: calc(random(100) * 1%);
         animation-duration: random(10) + 5 + s; // 5-15 secondes
         animation-delay: random(20) + s; // Jusqu'à 20 secondes de délai
         font-size: (random(7) * 0.2 + 0.3) * 1rem;
