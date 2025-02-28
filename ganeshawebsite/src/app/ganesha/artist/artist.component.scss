@@ -2,3 +2,43 @@
     background: #a5cae4;
     height: 100%;
 }
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to bottom, #a5cae4, #ffffff);
+    overflow: hidden;
+}
+
+.cloud {
+    position: absolute;
+    top: 10%;
+    left: -20%;
+    opacity: 0.9;
+    animation: moveClouds 2s linear infinite;
+}
+
+.cloud-small {
+    animation-duration: 2s;
+}
+
+.cloud-medium {
+    width: 150px;
+    animation-duration: 3s;
+    top: 20%;
+}
+
+.cloud-large {
+    width: 250px;
+    animation-duration: 5s;
+    top: 30%;
+}
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(210%);
+    }
+}
