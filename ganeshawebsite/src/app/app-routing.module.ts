@@ -10,10 +10,12 @@ import { GalleryLogoComponent } from './ganesha/gallery-logo/gallery-logo.compon
 import { Gallery3dComponent } from './ganesha/gallery3d/gallery3d.component';
 import { BusinessCardComponent } from './ganesha/business-card/business-card.component';
 import { MockupsComponent } from './ganesha/mockups/mockups.component';
+import { ArtistComponent } from './ganesha/artist/artist.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
   { path: 'welcome', component: WelcomeComponent },
+  { path: 'artist', component: ArtistComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'galleryarch', component: GalleryArchComponent },
   { path: 'gallerylogo', component: GalleryLogoComponent },

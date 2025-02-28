@@ -23,6 +23,13 @@ export class HeaderComponent {
       visibleOn: 'both'  // 'both' signifie visible sur desktop et mobile
     },
     {
+      url: '/artist',  // Chemin vers la page d'accueil
+      icon: 'bi-easel-fill',
+      title: 'Artist',
+      description: 'Explore our home page',
+      visibleOn: 'both'  // 'both' signifie visible sur desktop et mobile
+    },
+    {
       url: '/portfolio',  // Chemin vers la page portfolio
       icon: 'bi-briefcase',
       title: 'Portfolio',
