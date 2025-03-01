@@ -48,3 +48,18 @@
 .cloud-large {
     animation-duration: 30s;
 }
+
+.skyline {
+    position: relative;
+    background: linear-gradient(to bottom, #111, #000);
+    height: 5rem;
+    width: 100%;
+    overflow: hidden;
+    mask: url('/assets/skyline.png') no-repeat center;
+    -webkit-mask: url('/assets/skyline.png') no-repeat center;
+    /* Pour les80nciens navigateurs */
+    mask-size: 80vh !important;
+    -webkit-mask-size: 80vh !important;
+    mask-repeat: inherit;
+    /* Compatibilité avec les anciens navigateurs */
+}
