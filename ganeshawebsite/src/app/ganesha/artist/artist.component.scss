@@ -67,14 +67,14 @@
     mask-repeat: inherit;
     /* Compatibilité avec les anciens navigateurs */
     position: absolute;
-    bottom: 8.9rem;
+    bottom: 6.9rem;
     left: 0;
     width: 100%;
 }
 
 @media (max-width: 768px) {
     .skyline {
-        bottom: 7.9rem;
+        bottom: 5.9rem;
     }
 }
 
@@ -91,6 +91,7 @@
     position: relative;
     padding: 20px;
     margin-top: 0;
+    border-left: unset;
 }
 
 .quote p {
