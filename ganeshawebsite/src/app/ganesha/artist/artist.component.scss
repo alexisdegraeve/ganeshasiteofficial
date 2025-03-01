@@ -8,37 +8,43 @@
     height: 100vh;
     background: linear-gradient(to bottom, #a5cae4, #ffffff);
     overflow: hidden;
+    mask: url('/assets/ganesha-icon.svg') no-repeat center;
+    -webkit-mask: url('/assets/ganesha-icon.svg') no-repeat center;
+    /* Pour les80nciens navigateurs */
+    mask-size: 80vh !important;
+    -webkit-mask-size: 80vh !important;
+    /* Compatibilité avec les anciens navigateurs */
 }
 
 .cloud {
     position: absolute;
-    top: 10%;
-    left: -20%;
+    top: 0;
     opacity: 0.9;
-    animation: moveClouds 2s linear infinite;
-}
-
-.cloud-small {
-    animation-duration: 2s;
-}
-
-.cloud-medium {
-    width: 150px;
-    animation-duration: 3s;
-    top: 20%;
-}
-
-.cloud-large {
-    width: 250px;
-    animation-duration: 5s;
-    top: 30%;
+    animation: moveClouds 30s linear infinite;
 }
 
 @keyframes moveClouds {
     0% {
-        transform: translateX(-10%);
+        transform: translateX(-100%);
+        /* Commence à gauche de l'écran */
     }
     100% {
-        transform: translateX(210%);
+        transform: translateX(100%);
+        /* Se déplace complètement vers la droite */
     }
+}
+
+
+/* Ajout d'un effet pour chaque nuage avec des tailles différentes et une vitesse d'animation différente */
+
+.cloud-small {
+    animation-duration: 50s;
+}
+
+.cloud-medium {
+    animation-duration: 40s;
+}
+
+.cloud-large {
+    animation-duration: 30s;
 }
