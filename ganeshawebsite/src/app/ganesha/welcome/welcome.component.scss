@@ -122,13 +122,16 @@ ul {
     }
 }
 
+.falling-container {
+    z-index: 100;
+}
+
 .falling-figure {
     position: absolute;
     top: -10%;
     /* Commence juste au-dessus de l'écran */
     opacity: 1;
     animation: fall linear infinite, fadeOut 2s;
-    z-index: 200;
 }
 
 .falling-figure img {
@@ -171,4 +174,11 @@ ul {
     background-repeat: repeat-x;
     background-size: contain;
     background-position-y: bottom;
+}
+
+.middle {
+    background: #9db9d5;
+    height: 100%;
+    padding: 2rem;
+    z-index: 300;
 }
