@@ -124,6 +124,15 @@ ul {
 
 .falling-container {
     z-index: 100;
+    position: relative;
+    width: 100%;
+    /* Occupe toute la largeur */
+    height: 20rem;
+    /* Occupe toute la hauteur de l'écran */
+    overflow: hidden;
+    /* Masque tout ce qui dépasse */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Optionnel : arrière-plan ciel */
 }
 
 .falling-figure {
@@ -136,9 +145,17 @@ ul {
 
 .falling-figure img {
     display: block;
-    margin: 0 auto;
     object-fit: contain;
     max-width: 100%;
+    /* Inverse le masque de l’image pour ne garder que les contours */
+    /* Applique le masque basé sur l'image */
+    /* Convertit l'image en noir */
+    filter: brightness(0);
+    /* Conserve la transparence du PNG */
+    -webkit-mask-image: url('/assets/businessman-alone.png');
+    -webkit-mask-size: cover;
+    mask-image: url('/assets/businessman-alone.png');
+    mask-size: cover;
 }
 
 
@@ -187,7 +204,6 @@ ul {
 
 .man {
     height: 20rem;
-    background: #fff;
 }
 
 .man-mask {
