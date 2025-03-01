@@ -170,15 +170,33 @@ ul {
 }
 
 .homefacade {
-    background-image: url('/assets/homefacade2.png');
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position-y: bottom;
+    // background-image: url('/assets/homefacade2.png');
+    // background-repeat: repeat-x;
+    // background-size: contain;
+    // background-position-y: bottom;
+    z-index: 300;
+    display: block;
+    position: relative;
 }
 
 .middle {
-    background: #9db9d5;
     height: 100%;
     padding: 2rem;
     z-index: 300;
+}
+
+.man {
+    height: 20rem;
+    background: #fff;
+}
+
+.man-mask {
+    height: 20rem;
+    background: linear-gradient(to bottom, #a5cae4, #ffffff);
+    overflow: hidden;
+    mask: url('/assets/businessman-alone.png') no-repeat center;
+    -webkit-mask: url('/assets/businessman-alone.png') no-repeat center;
+    /* Pour les80nciens navigateurs */
+    mask-size: auto;
+    -webkit-mask-size: contain;
 }
