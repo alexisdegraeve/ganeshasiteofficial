@@ -1,5 +1,6 @@
 .artist {
     height: 100%;
+    padding-top: 3rem;
 }
 
 .background-sky {
@@ -70,6 +71,7 @@
     bottom: 6.9rem;
     left: 0;
     width: 100%;
+    z-index: 200;
 }
 
 @media (max-width: 768px) {

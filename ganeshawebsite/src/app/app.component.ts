@@ -9,7 +9,7 @@ import { ThemeService } from './shared/theme.service';
 })
 export class AppComponent {
   title = 'ganeshawebsite';
-  darkTheme = false;
+  darkTheme = true;
   isWinterSeason = false;
 
   constructor(private themeService: ThemeService) {
