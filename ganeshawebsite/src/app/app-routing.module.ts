@@ -13,9 +13,9 @@ import { MockupsComponent } from './ganesha/mockups/mockups.component';
 import { ArtistComponent } from './ganesha/artist/artist.component';
 
 const routes: Routes = [
-  { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
-  { path: 'welcome', component: WelcomeComponent },
-  { path: 'artist', component: ArtistComponent },
+  { path: '', component: ArtistComponent }, // Redirige vers Welcome par défaut
+  { path: 'welcome', component: ArtistComponent },
+  { path: 'artist', component: WelcomeComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'galleryarch', component: GalleryArchComponent },
   { path: 'gallerylogo', component: GalleryLogoComponent },

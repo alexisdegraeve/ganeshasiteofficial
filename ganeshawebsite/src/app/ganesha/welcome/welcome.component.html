@@ -1,115 +1,121 @@
 <a class="copyright" href="https://www.flaticon.com/free-icons/ganesha" title="ganesha icons">Ganesha icons created by Freepik - Flaticon</a>
-<div class="container d-flex justify-content-center main-page">
-    <div class="mt-4">
+<div class="homefacade">
+    <div class="container d-flex justify-content-center main-page">
+        <div class="mt-4">
 
-        <div class="sun-container">
-            <div class="sun" *ngIf="!isWinterSeason">
-            </div>
-            <div class="christmas-tree" *ngIf="isWinterSeason">
-                <i class="fas fa-tree"></i>
-            </div>
-        </div>
-        <h1 class="mb-4 pb-4">Alexis Degraeve</h1>
-
-        <div class="mb-5">
-            <blockquote class="blockquote">
-                <p class="mb-3 fst-italic">
-                    <img src="\assets\img\mickey.svg" alt="Mickey Icon" style="width: 20px; height: 20px;" class="me-2"> "Animation can explain whatever the mind of man can conceive."
-                </p>
-                <footer class="blockquote-footer">
-                    Walt Disney
-                </footer>
-            </blockquote>
-        </div>
-
-        <div class="card mb-4">
-            <div class="card-header align-items-center d-flex">
-                <i class="fa fa-paint-brush" style="font-size: 1.5rem;"></i>
-                <h5 class="card-title ms-3 mb-0"> UX/UI Designer & Front-End</h5>
-            </div>
-            <div class="card-body">
-                <p class="card-text">
-                    I am a passionate <strong>UX/UI designer</strong> specializing in both <strong>2D</strong> and <strong>3D</strong> design for diverse clients. My expertise includes <strong>logo creation</strong>, <strong>3D modeling</strong>, and
-                    crafting <strong>user-centered interfaces</strong> with a focus on <strong>pixel-perfect details</strong> and <strong>creativity</strong>.
-                    <br/><br/> Holding a <strong>Master's degree in Sciences</strong> from the University of Namur (graduated with distinction), I combine my academic background with hands-on experience in <strong>front-end technologies</strong> like
-                    <strong>Angular</strong>, <strong>React.js</strong>, <strong>Vue.js</strong>, <strong>TypeScript</strong>, <strong>SCSS</strong>, and <strong>SASS</strong>.
-                    <br/><br/> I excel in <strong>responsive design</strong>, <strong>animation</strong>, and delivering <strong>visually stunning web applications</strong> that prioritize user-friendliness and innovation. One of my most notable projects
-                    was developing a <strong>chatbot for an escape game</strong> as part of my Master's thesis, showcasing my ability to merge <strong>design</strong> with <strong>technology</strong> for engaging, interactive solutions.
-                </p>
-
-
-
-
-            </div>
-            <div class="card-footer">
-                <a href="/portfolio" class="btn btn-danger mt-3">View Portfolio</a>
-                <!-- Portfolio Icon -->
-            </div>
-        </div>
-
-
-        <div class="container my-5">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-
-
-                <!-- About Card -->
-                <div class="col">
-                    <div class="card">
-                        <!-- Card Header with Large Icon -->
-                        <div class="card-header align-items-center d-flex">
-                            <i class="fa fa-music" style="font-size: 1.5rem;"></i>
-                            <h5 class="ms-4  card-title">Music</h5>
-                        </div>
-
-                        <!-- Card Body -->
-                        <div class="card-body">
-                            <p class="card-text">
-                                I am deeply passionate about music and have been playing the piano since the age of 10. As a vocalist, I am fortunate to be coached by <strong>Aurore</strong>, a talented artist who excelled at the conservatory and closely
-                                mentors my singing journey.
-                                <br/><br/> I enjoy performing covers of renowned artists such as <strong>Celine Dion</strong>, <strong>Lady Gaga</strong>, <strong>Mariah Carey</strong>, and <strong>Phil Collins</strong>. My dedication to music is driven
-                                by a love for bringing emotion and creativity to every note I play or sing.
-                                <br/><br/> You can find some of my covers on <strong>Instagram</strong> and
-                                <strong>YouTube</strong>. Check out the link in the footer!
-                            </p>
-
-                        </div>
-                        <div class="card-footer">
-                            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/alexisdegraeve/" role="button">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.youtube.com/@ganeshamusicme657" role="button">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                            <!-- Contact Icons -->
-                        </div>
-                        <!-- Card Footer with Button -->
-
-                    </div>
-                </div>
-
-                <!-- Contact Card -->
-                <div class="col">
-                    <div class="card">
-
-                        <div class="card-header align-items-center d-flex">
-                            <i class="fa fa-at" style="font-size: 1.5rem;"></i>
-                            <h5 class="card-title ms-4 ">Write to me</h5>
-                        </div>
-
-                        <div class="card-body">
-                            <p class="card-text">
-                                Feel free to get in touch with me for collaboration opportunities or inquiries. I'm always open to discuss new projects and share ideas. Let's create something amazing together!
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="/contact" class="btn btn-danger">Contact</a>
-                            <!-- Contact Icon -->
-                        </div>
-                    </div>
+            <div class="falling-container">
+                <div *ngFor="let figure of figures" class="falling-figure" [ngStyle]="figure.style">
+                    <img src="assets/businessman-alone.png" [ngStyle]="{'width': figure.size + 'px'}" />
                 </div>
             </div>
+            <div class="sun-container">
+                <div class="sun" *ngIf="!isWinterSeason">
+                </div>
+                <div class="christmas-tree" *ngIf="isWinterSeason">
+                    <i class="fas fa-tree"></i>
+                </div>
+            </div>
+            <h1 class="mb-4 pb-4">Alexis Degraeve</h1>
+
+            <div class="mb-5">
+                <blockquote class="blockquote">
+                    <p class="mb-3 fst-italic">
+                        <img src="\assets\img\mickey.svg" alt="Mickey Icon" style="width: 20px; height: 20px;" class="me-2"> "Animation can explain whatever the mind of man can conceive."
+                    </p>
+                    <footer class="blockquote-footer">
+                        Walt Disney
+                    </footer>
+                </blockquote>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header align-items-center d-flex">
+                    <i class="fa fa-paint-brush" style="font-size: 1.5rem;"></i>
+                    <h5 class="card-title ms-3 mb-0"> UX/UI Designer & Front-End</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        I am a passionate <strong>UX/UI designer</strong> specializing in both <strong>2D</strong> and <strong>3D</strong> design for diverse clients. My expertise includes <strong>logo creation</strong>, <strong>3D modeling</strong>,
+                        and crafting <strong>user-centered interfaces</strong> with a focus on <strong>pixel-perfect details</strong> and <strong>creativity</strong>.
+                        <br/><br/> Holding a <strong>Master's degree in Sciences</strong> from the University of Namur (graduated with distinction), I combine my academic background with hands-on experience in <strong>front-end technologies</strong> like
+                        <strong>Angular</strong>, <strong>React.js</strong>, <strong>Vue.js</strong>, <strong>TypeScript</strong>, <strong>SCSS</strong>, and <strong>SASS</strong>.
+                        <br/><br/> I excel in <strong>responsive design</strong>, <strong>animation</strong>, and delivering <strong>visually stunning web applications</strong> that prioritize user-friendliness and innovation. One of my most notable projects
+                        was developing a <strong>chatbot for an escape game</strong> as part of my Master's thesis, showcasing my ability to merge <strong>design</strong> with <strong>technology</strong> for engaging, interactive solutions.
+                    </p>
+
+
+
+
+                </div>
+                <div class="card-footer">
+                    <a href="/portfolio" class="btn btn-danger mt-3">View Portfolio</a>
+                    <!-- Portfolio Icon -->
+                </div>
+            </div>
+
+
+            <div class="container my-5">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+
+
+                    <!-- About Card -->
+                    <div class="col">
+                        <div class="card">
+                            <!-- Card Header with Large Icon -->
+                            <div class="card-header align-items-center d-flex">
+                                <i class="fa fa-music" style="font-size: 1.5rem;"></i>
+                                <h5 class="ms-4  card-title">Music</h5>
+                            </div>
+
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <p class="card-text">
+                                    I am deeply passionate about music and have been playing the piano since the age of 10. As a vocalist, I am fortunate to be coached by <strong>Aurore</strong>, a talented artist who excelled at the conservatory and
+                                    closely mentors my singing journey.
+                                    <br/><br/> I enjoy performing covers of renowned artists such as <strong>Celine Dion</strong>, <strong>Lady Gaga</strong>, <strong>Mariah Carey</strong>, and <strong>Phil Collins</strong>. My dedication to music is
+                                    driven by a love for bringing emotion and creativity to every note I play or sing.
+                                    <br/><br/> You can find some of my covers on <strong>Instagram</strong> and
+                                    <strong>YouTube</strong>. Check out the link in the footer!
+                                </p>
+
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/alexisdegraeve/" role="button">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.youtube.com/@ganeshamusicme657" role="button">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <!-- Contact Icons -->
+                            </div>
+                            <!-- Card Footer with Button -->
+
+                        </div>
+                    </div>
+
+                    <!-- Contact Card -->
+                    <div class="col">
+                        <div class="card">
+
+                            <div class="card-header align-items-center d-flex">
+                                <i class="fa fa-at" style="font-size: 1.5rem;"></i>
+                                <h5 class="card-title ms-4 ">Write to me</h5>
+                            </div>
+
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Feel free to get in touch with me for collaboration opportunities or inquiries. I'm always open to discuss new projects and share ideas. Let's create something amazing together!
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="/contact" class="btn btn-danger">Contact</a>
+                                <!-- Contact Icon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-
     </div>
 </div>

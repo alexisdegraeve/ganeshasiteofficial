@@ -121,3 +121,54 @@ ul {
         color: #ccc;
     }
 }
+
+.falling-figure {
+    position: absolute;
+    top: -10%;
+    /* Commence juste au-dessus de l'écran */
+    opacity: 1;
+    animation: fall linear infinite, fadeOut 2s;
+    z-index: 200;
+}
+
+.falling-figure img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+
+/* Animation pour faire tomber les bonhommes */
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        /* Commence en haut */
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        /* Finit en bas */
+        opacity: 0;
+    }
+}
+
+
+/* Animation pour le fade out (disparition) */
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.homefacade {
+    background-image: url('/assets/homefacade2.png');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position-y: bottom;
+}
