@@ -1,3 +1,7 @@
+.artist {
+    height: 100%;
+}
+
 .background-sky {
     background: #a5cae4;
     height: 100%;
@@ -5,14 +9,14 @@
 
 .parallax-container {
     position: relative;
-    height: 100vh;
+    height: 25rem;
     background: linear-gradient(to bottom, #a5cae4, #ffffff);
     overflow: hidden;
     mask: url('/assets/ganesha-icon.svg') no-repeat center;
     -webkit-mask: url('/assets/ganesha-icon.svg') no-repeat center;
     /* Pour les80nciens navigateurs */
-    mask-size: 80vh !important;
-    -webkit-mask-size: 80vh !important;
+    mask-size: auto;
+    -webkit-mask-size: contain;
     /* Compatibilité avec les anciens navigateurs */
 }
 
@@ -62,6 +66,16 @@
     -webkit-mask-size: 80vh !important;
     mask-repeat: inherit;
     /* Compatibilité avec les anciens navigateurs */
+    position: absolute;
+    bottom: 8.9rem;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .skyline {
+        bottom: 7.9rem;
+    }
 }
 
 .quote {
@@ -76,6 +90,7 @@
     margin: 40px auto;
     position: relative;
     padding: 20px;
+    margin-top: 0;
 }
 
 .quote p {
