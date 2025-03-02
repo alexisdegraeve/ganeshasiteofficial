@@ -24,14 +24,17 @@ textarea.form-control {
     //background: linear-gradient(0deg, rgba(33, 95, 132, 1) 0%, rgba(100, 157, 187, 1) 50%, rgba(91, 150, 182, 1) 100%);
     position: relative;
     z-index: 300;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 20rem;
 }
 
 .apple-mask {
-    height: 20rem;
+    height: 9rem;
     mask: url('/assets/apple-2-min.png') no-repeat center;
     -webkit-mask: url('/assets/apple-2-min.png') no-repeat center;
-    mask-size: 25rem;
-    -webkit-mask-size: 25rem;
+    mask-size: 12rem;
+    -webkit-mask-size: 12rem;
     display: block;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 80% 80%;
