@@ -20,91 +20,96 @@
 
 
     <!-- Profile Section -->
-    <div class="row align-items-start mb-3">
-        <div class="col-12 col-md-6 col-xl-4 position-relative">
-            <!-- Placeholder while image is loading -->
-            <div *ngIf="!imageLoaded" class="placeholder-glow">
-                <div class="placeholder rounded portrait"></div>
-            </div>
-            <!-- Image -->
-            <img [hidden]="!imageLoaded" src="assets/img/portrait_alexis03.jpeg" alt="Alexis Degraeve" class="shadow portrait" (load)="onImageLoad($event)">
-        </div>
+    <div class="row align-items-start mb-3 mt-4">
         <div class="col-12 col-md-6 col-xl-8">
             <h2 class="fw-bold">Alexis Degraeve</h2>
-            <p class="text-muted">Webdesigner / Infographist / Developer</p>
-        </div>
-    </div>
-    <!-- Skills and Interests -->
-    <div class="row g-4">
-        <!-- Languages -->
-        <div class="col-lg-4 col-sm-6">
-            <div class="card h-100 shadow border-0">
+            <p class="text-muted">
+                <span>Designer | Frontend Software Engineer</span> <br />
+                <span class="text-info fw-bold">
+                  <a href="https://www.unamur.be/fr/info/etudes/info-hd" class="text-warning text-decoration-none" target="_blank">
+                      Master in Computer Science (with Distinction) &#64;UNAMUR (Université de Namur)
+                    </a>
+              </span>
 
-                <div class="card-body">
-                    <h5 class="card-title">Languages</h5>
-                    <div class="d-flex flex-column">
-                        <div *ngFor="let lang of languages" class="d-flex justify-content-between align-items-center py-2">
-                            <span class="col text-start">{{ lang.name }}</span>
-                            <span class="col text-end ms-auto">
+                <br /> Thesis: <em>
+                  <a href="https://researchportal.unamur.be/fr/studentTheses/%C3%A9tude-pr%C3%A9liminaire-pour-lint%C3%A9gration-dun-chatbot-comme-dispenseur"
+                     class="text-warning text-decoration-none" target="_blank">
+                      Preliminary Study of a Chatbot in an Escape Game
+                  </a>
+                </em>
+            </p>
+        </div>
+        <!-- Skills and Interests -->
+        <div class=" row g-4 ">
+            <!-- Languages -->
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="card h-100 shadow border-0 ">
+
+                    <div class="card-body ">
+                        <h5 class="card-title ">Languages</h5>
+                        <div class="d-flex flex-column ">
+                            <div *ngFor="let lang of languages " class="d-flex justify-content-between align-items-center py-2 ">
+                                <span class="col text-start ">{{ lang.name }}</span>
+                                <span class="col text-end ms-auto ">
                               {{ lang.level }} - {{ '★'.repeat(lang.stars) }}{{ '☆'.repeat(5 - lang.stars) }}
                             </span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Social Media -->
-        <div class="col-lg-4 col-sm-6">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body">
-                    <h5 class="card-title">Social Media</h5>
-                    <div class="d-grid gap-2">
-                        <a href="https://www.linkedin.com/in/degraevealexis" target="_blank" class="btn btn-outline-light">
-                            <i class="fab fa-linkedin me-2"></i>LinkedIn
-                        </a>
-                        <a href="https://www.instagram.com/alexisdegraeve" target="_blank" class="btn btn-outline-warning">
-                            <i class="fab fa-instagram me-2"></i>Instagram
-                        </a>
+            <!-- Social Media -->
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="card h-100 shadow border-0 ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Social Media</h5>
+                        <div class="d-grid gap-2 ">
+                            <a href="https://www.linkedin.com/in/degraevealexis " target="_blank " class="btn btn-outline-light ">
+                                <i class="fab fa-linkedin me-2 "></i>LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/alexisdegraeve " target="_blank " class="btn btn-outline-warning ">
+                                <i class="fab fa-instagram me-2 "></i>Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music -->
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="card h-100 shadow border-0 ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Music</h5>
+                        <ul class="list-unstyled ">
+                            <li>
+                                <i class="fa fa-music me-2 "></i> Piano -
+                                <a href="https://imaginarium-asbl.be/index.php/author/anais/ " target="_blank " class="link-warning text-decoration-none ">
+                Imaginarium
+              </a>
+                            </li>
+                            <li>
+                                <i class="fa fa-music me-2 "></i> Singing -
+                                <a href="https://jmomusique.blog/tag/aurore-rinchon/ " target="_blank " class="link-warning text-decoration-none ">
+                En avant la musique!
+              </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photography -->
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="card h-100 shadow border-0 ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Photography</h5>
+                        <ul class="list-unstyled ">
+                            <li><i class="fa fa-camera me-2 "></i> Alexis Degraeve</li>
+                            <li><i class="fa fa-camera me-2 "></i> Joris Boone</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Music -->
-        <div class="col-lg-4 col-sm-6">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body">
-                    <h5 class="card-title">Music</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <i class="fa fa-music me-2"></i> Piano -
-                            <a href="https://imaginarium-asbl.be/index.php/author/anais/" target="_blank" class="link-warning  text-decoration-none">
-                Imaginarium
-              </a>
-                        </li>
-                        <li>
-                            <i class="fa fa-music me-2"></i> Singing -
-                            <a href="https://jmomusique.blog/tag/aurore-rinchon/" target="_blank" class="link-warning text-decoration-none">
-                En avant la musique!
-              </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Photography -->
-        <div class="col-lg-4 col-sm-6">
-            <div class="card h-100 shadow border-0">
-                <div class="card-body">
-                    <h5 class="card-title">Photography</h5>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-camera me-2"></i> Alexis Degraeve</li>
-                        <li><i class="fa fa-camera me-2"></i> Joris Boone</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
-</div>

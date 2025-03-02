@@ -31,7 +31,7 @@ ul {
     background: #000;
     // background-color: rgb(240, 225, 184);
     z-index: 200;
-    padding-top: 4rem;
+    padding-top: 2rem;
     overflow: hidden;
     position: relative;
 }
@@ -152,12 +152,4 @@ ul {
 
 .quote {
     margin-top: 1.5rem;
-    color: rgb(93, 95, 74);
-    &::before,
-    &::after {
-        color: rgb(93, 95, 74);
-    }
-    cite {
-        color: rgb(93, 95, 74);
-    }
 }
