@@ -10,8 +10,8 @@
 <div *ngIf="isWinterSeason" class="snowflakes">
     <i class="fas fa-snowflake snowflake" *ngFor="let flake of [].constructor(50)"></i>
 </div>
-
-<div class="stars" *ngIf="darkTheme && !isWinterSeason">
+{{ darkTheme$ | async }}
+<div class="stars" *ngIf="( darkTheme$  | async) && !isWinterSeason">
     <div id="stars-group-1"></div>
     <div id="stars-group-2"></div>
     <div id="stars-group-3"></div>
@@ -20,7 +20,7 @@
     <div id="stars-group-6"></div>
 </div>
 
-<section *ngIf="darkTheme && !isWinterSeason && false">
+<section *ngIf=" (darkTheme$ |async) && !isWinterSeason && false">
     <span></span>
     <span></span>
     <span></span>

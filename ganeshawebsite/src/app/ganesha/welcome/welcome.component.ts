@@ -8,18 +8,9 @@ import { ThemeService } from 'src/app/shared/theme.service';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent {
-  darkTheme  = false;
-  isWinterSeason = false;
   figures: any[] = [];
 
-  constructor(private themeService: ThemeService) {
-    this.themeService.darkTheme$.subscribe( dark =>
-      this.darkTheme = dark
-    );
-    const currentDate = new Date();
-    const startDate = new Date(currentDate.getFullYear(), 11, 1); // 1er décembre
-    const endDate = new Date(currentDate.getFullYear() + 1, 0, 10); // 10 janvier
-    this.isWinterSeason = (currentDate >= startDate && currentDate <= endDate);
+  constructor() {
     for (let i = 0; i < 50; i++) {
       this.figures.push(this.generateFigure());
     }

@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
-  private darkThemeSource = new Subject<boolean>();
+  private darkThemeSource = new BehaviorSubject<boolean>(true);
 
-  darkTheme$ = this.darkThemeSource.asObservable();
+  get darkThemeSource$() {
+    return this.darkThemeSource.asObservable();
+  }
 
   constructor() {
     // Charger le thème depuis le sessionStorage au chargement du service

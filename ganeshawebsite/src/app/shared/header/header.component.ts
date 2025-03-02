@@ -12,7 +12,7 @@ import { Router } from '@angular/router';  // Importez Router
   imports: [CommonModule, RouterModule]
 })
 export class HeaderComponent {
-  protected darkTheme: boolean = false;
+  protected darkTheme: boolean = true;
 
   menuItems = [
     {
@@ -53,8 +53,8 @@ export class HeaderComponent {
   ];
 
   constructor(private themeService: ThemeService, private router: Router) {  // Injectez le router et le ThemeService
-    this.themeService.darkTheme$.subscribe(dark => {
-      this.darkTheme = dark;
+    this.themeService.darkThemeSource$.subscribe((theme) => {
+      this.darkTheme = theme;
     });
   }
 

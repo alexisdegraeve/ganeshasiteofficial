@@ -20,23 +20,25 @@ textarea.form-control {
 }
 
 .apple-container {
-    height: 20rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgb(143 191 215);
+    //background: linear-gradient(0deg, rgba(33, 95, 132, 1) 0%, rgba(100, 157, 187, 1) 50%, rgba(91, 150, 182, 1) 100%);
     position: relative;
-    .apple-mask {
-        height: 100%;
-        mask: url('/assets/apple-2-min.png') no-repeat center;
-        -webkit-mask: url('/assets/apple-2-min.png') no-repeat center;
-        mask-size: 25rem;
-        -webkit-mask-size: 25rem;
-        display: block;
-        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-        background-size: 80% 80%;
-        -webkit-animation: Animation 5s ease infinite;
-        -moz-animation: Animation 5s ease infinite;
-        animation: Animation 5s ease infinite;
-        /* Ajouter un trou en forme de cercle */
-    }
+    z-index: 300;
+}
+
+.apple-mask {
+    height: 20rem;
+    mask: url('/assets/apple-2-min.png') no-repeat center;
+    -webkit-mask: url('/assets/apple-2-min.png') no-repeat center;
+    mask-size: 25rem;
+    -webkit-mask-size: 25rem;
+    display: block;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 80% 80%;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+    /* Ajouter un trou en forme de cercle */
 }
 
 @-webkit-keyframes Animation {
@@ -72,5 +74,73 @@ textarea.form-control {
     }
     100% {
         background-position: 10% 0%
+    }
+}
+
+.quote {
+    font-family: "Playfair Display", serif;
+    /* Belle typographie */
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    max-width: 600px;
+    margin: 40px auto;
+    position: relative;
+    padding: 20px;
+    margin-top: 0;
+    border-left: unset;
+}
+
+.quote p {
+    position: relative;
+    z-index: 2;
+}
+
+.quote::before,
+.quote::after {
+    font-size: 4rem;
+    font-family: serif;
+    color: #fff;
+    position: absolute;
+}
+
+.quote::before {
+    content: "“";
+    /* Guillemets d'ouverture */
+    left: -5px;
+    top: -5px;
+}
+
+.quote::after {
+    content: "”";
+    /* Guillemets de fermeture */
+    right: -5px;
+    bottom: -5px;
+}
+
+cite {
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.quote {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
