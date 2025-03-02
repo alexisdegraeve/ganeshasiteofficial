@@ -1,15 +1,17 @@
-<div class="artist">
-    <a href="/artist" class="text-decoration-none">
-        <div class="parallax-container">
-            <div *ngFor="let cloud of clouds" [ngStyle]="cloud.style" class="cloud rellax" [attr.data-rellax-speed]="cloud.speed">
-                <img src="assets/cloud_tr.png" [ngStyle]="{'width': cloud.size + 'px'}" />
+<div class="container py-5">
+    <div class="artist">
+        <a href="/artist" class="text-decoration-none">
+            <div class="parallax-container">
+                <div *ngFor="let cloud of clouds" [ngStyle]="cloud.style" class="cloud rellax" [attr.data-rellax-speed]="cloud.speed">
+                    <img src="assets/cloud_tr.png" [ngStyle]="{'width': cloud.size + 'px'}" />
+                </div>
             </div>
-        </div>
-        <blockquote class="quote">
-            <p>Ceci n'est pas le dieu Ganesh!</p>
-            <cite>— Inspired by Magritte</cite>
-        </blockquote>
-        <div class="skyline">
-        </div>
-    </a>
+            <blockquote class="quote">
+                <p>Ceci n'est pas le dieu Ganesh!</p>
+                <cite>— Inspired by Magritte</cite>
+            </blockquote>
+            <div class="skyline">
+            </div>
+        </a>
+    </div>
 </div>

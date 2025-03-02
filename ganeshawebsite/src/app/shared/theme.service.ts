@@ -16,6 +16,8 @@ export class ThemeService {
     const storedTheme = sessionStorage.getItem('theme');
     if (storedTheme) {
       this.setDarkTheme(storedTheme === 'dark');
+    } else {
+      this.setDarkTheme(true);
     }
   }
 
