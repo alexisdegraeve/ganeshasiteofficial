@@ -7,6 +7,8 @@ html,
 body {
     height: 100%;
     margin: 0;
+    --bs-form-invalid-color: #ffb5bc;
+    --bs-form-invalid-border-color: #ffb5bc;
 }
 
 @font-face {
