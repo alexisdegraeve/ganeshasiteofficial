@@ -30,7 +30,7 @@ export class WelcomeComponent {
     // Position aléatoire sur l'axe X entre 0% et 100%
     const left = Math.random() * (100 - (size / window.innerWidth * 100));
     // Vitesse de la chute (animation) entre 10s et 20s
-    const animationDuration = Math.random() * (20 - 6) + 6; 
+    const animationDuration = Math.random() * (20 - 6) + 6;
 
     return {
       style: {
