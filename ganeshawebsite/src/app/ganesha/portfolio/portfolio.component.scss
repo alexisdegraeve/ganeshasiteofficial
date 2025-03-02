@@ -38,3 +38,77 @@
 .gallery {
     max-width: 30rem;
 }
+
+.moon-container {
+    background: black;
+    height: 20rem;
+    z-index: 200;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #63b7ff, #2b8bd9);
+    .moon {
+        background: #f3f3e2;
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50%;
+        // clip-path: circle(15rem at 8rem 8rem);
+        // animation: circle 10s infinite;
+        // transition: clip-path 1s;
+        box-shadow: 0 0 30px 15px rgba(255, 236, 127, 0.8), 0 0 50px 30px rgba(255, 200, 100, 0.6), 0 0 80px 50px rgba(255, 140, 50, 0.4);
+        overflow: hidden;
+        position: relative;
+    }
+    .eclipse {
+        height: 15rem;
+        width: 15rem;
+        background: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        opacity: 0;
+        /* Commence invisible */
+        /* Commence en dehors du soleil */
+        filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
+        /* Ajoute un effet d'ombre plus doux */
+        animation: eclipsemove 15s ease-in-out infinite;
+    }
+}
+
+@keyframes eclipsemove {
+    0% {
+        transform: translateX(-100%);
+        /* Position initiale */
+        opacity: 0;
+        /* Eclipse invisible au départ */
+    }
+    45% {
+        transform: translateX(-200%);
+        opacity: 0.5;
+        /* Eclipse commence à devenir visible */
+    }
+    55% {
+        transform: translateX(-250%);
+        opacity: 1;
+        /* Eclipse totalement visible (au moment de l'éclipse) */
+    }
+    100% {
+        transform: translateX(-300%);
+        opacity: 1;
+        /* Eclipse continue après l'éclipse totale */
+    }
+}
+
+@keyframes circle {
+    0% {
+        clip-path: circle(15rem at 8rem center);
+    }
+    50% {
+        clip-path: circle(15rem at 0rem center);
+    }
+    100% {
+        clip-path: circle(15rem at -15rem center);
+    }
+}
