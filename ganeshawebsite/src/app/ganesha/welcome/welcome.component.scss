@@ -131,7 +131,7 @@ ul {
     /* Occupe toute la hauteur de l'écran */
     overflow: hidden;
     /* Masque tout ce qui dépasse */
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgb(106 187 249);
     /* Optionnel : arrière-plan ciel */
 }
 
@@ -212,11 +212,22 @@ ul {
 
 .man-mask {
     height: 20rem;
-    background: linear-gradient(to bottom, #a5cae4, #ffffff);
+    width: 15rem;
     overflow: hidden;
     mask: url('/assets/businessman-alone.png') no-repeat center;
     -webkit-mask: url('/assets/businessman-alone.png') no-repeat center;
     /* Pour les80nciens navigateurs */
-    mask-size: auto;
-    -webkit-mask-size: contain;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background: linear-gradient(to bottom, #fff, #59728b);
+}
+
+.man-container {
+    display: flex;
+    .quote {
+        max-width: 600px;
+        align-self: flex-start;
+        margin: 20px;
+        padding: 2rem;
+    }
 }
