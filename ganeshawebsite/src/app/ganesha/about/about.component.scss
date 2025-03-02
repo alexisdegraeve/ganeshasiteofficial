@@ -28,17 +28,20 @@ ul {
 
 .pipe-container {
     height: 20rem;
-    background: #fff;
+    background: #000;
     // background-color: rgb(240, 225, 184);
     z-index: 200;
+    padding-top: 4rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .pipe {
     height: 12rem;
     mask: url('/assets/pipe.png') no-repeat center;
     -webkit-mask: url('/assets/pipe.png') no-repeat center;
-    mask-size: 25rem;
-    -webkit-mask-size: 25rem;
+    mask-size: 15rem;
+    -webkit-mask-size: 15rem;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 80% 80%;
     -webkit-animation: Animation 5s ease infinite;
@@ -52,7 +55,103 @@ ul {
     /* Ajouter un trou en forme de cercle */
 }
 
+
+/* Fumée */
+
+
+/* Conteneur de la fumée */
+
+.smoke-container {
+    /* Positionner la fumée juste sous la pipe */
+    transform: translateX(-50%);
+    z-index: 2;
+    /* La fumée doit être au-dessus de la pipe */
+    margin-top: -5rem;
+    margin-left: 43%;
+}
+
+@media (max-width: 768px) {
+    .smoke-container {
+        margin-left: 30%;
+    }
+}
+
+
+/* Fumée */
+
+.smoke {
+    position: absolute;
+    bottom: 100%;
+    /* Position de départ juste sous la pipe */
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    /* Couleur de la fumée */
+    border-radius: 50%;
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-50%);
+    animation: smokeAnimation 4s ease-out infinite;
+}
+
+
+/* Animation de la fumée */
+
+@keyframes smokeAnimation {
+    0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 0.2;
+        filter: blur(10px);
+    }
+    20% {
+        transform: translateX(-30%) translateY(-40px);
+        opacity: 0.3;
+        filter: blur(12px);
+    }
+    40% {
+        transform: translateX(10%) translateY(-80px);
+        opacity: 0.4;
+        filter: blur(14px);
+    }
+    60% {
+        transform: translateX(30%) translateY(-120px);
+        opacity: 0.5;
+        filter: blur(16px);
+    }
+    80% {
+        transform: translateX(50%) translateY(-160px);
+        opacity: 0.3;
+        filter: blur(18px);
+    }
+    100% {
+        transform: translateX(60%) translateY(-200px);
+        opacity: 0;
+        filter: blur(20px);
+    }
+}
+
+
+/* Animation différée pour des effets de fumée différents */
+
+.smoke:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.smoke:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.smoke:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.smoke:nth-child(4) {
+    animation-delay: 3s;
+}
+
 .quote {
+    margin-top: 1.5rem;
     color: rgb(93, 95, 74);
     &::before,
     &::after {
