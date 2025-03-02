@@ -195,7 +195,7 @@ ul {
     // background-repeat: repeat-x;
     // background-size: contain;
     // background-position-y: bottom;
-    z-index: 300;
+    z-index: 100;
     display: block;
     position: relative;
 }
@@ -203,7 +203,7 @@ ul {
 .middle {
     height: 100%;
     padding: 2rem;
-    z-index: 300;
+    z-index: 100;
 }
 
 .man {

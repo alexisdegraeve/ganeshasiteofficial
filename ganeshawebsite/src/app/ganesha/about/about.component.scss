@@ -30,7 +30,7 @@ ul {
     height: 20rem;
     background: #000;
     // background-color: rgb(240, 225, 184);
-    z-index: 200;
+    z-index: 100;
     padding-top: 2rem;
     overflow: hidden;
     position: relative;
@@ -47,7 +47,7 @@ ul {
     -webkit-animation: Animation 5s ease infinite;
     -moz-animation: Animation 5s ease infinite;
     animation: Animation 5s ease infinite;
-    z-index: 200;
+    z-index: 100;
     -webkit-transform: scale(-1, 1);
     -moz-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
@@ -152,4 +152,16 @@ ul {
 
 .quote {
     margin-top: 1.5rem;
+}
+
+.avatar-alexis {
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    z-index: 100;
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    /* Pour les navigateurs Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    /* Firefox */
 }

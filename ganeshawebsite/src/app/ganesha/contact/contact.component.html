@@ -14,7 +14,7 @@
         <div class="row align-items-center">
             <!-- Colonne de gauche : Image -->
             <div class="col-auto text-center text-md-start flex-grow-1">
-                <img src="assets/img/portrait_alexis.jpeg" alt="Alexis Degraeve" class="img-fluid rounded-circle" width="150">
+                <img src="assets/img/alexis_magritte.jpg" alt="Alexis Degraeve" class="img-fluid alexis-portrait mb-4">
             </div>
             <div class="col-12 col-md-8">
                 <div class="card shadow-lg">
@@ -27,7 +27,7 @@
                     </div>
                     <!-- Si le formulaire n'est pas encore soumis -->
                     <div *ngIf="!isSubmitted" class="card-body">
-                        <h5 class="card-title mb-4">I would like to contact you, Alexis...</h5>
+                        <h3 class="card-title mb-4">I would like to contact you...</h3>
                         <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" novalidate>
                             <div class="mt-3">
                                 <input type="text" formControlName="firstName" class="form-control" placeholder="First Name" [class.is-invalid]="contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid" />

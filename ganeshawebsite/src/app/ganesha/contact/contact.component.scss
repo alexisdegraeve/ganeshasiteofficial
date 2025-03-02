@@ -4,7 +4,7 @@
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ textarea.form-control {
     background: rgb(143 191 215);
     //background: linear-gradient(0deg, rgba(33, 95, 132, 1) 0%, rgba(100, 157, 187, 1) 50%, rgba(91, 150, 182, 1) 100%);
     position: relative;
-    z-index: 300;
+    z-index: 100;
     padding-top: 2rem;
     padding-bottom: 2rem;
     height: 20rem;
@@ -78,4 +78,11 @@ textarea.form-control {
     100% {
         background-position: 10% 0%
     }
+}
+
+.alexis-portrait {
+    width: 20rem;
+    z-index: 100;
+    position: relative;
+    border-radius: 1rem;
 }
