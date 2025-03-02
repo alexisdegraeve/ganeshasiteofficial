@@ -86,7 +86,7 @@ h2 {
 @media (max-width: 768px) {
     .quote {
         max-width: 420px;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -113,7 +113,7 @@ h2 {
 .quote::after {
     content: "”";
     /* Guillemets de fermeture */
-    right: -5px;
+    right: 5px;
     bottom: -5px;
 }
 
