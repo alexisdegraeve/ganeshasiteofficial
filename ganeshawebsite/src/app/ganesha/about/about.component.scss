@@ -25,3 +25,40 @@ ul {
     height: 12rem;
     width: 21rem;
 }
+
+.pipe-container {
+    height: 20rem;
+    background: #fff;
+    // background-color: rgb(240, 225, 184);
+    z-index: 200;
+}
+
+.pipe {
+    height: 12rem;
+    mask: url('/assets/pipe.png') no-repeat center;
+    -webkit-mask: url('/assets/pipe.png') no-repeat center;
+    mask-size: 25rem;
+    -webkit-mask-size: 25rem;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 80% 80%;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+    z-index: 200;
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    /* Ajouter un trou en forme de cercle */
+}
+
+.quote {
+    color: rgb(93, 95, 74);
+    &::before,
+    &::after {
+        color: rgb(93, 95, 74);
+    }
+    cite {
+        color: rgb(93, 95, 74);
+    }
+}
