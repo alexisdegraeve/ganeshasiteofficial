@@ -27,7 +27,7 @@
 
     <div class="card mb-4">
         <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title">Expert in UX/UI Design & Front-End Development</h5>
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-expert' | translate)"></h5>
         </div>
         <div class="card-body">
             <p class="card-text" [innerHTML]="('ARTIST.expert-ux' | translate)">
@@ -42,14 +42,14 @@
             <p class="card-text" [innerHTML]="('ARTIST.expert-last' | translate)"></p>
         </div>
         <div class="card-footer">
-            <a href="/portfolio" class="btn btn-danger mt-3">View Portfolio</a>
+            <a href="/portfolio" class="btn btn-danger mt-3" [innerHTML]="('ARTIST.btn-viewportfolio' | translate)"></a>
             <!-- Portfolio Icon -->
         </div>
     </div>
     <div class="card mb-4">
         <!-- Card Header with Large Icon -->
         <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title">Music</h5>
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-music' | translate)"></h5>
         </div>
 
         <!-- Card Body -->
@@ -72,7 +72,7 @@
 
     <div class="card mb-4">
         <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title ">About me</h5>
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-aboutme' | translate)"></h5>
         </div>
 
         <div class="card-body">
@@ -80,14 +80,14 @@
             </p>
         </div>
         <div class="card-footer">
-            <a href="/about" class="btn btn-danger">About me</a>
+            <a href="/about" class="btn btn-danger" [innerHTML]="('ARTIST.btn-aboutme' | translate)"></a>
             <!-- Contact Icon -->
         </div>
     </div>
 
     <div class="card mb-4">
         <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title ">Write to me</h5>
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-writetome' | translate)"></h5>
         </div>
 
         <div class="card-body">
@@ -95,7 +95,7 @@
             </p>
         </div>
         <div class="card-footer">
-            <a href="/contact" class="btn btn-danger">Contact</a>
+            <a href="/contact" class="btn btn-danger" [innerHTML]="('ARTIST.btn-contact' | translate)">Contact</a>
             <!-- Contact Icon -->
         </div>
     </div>

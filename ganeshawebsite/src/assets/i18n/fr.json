@@ -17,5 +17,26 @@
     },
     "FOOTER": {
         "copyright": "© Mars 2025 Tous droits réservés Ganesha <i class='fa fa - cloud'></i> Alexis Degraeve"
+    },
+    "ARTIST": {
+        "citation": "L'animation peut expliquer tout ce que l'esprit humain peut concevoir.",
+        "title-expert": "Expert en UX/UI Design & Développement Front-End",
+        "title-music": "Musique",
+        "title-aboutme": "À propos de moi",
+        "title-writetome": "Écrivez-moi",
+        "btn-aboutme": "À propos de moi",
+        "btn-viewportfolio": "Voir le portfolio",
+        "btn-contact": "Contact",
+        "expert-ux": "La créativité et la précision définissent mon travail — Je suis un <strong>designer UX/UI pixel-perfect</strong> passionné par la création d'expériences numériques immersives. Inspiré par l'univers surréaliste de <strong>Magritte</strong> et l'esthétique audacieuse de <strong>GTA</strong>, j'apporte une touche artistique unique à mes designs, mêlant <strong>visuels 2D</strong> et <strong>3D</strong> avec un focus profond sur l'expérience utilisateur. <br /><br /><strong>Mes compétences et expertise :</strong>",
+        "skill-1": "🎨 <strong>UX/UI Design</strong> : Mise en avant des interfaces centrées sur l'utilisateur, interactives et esthétiques.",
+        "skill-2": "🖌️ <strong>Prototypage interactif</strong> avec <strong>Figma</strong>, <strong>Adobe XD</strong>, <strong>Zeplin</strong>, et <strong>Illustrator</strong> pour des maquettes dynamiques et engageantes.",
+        "skill-3": "🔳 <strong>Design 2D & 3D</strong> : Création de logos, modélisation 3D et expériences visuelles immersives avec <strong>3ds Max</strong>.",
+        "skill-4": "💻 <strong>Développement Front-End</strong> : Expertise en <strong>Angular, React.js, Vue.js, TypeScript, SCSS, SASS</strong>.",
+        "skill-5": "📱 <strong>UI Responsive & Animée</strong> : Garantir des interactions fluides et des performances sans faille sur tous les appareils.",
+        "expert-last": "Je détiens un <strong>Master en Informatique</strong> de l'<a href='https://www.unamur.be/fr/info/etudes/info-hd' class='text-warning text-decoration-none' target='_blank'>Université de Namur</a> (avec distinction), combinant expertise technique et une compréhension approfondie du design.<br/><br/> L'un de mes projets les plus passionnants a été de développer un <strong><a href='https://researchportal.unamur.be/fr/studentTheses/%C3%A9tude-pr%C3%A9liminaire-pour-lint%C3%A9gration-dun-chatbot-comme-dispenseur' class='text-warning text-decoration-none' target='_blank'>chatbot pour un escape game</a></strong> dans le cadre de mon mémoire de Master — démontrant ma capacité à allier <strong>design</strong> et <strong>technologie</strong> pour créer des expériences numériques captivantes.",
+        "music": "Je suis passionné par la musique et je joue du piano depuis l'âge de 10 ans. En tant que chanteur, j'ai la chance d'être coaché par <strong>Aurore</strong>, une artiste talentueuse qui a excellé au conservatoire et me guide de près dans mon parcours vocal.<br/><br/> J'aime interpréter des reprises d'artistes renommés tels que <strong>Celine Dion</strong>, <strong>Lady Gaga</strong>, <strong>Mariah Carey</strong>, et <strong>Phil Collins</strong>. Ma passion pour la musique est alimentée par l'envie de transmettre émotion et créativité à chaque note que je joue ou chante.<br/><br/> Vous pouvez retrouver certaines de mes reprises sur <strong>Instagram</strong> et <strong>YouTube</strong>. Consultez le lien dans le pied de page !",
+        "aboutme": "Vous êtes curieux de savoir qui je suis ? Découvrez mon parcours, les langues que je parle et ma passion pour la musique à travers le piano et le chant. Plongez plus profondément dans ce qui me motive et comment cela influence mon travail et ma créativité.",
+        "writetome": "N'hésitez pas à me contacter pour des opportunités de collaboration ou pour toute question. Je suis toujours ouvert à discuter de nouveaux projets et à partager des idées. Créons quelque chose d'incroyable ensemble !"
     }
+
 }
