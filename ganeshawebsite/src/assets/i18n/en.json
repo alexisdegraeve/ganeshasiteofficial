@@ -37,5 +37,40 @@
         "music": "I am deeply passionate about music and have been playing the piano since the age of 10. As a vocalist, I am fortunate to be coached by <strong>Aurore</strong>, a talented artist who excelled at the conservatory and closely mentors my singing journey.<br/><br/> I enjoy performing covers of renowned artists such as <strong>Celine Dion</strong>, <strong>Lady Gaga</strong>, <strong>Mariah Carey</strong>, and <strong>Phil Collins</strong>. My dedication to music is driven by a love for bringing emotion and creativity to every note I play or sing. <br/><br/> You can find some of my covers on <strong>Instagram</strong> and <strong>YouTube</strong>. Check out the link in the footer!",
         "aboutme": "Curious about who I am? Explore my journey, the languages I speak, and my passion for music through piano and singing. Dive deeper into what drives me and how it influences both my work and creativity.",
         "writetome": "Feel free to get in touch with me for collaboration opportunities or inquiries. I'm always open to discuss new projects and share ideas. Let's create something amazing together!"
+    },
+    "PORTFOLIO": {
+        "citation": "Simplicity is the principle of art.",
+
+        "title-architecture": "Architecture",
+        "desc-architecture": "Explore our stunning architecture projects.",
+
+        "title-businesscards": "Business Cards",
+        "desc-businesscards": "Design professional business cards.",
+
+        "title-marcovigna": "Marco Vigna",
+        "desc-marcovigna": "Website for Marco Vigna.",
+
+        "title-expensemanagement": "Expense Management",
+        "desc-expensemanagement": "Expense management tool for Marco Vigna.",
+
+        "title-promockup": "Professional Mockup",
+        "desc-promockup": "Find professional mockups for your projects.",
+
+        "title-3D": "3D",
+        "desc-3D": "Creative 3D designs with 3DS Max.",
+
+        "title-logodesign": "Logo Design",
+        "desc-logodesign": "Creative logo designs for your brand.",
+
+        "title-mockups": "Mockups",
+        "desc-mockups": "Creative mockups with Figma, Zeplin.",
+
+        "title-ganeshalearning": "Ganesha Learning",
+        "desc-ganeshalearning": "🎓 On this channel, we provide comprehensive tutorials on Angular 19 and other essential frontend topics. Master HTML, CSS, and Angular's powerful framework to build modern web applications.",
+
+        "btn-visit": "Visit",
+        "btn-download": "Download",
+        "btn-viewgallery": "View Gallery"
     }
+
 }

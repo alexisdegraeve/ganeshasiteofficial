@@ -10,7 +10,7 @@
     </div>
 
     <blockquote class="quote">
-        <p>La simplicité est le principe de l'art.</p>
+        <p [innerHTML]="('PORTFOLIO.citation' | translate)"></p>
         <cite>— Bruce Lee</cite>
     </blockquote>
 
@@ -25,20 +25,16 @@
                 <!-- Image -->
                 <img [hidden]="!category.imageLoaded" [src]="category.image" [class]="category.class" class="card-img-top" [alt]="category.title" (load)="onImageLoad(i)">
                 <div class="card-body">
-                    <h5 class="card-title">{{ category.title }}</h5>
-                    <p class="card-text">{{ category.description }}</p>
-                    <button *ngIf="category.gallery" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#galleryModal" (click)="loadGallery(category)">
-                      View Gallery
+                    <h5 class="card-title" [innerHTML]="(category.title | translate)"></h5>
+                    <p class="card-text" [innerHTML]="(category.description | translate)"></p>
+                    <button *ngIf="category.gallery" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#galleryModal" (click)="loadGallery(category)" [innerHTML]="('PORTFOLIO.btn-viewgallery' | translate)">
                   </button>
-                    <a *ngIf="category.linkInternal" [routerLink]="category.linkInternal" class="btn btn-danger">
-                      Visit
-                  </a>
-                    <a *ngIf="category.link" [href]="category.link" class="btn btn-danger" target="_blank">
-                      Visit
-                  </a>
-                    <a *ngIf="category.download" [href]="category.download" class="btn btn-danger" download>
-                      Download
-                  </a>
+                    <a *ngIf="category.linkInternal" [routerLink]="category.linkInternal" class="btn btn-danger" [innerHTML]="('PORTFOLIO.btn-visit' | translate)">
+                    </a>
+                    <a *ngIf="category.link" [href]="category.link" class="btn btn-danger" target="_blank" [innerHTML]="('PORTFOLIO.btn-visit' | translate)">
+                    </a>
+                    <a *ngIf="category.download" [href]="category.download" class="btn btn-danger" download [innerHTML]="('PORTFOLIO.btn-download' | translate)">
+                    </a>
                 </div>
             </div>
         </div>

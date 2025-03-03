@@ -1,25 +1,27 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/shared/language.service';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss'],
-  imports: [CommonModule, RouterModule]
+  imports: [CommonModule, RouterModule, TranslateModule]
 })
 export class PortfolioComponent {
   categories = [
     {
-      title: 'Architecture',
-      description: 'Explore our stunning architecture projects.',
+      title: 'PORTFOLIO.title-architecture',
+      description: 'PORTFOLIO.desc-architecture',
       image: 'assets/img/flat_02.jpg',
       linkInternal: '/galleryarch',
       imageLoaded: false
     },
     {
-      title: 'Business cards',
-      description: 'Design business cards.',
+      title: 'PORTFOLIO.title-businesscards',
+      description: 'PORTFOLIO.desc-businesscards',
       image: 'assets/img/card_visit_bert02.jpg',
       gallery: [
         'assets/img/card_visit_bert.jpg',
@@ -27,50 +29,50 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
-      title: 'Marco Vigna',
-      description: 'Website container for Marco Vigna.',
+      title: 'PORTFOLIO.title-marcovigna',
+      description: 'PORTFOLIO.desc-marcovigna',
       image: 'assets/img/vigna_container.jpg',
       link: 'http://vigna.be',
       imageLoaded: false
     },
     {
-      title: 'Expense Management',
-      description: 'Expense management tool for Marco Vigna.',
+      title: 'PORTFOLIO.title-expensemanagement',
+      description: 'PORTFOLIO.desc-expensemanagement',
       image: 'assets/img/vigna_gestionfrais02.jpeg',
       imageLoaded: false
     },
     {
-      title: 'Professional Mockup',
-      description: 'Find professional mockups for your projects.',
+      title: 'PORTFOLIO.title-promockup',
+      description: 'PORTFOLIO.desc-promockup',
       image: 'assets/img/portfolio.jpg',
       download: 'assets/pdf/portfolio_adg.pdf', // Lien pour télécharger le PDF
       imageLoaded: false
     },
     {
-      title: '3D',
-      description: 'Creative 3D with 3DS Max.',
+      title: 'PORTFOLIO.title-3D',
+      description: 'PORTFOLIO.desc-3D',
       image: 'assets/img/3d_elephant.jpeg',
       linkInternal: '/gallery3D',
       imageLoaded: false
     },
     {
-      title: 'Logo Design',
-      description: 'Creative logo designs for your brand.',
+      title: 'PORTFOLIO.title-logodesign',
+      description: 'PORTFOLIO.desc-logodesign',
       image: 'assets/img/logos/logo_folder.png',
       linkInternal: '/gallerylogo',
       class: 'logo',
       imageLoaded: false
     },
     {
-      title: 'Mockups',
-      description: 'Creative mockups with Figma, Zeplin',
+      title: 'PORTFOLIO.title-mockups',
+      description: 'PORTFOLIO.desc-mockups',
       image: 'assets/img/mockups.jpeg',
       linkInternal: '/mockups',
       imageLoaded: false
     },
     {
-      title: 'Ganesha learning',
-      description: '🌟 In this channel, we provide comprehensive tutorials on Angular 19 and other essential frontend topics. Master HTML, CSS, and Angular\'s robust framework to build modern web applications.',
+      title: 'PORTFOLIO.title-ganeshalearning',
+      description: 'PORTFOLIO.desc-ganeshalearning',
       image: 'assets/img/youtube_ganesha_learning.jpg',
       link: 'https://www.youtube.com/@alexisdegraeve5',
       imageLoaded: false
@@ -86,4 +88,10 @@ export class PortfolioComponent {
   onImageLoad(index: number): void {
     this.categories[index].imageLoaded = true; // Marque l'image comme chargée
   }
+
+    constructor(private translate: TranslateService, private languageService: LanguageService) {
+      this.languageService.currentLang$.subscribe((lang) => {
+        this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+      });
+    }
 }

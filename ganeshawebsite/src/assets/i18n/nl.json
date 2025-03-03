@@ -37,6 +37,40 @@
         "music": "Ik ben gepassioneerd door muziek en speel sinds mijn 10e piano. Als zanger heb ik het geluk gecoacht te worden door <strong>Aurore</strong>, een getalenteerde artieste die uitblonk aan het conservatorium en mij nauw begeleidt in mijn zangreis.<br/><br/> Ik geniet ervan om covers te zingen van beroemde artiesten zoals <strong>Celine Dion</strong>, <strong>Lady Gaga</strong>, <strong>Mariah Carey</strong>, en <strong>Phil Collins</strong>. Mijn toewijding aan muziek komt voort uit mijn liefde voor het overbrengen van emoties en creativiteit in elke noot die ik speel of zing.<br/><br/> Je kunt enkele van mijn covers vinden op <strong>Instagram</strong> en <strong>YouTube</strong>. Bekijk de link in de footer!",
         "aboutme": "Ben je benieuwd wie ik ben? Ontdek mijn reis, de talen die ik spreek, en mijn passie voor muziek via piano en zang. Duik dieper in wat mij drijft en hoe dit mijn werk en creativiteit beïnvloedt.",
         "writetome": "Voel je vrij om contact met mij op te nemen voor samenwerkingsmogelijkheden of vragen. Ik sta altijd open om nieuwe projecten te bespreken en ideeën te delen. Laten we samen iets geweldigs creëren!"
+    },
+    "PORTFOLIO": {
+        "citation": "Eenvoud is het principe van kunst.",
+
+        "title-architecture": "Architectuur",
+        "desc-architecture": "Ontdek onze prachtige architectuurprojecten.",
+
+        "title-businesscards": "Visitekaartjes",
+        "desc-businesscards": "Ontwerp professionele visitekaartjes.",
+
+        "title-marcovigna": "Marco Vigna",
+        "desc-marcovigna": "Website voor Marco Vigna.",
+
+        "title-expensemanagement": "Uitgavenbeheer",
+        "desc-expensemanagement": "Uitgavenbeheertool voor Marco Vigna.",
+
+        "title-promockup": "Professionele Mockup",
+        "desc-promockup": "Vind professionele mockups voor je projecten.",
+
+        "title-3D": "3D",
+        "desc-3D": "Creatieve 3D-projecten met 3DS Max.",
+
+        "title-logodesign": "Logo-ontwerp",
+        "desc-logodesign": "Creatieve logo-ontwerpen voor je merk.",
+
+        "title-mockups": "Mockups",
+        "desc-mockups": "Creatieve mockups met Figma, Zeplin.",
+
+        "title-ganeshalearning": "Ganesha Learning",
+        "desc-ganeshalearning": "🎓 Op dit kanaal bieden we uitgebreide tutorials over Angular 19 en andere essentiële frontend-onderwerpen. Beheers HTML, CSS en het krachtige Angular-framework om moderne webapplicaties te bouwen.",
+
+        "btn-visit": "Bezoeken",
+        "btn-download": "Downloaden",
+        "btn-viewgallery": "Galerij bekijken"
     }
 
 }

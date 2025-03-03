@@ -37,6 +37,41 @@
         "music": "Je suis passionné par la musique et je joue du piano depuis l'âge de 10 ans. En tant que chanteur, j'ai la chance d'être coaché par <strong>Aurore</strong>, une artiste talentueuse qui a excellé au conservatoire et me guide de près dans mon parcours vocal.<br/><br/> J'aime interpréter des reprises d'artistes renommés tels que <strong>Celine Dion</strong>, <strong>Lady Gaga</strong>, <strong>Mariah Carey</strong>, et <strong>Phil Collins</strong>. Ma passion pour la musique est alimentée par l'envie de transmettre émotion et créativité à chaque note que je joue ou chante.<br/><br/> Vous pouvez retrouver certaines de mes reprises sur <strong>Instagram</strong> et <strong>YouTube</strong>. Consultez le lien dans le pied de page !",
         "aboutme": "Vous êtes curieux de savoir qui je suis ? Découvrez mon parcours, les langues que je parle et ma passion pour la musique à travers le piano et le chant. Plongez plus profondément dans ce qui me motive et comment cela influence mon travail et ma créativité.",
         "writetome": "N'hésitez pas à me contacter pour des opportunités de collaboration ou pour toute question. Je suis toujours ouvert à discuter de nouveaux projets et à partager des idées. Créons quelque chose d'incroyable ensemble !"
+    },
+    "PORTFOLIO": {
+        "citation": "La simplicité est le principe de l'art.",
+
+        "title-architecture": "Architecture",
+        "desc-architecture": "Découvrez nos magnifiques projets architecturaux.",
+
+        "title-businesscards": "Cartes de visite",
+        "desc-businesscards": "Concevez des cartes de visite professionnelles.",
+
+        "title-marcovigna": "Marco Vigna",
+        "desc-marcovigna": "Site web pour Marco Vigna.",
+
+        "title-expensemanagement": "Gestion des dépenses",
+        "desc-expensemanagement": "Outil de gestion des dépenses pour Marco Vigna.",
+
+        "title-promockup": "Mockup professionnel",
+        "desc-promockup": "Trouvez des mockups professionnels pour vos projets.",
+
+        "title-3D": "3D",
+        "desc-3D": "Créations 3D avec 3DS Max.",
+
+        "title-logodesign": "Création de logos",
+        "desc-logodesign": "Conception de logos créatifs pour votre marque.",
+
+        "title-mockups": "Mockups",
+        "desc-mockups": "Mockups créatifs avec Figma, Zeplin.",
+
+        "title-ganeshalearning": "Ganesha Learning",
+        "desc-ganeshalearning": "🎓 Sur cette chaîne, nous proposons des tutoriels complets sur Angular 19 et d'autres sujets essentiels du frontend. Maîtrisez HTML, CSS et le puissant framework Angular pour créer des applications web modernes.",
+
+        "btn-visit": "Visiter",
+        "btn-download": "Télécharger",
+        "btn-viewgallery": "Voir la galerie"
     }
+
 
 }
