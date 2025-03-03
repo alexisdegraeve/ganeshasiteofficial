@@ -33,17 +33,13 @@
             <p class="card-text" [innerHTML]="('ARTIST.expert-ux' | translate)">
             </p>
             <ul>
-                <li>🎨 <strong>UX/UI Design</strong>: Focus on user-centered, interactive, and aesthetic interfaces.</li>
-                <li>🖌️ <strong>Interactive Prototyping</strong> with <strong>Figma</strong>, <strong>Adobe XD</strong>, <strong>Zeplin</strong>, and <strong>Illustrator</strong> for engaging and dynamic mockups.</li>
-                <li>🔳 <strong>2D & 3D Design</strong>: Logo creation, 3D modeling, and immersive visual experiences with <strong>3ds Max</strong>.</li>
-                <li>💻 <strong>Front-End Development</strong>: Expertise in <strong>Angular, React.js, Vue.js, TypeScript, SCSS, SASS</strong>.</li>
-                <li>📱 <strong>Responsive & Animated UI</strong>: Ensuring smooth interactions and seamless performance across devices.</li>
+                <li [innerHTML]="('ARTIST.skill-1' | translate)"></li>
+                <li [innerHTML]="('ARTIST.skill-2' | translate)"></li>
+                <li [innerHTML]="('ARTIST.skill-3' | translate)"></li>
+                <li [innerHTML]="('ARTIST.skill-4' | translate)"></li>
+                <li [innerHTML]="('ARTIST.skill-5' | translate)"></li>
             </ul>
-            <p class="card-text">
-                I hold a <strong>Master’s degree in Computer Science</strong> from the University of Namur (graduated with distinction), combining technical expertise with a deep understanding of design.
-                <br/><br/> One of my most exciting projects was developing a <strong>chatbot for an escape game</strong> as part of my Master’s thesis—demonstrating my ability to merge <strong>design</strong> and <strong>technology</strong> to create
-                engaging digital experiences.
-            </p>
+            <p class="card-text" [innerHTML]="('ARTIST.expert-last' | translate)"></p>
         </div>
         <div class="card-footer">
             <a href="/portfolio" class="btn btn-danger mt-3">View Portfolio</a>
@@ -58,15 +54,8 @@
 
         <!-- Card Body -->
         <div class="card-body">
-            <p class="card-text">
-                I am deeply passionate about music and have been playing the piano since the age of 10. As a vocalist, I am fortunate to be coached by <strong>Aurore</strong>, a talented artist who excelled at the conservatory and closely mentors my singing
-                journey.
-                <br/><br/> I enjoy performing covers of renowned artists such as <strong>Celine Dion</strong>, <strong>Lady Gaga</strong>, <strong>Mariah Carey</strong>, and <strong>Phil Collins</strong>. My dedication to music is driven by a love for
-                bringing emotion and creativity to every note I play or sing.
-                <br/><br/> You can find some of my covers on <strong>Instagram</strong> and
-                <strong>YouTube</strong>. Check out the link in the footer!
+            <p class="card-text" [innerHTML]="('ARTIST.music' | translate)">
             </p>
-
         </div>
         <div class="card-footer">
             <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/alexisdegraeve/" role="button">
@@ -82,14 +71,27 @@
     </div>
 
     <div class="card mb-4">
+        <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title ">About me</h5>
+        </div>
 
+        <div class="card-body">
+            <p class="card-text" [innerHTML]="('ARTIST.aboutme' | translate)">
+            </p>
+        </div>
+        <div class="card-footer">
+            <a href="/about" class="btn btn-danger">About me</a>
+            <!-- Contact Icon -->
+        </div>
+    </div>
+
+    <div class="card mb-4">
         <div class="card-header align-items-center d-flex">
             <h5 class="text-warning card-title ">Write to me</h5>
         </div>
 
         <div class="card-body">
-            <p class="card-text">
-                Feel free to get in touch with me for collaboration opportunities or inquiries. I'm always open to discuss new projects and share ideas. Let's create something amazing together!
+            <p class="card-text" [innerHTML]="('ARTIST.writetome' | translate)">
             </p>
         </div>
         <div class="card-footer">
