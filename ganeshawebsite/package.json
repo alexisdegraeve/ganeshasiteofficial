@@ -21,6 +21,7 @@
         "@emailjs/browser": "^4.4.1",
         "@fortawesome/fontawesome-free": "^6.7.1",
         "@ngx-translate/core": "^16.0.4",
+        "@ngx-translate/http-loader": "^16.0.1",
         "bootstrap": "^5.3.3",
         "bootstrap-icons": "^1.11.3",
         "rellax": "^1.12.1",

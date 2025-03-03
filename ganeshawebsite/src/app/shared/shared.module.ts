@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ThemeService } from './theme.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
-
-
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -15,9 +14,9 @@ import { BrowserModule } from '@angular/platform-browser';
     RouterModule,
     HeaderComponent,
     FooterComponent,
-    TranslateModule.forRoot({
+    TranslateModule.forChild({
       defaultLanguage: 'en'
-   })
+    })
   ],
   exports : [
     HeaderComponent,

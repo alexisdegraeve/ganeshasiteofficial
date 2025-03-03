@@ -1,5 +1,3 @@
 {
-    "HOME": {
-        "HELLO": "Goedemorgen {{value}}"
-    }
+    "HELLO": "Goedemorgen {{value}}"
 }

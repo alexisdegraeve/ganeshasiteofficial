@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -13,6 +14,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     SharedModule,
+    TranslateModule,
     HttpClientModule
   ],
   exports: [

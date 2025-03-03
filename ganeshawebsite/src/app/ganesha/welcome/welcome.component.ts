@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/shared/language.service';
 
 @Component({
   selector: 'app-welcome',
@@ -10,11 +11,17 @@ import { TranslateService } from '@ngx-translate/core';
 export class WelcomeComponent {
   figures: any[] = [];
   param = {value: 'world'};
+  currentLang: string = 'en';
 
-  constructor(translate: TranslateService) {
+  constructor(private translate: TranslateService, private languageService: LanguageService) {
     for (let i = 0; i < 50; i++) {
       this.figures.push(this.generateFigure());
     }
+    this.languageService.currentLang$.subscribe((lang) => {
+      this.currentLang = lang;
+      this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+      console.log('change language welcome ', lang)
+    });
   }
   generateFigure() {
     // Taille aléatoire entre 30px et 70px

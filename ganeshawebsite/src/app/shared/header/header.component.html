@@ -13,12 +13,12 @@
         <div class="ms-auto d-none d-lg-flex">
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="darkTheme ? 'btn-dark' : 'btn-light'">
-              {{ 'language' | translate }}
+              <i class="fa-solid fa-globe"></i> {{ currentLang.toUpperCase() }}
             </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" (click)="switchLanguage('en')" [ngClass]="currentLang === 'en' ? 'active' : ''">{{ 'English' | translate }}</a></li>
-                    <li><a class="dropdown-item" (click)="switchLanguage('fr')" [ngClass]="currentLang === 'fr' ? 'active' : ''">{{ 'Français' | translate }}</a></li>
-                    <li><a class="dropdown-item" (click)="switchLanguage('nl')" [ngClass]="currentLang === 'nl' ? 'active' : ''">{{ 'Nederlands' | translate }}</a></li>
+                <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" (click)="switchLanguage('en')" [ngClass]="currentLang === 'en' ? 'active' : ''">EN</a></li>
+                    <li><a class="dropdown-item" (click)="switchLanguage('fr')" [ngClass]="currentLang === 'fr' ? 'active' : ''">FR</a></li>
+                    <li><a class="dropdown-item" (click)="switchLanguage('nl')" [ngClass]="currentLang === 'nl' ? 'active' : ''">NL</a></li>
                 </ul>
             </div>
 

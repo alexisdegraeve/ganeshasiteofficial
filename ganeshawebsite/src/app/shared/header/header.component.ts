@@ -3,11 +3,12 @@ import { ThemeService } from '../theme.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterModule, TranslateModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
@@ -54,19 +55,19 @@ export class HeaderComponent {
     }
   ];
 
-  constructor(private themeService: ThemeService, private translate: TranslateService) {  // Injectez le router et le ThemeService
-    this.translate.setDefaultLang('en'); // Langue par défaut
-    this.translate.use('en'); // Langue active initiale
+  constructor(private themeService: ThemeService, private languageService: LanguageService) {  // Injectez le router et le ThemeService
     this.themeService.darkThemeSource$.subscribe((theme) => {
       this.darkTheme = theme;
     });
+    this.languageService.currentLang$.subscribe((lang) => {
+      this.currentLang = lang;
+    });
+
   }
 
   // Changer de langue
   switchLanguage(lang: string) {
-    this.translate.use(lang);
-    this.currentLang = lang;
-    console.log('currentlanguage');
+    this.languageService.setLanguage(lang);
   }
 
 
