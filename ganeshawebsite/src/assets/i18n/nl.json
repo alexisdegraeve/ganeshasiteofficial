@@ -71,6 +71,26 @@
         "btn-visit": "Bezoeken",
         "btn-download": "Downloaden",
         "btn-viewgallery": "Galerij bekijken"
+    },
+    "ABOUT": {
+        "citation": "Dit is geen pijp!",
+        "magritte": "Geïnspireerd door het universum van Magritte",
+        "titre": "Designer | Frontend Software Engineer",
+        "master": "Master in de Informatica (met Onderscheiding) &#64;UNAMUR (Université de Namur)",
+        "title-thesis": "Thesis",
+        "thesis": "Voorlopige studie van een chatbot in een escape game",
+        "languages": "Talen",
+        "french": "Frans",
+        "english": "Engels",
+        "dutch": "Nederlands",
+        "spanish": "Spaans",
+        "native": "Moedertaal",
+        "SocialMedia": "Sociale Media",
+        "Music": "Muziek",
+        "Piano": "Piano",
+        "Chant": "Zang",
+        "Photography": "Fotografie"
     }
+
 
 }

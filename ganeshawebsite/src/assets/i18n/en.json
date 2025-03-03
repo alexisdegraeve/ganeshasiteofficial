@@ -71,6 +71,26 @@
         "btn-visit": "Visit",
         "btn-download": "Download",
         "btn-viewgallery": "View Gallery"
+    },
+    "ABOUT": {
+        "citation": "This is not a pipe!",
+        "magritte": "Inspired by Magritte's universe",
+        "titre": "Designer | Frontend Software Engineer",
+        "master": "Master in Computer Science (with Distinction) &#64;UNAMUR (University of Namur)",
+        "title-thesis": "Thesis",
+        "thesis": "Preliminary Study of a Chatbot in an Escape Game",
+        "languages": "Languages",
+        "french": "French",
+        "english": "English",
+        "dutch": "Dutch",
+        "spanish": "Spanish",
+        "native": "Native",
+        "SocialMedia": "Social Media",
+        "Music": "Music",
+        "Piano": "Piano",
+        "Chant": "Singing",
+        "Photography": "Photography"
     }
+
 
 }

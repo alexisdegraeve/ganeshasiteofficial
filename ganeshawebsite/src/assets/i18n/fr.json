@@ -71,6 +71,25 @@
         "btn-visit": "Visiter",
         "btn-download": "Télécharger",
         "btn-viewgallery": "Voir la galerie"
+    },
+    "ABOUT": {
+        "citation": "Ceci n'est pas une pipe !",
+        "magritte": "Inspiré par l'univers de Magritte",
+        "titre": "Designer | Ingénieur Logiciel Frontend",
+        "master": "Master en Informatique (avec Distinction) &#64;UNAMUR (Université de Namur)",
+        "title-thesis": "Mémoire",
+        "thesis": "Étude préliminaire d'un chatbot dans un escape game",
+        "languages": "Langues",
+        "french": "Français",
+        "english": "Anglais",
+        "dutch": "Néerlandais",
+        "spanish": "Espagnol",
+        "native": "Langue maternelle",
+        "SocialMedia": "Réseaux Sociaux",
+        "Music": "Musique",
+        "Piano": "Piano",
+        "Chant": "Chant",
+        "Photography": "Photographie"
     }
 
 
