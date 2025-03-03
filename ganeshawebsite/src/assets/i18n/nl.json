@@ -1,12 +1,12 @@
 {
     "CITATION": {
         "GANESH": "Dit is niet de god Ganesh!",
-        "MAGRITTE": "Geïnspireerd door Magritte"
+        "MAGRITTE": "Geïnspireerd door de wereld van Magritte"
     },
     "MENU": {
         "home": "Home",
         "home-description": "Verken de startpagina",
-        "artist": "Kunstenaars",
+        "artist": "Artiest",
         "artist-description": "Verken de artiestenpagina",
         "portfolio": "Portfolio",
         "portfolio-description": "Bekijk mijn geweldige projecten",
@@ -14,5 +14,8 @@
         "about-description": "Leer meer over mij",
         "contact": "Contact",
         "contact-description": "Neem contact met mij op"
+    },
+    "FOOTER": {
+        "copyright": "© Maart 2025 Alle rechten voorbehouden Ganesha <i class='fa fa - cloud'></i> Alexis Degraeve"
     }
 }

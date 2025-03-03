@@ -18,7 +18,7 @@
     <div class="man-container">
         <div class="man-mask"></div>
         <blockquote class="quote">
-            <p>Animation can explain whatever the mind of man can conceive.</p>
+            <p>{{ 'ARTIST.citation' | translate }}</p>
             <cite>— Walt Disney</cite>
         </blockquote>
     </div>
@@ -30,11 +30,7 @@
             <h5 class="text-warning card-title">Expert in UX/UI Design & Front-End Development</h5>
         </div>
         <div class="card-body">
-            <p class="card-text">
-                Creativity and precision define my work—I am a <strong>pixel-perfect UX/UI designer</strong> with a passion for crafting immersive digital experiences. Inspired by the surreal universe of <strong>Magritte</strong> and the bold aesthetics
-                of <strong>GTA</strong>, I bring a unique artistic touch to my designs, blending <strong>2D</strong> and <strong>3D visuals</strong> with a deep focus on user experience.
-                <br/><br/>
-                <strong>My key skills and expertise:</strong>
+            <p class="card-text" [innerHTML]="('ARTIST.expert-ux' | translate)">
             </p>
             <ul>
                 <li>🎨 <strong>UX/UI Design</strong>: Focus on user-centered, interactive, and aesthetic interfaces.</li>

@@ -1,7 +1,7 @@
 {
     "CITATION": {
         "GANESH": "Ceci n'est pas le dieu Ganesh!",
-        "MAGRITTE": "Inspiré par Magritte"
+        "MAGRITTE": "Inspiré par l'univers de Magritte"
     },
     "MENU": {
         "home": "Accueil",
@@ -14,5 +14,8 @@
         "about-description": "Apprenez-en plus sur moi",
         "contact": "Contact",
         "contact-description": "Prenez contact avec moi"
+    },
+    "FOOTER": {
+        "copyright": "© Mars 2025 Tous droits réservés Ganesha <i class='fa fa - cloud'></i> Alexis Degraeve"
     }
 }
