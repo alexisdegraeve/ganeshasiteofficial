@@ -2,5 +2,17 @@
     "CITATION": {
         "GANESH": "This is not the god Ganesh!",
         "MAGRITTE": "Inspired by Magritte"
+    },
+    "MENU": {
+        "home": "Home",
+        "home-description": "Explore the home page",
+        "artist": "Artist",
+        "artist-description": "Explore the artist page",
+        "portfolio": "Portfolio",
+        "portfolio-description": "Check my amazing projects",
+        "about": "About",
+        "about-description": "Learn more about me",
+        "contact": "Contact",
+        "contact-description": "Get in touch with me"
     }
 }

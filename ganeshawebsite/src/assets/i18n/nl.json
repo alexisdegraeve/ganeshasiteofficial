@@ -2,5 +2,17 @@
     "CITATION": {
         "GANESH": "Dit is niet de god Ganesh!",
         "MAGRITTE": "Geïnspireerd door Magritte"
+    },
+    "MENU": {
+        "home": "Home",
+        "home-description": "Verken de startpagina",
+        "artist": "Kunstenaars",
+        "artist-description": "Verken de artiestenpagina",
+        "portfolio": "Portfolio",
+        "portfolio-description": "Bekijk mijn geweldige projecten",
+        "about": "Over mij",
+        "about-description": "Leer meer over mij",
+        "contact": "Contact",
+        "contact-description": "Neem contact met mij op"
     }
 }
