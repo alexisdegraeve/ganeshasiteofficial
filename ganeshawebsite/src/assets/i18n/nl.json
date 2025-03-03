@@ -1,3 +1,6 @@
 {
-    "HELLO": "Goedemorgen {{value}}"
+    "CITATION": {
+        "GANESH": "Dit is niet de god Ganesh!",
+        "MAGRITTE": "Geïnspireerd door Magritte"
+    }
 }

@@ -1,21 +1,26 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import Rellax from 'rellax';
+import { LanguageService } from 'src/app/shared/language.service';
 
 @Component({
   selector: 'app-artist',
   templateUrl: './artist.component.html',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   styleUrl: './artist.component.scss'
 })
 export class ArtistComponent {
   private rellax!: any;
   clouds: any[] = [];
 
-  constructor(private el: ElementRef) {
+  constructor(private el: ElementRef, private translate: TranslateService, private languageService: LanguageService ) {
     for (let i = 0; i < 30; i++) {
       this.clouds.push(this.generateCloud());
     }
+    this.languageService.currentLang$.subscribe((lang) => {
+      this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+    });
   }
 
   ngAfterViewInit() {
