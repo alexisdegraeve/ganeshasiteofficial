@@ -16,9 +16,6 @@ import { TranslateModule } from '@ngx-translate/core';
     AppRoutingModule,
     SharedModule,
     GaneshaModule,
-    TranslateModule.forRoot({
-       defaultLanguage: 'en'
-    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,14 +4,20 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ThemeService } from './theme.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
 @NgModule({
   imports: [
     CommonModule,
+    RouterModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en'
+   })
   ],
   exports : [
     HeaderComponent,
