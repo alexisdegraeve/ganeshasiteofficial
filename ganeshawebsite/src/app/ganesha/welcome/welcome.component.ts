@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ThemeService } from 'src/app/shared/theme.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-welcome',
@@ -9,8 +9,9 @@ import { ThemeService } from 'src/app/shared/theme.service';
 })
 export class WelcomeComponent {
   figures: any[] = [];
+  param = {value: 'world'};
 
-  constructor() {
+  constructor(translate: TranslateService) {
     for (let i = 0; i < 50; i++) {
       this.figures.push(this.generateFigure());
     }

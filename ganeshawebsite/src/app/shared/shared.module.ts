@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ThemeService } from './theme.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -15,7 +16,8 @@ import { ThemeService } from './theme.service';
   exports : [
     HeaderComponent,
     FooterComponent,
-    CommonModule
+    CommonModule,
+    TranslateModule
   ],
   providers: [
     ThemeService
