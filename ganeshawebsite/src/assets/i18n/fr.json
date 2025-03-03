@@ -90,7 +90,28 @@
         "Piano": "Piano",
         "Chant": "Chant",
         "Photography": "Photographie"
+    },
+    "CONTACT": {
+        "citation": "Ceci n'est pas une pomme !",
+        "magritte": "Inspiré par l'univers de Magritte",
+        "msgOK": "Votre message a été envoyé avec succès ! Nous vous répondrons sous peu.",
+        "newmessage": "Nouveau message",
+        "title": "Je souhaite vous contacter...",
+        "phemail": "Adresse e-mail",
+        "phlastname": "Nom de famille",
+        "phfirstname": "Prénom",
+        "phyourmessage": "Votre message...",
+        "firstname": "Le prénom est requis.",
+        "lastname": "Le nom de famille est requis.",
+        "email": "Veuillez entrer une adresse e-mail valide.",
+        "subject": "Choisissez un sujet...",
+        "website": "Me contacter pour un nouveau site web",
+        "design": "Me contacter pour du design",
+        "other": "Autre",
+        "subjectselect": "Veuillez sélectionner un sujet.",
+        "invalidfeedback": "Le message doit contenir entre 20 et 500 caractères.",
+        "send": "Envoyer",
+        "charsleft": "caractères restants"
     }
-
 
 }

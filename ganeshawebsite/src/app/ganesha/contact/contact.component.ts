@@ -3,25 +3,30 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { HttpClient } from '@angular/common/http'; // Importez HttpClient
 import { CommonModule } from '@angular/common';
 import emailjs  from '@emailjs/browser';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/shared/language.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  imports: [CommonModule, ReactiveFormsModule]
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule]
 })
 export class ContactComponent {
   contactForm: FormGroup;
   remainingCharacters = 500;
   isSubmitted = false;
 
-  constructor(private fb: FormBuilder, private http: HttpClient) { // Injectez HttpClient
+  constructor(private fb: FormBuilder, private http: HttpClient, private translate: TranslateService, private languageService: LanguageService) { // Injectez HttpClient
     this.contactForm = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       subject: ['', Validators.required],
       message: ['', [Validators.required, Validators.minLength(20), Validators.maxLength(500)]],
+    });
+    this.languageService.currentLang$.subscribe((lang) => {
+      this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
     });
   }
 

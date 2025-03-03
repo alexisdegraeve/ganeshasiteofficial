@@ -90,7 +90,30 @@
         "Piano": "Piano",
         "Chant": "Singing",
         "Photography": "Photography"
+    },
+    "CONTACT": {
+        "citation": "This is not an apple!",
+        "magritte": "Inspired by Magritte's universe",
+        "msgOK": "Your message has been successfully sent! We will get back to you shortly.",
+        "newmessage": "New Message",
+        "title": "I would like to contact you...",
+        "phemail": "Email Address",
+        "phlastname": "Last Name",
+        "phfirstname": "First Name",
+        "phyourmessage": "Your message...",
+        "firstname": "First name is required.",
+        "lastname": "Last name is required.",
+        "email": "Please enter a valid email address.",
+        "subject": "Choose a subject...",
+        "website": "Contact me for a new website",
+        "design": "Contact me for design",
+        "other": "Other",
+        "subjectselect": "Please select a subject.",
+        "invalidfeedback": "Message must be at least 20 characters and up to 500 characters.",
+        "send": "Send",
+        "charsleft": "characters remaining"
     }
+
 
 
 }

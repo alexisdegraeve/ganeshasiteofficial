@@ -90,7 +90,30 @@
         "Piano": "Piano",
         "Chant": "Zang",
         "Photography": "Fotografie"
+    },
+    "CONTACT": {
+        "citation": "Dit is geen appel!",
+        "magritte": "Geïnspireerd door het universum van Magritte",
+        "msgOK": "Uw bericht is succesvol verzonden! We nemen binnenkort contact met u op.",
+        "newmessage": "Nieuw bericht",
+        "title": "Ik wil contact met u opnemen...",
+        "phemail": "E-mailadres",
+        "phlastname": "Achternaam",
+        "phfirstname": "Voornaam",
+        "phyourmessage": "Uw bericht...",
+        "firstname": "Voornaam is vereist.",
+        "lastname": "Achternaam is vereist.",
+        "email": "Voer een geldig e-mailadres in.",
+        "subject": "Kies een onderwerp...",
+        "website": "Neem contact met me op voor een nieuwe website",
+        "design": "Neem contact met me op voor design",
+        "other": "Anders",
+        "subjectselect": "Selecteer een onderwerp.",
+        "invalidfeedback": "Bericht moet minimaal 20 tekens en maximaal 500 tekens bevatten.",
+        "send": "Verzenden",
+        "charsleft": "tekens over"
     }
+
 
 
 }
