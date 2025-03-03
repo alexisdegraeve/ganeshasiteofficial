@@ -12,8 +12,8 @@
         </div>
         <div class="ms-auto d-none d-lg-flex">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="darkTheme ? 'btn-dark' : 'btn-light'">
-              <i class="fa-solid fa-globe"></i> {{ currentLang.toUpperCase() }}
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="darkTheme ? 'btn-dark' : 'btn-danger'">
+                {{ currentLang.toUpperCase() }}
             </button>
                 <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item" (click)="switchLanguage('en')" [ngClass]="currentLang === 'en' ? 'active' : ''">EN</a></li>
@@ -54,6 +54,20 @@
                         <div>
                             <div class="fw-bold ">Theme</div>
                             <div>{{ !darkTheme ? 'Change to dark mode' : 'Change to light mode' }}</div>
+                        </div>
+                    </a>
+
+                    <a class="nav-link mb-3 d-flex align-items-center">
+                        <i class="fa-solid icon-menu fa-globe"></i>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="darkTheme ? 'btn-dark' : 'btn-danger'">
+                        {{ currentLang.toUpperCase() }}
+                    </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" (click)="switchLanguage('en')" [ngClass]="currentLang === 'en' ? 'active' : ''">EN</a></li>
+                                <li><a class="dropdown-item" (click)="switchLanguage('fr')" [ngClass]="currentLang === 'fr' ? 'active' : ''">FR</a></li>
+                                <li><a class="dropdown-item" (click)="switchLanguage('nl')" [ngClass]="currentLang === 'nl' ? 'active' : ''">NL</a></li>
+                            </ul>
                         </div>
                     </a>
                 </div>
