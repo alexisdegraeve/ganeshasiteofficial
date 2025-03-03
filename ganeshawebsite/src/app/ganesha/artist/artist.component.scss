@@ -59,29 +59,3 @@
 .cloud-large {
     animation-duration: 30s;
 }
-
-.skyline {
-    position: relative;
-    background: linear-gradient(to bottom, #111, #000);
-    height: 5rem;
-    width: 100%;
-    overflow: hidden;
-    mask: url('/assets/skyline.png') no-repeat center;
-    -webkit-mask: url('/assets/skyline.png') no-repeat center;
-    /* Pour les80nciens navigateurs */
-    mask-size: 80vh !important;
-    -webkit-mask-size: 80vh !important;
-    mask-repeat: inherit;
-    /* Compatibilité avec les anciens navigateurs */
-    position: absolute;
-    bottom: 6.9rem;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
-
-@media (max-width: 768px) {
-    .skyline {
-        bottom: 5.9rem;
-    }
-}
