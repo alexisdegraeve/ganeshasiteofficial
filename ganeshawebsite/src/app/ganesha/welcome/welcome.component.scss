@@ -248,6 +248,12 @@ h1 {
         background-size: 80% 80%;
         /* Ajouter un trou en forme de cercle */
     }
+    @media screen and (max-width: 700px) {
+        .cat-mask {
+            mask-size: 9rem;
+            -webkit-mask-size: 9rem;
+        }
+    }
     .cat-mask .animated-bg {
         width: 100%;
         height: 100%;
