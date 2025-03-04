@@ -87,6 +87,33 @@
 
     <div class="card mb-4">
         <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-animal' | translate)"></h5>
+        </div>
+
+        <div class="card-body">
+            <div class="cat-container">
+                <div class="cat">
+                    <div class="cat-mask">
+                        <div class="animated-bg"></div>
+                    </div>
+                </div>
+                <blockquote class="quote">
+                    <p [innerHTML]="('ARTIST.citation-cat' | translate)"></p>
+                    <cite>— {{ ('ARTIST.MAGRITTE' | translate) }}</cite>
+                </blockquote>
+
+            </div>
+            <p class="card-text mt-4" [innerHTML]="('ARTIST.animal-1' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.animal-2' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.animal-3' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.animal-4' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.animal-5' | translate)"></p>
+            <p class="card-text mb-4" [innerHTML]="('ARTIST.animal-6' | translate)"></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header align-items-center d-flex">
             <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-writetome' | translate)"></h5>
         </div>
 
