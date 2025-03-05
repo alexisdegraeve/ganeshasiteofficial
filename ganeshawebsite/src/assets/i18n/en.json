@@ -45,7 +45,13 @@
         "animal-5": "I have personally adopted two cats, Batman and Lisa, who bring so much joy to my life. <br /> On this topic, I highly recommend the film <i>Flow</i>, a silent yet deeply moving piece that beautifully portrays the sensitivity of animals. The black cat in the movie reminds me so much of my Batman, a loyal and charismatic companion!",
         "animal-6": "To learn more about feline overpopulation and GAIA’s campaign, you can visit this link: <a href='https://www.gaia.be/fr/actualites/gaia-lance-une-campagne-contre-la-surpopulation-feline' target='_blank' class='text-warning text-decoration-none'>GAIA Campaign</a> <br /> <br/><span class='display-6'>🐾</span>",
         "citation-cat": "This is not a cat!",
-        "MAGRITTE": "Inspired by Magritte's universe"
+        "MAGRITTE": "Inspired by Magritte's universe",
+        "title-human": "Human",
+        "human-1": "A simple smile costs nothing and can brighten someone's day. 😊 <br /><br /> In a world where many struggle with poverty and injustice, every action counts. <br /> It is essential to think of others and take action, even in small ways, to create a more compassionate future.",
+        "human-2": "Thousands of organizations work every day to improve the lives of those in need. <br /> Even a small donation can make a real difference. Here are some organizations striving for a better world:\n\n<ul>\n<li><a href='https://act.unicef.be/' target='_blank' class='text-warning text-decoration-none'>UNICEF</a> - Supporting children and their rights.</li>\n<li><a href='https://www.sos-villages-enfants.be/' target='_blank' class='text-warning text-decoration-none'>SOS Children's Villages</a> - Protecting and educating vulnerable children.</li>\n<li><a href='https://www.croix-rouge.be/' target='_blank' class='text-warning text-decoration-none'>Red Cross</a> - Emergency relief and humanitarian aid.</li>\n</ul>",
+        "human-3": "Our planet also needs us. 🌍 Small, simple actions can have a big impact: <ul>\n<li>Throwing waste in the bin instead of littering.</li>\n<li>Turning off the water while soaping up in the shower to avoid waste.</li>\n<li>Reducing food waste by adjusting portion sizes.</li>\n</ul>",
+        "human-4": "Helping others and protecting the environment isn’t difficult. Let’s work together to be kinder and more responsible. <br /><br /> ❤️\n\nThank you for these small actions that, combined, can change the world.",
+        "citation-human": "This is not a human!"
     },
     "PORTFOLIO": {
         "citation": "Simplicity is the principle of art.",

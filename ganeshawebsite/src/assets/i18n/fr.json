@@ -45,7 +45,13 @@
         "animal-5": "Je suis moi-même l’heureux adoptant de deux chats, Batman et Lisa, qui remplissent mon quotidien de bonheur. <br /> À ce sujet, je vous recommande le film <i>Flow</i>, une œuvre sans paroles, mais profondément émouvante, qui illustre avec poésie la sensibilité animale. Le chat noir du film me rappelle d’ailleurs beaucoup mon Batman, un compagnon fidèle et plein de caractère !",
         "animal-6": "Pour en savoir plus sur la surpopulation féline et la campagne de GAIA, vous pouvez consulter ce lien : <a href='https://www.gaia.be/fr/actualites/gaia-lance-une-campagne-contre-la-surpopulation-feline' target='_blank' class='text-warning text-decoration-none'>Campagne GAIA</a> <br /> <br/><span class='display-6'>🐾</span>",
         "citation-cat": "Ce n'est pas un chat !",
-        "MAGRITTE": "Inspiré par l'univers de Magritte"
+        "MAGRITTE": "Inspiré par l'univers de Magritte",
+        "title-human": "Humain",
+        "human-1": "Un simple sourire ne coûte rien et peut illuminer la journée de quelqu’un. 😊 <br /> <br />Dans un monde où beaucoup luttent contre la pauvreté et l’injustice, chaque geste compte.<br /> Il est essentiel de penser aux autres et d’agir, même modestement, pour un avenir plus solidaire.",
+        "human-2": "Des milliers d’associations se battent chaque jour pour améliorer la vie des plus démunis. <br />Faire un don, même minime, peut réellement faire la différence. Voici quelques organisations qui œuvrent pour un monde meilleur :\n\n<ul>\n<li><a href='https://act.unicef.be/' target='_blank' class='text-warning text-decoration-none'>UNICEF</a> - Aide à l’enfance et aux droits des enfants.</li>\n<li><a href='https://www.sos-villages-enfants.be/' target='_blank' class='text-warning text-decoration-none'>SOS Villages d’Enfants</a> - Protection et éducation des enfants vulnérables.</li>\n<li><a href='https://www.croix-rouge.be/' target='_blank' class='text-warning text-decoration-none'>Croix-Rouge</a> - Aide humanitaire d’urgence et actions de solidarité.</li>\n</ul>",
+        "human-3": "Notre planète aussi a besoin de nous. 🌍 De petits gestes simples peuvent avoir un grand impact :<ul><li>Jeter ses déchets à la poubelle plutôt que dans la nature.</li>\n<li>Éteindre l’eau sous la douche pendant qu’on se savonne pour éviter le gaspillage.</li>\n<li>Réduire le gaspillage alimentaire en adaptant ses portions.</li>\n</ul>",
+        "human-4": "Agir pour les autres et pour l’environnement, ce n’est pas si compliqué. Ensemble, faisons preuve de bienveillance et de responsabilité. <br /> <br />❤️\n\nMerci pour ces petits gestes qui, mis bout à bout, peuvent changer le monde.",
+        "citation-human": "Ce n'est pas un humain !"
     },
     "PORTFOLIO": {
         "citation": "La simplicité est le principe de l'art.",

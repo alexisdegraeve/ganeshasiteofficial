@@ -114,6 +114,30 @@
 
     <div class="card mb-4">
         <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-human' | translate)"></h5>
+        </div>
+
+        <div class="card-body">
+            <div class="human-container">
+                <div class="human">
+                    <div class="human-mask">
+                    </div>
+                </div>
+                <blockquote class="quote">
+                    <p [innerHTML]="('ARTIST.citation-human' | translate)"></p>
+                    <cite>— {{ ('ARTIST.MAGRITTE' | translate) }}</cite>
+                </blockquote>
+
+            </div>
+            <p class="card-text mt-4" [innerHTML]="('ARTIST.human-1' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.human-2' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.human-3' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.human-4' | translate)"></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header align-items-center d-flex">
             <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-writetome' | translate)"></h5>
         </div>
 

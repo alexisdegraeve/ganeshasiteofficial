@@ -275,3 +275,93 @@ h1 {
         }
     }
 }
+
+.human-container {
+    background: black;
+    height: 20rem;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #92C7E8;
+    background: linear-gradient(180deg, #92C7E8 0%, #A7D3F2 100%);
+    .human {
+        // background: #f3f3e2;
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50%;
+        // clip-path: circle(15rem at 8rem 8rem);
+        // animation: circle 10s infinite;
+        // transition: clip-path 1s;
+        margin: 2rem;
+    }
+    .human-mask {
+        height: 16rem;
+        mask: url('/assets/manglobe.svg') no-repeat center;
+        -webkit-mask: url('/assets/manglobe.svg') no-repeat center;
+        mask-size: 10rem;
+        -webkit-mask-size: 10rem;
+        display: block;
+        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+        background-size: 80% 80%;
+        -webkit-animation: Animation 5s ease infinite;
+        -moz-animation: Animation 5s ease infinite;
+        animation: Animation 5s ease infinite;
+        /* Ajouter un trou en forme de cercle */
+    }
+    @media screen and (max-width: 700px) {
+        .human-mask {
+            mask-size: 6rem;
+            -webkit-mask-size: 6rem;
+        }
+    }
+    @-webkit-keyframes Animation {
+        0% {
+            background-position: 10% 0%
+        }
+        50% {
+            background-position: 91% 100%
+        }
+        100% {
+            background-position: 10% 0%
+        }
+    }
+    @-moz-keyframes Animation {
+        0% {
+            background-position: 10% 0%
+        }
+        50% {
+            background-position: 91% 100%
+        }
+        100% {
+            background-position: 10% 0%
+        }
+    }
+    @keyframes Animation {
+        0% {
+            background-position: 10% 0%
+        }
+        50% {
+            background-position: 91% 100%
+        }
+        100% {
+            background-position: 10% 0%
+        }
+    }
+    blockquote {
+        color: #1E3D58;
+    }
+    .quote::before,
+    .quote::after {
+        color: #1E3D58 !important;
+    }
+    .quote {
+        margin: 20px 0;
+        cite {
+            color: #1E3D58;
+        }
+        p {
+            margin: 1rem;
+        }
+    }
+}
