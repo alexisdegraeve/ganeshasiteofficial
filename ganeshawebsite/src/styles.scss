@@ -70,7 +70,7 @@ h2 {
 .quote {
     font-family: "Playfair Display", serif;
     /* Belle typographie */
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     font-style: italic;
     color: #fff;
@@ -83,13 +83,6 @@ h2 {
     border-left: unset;
 }
 
-@media (max-width: 768px) {
-    .quote {
-        max-width: 420px;
-        font-size: 1.2rem;
-    }
-}
-
 .quote p {
     position: relative;
     z-index: 2;
@@ -97,7 +90,7 @@ h2 {
 
 .quote::before,
 .quote::after {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: serif;
     color: #fff;
     position: absolute;
@@ -129,6 +122,17 @@ cite {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .quote {
+        max-width: 420px;
+        font-size: 1.2rem;
+    }
+    .quote::before,
+    .quote::after {
+        font-size: 3rem;
+    }
 }
 
 @keyframes fadeInUp {
