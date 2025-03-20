@@ -13,15 +13,15 @@ export class GamesComponent {
     {
       title: 'Gano - Parodie du Uno',
       description: 'Un jeu de cartes amusant, inspiré du Uno, conçu et développé avec Angular.',
-      image: 'assets/img/gano_game.jpg',
+      image: 'assets/img/uno-ganesha.png',
       playUrl: 'https://lien-vers-le-jeu.com',
-      githubUrl: 'https://github.com/monrepo/gano',
+      githubUrl: 'https://github.com/alexisdegraeve/unoganesha',
       imageLoaded: false
     },
     {
       title: 'Champion - En préparation',
       description: 'Un jeu de type compétition, inspiré des meilleurs jeux de cartes, en cours de développement.',
-      image: 'assets/img/champion_game.jpg',
+      image: 'assets/img/uno-ganesha.png',
       playUrl: 'https://lien-vers-le-jeu.com',
       githubUrl: 'https://github.com/monrepo/champion',
       imageLoaded: false
