@@ -131,6 +131,18 @@
         "invalidfeedback": "Bericht moet minimaal 20 tekens en maximaal 500 tekens bevatten.",
         "send": "Verzenden",
         "charsleft": "tekens over"
+    },
+    "GAMES": {
+        "Gano": {
+            "title": "Gano - Parodie van Uno",
+            "description": "Een leuk kaartspel geïnspireerd door Uno, ontworpen en ontwikkeld met Angular."
+        },
+        "Champion": {
+            "title": "Champion - In voorbereiding",
+            "description": "Een competitief kaartspel geïnspireerd door de beste kaartspellen, in ontwikkeling."
+        },
+        "play": "PLAY!",
+        "github": "GitHub"
     }
 
 

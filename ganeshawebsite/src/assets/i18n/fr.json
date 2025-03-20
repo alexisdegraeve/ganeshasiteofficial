@@ -130,6 +130,18 @@
         "invalidfeedback": "Le message doit contenir entre 20 et 500 caractères.",
         "send": "Envoyer",
         "charsleft": "caractères restants"
+    },
+    "GAMES": {
+        "Gano": {
+            "title": "Gano - Parodie du Uno",
+            "description": "Un jeu de cartes amusant, inspiré du Uno, conçu et développé avec Angular."
+        },
+        "Champion": {
+            "title": "Champion - En préparation",
+            "description": "Un jeu de cartes compétitif inspiré des meilleurs jeux, en cours de développement."
+        },
+        "play": "PLAY!",
+        "github": "GitHub"
     }
 
 }
