@@ -13,14 +13,23 @@ export class ArtistComponent {
   param = {value: 'world'};
   currentLang: string = 'en';
   figuresLoaded = false; // Ajout de l'indicateur de chargement
+  translationsLoaded = false;
 
 
   constructor(private translate: TranslateService, private languageService: LanguageService) {
     this.languageService.currentLang$.subscribe((lang) => {
       this.currentLang = lang;
+      this.translationsLoaded = false;
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
       console.log('change language welcome ', lang)
     });
+
+    this.translate.onLangChange.subscribe(() => {
+      setTimeout(() => {
+        this.translationsLoaded = true; // Activer après un court délai (sécurité)
+      }, 500);
+    });
+
     this.loadFigures(); // Charger les figures avec délai
   }
 
