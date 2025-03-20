@@ -1,14 +1,10 @@
 <div class="container py-5">
 
-
-    <!-- <div class="falling-container">
-                <div *ngFor="let figure of figures" class="falling-figure" [ngStyle]="figure.style">
-                    <img src="assets/businessman-alone.png" [ngStyle]="{'width': figure.size + 'px'}" />
-                </div>
-            </div> -->
-
     <div class="man">
-        <div class="falling-container">
+        <div class="falling-container-mask" *ngIf="!figuresLoaded">
+            <div class="man-mask skeleton-mask"></div>
+        </div>
+        <div class="falling-container" *ngIf="figuresLoaded">
             <div *ngFor="let figure of figures" class="falling-figure" [ngStyle]="figure.style">
                 <div class="gradient-mask" [ngStyle]="{'width': figure.size + 'px'}"></div>
             </div>

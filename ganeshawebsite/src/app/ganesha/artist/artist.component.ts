@@ -12,17 +12,27 @@ export class ArtistComponent {
   figures: any[] = [];
   param = {value: 'world'};
   currentLang: string = 'en';
+  figuresLoaded = false; // Ajout de l'indicateur de chargement
+
 
   constructor(private translate: TranslateService, private languageService: LanguageService) {
-    for (let i = 0; i < 50; i++) {
-      this.figures.push(this.generateFigure());
-    }
     this.languageService.currentLang$.subscribe((lang) => {
       this.currentLang = lang;
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
       console.log('change language welcome ', lang)
     });
+    this.loadFigures(); // Charger les figures avec délai
   }
+
+  loadFigures() {
+    setTimeout(() => { // Simule un chargement
+      for (let i = 0; i < 50; i++) {
+        this.figures.push(this.generateFigure());
+      }
+      this.figuresLoaded = true; // Indique que le chargement est terminé
+    }, 1500); // Délai de 1.5s avant d'afficher les figures
+  }
+
   generateFigure() {
     // Taille aléatoire entre 30px et 70px
     const size = Math.random() * (150 - 50) + 50;
