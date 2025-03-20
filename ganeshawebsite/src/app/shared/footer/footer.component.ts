@@ -9,9 +9,12 @@ import { LanguageService } from '../language.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  isLoadingFooter = true;
+
   constructor(private translate: TranslateService, private languageService: LanguageService ) {
     this.languageService.currentLang$.subscribe((lang) => {
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
     });
   }
+  
 }
