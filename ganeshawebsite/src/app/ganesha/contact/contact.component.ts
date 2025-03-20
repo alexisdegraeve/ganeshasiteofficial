@@ -16,6 +16,7 @@ export class ContactComponent {
   contactForm: FormGroup;
   remainingCharacters = 500;
   isSubmitted = false;
+  isLoadingAlexis = true;
 
   constructor(private fb: FormBuilder, private http: HttpClient, private translate: TranslateService, private languageService: LanguageService) { // Injectez HttpClient
     this.contactForm = this.fb.group({
@@ -82,5 +83,9 @@ export class ContactComponent {
     this.contactForm.reset();
     this.remainingCharacters = 500;
     this.isSubmitted = false;
+  }
+
+  onImageLoadAlexis() {
+    this.isLoadingAlexis = false; // L'image est complètement chargée
   }
 }

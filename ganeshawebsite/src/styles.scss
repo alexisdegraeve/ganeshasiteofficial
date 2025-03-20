@@ -191,6 +191,28 @@ cite {
     }
 }
 
+.skeleton-image {
+    width: 10rem;
+    /* Taille de l'image (ajustez selon besoin) */
+    height: 10rem;
+    /* Taille de l'image (ajustez selon besoin) */
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    /* Pour donner un aspect rond comme l'image réelle */
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #f0f0f0;
+    }
+    50% {
+        background-color: #e0e0e0;
+    }
+    100% {
+        background-color: #f0f0f0;
+    }
+}
+
 .avatar-skeleton {
     width: 100px;
     height: 100px;

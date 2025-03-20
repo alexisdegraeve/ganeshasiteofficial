@@ -14,53 +14,56 @@
         <div class="row align-items-center">
             <!-- Colonne de gauche : Image -->
             <div class="col-auto text-center text-md-start flex-grow-1">
-                <img src="assets/img/alexis_magritte.jpg" alt="Alexis Degraeve" class="img-fluid alexis-portrait mb-4">
+                <div class="avatar-skeleton img-fluid alexis-portrait mb-4 ms-0" *ngIf="isLoadingAlexis"></div>
+                <!-- L'image avec l'événement de chargement -->
+                <img src="assets/img/alexis_magritte.jpg" alt="Alexis Degraeve" class="img-fluid alexis-portrait mb-4" (load)=" onImageLoadAlexis() " [class.d-none]="isLoadingAlexis " />
             </div>
-            <div class="col-12 col-md-8">
-                <div class="card shadow-lg">
-                    <div *ngIf="isSubmitted" class="card-body text-center">
-                        <div class="alert alert-success d-flex align-items-center" role="alert">
-                            <i class="bi bi-check-circle-fill me-2"></i>
-                            <div [innerHTML]="('CONTACT.msgOK' | translate)"></div>
+            <div class="col-12 col-md-8 ">
+                <div class="card shadow-lg ">
+                    <div *ngIf="isSubmitted " class="card-body text-center ">
+                        <div class="alert alert-success d-flex align-items-center " role="alert ">
+                            <i class="bi bi-check-circle-fill me-2 "></i>
+                            <div [innerHTML]="( 'CONTACT.msgOK' | translate) "></div>
                         </div>
-                        <button class="btn btn-primary mt-3" (click)="resetForm()" [innerHTML]="('CONTACT.newmessage' | translate)"></button>
+                        <button class="btn btn-primary mt-3 " (click)="resetForm() " [innerHTML]="( 'CONTACT.newmessage' | translate) "></button>
                     </div>
                     <!-- Si le formulaire n'est pas encore soumis -->
-                    <div *ngIf="!isSubmitted" class="card-body">
-                        <h3 class="card-title mb-4" [innerHTML]="('CONTACT.title' | translate)"></h3>
-                        <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" novalidate>
-                            <div class="mt-3">
-                                <input type="text" formControlName="firstName" class="form-control" [placeholder]="('CONTACT.phfirstname' | translate)" [class.is-invalid]="contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid" />
-                                <div class="invalid-feedback" [innerHTML]="('CONTACT.firstname' | translate)"></div>
+                    <div *ngIf="!isSubmitted " class="card-body ">
+                        <h3 class="card-title mb-4 " [innerHTML]="( 'CONTACT.title' | translate) "></h3>
+                        <form (ngSubmit)="onSubmit() " [formGroup]="contactForm " novalidate>
+                            <div class="mt-3 ">
+                                <input type="text " formControlName="firstName " class="form-control " [placeholder]="( 'CONTACT.phfirstname' | translate) " [class.is-invalid]="contactForm.get( 'firstName')?.touched && contactForm.get( 'firstName')?.invalid " />
+                                <div class="invalid-feedback " [innerHTML]="( 'CONTACT.firstname' | translate) "></div>
                             </div>
-                            <div class="mt-3">
-                                <input type="text" formControlName="lastName" class="form-control" [placeholder]="('CONTACT.phlastname' | translate)" [class.is-invalid]="contactForm.get('lastName')?.touched && contactForm.get('lastName')?.invalid" />
-                                <div class="invalid-feedback" [innerHTML]="('CONTACT.lastname' | translate)"></div>
+                            <div class="mt-3 ">
+                                <input type="text " formControlName="lastName " class="form-control " [placeholder]="( 'CONTACT.phlastname' | translate) " [class.is-invalid]="contactForm.get( 'lastName')?.touched && contactForm.get( 'lastName')?.invalid " />
+                                <div class="invalid-feedback " [innerHTML]="( 'CONTACT.lastname' | translate) "></div>
                             </div>
                             <!-- Email -->
-                            <div class="mt-3">
-                                <input type="email" formControlName="email" class="form-control" [placeholder]="('CONTACT.phemail' | translate)" [class.is-invalid]="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" />
-                                <div class="invalid-feedback" [innerHTML]="('CONTACT.email' | translate)"></div>
+                            <div class="mt-3 ">
+                                <input type="email " formControlName="email " class="form-control " [placeholder]="( 'CONTACT.phemail' | translate) " [class.is-invalid]="contactForm.get( 'email')?.touched && contactForm.get( 'email')?.invalid " />
+                                <div class="invalid-feedback " [innerHTML]="( 'CONTACT.email' | translate) "></div>
                             </div>
                             <!-- Sujet -->
-                            <div class="mt-3">
-                                <select formControlName="subject" class="form-select" [class.is-invalid]="contactForm.get('subject')?.touched && contactForm.get('subject')?.invalid">
-          <option value="" disabled selected  [innerHTML]="('CONTACT.subject' | translate)"></option>
-          <option value="new-website" [innerHTML]="('CONTACT.website' | translate)"></option>
-          <option value="design" [innerHTML]="('CONTACT.design' | translate)"></option>
-          <option value="other" [innerHTML]="('CONTACT.other' | translate)"></option>
+                            <div class="mt-3 ">
+                                <select formControlName="subject " class="form-select " [class.is-invalid]="contactForm.get( 'subject')?.touched && contactForm.get( 'subject')?.invalid ">
+          <option value=" " disabled selected  [innerHTML]="( 'CONTACT.subject' | translate) "></option>
+          <option value="new-website " [innerHTML]="( 'CONTACT.website' | translate) "></option>
+          <option value="design " [innerHTML]="( 'CONTACT.design' | translate) "></option>
+          <option value="other " [innerHTML]="( 'CONTACT.other' | translate) "></option>
         </select>
-                                <div class="invalid-feedback" [innerHTML]="('CONTACT.subjectselect' | translate)"></div>
+                                <div class="invalid-feedback " [innerHTML]="( 'CONTACT.subjectselect' | translate) "></div>
                             </div>
                             <!-- Message -->
-                            <div class="mt-3">
-                                <textarea formControlName="message" class="form-control" rows="5" maxlength="500" [placeholder]="('CONTACT.phyourmessage' | translate)" (input)="updateCharacterCount()" [class.is-invalid]="contactForm.get('message')?.touched && contactForm.get('message')?.invalid"></textarea>
-                                <small class="text-muted d-block text-end">{{ remainingCharacters }} {{ ('CONTACT.charsleft' | translate) }} </small>
-                                <div class="invalid-feedback" [innerHTML]="('CONTACT.invalidfeedback' | translate)"></div>
+                            <div class="mt-3 ">
+                                <textarea formControlName="message " class="form-control " rows="5 " maxlength="500 " [placeholder]="( 'CONTACT.phyourmessage' | translate) " (input)="updateCharacterCount() " [class.is-invalid]="contactForm.get(
+                    'message')?.touched && contactForm.get( 'message')?.invalid "></textarea>
+                                <small class="text-muted d-block text-end ">{{ remainingCharacters }} {{ ('CONTACT.charsleft' | translate) }} </small>
+                                <div class="invalid-feedback " [innerHTML]="( 'CONTACT.invalidfeedback' | translate) "></div>
                             </div>
                             <!-- Bouton envoyer -->
-                            <div class="mt-4 text-center">
-                                <button type="submit" class="btn btn-primary w-100" [disabled]="contactForm.invalid" [innerHTML]="('CONTACT.invalidfeedback' | translate)">send</button>
+                            <div class="mt-4 text-center ">
+                                <button type="submit " class="btn btn-primary w-100 " [disabled]="contactForm.invalid " [innerHTML]="( 'CONTACT.invalidfeedback' | translate) ">send</button>
                             </div>
                         </form>
                     </div>
