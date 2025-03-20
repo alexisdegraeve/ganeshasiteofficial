@@ -1,15 +1,154 @@
 <div class="container py-5">
-    <div class="artist">
-        <a href="/artist" class="text-decoration-none">
-            <div class="parallax-container">
-                <div *ngFor="let cloud of clouds" [ngStyle]="cloud.style" class="cloud rellax" [attr.data-rellax-speed]="cloud.speed">
-                    <img src="assets/cloud_tr.png" [ngStyle]="{'width': cloud.size + 'px'}" />
+
+
+    <!-- <div class="falling-container">
+                <div *ngFor="let figure of figures" class="falling-figure" [ngStyle]="figure.style">
+                    <img src="assets/businessman-alone.png" [ngStyle]="{'width': figure.size + 'px'}" />
                 </div>
+            </div> -->
+
+    <div class="man">
+        <div class="falling-container">
+            <div *ngFor="let figure of figures" class="falling-figure" [ngStyle]="figure.style">
+                <div class="gradient-mask" [ngStyle]="{'width': figure.size + 'px'}"></div>
             </div>
-            <blockquote class="quote">
-                <p>{{ 'CITATION.GANESH' | translate }}</p>
-                <cite>— {{ 'CITATION.MAGRITTE' | translate }}</cite>
-            </blockquote>
-        </a>
+        </div>
     </div>
+
+    <div class="man-container">
+        <div class="man-mask"></div>
+        <blockquote class="quote">
+            <p>{{ 'ARTIST.citation' | translate }}</p>
+            <cite>— Walt Disney</cite>
+        </blockquote>
+    </div>
+
+
+
+    <div class="card mb-4">
+        <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-expert' | translate)"></h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text" [innerHTML]="('ARTIST.expert-ux' | translate)">
+            </p>
+            <ul>
+                <li [innerHTML]="('ARTIST.skill-1' | translate)"></li>
+                <li [innerHTML]="('ARTIST.skill-2' | translate)"></li>
+                <li [innerHTML]="('ARTIST.skill-3' | translate)"></li>
+                <li [innerHTML]="('ARTIST.skill-4' | translate)"></li>
+                <li [innerHTML]="('ARTIST.skill-5' | translate)"></li>
+            </ul>
+            <p class="card-text" [innerHTML]="('ARTIST.expert-last' | translate)"></p>
+        </div>
+        <div class="card-footer">
+            <a href="/portfolio" class="btn btn-danger mt-3" [innerHTML]="('ARTIST.btn-viewportfolio' | translate)"></a>
+            <!-- Portfolio Icon -->
+        </div>
+    </div>
+    <div class="card mb-4">
+        <!-- Card Header with Large Icon -->
+        <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-music' | translate)"></h5>
+        </div>
+
+        <!-- Card Body -->
+        <div class="card-body">
+            <p class="card-text" [innerHTML]="('ARTIST.music' | translate)">
+            </p>
+        </div>
+        <div class="card-footer">
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/alexisdegraeve/" role="button">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.youtube.com/@ganeshamusicme657" role="button">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <!-- Contact Icons -->
+        </div>
+        <!-- Card Footer with Button -->
+
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-aboutme' | translate)"></h5>
+        </div>
+
+        <div class="card-body">
+            <p class="card-text" [innerHTML]="('ARTIST.aboutme' | translate)">
+            </p>
+        </div>
+        <div class="card-footer">
+            <a href="/about" class="btn btn-danger" [innerHTML]="('ARTIST.btn-aboutme' | translate)"></a>
+            <!-- Contact Icon -->
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-animal' | translate)"></h5>
+        </div>
+
+        <div class="card-body">
+            <div class="cat-container">
+                <div class="cat">
+                    <div class="cat-mask">
+                        <div class="animated-bg"></div>
+                    </div>
+                </div>
+                <blockquote class="quote">
+                    <p [innerHTML]="('ARTIST.citation-cat' | translate)"></p>
+                    <cite>— {{ ('ARTIST.MAGRITTE' | translate) }}</cite>
+                </blockquote>
+
+            </div>
+            <p class="card-text mt-4" [innerHTML]="('ARTIST.animal-1' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.animal-2' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.animal-3' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.animal-4' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.animal-5' | translate)"></p>
+            <p class="card-text mb-4" [innerHTML]="('ARTIST.animal-6' | translate)"></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-human' | translate)"></h5>
+        </div>
+
+        <div class="card-body">
+            <div class="human-container">
+                <div class="human">
+                    <div class="human-mask">
+                    </div>
+                </div>
+                <blockquote class="quote">
+                    <p [innerHTML]="('ARTIST.citation-human' | translate)"></p>
+                    <cite>— {{ ('ARTIST.MAGRITTE' | translate) }}</cite>
+                </blockquote>
+
+            </div>
+            <p class="card-text mt-4" [innerHTML]="('ARTIST.human-1' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.human-2' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.human-3' | translate)"></p>
+            <p class="card-text" [innerHTML]="('ARTIST.human-4' | translate)"></p>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header align-items-center d-flex">
+            <h5 class="text-warning card-title" [innerHTML]="('ARTIST.title-writetome' | translate)"></h5>
+        </div>
+
+        <div class="card-body">
+            <p class="card-text" [innerHTML]="('ARTIST.writetome' | translate)">
+            </p>
+        </div>
+        <div class="card-footer">
+            <a href="/contact" class="btn btn-danger" [innerHTML]="('ARTIST.btn-contact' | translate)">Contact</a>
+            <!-- Contact Icon -->
+        </div>
+    </div>
+
 </div>

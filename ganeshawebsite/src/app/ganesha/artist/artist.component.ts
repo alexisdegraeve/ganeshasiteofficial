@@ -1,50 +1,42 @@
-import { CommonModule } from '@angular/common';
-import { Component, ElementRef } from '@angular/core';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import Rellax from 'rellax';
+import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
 
 @Component({
   selector: 'app-artist',
+  standalone: false,
   templateUrl: './artist.component.html',
-  imports: [CommonModule, TranslateModule],
-  styleUrl: './artist.component.scss'
+  styleUrls: ['./artist.component.scss']
 })
 export class ArtistComponent {
-  private rellax!: any;
-  clouds: any[] = [];
+  figures: any[] = [];
+  param = {value: 'world'};
+  currentLang: string = 'en';
 
-  constructor(private el: ElementRef, private translate: TranslateService, private languageService: LanguageService ) {
-    for (let i = 0; i < 30; i++) {
-      this.clouds.push(this.generateCloud());
+  constructor(private translate: TranslateService, private languageService: LanguageService) {
+    for (let i = 0; i < 50; i++) {
+      this.figures.push(this.generateFigure());
     }
     this.languageService.currentLang$.subscribe((lang) => {
+      this.currentLang = lang;
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+      console.log('change language welcome ', lang)
     });
   }
-
-  ngAfterViewInit() {
-    this.rellax = new Rellax('.cloud', { speed: -3 });
-  }
-
-  generateCloud() {
-    // Taille aléatoire entre 50px et 300px
-    const size = Math.random() * (300 - 50) + 50;
-    // Position aléatoire sur l'axe Y entre 0% et 100%
-    const top = Math.random() * 100;
+  generateFigure() {
+    // Taille aléatoire entre 30px et 70px
+    const size = Math.random() * (150 - 50) + 50;
     // Position aléatoire sur l'axe X entre 0% et 100%
-    const left = Math.random() * 100;
-    // Vitesse de défilement entre -2 et -5 pour des mouvements lents
-    const speed = Math.random() * (-5 + 2) + 2;
+    const left = Math.random() * (100 - (size / window.innerWidth * 100));
+    // Vitesse de la chute (animation) entre 10s et 20s
+    const animationDuration = Math.random() * (20 - 6) + 6;
 
     return {
       style: {
-        top: `${top}%`,
         left: `${left}%`,
+        animationDuration: `${animationDuration}s`,
       },
-      size,
-      speed
+      size
     };
   }
-
 }

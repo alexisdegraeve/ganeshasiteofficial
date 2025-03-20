@@ -1,367 +1,61 @@
-.card-info {
-    background: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 3rem;
-}
-
-.sun-container {
-    display: flex;
-    justify-content: center;
-}
-
-.sun {
-    width: 12.5rem;
-    height: 6.25rem;
-    background-color: rgb(255, 252, 234);
-    border-top-left-radius: 110px;
-    border-top-right-radius: 110px;
-    border: 0.625rem solid gray;
-    border-bottom: 0;
-    outline: none;
-    border-color: #fffdee;
-    animation: mymove 3s infinite;
-}
-
-@keyframes mymove {
-    0% {
-        box-shadow: 0 0 6.25rem 6.25rem rgba(255, 236, 201, 0.2)
-    }
-    50% {
-        box-shadow: 0 0 7rem 12.5rem rgba(255, 236, 201, 0.4)
-    }
-    100% {
-        box-shadow: 0 0 6.25rem 6.25rem rgba(255, 236, 201, 0.2)
-    }
-}
-
-.christmas-tree {
-    font-size: 8rem;
-    /* Augmenter la taille pour une meilleure visibilité */
-    color: #228B22;
-    /* Couleur du sapin vert */
-    text-align: center;
-    /* Ajouter une ombre plus prononcée pour un effet de glow visible sur fond clair */
-    text-shadow: 0 0 3px rgba(34, 139, 34, 0.8);
-    animation: mymove2 13s infinite;
-}
-
-@keyframes mymove2 {
-    0% {
-        text-shadow: 0 0 23px rgba(255, 255, 255, 0.9);
-    }
-    50% {
-        text-shadow: 0 0 125px rgb(255, 255, 255);
-    }
-    100% {
-        text-shadow: 0 0 23px rgba(255, 255, 255, 0.9);
-    }
-}
-
-h1 {
-    font-family: 'Galantis';
-    margin: 0;
-    color: var(--title-ganesha);
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 1rem;
-}
-
-.subtitle {
-    font-size: 1rem;
-    text-align: center;
-    color: #eee;
-    margin-top: 2rem;
-}
-
-.sep {
-    width: 100%;
-    height: 0.25rem;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.info {
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    svg {
-        opacity: 0.8;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    h1 {
-        font-size: 2.25rem;
-    }
-    .subtitle {
-        font-size: 0.875rem;
-    }
-}
-
-.icon-info {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    .fa {
-        color: #ccc;
-    }
-}
-
-.falling-container {
-    z-index: 100;
-    position: relative;
-    width: 100%;
-    /* Occupe toute la largeur */
-    height: 20rem;
-    /* Occupe toute la hauteur de l'écran */
-    overflow: hidden;
-    /* Masque tout ce qui dépasse */
-    background-color: rgb(106 187 249);
-    /* Optionnel : arrière-plan ciel */
-}
-
-.falling-figure {
-    position: absolute;
-    top: -10%;
-    /* Commence juste au-dessus de l'écran */
-    opacity: 1;
-    animation: fall linear infinite, fadeOut 2s;
-    /* Ajuste selon la taille souhaitée */
-    height: 150px;
-}
-
-.gradient-mask {
-    width: 100%;
+.welcome {
     height: 100%;
-    /* Applique un dégradé */
-    background: linear-gradient(to bottom, #000, #444);
-    /* Rouge → Bleu */
-    /* Utilise l’image PNG comme masque pour garder la transparence */
-    -webkit-mask-image: url('/assets/businessman-alone.png');
-    -webkit-mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-image: url('/assets/businessman-alone.png');
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
+    padding-top: 3rem;
 }
 
-
-/* Animation pour faire tomber les bonhommes */
-
-@keyframes fall {
-    0% {
-        top: -10%;
-        /* Commence en haut */
-        opacity: 1;
-    }
-    100% {
-        top: 100%;
-        /* Finit en bas */
-        opacity: 0;
-    }
+.background-sky {
+    background: #a5cae4;
+    height: 100%;
 }
 
-
-/* Animation pour le fade out (disparition) */
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.homefacade {
-    // background-image: url('/assets/homefacade2.png');
-    // background-repeat: repeat-x;
-    // background-size: contain;
-    // background-position-y: bottom;
-    z-index: 100;
-    display: block;
+.parallax-container {
     position: relative;
-}
-
-.man {
-    height: 20rem;
-}
-
-.man-mask {
-    height: 20rem;
-    width: 15rem;
+    height: 24rem;
+    background: linear-gradient(to bottom, #a5cae4, #ffffff);
     overflow: hidden;
-    mask: url('/assets/businessman-alone.png') no-repeat center;
-    -webkit-mask: url('/assets/businessman-alone.png') no-repeat center;
+    mask: url('/assets/ganesha-icon.svg') no-repeat center;
+    -webkit-mask: url('/assets/ganesha-icon.svg') no-repeat center;
     /* Pour les80nciens navigateurs */
-    mask-size: cover;
-    -webkit-mask-size: cover;
-    background: linear-gradient(to bottom, #fff, #59728b);
+    mask-size: auto;
+    -webkit-mask-size: contain;
+    /* Compatibilité avec les anciens navigateurs */
 }
 
-.man-container {
-    display: flex;
-    .quote {
-        max-width: 600px;
-        align-self: flex-start;
-        margin: 20px;
-        padding: 2rem;
-    }
-}
-
-.cat-container {
-    background: black;
-    height: 20rem;
-    z-index: 100;
-    position: relative;
-    display: flex;
-    align-items: center;
-    background: rgb(64, 75, 76);
-    background: linear-gradient(0deg, rgba(113, 148, 184, 1) 0%, rgba(90, 111, 131, 1) 100%);
-    .cat {
-        // background: #f3f3e2;
-        height: 15rem;
-        width: 15rem;
-        border-radius: 50%;
-        // clip-path: circle(15rem at 8rem 8rem);
-        // animation: circle 10s infinite;
-        // transition: clip-path 1s;
-        margin: 2rem;
-    }
-    .cat-mask {
+@media (max-width: 768px) {
+    .parallax-container {
         height: 14rem;
-        mask: url('/assets/cat.svg') no-repeat center;
-        -webkit-mask: url('/assets/cat.svg') no-repeat center;
-        mask-size: 12rem;
-        -webkit-mask-size: 12rem;
-        display: block;
-        background-size: 80% 80%;
-        /* Ajouter un trou en forme de cercle */
-    }
-    @media screen and (max-width: 700px) {
-        .cat-mask {
-            mask-size: 6rem;
-            -webkit-mask-size: 6rem;
-        }
-    }
-    .cat-mask .animated-bg {
-        width: 100%;
-        height: 100%;
-        background: black;
-        animation: gradientFade 8s ease alternate infinite;
-    }
-    @keyframes gradientFade {
-        0% {
-            background: black;
-        }
-        100% {
-            background: white;
-        }
-    }
-    .quote {
-        margin: 20px 0;
-        p {
-            margin: 1rem;
-        }
     }
 }
 
-.human-container {
-    background: black;
-    height: 20rem;
-    z-index: 100;
-    position: relative;
-    display: flex;
-    align-items: center;
-    background: #92C7E8;
-    background: linear-gradient(180deg, #92C7E8 0%, #A7D3F2 100%);
-    .human {
-        // background: #f3f3e2;
-        height: 15rem;
-        width: 15rem;
-        border-radius: 50%;
-        // clip-path: circle(15rem at 8rem 8rem);
-        // animation: circle 10s infinite;
-        // transition: clip-path 1s;
-        margin: 2rem;
+.cloud {
+    position: absolute;
+    top: 0;
+    opacity: 0.9;
+    animation: moveClouds 30s linear infinite;
+}
+
+@keyframes moveClouds {
+    0% {
+        transform: translateX(-100%);
+        /* Commence à gauche de l'écran */
     }
-    .human-mask {
-        height: 16rem;
-        mask: url('/assets/manglobe.svg') no-repeat center;
-        -webkit-mask: url('/assets/manglobe.svg') no-repeat center;
-        mask-size: 10rem;
-        -webkit-mask-size: 10rem;
-        display: block;
-        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-        background-size: 80% 80%;
-        -webkit-animation: Animation 5s ease infinite;
-        -moz-animation: Animation 5s ease infinite;
-        animation: Animation 5s ease infinite;
-        /* Ajouter un trou en forme de cercle */
+    100% {
+        transform: translateX(100%);
+        /* Se déplace complètement vers la droite */
     }
-    @media screen and (max-width: 700px) {
-        .human-mask {
-            mask-size: 6rem;
-            -webkit-mask-size: 6rem;
-        }
-    }
-    @-webkit-keyframes Animation {
-        0% {
-            background-position: 10% 0%
-        }
-        50% {
-            background-position: 91% 100%
-        }
-        100% {
-            background-position: 10% 0%
-        }
-    }
-    @-moz-keyframes Animation {
-        0% {
-            background-position: 10% 0%
-        }
-        50% {
-            background-position: 91% 100%
-        }
-        100% {
-            background-position: 10% 0%
-        }
-    }
-    @keyframes Animation {
-        0% {
-            background-position: 10% 0%
-        }
-        50% {
-            background-position: 91% 100%
-        }
-        100% {
-            background-position: 10% 0%
-        }
-    }
-    blockquote {
-        color: #1E3D58;
-    }
-    .quote::before,
-    .quote::after {
-        color: #1E3D58 !important;
-    }
-    .quote {
-        margin: 20px 0;
-        cite {
-            color: #1E3D58;
-        }
-        p {
-            margin: 1rem;
-        }
-    }
+}
+
+
+/* Ajout d'un effet pour chaque nuage avec des tailles différentes et une vitesse d'animation différente */
+
+.cloud-small {
+    animation-duration: 50s;
+}
+
+.cloud-medium {
+    animation-duration: 40s;
+}
+
+.cloud-large {
+    animation-duration: 30s;
 }

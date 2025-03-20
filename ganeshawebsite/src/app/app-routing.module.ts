@@ -1,4 +1,4 @@
-import { WelcomeComponent } from './ganesha/welcome/welcome.component';
+import { ArtistComponent } from './ganesha/artist/artist.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PortfolioComponent } from './ganesha/portfolio/portfolio.component';
@@ -10,12 +10,12 @@ import { GalleryLogoComponent } from './ganesha/gallery-logo/gallery-logo.compon
 import { Gallery3dComponent } from './ganesha/gallery3d/gallery3d.component';
 import { BusinessCardComponent } from './ganesha/business-card/business-card.component';
 import { MockupsComponent } from './ganesha/mockups/mockups.component';
-import { ArtistComponent } from './ganesha/artist/artist.component';
+import { WelcomeComponent } from './ganesha/welcome/welcome.component';
 
 const routes: Routes = [
-  { path: '', component: ArtistComponent }, // Redirige vers Welcome par défaut
-  { path: 'welcome', component: ArtistComponent },
-  { path: 'artist', component: WelcomeComponent },
+  { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
+  { path: 'welcome', component: WelcomeComponent },
+  { path: 'artist', component: ArtistComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'galleryarch', component: GalleryArchComponent },
   { path: 'gallerylogo', component: GalleryLogoComponent },
