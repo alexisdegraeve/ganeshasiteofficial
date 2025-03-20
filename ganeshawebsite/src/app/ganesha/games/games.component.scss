@@ -3,36 +3,27 @@
     object-fit: cover;
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 180px;
+.modal-body img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+.modal-body img:hover {
+    transform: scale(1.05);
 }
 
 .card-text {
     font-size: 0.9rem;
-    color: #666;
-    flex-grow: 1;
+    color: #d2d2d2;
 }
 
-.btn-danger {
-    background-color: #e74c3c;
-    border-color: #e74c3c;
+.card-body {
+    min-height: 13rem;
 }
 
-.btn-outline-secondary {
-    border-color: #ccc;
-    color: #333;
-}
-
-.placeholder-glow {
-    background-color: #f0f0f0;
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
 }
 
 .placeholder {

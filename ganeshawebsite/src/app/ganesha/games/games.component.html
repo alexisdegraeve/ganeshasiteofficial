@@ -12,8 +12,10 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ game.title }}</h5>
                     <p class="card-text">{{ game.description }}</p>
-                    <a [href]="game.playUrl" class="btn btn-danger" target="_blank">GO</a>
-                    <a [href]="game.githubUrl" class="btn btn-outline-secondary" target="_blank">GitHub</a>
+                </div>
+                <div class="card-footer d-flex">
+                    <a [href]="game.playUrl" class="btn btn-danger" target="_blank">PLAY!</a>
+                    <a [href]="game.githubUrl" class="btn btn-outline-light ms-auto" target="_blank" title="Github"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
