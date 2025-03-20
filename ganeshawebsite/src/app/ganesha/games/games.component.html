@@ -1,0 +1,21 @@
+<div class="container py-5">
+    <div class="row g-4">
+        <!-- Génération dynamique des cartes de jeux -->
+        <div class="col-md-4" *ngFor="let game of games; let i = index">
+            <div class="card shadow">
+                <!-- Placeholder pendant le chargement de l'image -->
+                <div *ngIf="!game.imageLoaded" class="placeholder-glow">
+                    <div class="placeholder rounded" style="width: 100%; height: 200px;"></div>
+                </div>
+                <!-- Image du jeu -->
+                <img [hidden]="!game.imageLoaded" [src]="game.image" class="card-img-top" [alt]="game.title" (load)="onImageLoad(i)">
+                <div class="card-body">
+                    <h5 class="card-title">{{ game.title }}</h5>
+                    <p class="card-text">{{ game.description }}</p>
+                    <a [href]="game.playUrl" class="btn btn-danger" target="_blank">GO</a>
+                    <a [href]="game.githubUrl" class="btn btn-outline-secondary" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -13,6 +13,13 @@ import { LanguageService } from 'src/app/shared/language.service';
 export class PortfolioComponent {
   categories = [
     {
+      title: 'PORTFOLIO.title-games',
+      description: 'PORTFOLIO.desc-games',
+      image: 'assets/img/games.jpg',
+      linkInternal: '/games',
+      imageLoaded: false
+      },
+    {
       title: 'PORTFOLIO.title-architecture',
       description: 'PORTFOLIO.desc-architecture',
       image: 'assets/img/flat_02.jpg',

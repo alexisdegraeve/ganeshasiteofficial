@@ -56,6 +56,10 @@
     "PORTFOLIO": {
         "citation": "Eenvoud is het principe van kunst.",
 
+        "title-games": "Games",
+        "desc-games": "Als ontwerper en ontwikkelaar maak ik interactieve spellen met zorgvuldig design, volledig responsive op alle apparaten. Technologieën: Angular 19 en ReactJS 18 voor hoge prestaties en soepele interactie.",
+
+
         "title-architecture": "Architectuur",
         "desc-architecture": "Ontdek onze prachtige architectuurprojecten.",
 

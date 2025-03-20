@@ -56,6 +56,9 @@
     "PORTFOLIO": {
         "citation": "La simplicité est le principe de l'art.",
 
+        "title-games": "Games",
+        "desc-games": "En tant que designer et développeur, je crée des jeux interactifs avec un design soigné, responsives sur tous les appareils. Technologies: Angular 19 et ReactJS 18 pour garantir des performances élevées et une expérience fluide.",
+
         "title-architecture": "Architecture",
         "desc-architecture": "Découvrez nos magnifiques projets architecturaux.",
 
