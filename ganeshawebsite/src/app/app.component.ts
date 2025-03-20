@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { ThemeService } from './shared/theme.service';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -8,10 +8,11 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   title = 'ganeshawebsite';
   darkTheme$ = this.themeService.darkThemeSource$;
   isWinterSeason = false;
+  isComponentLoaded: boolean = false;
 
   constructor(private themeService: ThemeService, translate: TranslateService) {
     // Vérifiez si la date actuelle est entre le 1er décembre et le 10 janvier
@@ -23,5 +24,12 @@ export class AppComponent {
     translate.setDefaultLang('en');
     // the lang to use, if the lang isn't available, it will use the current loader to get them
     translate.use('en');
+  }
+
+  ngAfterViewInit(): void {
+    // Ce hook est appelé une fois que la vue du composant est complètement chargée
+    console.log('ngAfterViewInit - Vue chargée');
+    this.isComponentLoaded = true;  // Le composant est chargé
+    // On peut ici déclencher des actions (comme cacher le spinner)
   }
 }
