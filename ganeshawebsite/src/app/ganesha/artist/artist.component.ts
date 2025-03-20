@@ -24,11 +24,10 @@ export class ArtistComponent {
       console.log('change language welcome ', lang)
     });
 
-    this.translate.onLangChange.subscribe(() => {
-      setTimeout(() => {
-        this.translationsLoaded = true; // Activer après un court délai (sécurité)
-      }, 500);
-    });
+
+    setTimeout(() => {
+      this.translationsLoaded = true; // Activer après un court délai (sécurité)
+    }, 500);
 
     this.loadFigures(); // Charger les figures avec délai
   }

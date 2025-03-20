@@ -24,7 +24,9 @@
         <div class="row align-items-center">
             <!-- Colonne de gauche : Image -->
             <div class="col-auto text-center text-md-start">
-                <img src="assets/img/alexis_face.jpg" alt="Alexis Degraeve" class="img-fluid rounded-circle avatar-alexis">
+                <div class="avatar-alexis avatar-skeleton" *ngIf="isLoadingAlexis"></div>
+                <!-- Skeleton Loader -->
+                <img src="assets/img/alexis_face.jpg" alt="Alexis Degraeve" class="img-fluid rounded-circle avatar-alexis" (load)="onImageLoadAlexis()" [class.d-none]="isLoadingAlexis" />
             </div>
 
             <!-- Colonne de droite : Texte -->
@@ -45,19 +47,30 @@
             </div>
         </div>
         <!-- Skills and Interests -->
-        <div class=" row g-4 ">
+        <div class="row g-4">
             <!-- Languages -->
-            <div class="col-lg-4 col-sm-6 ">
-                <div class="card h-100 shadow border-0 ">
-
-                    <div class="card-body ">
-                        <h5 class="card-title ">Languages</h5>
-                        <div class="d-flex flex-column ">
-                            <div *ngFor="let lang of languages " class="d-flex justify-content-between align-items-center py-2 ">
-                                <span class="col text-start ">{{ lang.name | translate }}</span>
-                                <span class="col text-end ms-auto text-nowrap ">
-                              {{ lang.level | translate }} - {{ '★'.repeat(lang.stars) }}{{ '☆'.repeat(5 - lang.stars) }}
-                            </span>
+            <div class="col-lg-4 col-sm-6">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body">
+                        <h5 *ngIf="!isLoading; else skeleton" class="card-title">{{ 'ABOUT.Languages' | translate }}</h5>
+                        <ng-template #skeleton>
+                            <div class="skeleton-text skeleton-title"></div>
+                            <!-- Skeleton loader pour le titre -->
+                        </ng-template>
+                        <div class="d-flex flex-column">
+                            <div *ngFor="let lang of languages" class="d-flex justify-content-between align-items-center py-2">
+                                <span *ngIf="!isLoading; else skeletonLang" class="col text-start">{{ lang.name | translate }}</span>
+                                <ng-template #skeletonLang>
+                                    <div class="skeleton-text"></div>
+                                    <!-- Skeleton loader pour les langues -->
+                                </ng-template>
+                                <span *ngIf="!isLoading; else skeletonStars" class="col text-end ms-auto text-nowrap">
+                                  {{ lang.level | translate }} - {{ '★'.repeat(lang.stars) }}{{ '☆'.repeat(5 - lang.stars) }}
+                              </span>
+                                <ng-template #skeletonStars>
+                                    <div class="skeleton-text"></div>
+                                    <!-- Skeleton loader pour le niveau -->
+                                </ng-template>
                             </div>
                         </div>
                     </div>
@@ -65,58 +78,57 @@
             </div>
 
             <!-- Social Media -->
-            <div class="col-lg-4 col-sm-6 ">
-                <div class="card h-100 shadow border-0 ">
-                    <div class="card-body ">
-                        <h5 class="card-title " [innerHTML]="('ABOUT.SocialMedia' | translate)"></h5>
-                        <div class="d-grid gap-2 ">
-                            <a href="https://www.linkedin.com/in/degraevealexis " target="_blank " class="btn btn-outline-light ">
-                                <i class="fab fa-linkedin me-2 "></i>LinkedIn
+            <div class="col-lg-4 col-sm-6">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body">
+                        <h5 *ngIf="!isLoading; else skeleton" class="card-title" [innerHTML]="('ABOUT.SocialMedia' | translate)"></h5>
+                        <ng-template #skeleton>
+                            <div class="skeleton-text skeleton-title"></div>
+                            <!-- Skeleton loader pour le titre -->
+                        </ng-template>
+                        <div class="d-grid gap-2">
+                            <a *ngIf="!isLoading; else skeletonSocial" href="https://www.linkedin.com/in/degraevealexis" target="_blank" class="btn btn-outline-light">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
                             </a>
-                            <a href="https://www.instagram.com/alexisdegraeve " target="_blank " class="btn btn-outline-warning ">
-                                <i class="fab fa-instagram me-2 "></i>Instagram
+                            <ng-template #skeletonSocial>
+                                <div class="skeleton-text"></div>
+                                <!-- Skeleton loader pour le lien -->
+                            </ng-template>
+                            <a *ngIf="!isLoading; else skeletonInstagram" href="https://www.instagram.com/alexisdegraeve" target="_blank" class="btn btn-outline-warning">
+                                <i class="fab fa-instagram me-2"></i>Instagram
                             </a>
+                            <ng-template #skeletonInstagram>
+                                <div class="skeleton-text"></div>
+                                <!-- Skeleton loader pour le lien -->
+                            </ng-template>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Music -->
-            <div class="col-lg-4 col-sm-6 ">
-                <div class="card h-100 shadow border-0 ">
-                    <div class="card-body ">
-                        <h5 class="card-title " [innerHTML]="('ABOUT.Music' | translate)"></h5>
-                        <ul class="list-unstyled ">
-                            <li>
-                                <i class="fa fa-music me-2 "></i> {{ ('ABOUT.Piano' | translate) }} -
-                                <a href="https://imaginarium-asbl.be/index.php/author/anais/ " target="_blank " class="link-warning text-decoration-none ">
-                Imaginarium
-              </a>
-                            </li>
-                            <li>
-                                <i class="fa fa-music me-2 "></i> {{ ('ABOUT.Chant' | translate) }} -
-                                <a href="https://jmomusique.blog/tag/aurore-rinchon/ " target="_blank " class="link-warning text-decoration-none ">
-                En avant la musique!
-              </a>
+            <div class="col-lg-4 col-sm-6">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body">
+                        <h5 *ngIf="!isLoading; else skeleton" class="card-title" [innerHTML]="('ABOUT.Music' | translate)"></h5>
+                        <ng-template #skeleton>
+                            <div class="skeleton-text skeleton-title"></div>
+                            <!-- Skeleton loader pour le titre -->
+                        </ng-template>
+                        <ul *ngIf="!isLoading; else skeletonList" class="list-unstyled">
+                            <li *ngFor="let item of musicItems">
+                                <i class="fa fa-music me-2"></i> {{ item.name | translate }} -
+                                <a href="{{ item.link }}" target="_blank" class="link-warning text-decoration-none">{{ item.title }}</a>
                             </li>
                         </ul>
+                        <ng-template #skeletonList>
+                            <div class="skeleton-text"></div>
+                            <!-- Skeleton loader pour la liste -->
+                        </ng-template>
                     </div>
                 </div>
             </div>
-
-            <div class="pb-4"></div>
-            <!-- Photography -->
-            <!-- <div class="col-lg-4 col-sm-6 ">
-                <div class="card h-100 shadow border-0 ">
-                    <div class="card-body ">
-                        <h5 class="card-title" [innerHTML]="('ABOUT.Photography' | translate)"></h5>
-                        <ul class="list-unstyled ">
-                            <li><i class="fa fa-camera me-2 "></i> Alexis Degraeve</li>
-                            <li><i class="fa fa-camera me-2 "></i> Joris Boone</li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
         </div>
+
     </div>
 </div>
