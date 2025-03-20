@@ -13,7 +13,7 @@
                     <!-- Titre du jeu avec traduction -->
                     <h5 class="card-title">{{ game.title | translate }}</h5>
                     <!-- Description du jeu avec traduction -->
-                    <p class="card-text">{{ game.description | translate }}</p>
+                    <p class="card-text" [innerHTML]="(game.description | translate)"></p>
                 </div>
                 <div class="card-footer d-flex">
                     <!-- Lien Play (désactivé si playUrl est vide) -->

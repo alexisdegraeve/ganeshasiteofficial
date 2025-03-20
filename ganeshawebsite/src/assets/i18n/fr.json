@@ -133,19 +133,18 @@
     },
     "GAMES": {
         "Gano": {
-            "title": "Gano - Parodie du Uno",
-            "description": "Un jeu de cartes amusant, inspiré du Uno, conçu et développé avec Angular."
+            "title": "Gano - Parodie d'Uno",
+            "description": "Un jeu de cartes amusant inspiré d'Uno, conçu et développé avec Angular. <strong>Actuellement disponible uniquement sur Desktop et Tablette.</strong> La version mobile est en cours de développement <em>(restez à l'écoute !)</em>."
         },
         "Champion": {
-            "title": "QPUG Champion - En préparation",
-            "description": "Un jeu de cartes compétitif inspiré des meilleurs jeux, en cours de développement."
+            "title": "QPUG Champion - En Cours",
+            "description": "Un jeu de cartes compétitif inspiré des meilleurs jeux de cartes, <strong>en cours de développement.</strong>"
         },
         "EscapeGame": {
             "title": "Escape Game - Thème Super Mario",
-            "description": "Un chatbot dans un escape game sur le thème de Super Mario, développé dans le cadre de mon master en informatique pour ma thèse de fin d'étude. J'ai réussi mon mémoire avec distinction."
+            "description": "Un chatbot dans un jeu d'évasion sur le thème de Super Mario, développé dans le cadre de mon mémoire de Master en Informatique. <strong>J'ai obtenu mon diplôme avec mention.</strong>"
         },
-
-        "play": "PLAY!",
+        "play": "JOUER !",
         "github": "GitHub"
     }
 
