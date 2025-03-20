@@ -21,6 +21,14 @@ export class GamesComponent {
       imageLoaded: false
     },
     {
+      title: 'GAMES.EscapeGame.title',  // Clé de traduction
+      description: 'GAMES.EscapeGame.description',  // Clé de traduction
+      image: 'assets/img/escapegame_mario.png',
+      playUrl: 'https://chatboteg.ganesha.ovh/',
+      githubUrl: '',
+      imageLoaded: false
+    },
+    {
       title: 'GAMES.Champion.title',  // Clé de traduction
       description: 'GAMES.Champion.description',  // Clé de traduction
       image: 'assets/img/qpug-ganesha.jpg',

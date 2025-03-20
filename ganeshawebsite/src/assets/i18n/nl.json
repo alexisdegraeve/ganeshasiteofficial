@@ -138,8 +138,12 @@
             "description": "Een leuk kaartspel geïnspireerd door Uno, ontworpen en ontwikkeld met Angular."
         },
         "Champion": {
-            "title": "Champion - In voorbereiding",
+            "title": "QPUG Champion - In voorbereiding",
             "description": "Een competitief kaartspel geïnspireerd door de beste kaartspellen, in ontwikkeling."
+        },
+        "EscapeGame": {
+            "title": "Escape Game - Super Mario Thema",
+            "description": "Een chatbot in een escape game met het thema Super Mario, ontwikkeld als onderdeel van mijn master in informatica voor mijn afstudeerscriptie. Ik heb mijn scriptie met onderscheiding afgerond."
         },
         "play": "PLAY!",
         "github": "GitHub"

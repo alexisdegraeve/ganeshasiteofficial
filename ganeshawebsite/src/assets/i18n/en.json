@@ -138,8 +138,12 @@
             "description": "A fun card game inspired by Uno, designed and developed with Angular."
         },
         "Champion": {
-            "title": "Champion - In Progress",
+            "title": "QPUG Champion - In Progress",
             "description": "A competitive card game inspired by the best card games, under development."
+        },
+        "EscapeGame": {
+            "title": "Escape Game - Super Mario Theme",
+            "description": "A chatbot in an escape game with a Super Mario theme, developed as part of my Master's thesis in Computer Science. I graduated with honors."
         },
         "play": "PLAY!",
         "github": "GitHub"
