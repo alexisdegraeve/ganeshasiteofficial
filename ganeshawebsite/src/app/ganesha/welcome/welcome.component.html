@@ -1,10 +1,11 @@
 <div class="container py-5">
     <div class="welcome">
         <a href="/artist" class="text-decoration-none">
-            <div class="parallax-container">
+            <div class="parallax-container" [ngClass]="{'loading': !imageLoaded, 'loaded': imageLoaded}">
+                <div class="loading-ganesha" *ngIf="!imageLoaded"></div>
+
                 <div *ngFor="let cloud of clouds" [ngStyle]="cloud.style" class="cloud rellax" [attr.data-rellax-speed]="cloud.speed">
-                    <img *ngIf="imageLoaded" src="assets/cloud_tr.png" [ngStyle]="{'width': cloud.size + 'px'}" (load)="onImageLoad()" />
-                    <div *ngIf="imageLoaded"></div>
+                    <img src="assets/cloud_tr.png" [ngStyle]="{'width': cloud.size + 'px'}" (load)="onImageLoad()" />
                 </div>
             </div>
             <blockquote class="quote">

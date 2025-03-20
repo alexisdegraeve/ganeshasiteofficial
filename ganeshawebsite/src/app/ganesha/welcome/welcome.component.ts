@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import Rellax from 'rellax';
 import { LanguageService } from 'src/app/shared/language.service';
@@ -10,10 +10,12 @@ import { LanguageService } from 'src/app/shared/language.service';
   imports: [CommonModule, TranslateModule],
   styleUrl: './welcome.component.scss'
 })
-export class WelcomeComponent {
+export class WelcomeComponent implements OnInit {
   private rellax!: any;
   clouds: any[] = [];
   imageLoaded = false;
+  totalImages = 0;
+  loadedImages = 0;
 
   constructor(private el: ElementRef, private translate: TranslateService, private languageService: LanguageService ) {
     for (let i = 0; i < 30; i++) {
@@ -26,6 +28,10 @@ export class WelcomeComponent {
 
   ngAfterViewInit() {
     this.rellax = new Rellax('.cloud', { speed: -3 });
+  }
+
+  ngOnInit() {
+    this.totalImages = this.clouds.length;
   }
 
   generateCloud() {
@@ -49,7 +55,11 @@ export class WelcomeComponent {
   }
 
   onImageLoad() {
-    this.imageLoaded = true;
+    this.loadedImages++;
+    // Si toutes les images sont chargées
+    if (this.loadedImages === this.totalImages) {
+      this.imageLoaded = true;  // Toutes les images sont chargées
+    }
   }
 
 }

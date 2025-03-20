@@ -11,14 +11,40 @@
 .parallax-container {
     position: relative;
     height: 24rem;
-    background: linear-gradient(to bottom, #a5cae4, #ffffff);
     overflow: hidden;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
     mask: url('/assets/ganesha-icon.svg') no-repeat center;
     -webkit-mask: url('/assets/ganesha-icon.svg') no-repeat center;
-    /* Pour les80nciens navigateurs */
     mask-size: auto;
     -webkit-mask-size: contain;
-    /* Compatibilité avec les anciens navigateurs */
+    &.loading {
+        position: relative;
+        .loading-ganesha {
+            background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
+            width: 24rem;
+        }
+        .cloud {
+            visibility: hidden;
+        }
+    }
+    &.loaded {
+        background: linear-gradient(to bottom, #a5cae4, #ffffff);
+        .loading-ganesha {
+            display: none;
+        }
+        .cloud {
+            visibility: visible;
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 @media (max-width: 768px) {
