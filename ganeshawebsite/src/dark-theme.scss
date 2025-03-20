@@ -19,6 +19,11 @@ body.dark-theme {
     /* Jaune plus foncé pour le survol des liens */
     --bs-nav-link-hover-color: #f8c200;
     --bs-secondary-color: rgba(255, 255, 255, 0.75);
+    .content {
+        background-image: linear-gradient(160deg, #111822 -100%, #4575A3 100%);
+        background-repeat: no-repeat;
+        background-color: #3b648b;
+    }
     navbar-nav .nav-link {
         --bs-nav-link-color: #ddd;
     }
