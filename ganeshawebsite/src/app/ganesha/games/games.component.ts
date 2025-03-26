@@ -21,18 +21,18 @@ export class GamesComponent {
       imageLoaded: false
     },
     {
+      title: 'GAMES.Champion.title',  // Clé de traduction
+      description: 'GAMES.Champion.description',  // Clé de traduction
+      image: 'assets/img/qpuc.png',
+      playUrl: 'https://www.qpuc.ganesha.ovh/',
+      githubUrl: 'https://github.com/alexisdegraeve/ganeshquestion',
+      imageLoaded: false
+    },
+    {
       title: 'GAMES.EscapeGame.title',  // Clé de traduction
       description: 'GAMES.EscapeGame.description',  // Clé de traduction
       image: 'assets/img/escapegame_mario.png',
       playUrl: 'https://chatboteg.ganesha.ovh/',
-      githubUrl: '',
-      imageLoaded: false
-    },
-    {
-      title: 'GAMES.Champion.title',  // Clé de traduction
-      description: 'GAMES.Champion.description',  // Clé de traduction
-      image: 'assets/img/qpug-ganesha.jpg',
-      playUrl: '',
       githubUrl: '',
       imageLoaded: false
     }

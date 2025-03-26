@@ -137,8 +137,8 @@
             "description": "Un jeu de cartes amusant inspiré du Uno, conçu et développé avec Angular. <strong>Maintenant disponible sur Tablette et Smartphone !</strong> J'ai entièrement revu le design pour une expérience encore meilleure. Amusez-vous bien. <em>GG (Good Game) !</em>"
         },
         "Champion": {
-            "title": "QPUG Champion - En Cours",
-            "description": "Un jeu de cartes compétitif inspiré des meilleurs jeux de cartes, <strong>en cours de développement.</strong>"
+            "title": "QPUC 4 à la suite",
+            "description": "Le jeu est disponible en français et s’inspire du célèbre 'Question pour un Champion'. Vous pouvez également jouer sur votre smartphone !"
         },
         "EscapeGame": {
             "title": "Escape Game - Thème Super Mario",
