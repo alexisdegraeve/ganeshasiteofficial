@@ -134,15 +134,15 @@
     "GAMES": {
         "Gano": {
             "title": "Gano - Parodie d'Uno",
-            "description": "Un jeu de cartes amusant inspiré du Uno, conçu et développé avec Angular. <strong>Maintenant disponible sur Tablette et Smartphone !</strong> J'ai entièrement revu le design pour une expérience encore meilleure. Amusez-vous bien. <em>GG (Good Game) !</em>"
+            "description": "Un jeu de cartes amusant inspiré du Uno, conçu et développé avec Angular 19 et Bootstrap. <strong>Maintenant disponible sur Tablette et Smartphone !</strong> J'ai entièrement revu le design pour une expérience encore meilleure. Amusez-vous bien. <em>GG (Good Game) !</em>"
         },
         "Champion": {
             "title": "QPUC 4 à la suite",
-            "description": "Le jeu est disponible en français et s’inspire du célèbre 'Question pour un Champion'. Vous pouvez également jouer sur votre smartphone !"
+            "description": "Le jeu est disponible en français et s’inspire du célèbre 'Question pour un Champion'. Développé en ReactJS 19 et Vite, il utilise également Bootstrap pour offrir une expérience fluide et responsive. Vous pouvez également y jouer sur votre smartphone !"
         },
         "EscapeGame": {
             "title": "Escape Game - Thème Super Mario",
-            "description": "Un chatbot dans un jeu d'évasion sur le thème de Super Mario, développé dans le cadre de mon mémoire de Master en Informatique. <strong>J'ai obtenu mon diplôme avec mention.</strong>"
+            "description": "Un chatbot dans un jeu d'évasion avec un thème Super Mario, entièrement développé par mes soins dans le cadre de mon mémoire de Master en Informatique. <strong>J'ai obtenu mon diplôme avec distinction.</strong> Il a récemment été mis à jour vers Angular 19, optimisé pour les smartphones et entièrement redessiné avec Bootstrap pour assurer une expérience fluide et responsive sur tous les appareils."
         },
         "play": "JOUER !",
         "github": "GitHub"

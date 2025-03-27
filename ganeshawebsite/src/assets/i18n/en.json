@@ -135,15 +135,15 @@
     "GAMES": {
         "Gano": {
             "title": "Gano - Parody of Uno",
-            "description": "A fun card game inspired by Uno, designed and developed with Angular. <strong>Now available on Tablet and Smartphone!</strong> The entire design has been completely revamped for an even better experience. Enjoy and have fun. <em>GG (Good Game)!</em>"
+            "description": "A fun card game inspired by Uno, designed and developed with Angular 19 and Bootstrap. <strong>Now available on Tablet and Smartphone!</strong> I’ve completely revamped the design for an even better experience. Have fun! <em>GG (Good Game)!</em>"
         },
         "Champion": {
             "title": "QPUC 4 in a Row",
-            "description": "The game is available in French and inspired by the famous 'Question pour un Champion'. You can also play on your smartphone!"
+            "description": "The game is available in French and inspired by the famous 'Question pour un Champion'. Developed using ReactJS 19 and Vite, it also uses Bootstrap for a responsive and smooth experience. You can also play it on your smartphone!"
         },
         "EscapeGame": {
             "title": "Escape Game - Super Mario Theme",
-            "description": "A chatbot in an escape game with a Super Mario theme, developed as part of my Master's thesis in Computer Science. <strong>I graduated with honors.</strong>"
+            "description": "A chatbot in an escape game with a Super Mario theme, developed as part of my Master's thesis in Computer Science. <strong>I graduated with honors.</strong> It has recently been upgraded to Angular 19, optimized for smartphones, and redesigned using Bootstrap to ensure a responsive and smooth experience on any device."
         },
         "play": "PLAY!",
         "github": "GitHub"
