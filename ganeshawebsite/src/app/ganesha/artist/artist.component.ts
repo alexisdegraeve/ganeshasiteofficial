@@ -65,9 +65,9 @@ export class ArtistComponent {
     });
 
 
-    setTimeout(() => {
-      this.translationsLoaded = true; // Activer après un court délai (sécurité)
-    }, 500);
+    this.translate.onLangChange.subscribe(() => {
+      this.translationsLoaded = true;
+    });
 
     this.loadFigures(); // Charger les figures avec délai
   }

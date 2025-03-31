@@ -27,9 +27,14 @@ export class WelcomeComponent implements OnInit {
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
     });
 
-    setTimeout(() => {
-      this.translationsLoaded = true; // Activer après un court délai (sécurité)
-    }, 500);
+    this.translate.get('CITATION.ganesh').subscribe(() => {
+      this.translationsLoaded = true;
+    });
+
+    // Écoute les changements de langue pour mettre à jour le statut de chargement
+    this.translate.onLangChange.subscribe(() => {
+      this.translationsLoaded = true;
+    });
   }
 
   ngAfterViewInit() {

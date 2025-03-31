@@ -15,6 +15,7 @@ import { LanguageService } from '../language.service';
 export class HeaderComponent {
   protected darkTheme: boolean = true;
   currentLang: string = 'en';
+  translationsLoaded = false;
 
 
   menuItems = [
@@ -60,8 +61,17 @@ export class HeaderComponent {
       this.darkTheme = theme;
     });
     this.languageService.currentLang$.subscribe((lang) => {
+      this.translationsLoaded = false;
       this.currentLang = lang;
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+    });
+
+    this.translate.get('MENU.home').subscribe(() => {
+      this.translationsLoaded = true;
+    });
+
+    this.translate.onLangChange.subscribe(() => {
+      this.translationsLoaded = true;
     });
 
   }
