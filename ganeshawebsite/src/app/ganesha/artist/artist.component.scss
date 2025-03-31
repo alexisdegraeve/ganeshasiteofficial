@@ -122,7 +122,6 @@ h1 {
     position: relative;
     width: 100%;
     /* Occupe toute la largeur */
-    height: 20rem;
     /* Occupe toute la hauteur de l'écran */
     overflow: hidden;
     /* Masque tout ce qui dépasse */
@@ -205,6 +204,16 @@ h1 {
 
 .man {
     height: 20rem;
+}
+
+@media (max-width: 768px) {
+    .man {
+        height: 15rem;
+    }
+    .man-mask {
+        height: 15rem;
+        width: 10rem;
+    }
 }
 
 .man-mask {

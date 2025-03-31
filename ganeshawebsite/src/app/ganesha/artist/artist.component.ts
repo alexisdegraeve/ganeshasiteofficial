@@ -64,6 +64,10 @@ export class ArtistComponent {
       console.log('change language welcome ', lang)
     });
 
+    this.translate.get('ARTIST.citation').subscribe(() => {
+      this.translationsLoaded = true;
+    });
+
 
     this.translate.onLangChange.subscribe(() => {
       this.translationsLoaded = true;
