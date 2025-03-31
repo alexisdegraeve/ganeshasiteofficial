@@ -1,3 +1,4 @@
+@use '../../../styles.scss';
 .card-info {
     background: rgba(0, 0, 0, 0.4);
     color: #fff;
@@ -116,6 +117,7 @@ h1 {
 }
 
 .falling-container {
+    @extend .container-radius;
     z-index: 100;
     position: relative;
     width: 100%;

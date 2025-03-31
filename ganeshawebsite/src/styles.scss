@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+@use "./light-theme.scss";
+@use "./dark-theme.scss";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-@import "./light-theme.scss";
-@import "./dark-theme.scss";
 html,
 body {
     height: 100%;
@@ -245,4 +245,9 @@ cite {
     100% {
         background-position: 200% 0;
     }
+}
+
+.container-radius {
+    border-top-right-radius: 3.125rem;
+    border-left: 0.5rem solid #fff;
 }
