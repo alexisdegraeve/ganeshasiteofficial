@@ -15,6 +15,46 @@ export class ArtistComponent {
   figuresLoaded = false; // Ajout de l'indicateur de chargement
   translationsLoaded = false;
 
+  cardsData = [
+    {
+      icon: 'fa-solid fa-palette', // Exemple d'icône FontAwesome
+      title: 'ARTIST.card1-title',
+      image: 'assets/images/card1.svg', // Remplace par le chemin réel
+      description: 'ARTIST.card1-description'
+    },
+    {
+      icon: 'fa-solid fa-music',
+      title: 'ARTIST.card2-title',
+      image: 'assets/images/card2.svg',
+      description: 'ARTIST.card2-description'
+    },
+    {
+      icon: 'fa-solid fa-film',
+      title: 'ARTIST.card3-title',
+      image: 'assets/images/card3.svg',
+      description: 'ARTIST.card3-description'
+    },
+    {
+      icon: 'fa-solid fa-pen-nib',
+      title: 'ARTIST.card4-title',
+      image: 'assets/images/card4.svg',
+      description: 'ARTIST.card4-description'
+    },
+    {
+      icon: 'fa-solid fa-brush',
+      title: 'ARTIST.card5-title',
+      image: 'assets/images/card5.svg',
+      description: 'ARTIST.card5-description'
+    },
+    {
+      icon: 'fa-solid fa-camera-retro',
+      title: 'ARTIST.card6-title',
+      image: 'assets/images/card6.svg',
+      description: 'ARTIST.card6-description'
+    }
+  ];
+
+
 
   constructor(private translate: TranslateService, private languageService: LanguageService) {
     this.languageService.currentLang$.subscribe((lang) => {

@@ -19,6 +19,30 @@
     </div>
 
 
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let card of cardsData">
+            <div class="card h-100">
+                <div class="card-header d-flex align-items-center">
+                    <i [class]="card.icon" class="me-2 text-warning"></i>
+                    <h5 class="text-warning card-title" *ngIf="translationsLoaded" [innerHTML]="card.title | translate"></h5>
+                    <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
+                </div>
+                <div class="card-body text-center">
+                    <div *ngIf="translationsLoaded">
+                        <img [src]="card.image" alt="Illustration" class="img-fluid mb-3">
+                        <p class="card-text" [innerHTML]="card.description | translate"></p>
+                    </div>
+                    <div *ngIf="!translationsLoaded">
+                        <div class="skeleton skeleton-image"></div>
+                        <div class="skeleton skeleton-text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <div class="card mb-4">
         <div class="card-header align-items-center d-flex">
