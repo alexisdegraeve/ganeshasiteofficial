@@ -16,14 +16,20 @@ export class WelcomeComponent implements OnInit {
   imageLoaded = false;
   totalImages = 0;
   loadedImages = 0;
+  translationsLoaded = false;
 
   constructor(private el: ElementRef, private translate: TranslateService, private languageService: LanguageService ) {
     for (let i = 0; i < 30; i++) {
       this.clouds.push(this.generateCloud());
     }
     this.languageService.currentLang$.subscribe((lang) => {
+      this.translationsLoaded = false;
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
     });
+
+    setTimeout(() => {
+      this.translationsLoaded = true; // Activer après un court délai (sécurité)
+    }, 500);
   }
 
   ngAfterViewInit() {

@@ -1,16 +1,27 @@
 <div class="container py-5">
     <div class="welcome">
         <a href="/artist" class="text-decoration-none">
+            <!-- Parallax Container avec Skeleton -->
             <div class="parallax-container" [ngClass]="{'loading': !imageLoaded, 'loaded': imageLoaded}">
-                <div class="loading-ganesha" *ngIf="!imageLoaded"></div>
 
-                <div *ngFor="let cloud of clouds" [ngStyle]="cloud.style" class="cloud rellax" [attr.data-rellax-speed]="cloud.speed">
-                    <img src="assets/cloud_tr.png" [ngStyle]="{'width': cloud.size + 'px'}" (load)="onImageLoad()" />
+                <!-- Skeleton toujours présent mais caché après le chargement -->
+                <div class="skeleton skeleton-circle" *ngIf="!imageLoaded"></div>
+
+                <!-- Nuages affichés uniquement quand imageLoaded est vrai -->
+                <div class="clouds-container" [ngClass]="{'d-none': !imageLoaded}">
+                    <div *ngFor="let cloud of clouds" [ngStyle]="cloud.style" class="cloud rellax" [attr.data-rellax-speed]="cloud.speed">
+                        <img src="assets/cloud_tr.png" [ngStyle]="{'width': cloud.size + 'px'}" (load)="onImageLoad()" />
+                    </div>
                 </div>
             </div>
+
+
+            <!-- Citation avec Skeleton -->
             <blockquote class="quote">
-                <p>{{ 'CITATION.GANESH' | translate }}</p>
-                <cite>— {{ 'CITATION.MAGRITTE' | translate }}</cite>
+                <p *ngIf="translationsLoaded">{{ 'CITATION.GANESH' | translate }}</p>
+                <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
+                <cite *ngIf="translationsLoaded">— {{ 'CITATION.MAGRITTE' | translate }}</cite>
+                <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
             </blockquote>
         </a>
     </div>
