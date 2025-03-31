@@ -19,7 +19,7 @@ export class ArtistComponent {
     {
       icon: 'bi bi-brush-fill', // Exemple d'icône FontAwesome
       title: 'ARTIST.title-expert',
-      description: 'ARTIST.card1-description'
+      description: 'ARTIST.resume-expert'
     },
     {
       icon: 'bi bi-music-note-beamed',
