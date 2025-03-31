@@ -25,18 +25,20 @@
             <div class="card h-100">
                 <div class="card-header d-flex align-items-center">
                     <div class="card-header-icon">
-                        <i [class]="card.icon" class="me-2 text-warning"></i>
-                        <h5 class="text-warning card-title" *ngIf="translationsLoaded" [innerHTML]="card.title | translate"></h5>
-                        <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
+                        <div class="circle-header">
+                            <i [class]="card.icon" class="circle-icon" *ngIf="card.icon"></i>
+                            <img [src]="card.image" alt="Illustration" class="img-fluid mb-3" *ngIf="card.image">
+                        </div>
+                        <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
                     </div>
                 </div>
-                <div class="card-body text-center">
+                <div class="card-body">
+                    <h5 class="card-title" *ngIf="translationsLoaded" [innerHTML]="card.title | translate"></h5>
+                    <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
                     <div *ngIf="translationsLoaded">
-                        <img [src]="card.image" alt="Illustration" class="img-fluid mb-3">
                         <p class="card-text" [innerHTML]="card.description | translate"></p>
                     </div>
                     <div *ngIf="!translationsLoaded">
-                        <div class="skeleton skeleton-image"></div>
                         <div class="skeleton skeleton-text"></div>
                     </div>
                 </div>

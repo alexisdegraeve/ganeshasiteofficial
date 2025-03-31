@@ -17,39 +17,33 @@ export class ArtistComponent {
 
   cardsData = [
     {
-      icon: 'fa-solid fa-palette', // Exemple d'icône FontAwesome
-      title: 'ARTIST.card1-title',
-      image: 'assets/images/card1.svg', // Remplace par le chemin réel
+      icon: 'bi bi-brush-fill', // Exemple d'icône FontAwesome
+      title: 'ARTIST.title-expert',
       description: 'ARTIST.card1-description'
     },
     {
-      icon: 'fa-solid fa-music',
-      title: 'ARTIST.card2-title',
-      image: 'assets/images/card2.svg',
+      icon: 'bi bi-music-note-beamed',
+      title: 'ARTIST.title-music',
       description: 'ARTIST.card2-description'
     },
     {
-      icon: 'fa-solid fa-film',
-      title: 'ARTIST.card3-title',
-      image: 'assets/images/card3.svg',
+      icon: 'bi bi-heart-fill',
+      title: 'ARTIST.title-aboutme',
       description: 'ARTIST.card3-description'
     },
     {
-      icon: 'fa-solid fa-pen-nib',
-      title: 'ARTIST.card4-title',
-      image: 'assets/images/card4.svg',
+      title: 'ARTIST.title-animal',
+      image: 'assets/icons/animal.svg',
       description: 'ARTIST.card4-description'
     },
     {
-      icon: 'fa-solid fa-brush',
-      title: 'ARTIST.card5-title',
-      image: 'assets/images/card5.svg',
+      title: 'ARTIST.title-human',
+      image: 'assets/icons/human.svg',
       description: 'ARTIST.card5-description'
     },
     {
-      icon: 'fa-solid fa-camera-retro',
-      title: 'ARTIST.card6-title',
-      image: 'assets/images/card6.svg',
+      icon: 'bi bi-envelope-at-fill',
+      title: 'ARTIST.title-writetome',
       description: 'ARTIST.card6-description'
     }
   ];
