@@ -20,10 +20,12 @@
     },
     "ARTIST": {
         "citation": "L'animation peut expliquer tout ce que l'esprit humain peut concevoir.",
-        "title-expert": "UI/UX & Front-End Designer",
-        "resume-expert": "Designer UX/UI passionné, mêlant 2D, 3D et Front&ndash;End pour des expériences immersives.",
+        "title-expert": "Designer UI/UX & Frontend",
+        "resume-expert": "Designer UX/UI passionné, mêlant 2D, 3D et frontend pour des expériences immersives.",
         "title-music": "Musique",
+        "resume-music": "Passionné de musique, je joue du piano et interprète des reprises de Lana Del Rey, Lady Gaga et Céline Dion.",
         "title-aboutme": "À propos de moi",
+        "resume-aboutme": "Curieux d’en savoir plus ? Découvrez mon parcours, les langues que je parle et ma passion pour la musique à travers le piano et le chant.",
         "title-writetome": "Écrivez-moi",
         "btn-aboutme": "À propos de moi",
         "btn-viewportfolio": "Voir le portfolio",
@@ -40,6 +42,7 @@
         "aboutme": "Vous êtes curieux de savoir qui je suis ? Découvrez mon parcours, les langues que je parle et ma passion pour la musique à travers le piano et le chant. Plongez plus profondément dans ce qui me motive et comment cela influence mon travail et ma créativité.",
         "writetome": "N'hésitez pas à me contacter pour des opportunités de collaboration ou pour toute question. Je suis toujours ouvert à discuter de nouveaux projets et à partager des idées. Créons quelque chose d'incroyable ensemble !",
         "title-animal": "Animaux",
+        "resume-animal": "La cause animale me tient à cœur. La stérilisation et l’adoption responsable sont essentielles pour limiter la souffrance et protéger les animaux abandonnés.",
         "animal-1": "La cause animale me tient particulièrement à cœur. ❤️<br /><br /> Chaque jour, des associations et des bénévoles se battent pour améliorer la vie des animaux abandonnés. Leur engagement est admirable, mais malheureusement, trop de chats et de chiens restent livrés à eux-mêmes sans solution durable.",
         "animal-2": "L’une des solutions essentielles à ce problème est la stérilisation. La prolifération des chats errants entraîne une surpopulation difficile à gérer. La stérilisation est un geste simple, mais crucial pour éviter cette situation et limiter la souffrance animale.",
         "animal-3": "Il est aussi important de réfléchir à la condition des chevaux utilisés pour les balades touristiques. Plutôt que d'exploiter ces animaux pour le divertissement, il existe des alternatives motorisées qui permettent d’éviter leur souffrance physique.",
@@ -49,11 +52,13 @@
         "citation-cat": "Ceci n'est pas un chat !",
         "MAGRITTE": "Inspiré par l'univers de Magritte",
         "title-human": "Humain",
+        "resume-human": "Un petit geste peut tout changer. Aider les autres et protéger notre planète commence par des actions simples au quotidien.",
         "human-1": "Un simple sourire ne coûte rien et peut illuminer la journée de quelqu’un. 😊 <br /> <br />Dans un monde où beaucoup luttent contre la pauvreté et l’injustice, chaque geste compte.<br /> Il est essentiel de penser aux autres et d’agir, même modestement, pour un avenir plus solidaire.",
         "human-2": "Des milliers d’associations se battent chaque jour pour améliorer la vie des plus démunis. <br />Faire un don, même minime, peut réellement faire la différence. Voici quelques organisations qui œuvrent pour un monde meilleur :\n\n<ul>\n<li><a href='https://act.unicef.be/' target='_blank' class='text-warning text-decoration-none'>UNICEF</a> - Aide à l’enfance et aux droits des enfants.</li>\n<li><a href='https://www.sos-villages-enfants.be/' target='_blank' class='text-warning text-decoration-none'>SOS Villages d’Enfants</a> - Protection et éducation des enfants vulnérables.</li>\n<li><a href='https://www.croix-rouge.be/' target='_blank' class='text-warning text-decoration-none'>Croix-Rouge</a> - Aide humanitaire d’urgence et actions de solidarité.</li>\n</ul>",
         "human-3": "Notre planète aussi a besoin de nous. 🌍 De petits gestes simples peuvent avoir un grand impact :<ul><li>Jeter ses déchets à la poubelle plutôt que dans la nature.</li>\n<li>Éteindre l’eau sous la douche pendant qu’on se savonne pour éviter le gaspillage.</li>\n<li>Réduire le gaspillage alimentaire en adaptant ses portions.</li>\n</ul>",
         "human-4": "Agir pour les autres et pour l’environnement, ce n’est pas si compliqué. Ensemble, faisons preuve de bienveillance et de responsabilité. <br /> <br />❤️\n\nMerci pour ces petits gestes qui, mis bout à bout, peuvent changer le monde.",
-        "citation-human": "Ceci n'est pas un humain !"
+        "citation-human": "Ceci n'est pas un humain !",
+        "resume-contact": "N'hésitez pas à me contacter pour collaborer ou poser vos questions. Créons quelque chose d’incroyable ensemble !"
     },
     "PORTFOLIO": {
         "citation": "La simplicité est le principe de l'art.",

@@ -26,33 +26,39 @@ export class ArtistComponent {
     {
       icon: 'bi bi-music-note-beamed',
       title: 'ARTIST.title-music',
-      description: 'ARTIST.card2-description'
+      description: 'ARTIST.resume-music',
+      url: '/music'
     },
     {
       icon: 'bi bi-heart-fill',
       title: 'ARTIST.title-aboutme',
-      description: 'ARTIST.card3-description'
+      description: 'ARTIST.resume-aboutme',
+      url: '/about'
     },
     {
       title: 'ARTIST.title-animal',
       image: 'assets/icons/animal.svg',
-      description: 'ARTIST.card4-description'
+      description: 'ARTIST.resume-animal',
+      url: '/animal'
     },
     {
       title: 'ARTIST.title-human',
       image: 'assets/icons/human.svg',
-      description: 'ARTIST.card5-description'
+      description: 'ARTIST.resume-human',
+      url: '/human'
     },
     {
       icon: 'bi bi-envelope-at-fill',
       title: 'ARTIST.title-writetome',
-      description: 'ARTIST.card6-description'
+      description: 'ARTIST.resume-contact',
+      url: '/contact'
     }
   ];
 
 
 
   constructor(private translate: TranslateService, private languageService: LanguageService) {
+    this.translationsLoaded = false;
     this.languageService.currentLang$.subscribe((lang) => {
       this.currentLang = lang;
       this.translationsLoaded = false;

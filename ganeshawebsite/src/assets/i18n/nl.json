@@ -20,10 +20,12 @@
     },
     "ARTIST": {
         "citation": "Animatie kan uitleggen wat de menselijke geest kan bedenken.",
-        "title-expert": "UI/UX & Front-End Designer",
-        "resume-expert": "Passievolle UX/UI-designer, combineert 2D, 3D en Front&ndash;End voor meeslepende ervaringen.",
+        "title-expert": "UI/UX & Frontend Designer",
+        "resume-expert": "Gepassioneerde UX/UI-designer die 2D, 3D en frontend combineert voor meeslepende ervaringen.",
         "title-music": "Muziek",
+        "resume-music": "Gepassioneerd door muziek, ik speel piano en zing covers van Lana Del Rey, Lady Gaga en Céline Dion.",
         "title-aboutme": "Over mij",
+        "resume-aboutme": "Benieuwd naar mij? Ontdek mijn reis, de talen die ik spreek en mijn passie voor muziek via piano en zang.",
         "title-writetome": "Schrijf naar mij",
         "btn-aboutme": "Over mij",
         "btn-viewportfolio": "Bekijk portfolio",
@@ -40,6 +42,7 @@
         "aboutme": "Ben je benieuwd wie ik ben? Ontdek mijn reis, de talen die ik spreek, en mijn passie voor muziek via piano en zang. Duik dieper in wat mij drijft en hoe dit mijn werk en creativiteit beïnvloedt.",
         "writetome": "Voel je vrij om contact met mij op te nemen voor samenwerkingsmogelijkheden of vragen. Ik sta altijd open om nieuwe projecten te bespreken en ideeën te delen. Laten we samen iets geweldigs creëren!",
         "title-animal": "Dieren",
+        "resume-animal": "Dierenwelzijn ligt mij nauw aan het hart. Sterilisatie en verantwoord adopteren helpen dierenleed te verminderen en verlaten dieren te beschermen.",
         "animal-1": "Dierenwelzijn ligt me nauw aan het hart. ❤️<br /><br /> Elke dag zetten verenigingen en vrijwilligers zich in om het leven van achtergelaten dieren te verbeteren. Hun inzet is bewonderenswaardig, maar helaas worden nog steeds te veel katten en honden aan hun lot overgelaten zonder een duurzame oplossing.",
         "animal-2": "Een van de belangrijkste oplossingen voor dit probleem is sterilisatie. De overbevolking van zwerfkatten is moeilijk te beheersen en veroorzaakt onnodig lijden. Sterilisatie is een eenvoudige maar essentiële maatregel om dit probleem te voorkomen en het dierenwelzijn te verbeteren.",
         "animal-3": "We moeten ook nadenken over het welzijn van paarden die worden gebruikt voor toeristische ritten. In plaats van deze dieren uit te buiten voor amusement, zijn er gemotoriseerde alternatieven die hun fysieke lijden kunnen voorkomen.",
@@ -49,11 +52,13 @@
         "citation-cat": "Dit is geen kat!",
         "MAGRITTE": "Geïnspireerd door het universum van Magritte",
         "title-human": "Mens",
+        "resume-human": "Een klein gebaar kan een groot verschil maken. Anderen helpen en onze planeet beschermen begint met eenvoudige, dagelijkse handelingen.",
         "human-1": "Een simpele glimlach kost niets en kan iemands dag opfleuren. 😊 <br /><br /> In een wereld waar velen worstelen met armoede en onrecht, telt elke kleine daad. <br /> Het is belangrijk om aan anderen te denken en, hoe bescheiden ook, bij te dragen aan een meer solidaire toekomst.",
         "human-2": "Duizenden organisaties zetten zich dagelijks in om het leven van de meest kwetsbaren te verbeteren. <br /> Zelfs een kleine donatie kan een groot verschil maken. Hier zijn enkele organisaties die werken aan een betere wereld:\n\n<ul>\n<li><a href='https://act.unicef.be/' target='_blank' class='text-warning text-decoration-none'>UNICEF</a> - Hulp aan kinderen en hun rechten.</li>\n<li><a href='https://www.sos-villages-enfants.be/' target='_blank' class='text-warning text-decoration-none'>SOS Kinderdorpen</a> - Bescherming en onderwijs voor kwetsbare kinderen.</li>\n<li><a href='https://www.croix-rouge.be/' target='_blank' class='text-warning text-decoration-none'>Rode Kruis</a> - Noodhulp en solidariteitsacties.</li>\n</ul>",
         "human-3": "Onze planeet heeft ons ook nodig. 🌍 Kleine, eenvoudige handelingen kunnen een groot verschil maken: <ul>\n<li>Afval in de vuilnisbak gooien in plaats van in de natuur.</li>\n<li>De kraan dichtdraaien tijdens het inzepen onder de douche om verspilling te voorkomen.</li>\n<li>Voedselverspilling verminderen door porties beter af te stemmen.</li>\n</ul>",
         "human-4": "Iets doen voor anderen en het milieu is helemaal niet zo moeilijk. Laten we samen vriendelijkheid en verantwoordelijkheid tonen. <br /><br /> ❤️\n\nDank je wel voor deze kleine gebaren die, samen genomen, de wereld kunnen veranderen.",
-        "citation-human": "Dit is geen mens!"
+        "citation-human": "Dit is geen mens!",
+        "resume-contact": "Neem gerust contact op voor samenwerking of vragen. Laten we samen iets geweldigs creëren!"
     },
     "PORTFOLIO": {
         "citation": "Eenvoud is het principe van kunst.",

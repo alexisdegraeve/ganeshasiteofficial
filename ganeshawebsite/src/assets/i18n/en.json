@@ -20,10 +20,12 @@
     },
     "ARTIST": {
         "citation": "Animation can explain whatever the mind of man can conceive.",
-        "title-expert": "UI/UX & Front-End Designer",
-        "resume-expert": "Passionate UX/UI designer, blending 2D, 3D, and Front&ndash;End for immersive experiences.",
+        "title-expert": "UI/UX & Frontend Designer",
+        "resume-expert": "Passionate UX/UI designer blending 2D, 3D, and frontend for immersive experiences.",
         "title-music": "Music",
+        "resume-music": "Passionate about music, I play piano and sing covers of Lana Del Rey, Lady Gaga, and Celine Dion.",
         "title-aboutme": "About me",
+        "resume-aboutme": "Curious about me? Discover my journey, the languages I speak, and my passion for music through piano and singing.",
         "title-writetome": "Write to me",
         "btn-aboutme": "About me",
         "btn-viewportfolio": "View Portfolio",
@@ -40,6 +42,7 @@
         "aboutme": "Curious about who I am? Explore my journey, the languages I speak, and my passion for music through piano and singing. Dive deeper into what drives me and how it influences both my work and creativity.",
         "writetome": "Feel free to get in touch with me for collaboration opportunities or inquiries. I'm always open to discuss new projects and share ideas. Let's create something amazing together!",
         "title-animal": "Animals",
+        "resume-animal": "Animal welfare is close to my heart. Sterilization and responsible adoption help reduce suffering and protect abandoned animals.",
         "animal-1": "Animal welfare is a cause close to my heart. ❤️<br /><br /> Every day, associations and volunteers work tirelessly to improve the lives of abandoned animals. Their dedication is admirable, yet too many cats and dogs are still left to fend for themselves without a sustainable solution.",
         "animal-2": "One of the key solutions to this issue is sterilization. The overpopulation of stray cats is difficult to manage, leading to unnecessary suffering. Sterilization is a simple but crucial step in preventing this problem and improving animal welfare.",
         "animal-3": "We should also consider the condition of horses used for tourist rides. Instead of exploiting these animals for entertainment, motorized alternatives exist that can prevent their physical suffering.",
@@ -49,11 +52,13 @@
         "citation-cat": "This is not a cat!",
         "MAGRITTE": "Inspired by Magritte's universe",
         "title-human": "Human",
+        "resume-human": "A small act of kindness can make a big difference. Helping others and protecting our planet starts with simple, everyday actions.",
         "human-1": "A simple smile costs nothing and can brighten someone's day. 😊 <br /><br /> In a world where many struggle with poverty and injustice, every action counts. <br /> It is essential to think of others and take action, even in small ways, to create a more compassionate future.",
         "human-2": "Thousands of organizations work every day to improve the lives of those in need. <br /> Even a small donation can make a real difference. Here are some organizations striving for a better world:\n\n<ul>\n<li><a href='https://act.unicef.be/' target='_blank' class='text-warning text-decoration-none'>UNICEF</a> - Supporting children and their rights.</li>\n<li><a href='https://www.sos-villages-enfants.be/' target='_blank' class='text-warning text-decoration-none'>SOS Children's Villages</a> - Protecting and educating vulnerable children.</li>\n<li><a href='https://www.croix-rouge.be/' target='_blank' class='text-warning text-decoration-none'>Red Cross</a> - Emergency relief and humanitarian aid.</li>\n</ul>",
         "human-3": "Our planet also needs us. 🌍 Small, simple actions can have a big impact: <ul>\n<li>Throwing waste in the bin instead of littering.</li>\n<li>Turning off the water while soaping up in the shower to avoid waste.</li>\n<li>Reducing food waste by adjusting portion sizes.</li>\n</ul>",
         "human-4": "Helping others and protecting the environment isn’t difficult. Let’s work together to be kinder and more responsible. <br /><br /> ❤️\n\nThank you for these small actions that, combined, can change the world.",
-        "citation-human": "This is not a human!"
+        "citation-human": "This is not a human!",
+        "resume-contact": "Feel free to reach out for collaborations or questions. Let’s create something amazing together!"
     },
     "PORTFOLIO": {
         "citation": "Simplicity is the principle of art.",

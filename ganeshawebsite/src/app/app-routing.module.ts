@@ -13,6 +13,9 @@ import { MockupsComponent } from './ganesha/mockups/mockups.component';
 import { WelcomeComponent } from './ganesha/welcome/welcome.component';
 import { GamesComponent } from './ganesha/games/games.component';
 import { DesignerComponent } from './ganesha/designer/designer.component';
+import { MusicComponent } from './ganesha/music/music.component';
+import { AnimalComponent } from './ganesha/animal/animal.component';
+import { HumanComponent } from './ganesha/human/human.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -28,6 +31,9 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'designer', component: DesignerComponent },
+  { path: 'music', component: MusicComponent },
+  { path: 'animal', component: AnimalComponent },
+  { path: 'human', component: HumanComponent },
   { path: '**', component: NotfoundComponent } // Route 404 pour URL incorrecte
 ];
 
