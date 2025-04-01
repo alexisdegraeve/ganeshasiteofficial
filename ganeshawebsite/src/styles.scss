@@ -306,3 +306,19 @@
         margin-top: 4rem;
         margin-bottom: 8rem;
     }
+    
+    .instagram {
+        background: linear-gradient(90deg, #8D37A8 0%, #F41F28 48.56%, #F77235 100%);
+        i {
+            color: #fff;
+            font-size: 6rem;
+        }
+    }
+    
+    .youtube {
+        background: linear-gradient(180deg, #FFFFFF 0%, #CBDFEE 100%);
+        i {
+            color: red;
+            font-size: 6rem;
+        }
+    }

@@ -153,6 +153,11 @@
         },
         "play": "JOUER !",
         "github": "GitHub"
+    },
+    "MUSIC": {
+        "youtube": "YouTube Channel",
+        "resume-youtube": "blabla",
+        "insta": "Instagram",
+        "resume-insta": "blabla"
     }
-
 }
