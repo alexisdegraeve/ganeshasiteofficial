@@ -6,14 +6,14 @@
         </div>
     </div>
     <div class="middle-content">
-        <h5 class="text-warning card-title" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-music' | translate)"></h5>
-        <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-        <p class="card-text" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.music' | translate)"></p>
+        <h5 class="mb-4" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-music' | translate)"></h5>
+        <div *ngIf="!translationsLoaded" class="skeleton skeleton-title mb-4"></div>
+        <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.music' | translate)"></p>
         <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
 
 
 
-        <div class="row">
+        <div class="row space-top-8">
             <div class="col-lg-4 col-md-6 mb-4" *ngFor="let card of musicData">
                 <div class="card h-100">
                     <div class="card-header d-flex align-items-center">
