@@ -19,17 +19,18 @@
 
         <!-- Bouton de sélection de langue -->
         <div class="ms-auto d-none d-lg-flex ">
-            <div class="dropdown ">
-                <button class="btn dropdown-toggle " type="button " id="dropdownMenuButton " data-bs-toggle="dropdown " aria-expanded="false " [ngClass]="darkTheme ? 'btn-dark' : 'btn-danger' ">
-                      {{ currentLang.toUpperCase() }}
-                  </button>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="darkTheme ? 'btn-dark' : 'btn-danger'">
+                {{ currentLang.toUpperCase() }}
+            </button>
 
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton ">
-                    <li><a class="dropdown-item " (click)="switchLanguage('en')" [ngClass]="currentLang==='en' ? 'active' : '' ">EN</a></li>
-                    <li><a class="dropdown-item " (click)="switchLanguage('fr')" [ngClass]="currentLang==='fr' ? 'active' : '' ">FR</a></li>
-                    <li><a class="dropdown-item " (click)="switchLanguage('nl')" [ngClass]="currentLang==='nl' ? 'active' : '' ">NL</a></li>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" (click)="switchLanguage('en')" [ngClass]="currentLang==='en' ? 'active' : ''">EN</a></li>
+                    <li><a class="dropdown-item" (click)="switchLanguage('fr')" [ngClass]="currentLang==='fr' ? 'active' : ''">FR</a></li>
+                    <li><a class="dropdown-item" (click)="switchLanguage('nl')" [ngClass]="currentLang==='nl' ? 'active' : ''">NL</a></li>
                 </ul>
             </div>
+
         </div>
 
         <!-- Bouton pour changer le thème -->
