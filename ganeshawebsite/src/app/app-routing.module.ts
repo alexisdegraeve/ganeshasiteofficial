@@ -12,6 +12,7 @@ import { BusinessCardComponent } from './ganesha/business-card/business-card.com
 import { MockupsComponent } from './ganesha/mockups/mockups.component';
 import { WelcomeComponent } from './ganesha/welcome/welcome.component';
 import { GamesComponent } from './ganesha/games/games.component';
+import { DesignerComponent } from './ganesha/designer/designer.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'games', component: GamesComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'designer', component: DesignerComponent },
   { path: '**', component: NotfoundComponent } // Route 404 pour URL incorrecte
 ];
 

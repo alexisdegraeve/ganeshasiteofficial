@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ArtistComponent } from './artist/artist.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,9 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     SharedModule,
     TranslateModule,
-    HttpClientModule
+    RouterModule
   ],
+  providers: [provideHttpClient()],
   exports: [
     ArtistComponent
   ]

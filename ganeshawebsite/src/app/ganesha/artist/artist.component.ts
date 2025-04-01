@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
 
@@ -6,7 +7,7 @@ import { LanguageService } from 'src/app/shared/language.service';
   selector: 'app-artist',
   standalone: false,
   templateUrl: './artist.component.html',
-  styleUrls: ['./artist.component.scss']
+  styleUrls: ['./artist.component.scss'],
 })
 export class ArtistComponent {
   figures: any[] = [];
@@ -19,7 +20,8 @@ export class ArtistComponent {
     {
       icon: 'bi bi-brush-fill', // Exemple d'icône FontAwesome
       title: 'ARTIST.title-expert',
-      description: 'ARTIST.resume-expert'
+      description: 'ARTIST.resume-expert',
+      url: '/designer'
     },
     {
       icon: 'bi bi-music-note-beamed',
