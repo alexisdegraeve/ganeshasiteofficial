@@ -37,7 +37,9 @@
                     <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
                     <div *ngIf="translationsLoaded">
                         <p class="card-text" [innerHTML]="card.description | translate"></p>
-                        <a *ngIf="card.url" [routerLink]="card.url" class="btn btn-outline-danger" [innerHTML]="('ARTIST.btn-know-more' | translate)"></a>
+                        <a *ngIf="card.url" [routerLink]="card.url" class="btn btn-outline-light mt-3 mb-4">
+                            <span>{{ 'ARTIST.btn-know-more' | translate }}</span> <i class="bi bi-chevron-right ms-2"></i>
+                        </a>
                     </div>
                     <div *ngIf="!translationsLoaded">
                         <div class="skeleton skeleton-text"></div>
