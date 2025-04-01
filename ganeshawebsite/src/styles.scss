@@ -1,5 +1,5 @@
     /* You can add global styles to this file, and also import other style files */
-
+    
     @use "./light-theme.scss";
     @use "./dark-theme.scss";
     @import "~bootstrap-icons/font/bootstrap-icons.css";
@@ -11,29 +11,29 @@
         --bs-form-invalid-border-color: #ffb5bc;
         background-color: black;
     }
-
+    
     @font-face {
         font-family: 'January';
         src: url('/assets/fonts/January_Shine.ttf') format('truetype');
         font-weight: bold;
     }
-
+    
     @font-face {
         font-family: 'Plane Crash';
         src: url('/assets/fonts/Plane_Crash.ttf') format('truetype');
         font-weight: bold;
     }
-
+    
     @font-face {
         font-family: 'Galantis';
         src: url('/assets/fonts/Galantis.otf') format('truetype');
         font-weight: bold;
     }
-
+    
     .copyright {
         display: none;
     }
-
+    
     .card {
         color: #fff;
         border-radius: 10px;
@@ -41,7 +41,7 @@
         overflow: auto;
         z-index: 100;
     }
-
+    
     blockquote {
         font-size: 1.2rem;
         border-left: 4px solid #ddd;
@@ -51,23 +51,23 @@
             color: #fff;
         }
     }
-
+    
     h2 {
         color: var(--title-ganesha);
     }
-
+    
     .modal-backdrop {
         --bs-backdrop-zindex: 200;
     }
-
+    
     .modal-header {
         border-bottom: unset;
     }
-
+    
     .modal-footer {
         border-top: unset;
     }
-
+    
     .quote {
         font-family: "Playfair Display", serif;
         /* Belle typographie */
@@ -83,12 +83,12 @@
         margin-top: 0;
         border-left: unset;
     }
-
+    
     .quote p {
         position: relative;
         z-index: 2;
     }
-
+    
     .quote::before,
     .quote::after {
         font-size: 4rem;
@@ -96,21 +96,21 @@
         color: #fff;
         position: absolute;
     }
-
+    
     .quote::before {
         content: "“";
         /* Guillemets d'ouverture */
         left: -5px;
         top: -5px;
     }
-
+    
     .quote::after {
         content: "”";
         /* Guillemets de fermeture */
         right: 5px;
         bottom: -5px;
     }
-
+    
     cite {
         font-size: 0.9rem;
         font-weight: bold;
@@ -118,13 +118,13 @@
         margin-top: 5px;
         color: #fff;
     }
-
+    
     .quote {
         opacity: 0;
         transform: translateY(20px);
         animation: fadeInUp 1.5s ease-out forwards;
     }
-
+    
     @media (max-width: 768px) {
         .quote {
             max-width: 420px;
@@ -135,7 +135,7 @@
             font-size: 3rem;
         }
     }
-
+    
     @keyframes fadeInUp {
         from {
             opacity: 0;
@@ -146,20 +146,20 @@
             transform: translateY(0);
         }
     }
-
+    
     .skeleton {
         background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
         background-size: 200% 100%;
         animation: loadingSkeleton 1.5s infinite;
         border-radius: 4px;
     }
-
+    
     .skeleton-title {
         width: 60%;
         height: 20px;
         margin: 10px 0;
     }
-
+    
     .skeleton-text {
         background-color: #e0e0e0;
         border-radius: 4px;
@@ -168,7 +168,7 @@
         width: 100%;
         animation: loadingSkeleton 1.5s infinite ease-in-out;
     }
-
+    
     .skeleton-nav-item {
         width: 120px; // Largeur standard d'un lien de navigation
         height: 20px; // Hauteur d'un texte de menu
@@ -178,20 +178,20 @@
         background-size: 200% 100%;
         animation: loadingSkeleton 1.5s infinite ease-in-out;
     }
-
+    
     .skeleton-list {
         width: 80%;
         height: 10px;
         margin: 8px 0;
     }
-
+    
     .skeleton-button {
         width: 120px;
         height: 40px;
         margin-top: 10px;
         border-radius: 5px;
     }
-
+    
     @keyframes loadingSkeleton {
         0% {
             background-position: 200% 0;
@@ -200,7 +200,7 @@
             background-position: -200% 0;
         }
     }
-
+    
     .skeleton-image {
         width: 10rem;
         /* Taille de l'image (ajustez selon besoin) */
@@ -210,7 +210,7 @@
         border-radius: 50%;
         /* Pour donner un aspect rond comme l'image réelle */
     }
-
+    
     @keyframes pulse {
         0% {
             background-color: #f0f0f0;
@@ -222,7 +222,7 @@
             background-color: #f0f0f0;
         }
     }
-
+    
     .avatar-skeleton {
         width: 100px;
         height: 100px;
@@ -232,12 +232,12 @@
         animation: skeleton-loading 1.5s ease-in-out infinite;
         margin: 0 auto;
     }
-
+    
     .avatar-alexis {
         width: 100px; // Ajuste selon ta taille d'image
         height: 100px; // Ajuste selon ta taille d'image
     }
-
+    
     @keyframes skeleton-loading {
         0% {
             background-position: -200% 0;
@@ -246,7 +246,7 @@
             background-position: 200% 0;
         }
     }
-
+    
     .card-header-icon {
         height: 12.5rem;
         display: flex;
@@ -268,17 +268,41 @@
             }
         }
     }
-
+    
+    .general-container {
+        @extend .container-radius;
+        z-index: 100;
+        position: relative;
+        width: 100%;
+        /* Occupe toute la largeur */
+        /* Occupe toute la hauteur de l'écran */
+        overflow: hidden;
+        /* Masque tout ce qui dépasse */
+        background-color: rgb(106 187 249);
+        /* Optionnel : arrière-plan ciel */
+        .central-icon {
+            font-size: 10.5rem;
+        }
+        .card-header-icon {
+            height: 100%;
+        }
+    }
+    
     .container-radius {
         border-top-right-radius: 3.125rem;
         border-left: 0.5rem solid #fff;
         height: 20rem;
     }
-
+    
     @media (max-width: 768px) {
         .container-radius {
             border-top-right-radius: 1.125rem;
             border-left: 0.25rem solid #fff;
             height: 15rem;
         }
+    }
+    
+    .middle-content {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
     }
