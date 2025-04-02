@@ -211,13 +211,13 @@ h1 {
         height: 15rem;
     }
     .man-mask {
-        height: 15rem;
+        height: 100%;
         width: 10rem;
     }
 }
 
 .man-mask {
-    height: 20rem;
+    height: 100%;
     width: 15rem;
     overflow: hidden;
     mask: url('/assets/businessman-alone.png') no-repeat center;
