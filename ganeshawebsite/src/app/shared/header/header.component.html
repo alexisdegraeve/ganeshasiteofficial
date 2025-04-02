@@ -25,17 +25,22 @@
             </div>
 
             <!-- Dropdown à droite -->
-            <div class="ms-auto">
-                <div class="dropdown">
+            <div class="ms-auto d-flex align-items-center">
+                <div class="dropdown  me-3">
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="darkTheme ? 'btn-dark' : 'btn-danger'">
                       {{ currentLang.toUpperCase() }}
                   </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <ul class="dropdown-menu  dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                         <li><a class="dropdown-item" (click)="switchLanguage('en')" [ngClass]="currentLang==='en' ? 'active' : ''">EN</a></li>
                         <li><a class="dropdown-item" (click)="switchLanguage('fr')" [ngClass]="currentLang==='fr' ? 'active' : ''">FR</a></li>
                         <li><a class="dropdown-item" (click)="switchLanguage('nl')" [ngClass]="currentLang==='nl' ? 'active' : ''">NL</a></li>
                     </ul>
                 </div>
+
+                <!-- Bouton pour switcher entre Dark/Light mode -->
+                <button type="button" class="btn btn-lg border-0" (click)="switchTheme()">
+                    <i class="fa-solid" [ngClass]="darkTheme ? 'fa-sun' : 'fa-moon'"></i>
+                </button>
             </div>
         </div>
     </div>
