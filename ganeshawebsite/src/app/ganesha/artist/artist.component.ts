@@ -30,7 +30,7 @@ export class ArtistComponent {
       url: '/music'
     },
     {
-      icon: 'bi bi-heart-fill',
+      icon: 'bi bi-heart-fill pulse-icon',
       title: 'ARTIST.title-aboutme',
       description: 'ARTIST.resume-aboutme',
       url: '/about'

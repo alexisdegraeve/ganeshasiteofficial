@@ -14,49 +14,50 @@
         <cite>— Bruce Lee</cite>
     </blockquote>
 
-    <div class="row g-4">
-        <!-- Card Template -->
-        <div class="col-md-4" *ngFor="let category of categories; let i = index">
-            <div class="card shadow">
-                <!-- Placeholder while image is loading -->
-                <div *ngIf="!category.imageLoaded" class="placeholder-glow">
-                    <div class="placeholder rounded" style="width: 100%; height: 200px;"></div>
-                </div>
-                <!-- Image -->
-                <img [hidden]="!category.imageLoaded" [src]="category.image" [class]="category.class" class="card-img-top" [alt]="category.title" (load)="onImageLoad(i)">
-                <div class="card-body portfolio-body">
-                    <h5 class="card-title" [innerHTML]="(category.title | translate)"></h5>
-                    <p class="card-text" [innerHTML]="(category.description | translate)"></p>
-                    <button *ngIf="category.gallery" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#galleryModal" (click)="loadGallery(category)" [innerHTML]="('PORTFOLIO.btn-viewgallery' | translate)">
+    <div class="middle-content">
+        <div class=" row g-4 ">
+            <!-- Card Template -->
+            <div class="col-md-4 " *ngFor="let category of categories; let i=index ">
+                <div class="card shadow ">
+                    <!-- Placeholder while image is loading -->
+                    <div *ngIf="!category.imageLoaded " class="placeholder-glow ">
+                        <div class="placeholder rounded " style="width: 100%; height: 200px; "></div>
+                    </div>
+                    <!-- Image -->
+                    <img [hidden]="!category.imageLoaded " [src]="category.image " [class]="category.class " class="card-img-top " [alt]="category.title " (load)="onImageLoad(i) ">
+                    <div class="card-body portfolio-body ">
+                        <h5 class="card-title " [innerHTML]="(category.title | translate) "></h5>
+                        <p class="card-text " [innerHTML]="(category.description | translate) "></p>
+                        <button *ngIf="category.gallery " class="btn btn-outline-light mt-3 mb-4 " data-bs-toggle="modal " data-bs-target="#galleryModal " (click)="loadGallery(category) " [innerHTML]="( 'PORTFOLIO.btn-viewgallery' | translate) ">
                   </button>
-                    <a *ngIf="category.linkInternal" [routerLink]="category.linkInternal" class="btn btn-danger" [innerHTML]="('PORTFOLIO.btn-visit' | translate)">
-                    </a>
-                    <a *ngIf="category.link" [href]="category.link" class="btn btn-danger" target="_blank" [innerHTML]="('PORTFOLIO.btn-visit' | translate)">
-                    </a>
-                    <a *ngIf="category.download" [href]="category.download" class="btn btn-danger" download [innerHTML]="('PORTFOLIO.btn-download' | translate)">
-                    </a>
+                        <a *ngIf="category.linkInternal " [routerLink]="category.linkInternal " class="btn btn-outline-light mt-3 mb-4 " [innerHTML]="( 'PORTFOLIO.btn-visit' | translate) ">
+                        </a>
+                        <a *ngIf="category.link " [href]="category.link " class="btn btn-outline-light mt-3 mb-4" target="_blank " [innerHTML]="( 'PORTFOLIO.btn-visit' | translate) ">
+                        </a>
+                        <a *ngIf="category.download " [href]="category.download " class="btn btn-outline-light mt-3 mb-4" download [innerHTML]="( 'PORTFOLIO.btn-download' | translate) ">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Modal for Gallery -->
-    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="galleryModalLabel">{{ selectedCategory?.title }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade " id="galleryModal " tabindex="-1 " aria-labelledby="galleryModalLabel " aria-hidden="true ">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h5 class="modal-title " id="galleryModalLabel ">{{ selectedCategory?.title }}</h5>
+                    <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-6 col-md-4 mb-3" *ngFor="let image of selectedCategory?.gallery">
-                            <img [src]="image" class="img-fluid rounded gallery" alt="Gallery Image">
+                <div class="modal-body ">
+                    <div class="row ">
+                        <div class="col-6 col-md-4 mb-3 " *ngFor="let image of selectedCategory?.gallery ">
+                            <img [src]="image " class="img-fluid rounded gallery " alt="Gallery Image ">
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
                 </div>
             </div>
         </div>

@@ -332,7 +332,6 @@
         }
 
         .middle-content {
-            margin-top: 4rem;
             margin-bottom: 8rem;
         }
 
@@ -373,4 +372,20 @@
 
         .text-unamur {
             color: #4eb848;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.08);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pulse-icon {
+            animation: pulse 1.5s infinite ease-in-out;
         }
