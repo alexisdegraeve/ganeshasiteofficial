@@ -16,7 +16,7 @@ export class HeaderComponent {
   protected darkTheme: boolean = true;
   currentLang: string = 'en';
   translationsLoaded = false;
-
+  isDesktop = window.innerWidth >= 992;
 
   menuItems = [
     {
@@ -57,6 +57,9 @@ export class HeaderComponent {
   ];
 
   constructor(private themeService: ThemeService, private languageService: LanguageService, private translate: TranslateService) {  // Injectez le router et le ThemeService
+    window.addEventListener('resize', () => {
+      this.isDesktop = window.innerWidth >= 992;
+    });
     this.themeService.darkThemeSource$.subscribe((theme) => {
       this.darkTheme = theme;
     });
