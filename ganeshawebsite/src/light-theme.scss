@@ -1,6 +1,6 @@
 $primary-color:#dc3545;
 body.light-theme {
-    color: #000;
+    color: #fff;
     background-image: linear-gradient(to bottom, #bf52a5 0, #fe5c8a 69%, #ff9e53 80%, #ff9e53 100%);
     background-repeat: no-repeat;
     background-color: #ff9e53;
@@ -11,7 +11,7 @@ body.light-theme {
     --bg-header: #dc3545;
     --bs-body-color: black;
     --bs-body-bg: #fff;
-    --bs-heading-color: #dc3545;
+    --bs-heading-color: #ffc107;
     --bs-link-color: #b02a2a;
     --bs-link-hover-color: #dc3545;
     --bs-nav-link-color: #6d1919;
