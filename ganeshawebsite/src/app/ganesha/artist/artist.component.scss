@@ -396,12 +396,3 @@ h1 {
         }
     }
 }
-
-.artist-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* Aligne le bouton en bas */
-    min-height: calc(100% - 14rem);
-    /* Assure une hauteur uniforme */
-}

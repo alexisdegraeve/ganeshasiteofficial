@@ -334,3 +334,13 @@
     .space-top-8 {
         margin-top: 4rem;
     }
+
+    .portfolio-body,
+    .artist-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Aligne le bouton en bas */
+        min-height: calc(100% - 14rem);
+        /* Assure une hauteur uniforme */
+    }
