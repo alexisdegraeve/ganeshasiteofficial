@@ -29,9 +29,10 @@
             <div class="col-lg-4 col-md-6 mb-4" *ngFor="let card of musicData">
                 <div class="card h-100">
                     <div class="card-header d-flex align-items-center">
-                        <div class="card-header-icon" [class]="card.class">
-                            <i [class]="card.icon" class="circle-icon" *ngIf="card.icon && translationsLoaded "></i>
-                            <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
+                        <div [class]="card.class">
+                            <img [src]="card.image" class="img-preview" [alt]="card.title" *ngIf="card.image && translationsLoaded ">
+                            <i [class]="card?.icon" class="circle-icon" *ngIf="card.icon && translationsLoaded "></i>
+                            <div *ngIf="!translationsLoaded" class="skeleton skeleton-image-square"></div>
                         </div>
                     </div>
                     <div class="card-body artist-body">

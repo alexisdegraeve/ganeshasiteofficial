@@ -16,17 +16,19 @@ export class DesignerComponent {
 
   musicData = [
     {
-      icon: 'fa-brands fa-instagram',
+      icon: '',
+      image: 'assets/preview/unamur_logo.svg',
       title: 'DESIGNER.title-unamur',
       description: 'DESIGNER.resume-unamur',
-      class: 'instagram',
+      class: 'unamur',
       href: 'https://www.unamur.be/fr/info/etudes/info-hd'
     },
     {
-      icon: 'fa-brands fa-youtube', // Exemple d'icône FontAwesome
+      icon: '',
+      image: 'assets/preview/escape_game_chatbot_wide.png',
       title: 'DESIGNER.title-chatbot',
       description: 'DESIGNER.resume-chatbot',
-      class: 'youtube',
+      class: 'chatbot',
       href: 'https://researchportal.unamur.be/fr/studentTheses/%C3%A9tude-pr%C3%A9liminaire-pour-lint%C3%A9gration-dun-chatbot-comme-dispenseur'
     },
   ];
