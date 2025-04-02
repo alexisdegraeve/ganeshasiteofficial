@@ -4,38 +4,39 @@
             <img src="/assets/logo_ganesha.svg" alt="Ganesha logo" class="logo"> Ganesha
         </a>
 
-        <!-- Menu classique (desktop) -->
-        <div class="navbar-nav d-none d-lg-flex">
-            <ng-container *ngIf="translationsLoaded; else skeletonNav">
-                <a *ngFor="let item of menuItems" class="nav-link" [routerLink]="item.url" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                  {{ item.title | translate }}
-              </a>
-            </ng-container>
-            <!-- Skeleton pour le menu -->
-            <ng-template #skeletonNav>
-                <div *ngFor="let _ of [1,2,3,4,5]" class="skeleton skeleton-text skeleton-nav-item "></div>
-            </ng-template>
-        </div>
-
-        <!-- Bouton de sélection de langue -->
-        <div class="ms-auto d-none d-lg-flex ">
-            <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="darkTheme ? 'btn-dark' : 'btn-danger'">
-                {{ currentLang.toUpperCase() }}
-            </button>
-
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" (click)="switchLanguage('en')" [ngClass]="currentLang==='en' ? 'active' : ''">EN</a></li>
-                    <li><a class="dropdown-item" (click)="switchLanguage('fr')" [ngClass]="currentLang==='fr' ? 'active' : ''">FR</a></li>
-                    <li><a class="dropdown-item" (click)="switchLanguage('nl')" [ngClass]="currentLang==='nl' ? 'active' : ''">NL</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <!-- Bouton pour changer le thème -->
-        <button type="button " class="btn btn-lg d-none d-lg-flex border-0 " [ngClass]="!darkTheme ? 'btn-danger' : 'btn-link' " (click)="switchTheme() ">
-          <i class="fa-solid " [ngClass]="!darkTheme ? 'fa-moon' : 'fa-sun' "></i>
+        <!-- Bouton toggler (menu mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
 
-        <!-- Menu contextuel pour mobile -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Menu à gauche -->
+            <div class="navbar-nav">
+                <ng-container *ngIf="translationsLoaded; else skeletonNav">
+                    <a *ngFor="let item of menuItems" class="nav-link" [routerLink]="item.url" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                      {{ item.title | translate }}
+                  </a>
+                </ng-container>
+
+                <!-- Skeleton pour le menu -->
+                <ng-template #skeletonNav>
+                    <div *ngFor="let _ of [1,2,3,4,5]" class="skeleton skeleton-text skeleton-nav-item"></div>
+                </ng-template>
+            </div>
+
+            <!-- Dropdown à droite -->
+            <div class="ms-auto">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="darkTheme ? 'btn-dark' : 'btn-danger'">
+                      {{ currentLang.toUpperCase() }}
+                  </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" (click)="switchLanguage('en')" [ngClass]="currentLang==='en' ? 'active' : ''">EN</a></li>
+                        <li><a class="dropdown-item" (click)="switchLanguage('fr')" [ngClass]="currentLang==='fr' ? 'active' : ''">FR</a></li>
+                        <li><a class="dropdown-item" (click)="switchLanguage('nl')" [ngClass]="currentLang==='nl' ? 'active' : ''">NL</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

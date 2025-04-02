@@ -64,6 +64,9 @@ export class HeaderComponent {
       this.translationsLoaded = false;
       this.currentLang = lang;
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+      setTimeout(() => {
+        this.translationsLoaded = true;
+    }, 300); // 300ms de délai pour éviter un effet de latence visuelle
     });
 
     this.translate.get('MENU.home').subscribe(() => {
@@ -71,7 +74,9 @@ export class HeaderComponent {
     });
 
     this.translate.onLangChange.subscribe(() => {
-      this.translationsLoaded = true;
+      setTimeout(() => {
+        this.translationsLoaded = true;
+    }, 300); // 300ms de délai pour éviter un effet de latence visuelle
     });
 
   }
