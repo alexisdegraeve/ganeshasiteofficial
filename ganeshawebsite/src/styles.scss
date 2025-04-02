@@ -296,6 +296,19 @@
         }
     }
 
+    .anm-fadein {
+        animation: fadeIn 3s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
     .container-radius {
         border-top-right-radius: 3.125rem;
         border-left: 0.5rem solid #fff;
