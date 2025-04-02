@@ -1,0 +1,73 @@
+.human-container {
+    display: flex;
+    justify-content: center;
+    .quote {
+        max-width: 100%;
+        align-self: flex-start;
+        margin: 20px;
+        padding: 2rem;
+    }
+}
+
+.human {
+    height: 10rem;
+    width: 10rem;
+}
+
+.human-mask {
+    height: 12rem;
+    mask: url('/assets/manglobe.svg') no-repeat center;
+    -webkit-mask: url('/assets/manglobe.svg') no-repeat center;
+    mask-size: 8rem;
+    -webkit-mask-size: 8rem;
+    display: block;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 80% 80%;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+    /* Ajouter un trou en forme de cercle */
+}
+
+@media screen and (max-width: 700px) {
+    .human-mask {
+        mask-size: 8rem;
+        -webkit-mask-size: 8rem;
+    }
+}
+
+@-webkit-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+    50% {
+        background-position: 91% 100%
+    }
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@-moz-keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+    50% {
+        background-position: 91% 100%
+    }
+    100% {
+        background-position: 10% 0%
+    }
+}
+
+@keyframes Animation {
+    0% {
+        background-position: 10% 0%
+    }
+    50% {
+        background-position: 91% 100%
+    }
+    100% {
+        background-position: 10% 0%
+    }
+}

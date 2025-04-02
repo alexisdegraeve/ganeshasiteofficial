@@ -19,200 +19,36 @@
         </blockquote>
     </div>
 
-
-    <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let card of cardsData">
-            <div class="card h-100">
-                <div class="card-header d-flex align-items-center">
-                    <div class="card-header-icon">
-                        <div class="circle-header" *ngIf="translationsLoaded">
-                            <i [class]="card.icon" class="circle-icon" *ngIf="card.icon"></i>
-                            <img [src]="card.image" alt="Illustration" class="img-fluid mb-3" *ngIf="card.image">
+    <div class="middle-content">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let card of cardsData">
+                <div class="card h-100">
+                    <div class="card-header d-flex align-items-center">
+                        <div class="card-header-icon">
+                            <div class="circle-header" *ngIf="translationsLoaded">
+                                <i [class]="card.icon" class="circle-icon" *ngIf="card.icon"></i>
+                                <img [src]="card.image" alt="Illustration" class="img-fluid mb-3" *ngIf="card.image">
+                            </div>
+                            <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
                         </div>
-                        <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
                     </div>
-                </div>
-                <div class="card-body artist-body">
-                    <h5 class="card-title" *ngIf="translationsLoaded" [innerHTML]="card.title | translate"></h5>
-                    <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-                    <div *ngIf="translationsLoaded">
-                        <p class="card-text" [innerHTML]="card.description | translate"></p>
-                        <a *ngIf="card.url" [routerLink]="card.url" class="btn btn-outline-light mt-3 mb-4">
-                            <span>{{ 'ARTIST.btn-know-more' | translate }}</span> <i class="bi bi-chevron-right ms-2"></i>
-                        </a>
-                    </div>
-                    <div *ngIf="!translationsLoaded">
-                        <div class="skeleton skeleton-text"></div>
-                        <div class="skeleton skeleton-button"></div>
+                    <div class="card-body artist-body">
+                        <h5 class="card-title" *ngIf="translationsLoaded" [innerHTML]="card.title | translate"></h5>
+                        <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
+                        <div *ngIf="translationsLoaded">
+                            <p class="card-text" [innerHTML]="card.description | translate"></p>
+                            <a *ngIf="card.url" [routerLink]="card.url" class="btn btn-outline-light mt-3 mb-4">
+                                <span>{{ 'ARTIST.btn-know-more' | translate }}</span> <i class="bi bi-chevron-right ms-2"></i>
+                            </a>
+                        </div>
+                        <div *ngIf="!translationsLoaded">
+                            <div class="skeleton skeleton-text"></div>
+                            <div class="skeleton skeleton-button"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-    <div class="card mb-4">
-        <!-- Card Header -->
-        <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-music' | translate)"></h5>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-        </div>
-
-        <!-- Card Body -->
-        <div class="card-body">
-            <p class="card-text" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.music' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-        </div>
-
-        <!-- Card Footer avec les icônes -->
-        <div class="card-footer">
-            <ng-container *ngIf="translationsLoaded; else skeletonIcons">
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/alexisdegraeve/" role="button">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.youtube.com/@ganeshamusicme657" role="button">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </ng-container>
-
-            <!-- Skeleton pour les icônes -->
-            <ng-template #skeletonIcons>
-                <div class="skeleton skeleton-icon"></div>
-                <div class="skeleton skeleton-icon"></div>
-            </ng-template>
-        </div>
-    </div>
-
-
-    <div class="card mb-4">
-        <!-- Card Header -->
-        <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-aboutme' | translate)"></h5>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-        </div>
-
-        <!-- Card Body -->
-        <div class="card-body">
-            <p class="card-text" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.aboutme' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-        </div>
-
-        <!-- Card Footer avec le bouton -->
-        <div class="card-footer">
-            <a *ngIf="translationsLoaded" href="/about" class="btn btn-danger" [innerHTML]="('ARTIST.btn-aboutme' | translate)"></a>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-button"></div>
-        </div>
-    </div>
-
-
-    <div class="card mb-4">
-        <!-- Card Header -->
-        <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-animal' | translate)"></h5>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-        </div>
-
-        <!-- Card Body -->
-        <div class="card-body">
-            <div class="cat-container">
-                <div class="cat">
-                    <div class="cat-mask">
-                        <div *ngIf="translationsLoaded" class="animated-bg"></div>
-                        <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
-                    </div>
-                </div>
-                <blockquote class="quote">
-                    <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.citation-cat' | translate)"></p>
-                    <p *ngIf="!translationsLoaded" class="skeleton skeleton-text"></p>
-                    <cite *ngIf="translationsLoaded">— {{ ('ARTIST.MAGRITTE' | translate) }}</cite>
-                    <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-                </blockquote>
-            </div>
-
-            <!-- Card Text -->
-            <p *ngIf="translationsLoaded" class="card-text mt-4" [innerHTML]="('ARTIST.animal-1' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-
-            <p *ngIf="translationsLoaded" class="card-text" [innerHTML]="('ARTIST.animal-2' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-
-            <p *ngIf="translationsLoaded" class="card-text" [innerHTML]="('ARTIST.animal-3' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-
-            <p *ngIf="translationsLoaded" class="card-text" [innerHTML]="('ARTIST.animal-4' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-
-            <p *ngIf="translationsLoaded" class="card-text" [innerHTML]="('ARTIST.animal-5' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-
-            <p *ngIf="translationsLoaded" class="card-text mb-4" [innerHTML]="('ARTIST.animal-6' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-        </div>
-    </div>
-
-
-    <div class="card mb-4">
-        <!-- Card Header -->
-        <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-human' | translate)"></h5>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-        </div>
-
-        <!-- Card Body -->
-        <div class="card-body">
-            <div class="human-container">
-                <div class="human">
-                    <div class="human-mask">
-                        <div *ngIf="translationsLoaded" class="animated-bg"></div>
-                        <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
-                    </div>
-                </div>
-                <blockquote class="quote">
-                    <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.citation-human' | translate)"></p>
-                    <p *ngIf="!translationsLoaded" class="skeleton skeleton-text"></p>
-                    <cite *ngIf="translationsLoaded">— {{ ('ARTIST.MAGRITTE' | translate) }}</cite>
-                    <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-                </blockquote>
-            </div>
-
-            <!-- Card Text -->
-            <p *ngIf="translationsLoaded" class="card-text mt-4" [innerHTML]="('ARTIST.human-1' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-
-            <p *ngIf="translationsLoaded" class="card-text" [innerHTML]="('ARTIST.human-2' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-
-            <p *ngIf="translationsLoaded" class="card-text" [innerHTML]="('ARTIST.human-3' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-
-            <p *ngIf="translationsLoaded" class="card-text" [innerHTML]="('ARTIST.human-4' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-        </div>
-    </div>
-
-
-    <div class="card mb-4">
-        <!-- Card Header -->
-        <div class="card-header align-items-center d-flex">
-            <h5 class="text-warning card-title" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-writetome' | translate)"></h5>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-        </div>
-
-        <!-- Card Body -->
-        <div class="card-body">
-            <p *ngIf="translationsLoaded" class="card-text" [innerHTML]="('ARTIST.writetome' | translate)"></p>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
-        </div>
-
-        <!-- Card Footer -->
-        <div class="card-footer">
-            <a *ngIf="translationsLoaded" href="/contact" class="btn btn-danger" [innerHTML]="('ARTIST.btn-contact' | translate)">Contact</a>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-btn"></div>
-        </div>
-    </div>
-
 
 </div>

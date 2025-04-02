@@ -299,6 +299,9 @@
             .card-header-icon {
                 height: 100%;
             }
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .anm-fadein {
@@ -354,7 +357,7 @@
             height: 100%;
         }
 
-        h .space-top-8 {
+        .space-top-8 {
             margin-top: 4rem;
         }
 
