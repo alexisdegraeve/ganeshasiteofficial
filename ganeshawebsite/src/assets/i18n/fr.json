@@ -139,6 +139,10 @@
         "charsleft": "caractères restants"
     },
     "GAMES": {
+        "LangCards": {
+            "title": "Ganesha - Lang Cards",
+            "description": "Un jeu de flashcards pour apprendre les langues, notamment en néerlandais (niveau B 2.4), espagnol (niveau débutant) et anglais (niveau avancé). Un moyen ludique et efficace de renforcer ton vocabulaire tout en t'amusant !"
+        },
         "Gano": {
             "title": "Gano - Parodie d'Uno",
             "description": "Un jeu de cartes amusant inspiré du Uno, conçu et développé avec Angular 19 et Bootstrap. <strong>Maintenant disponible sur Tablette et Smartphone !</strong> J'ai entièrement revu le design pour une expérience encore meilleure. Amusez-vous bien. <em>GG (Good Game) !</em>"
