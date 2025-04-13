@@ -139,6 +139,10 @@
         "charsleft": "caractères restants"
     },
     "GAMES": {
+        "GaneshaOxo": {
+            "title": "Ganesha Oxo",
+            "description": "Le classique jeu OXO, entièrement designé et développé avec ReactJS 19. Compatible smartphone, rapide et fun. Bonne partie !"
+        },
         "LangCards": {
             "title": "Ganesha - Lang Cards",
             "description": "Un jeu de flashcards pour apprendre les langues, notamment en néerlandais (niveau B 2.4), espagnol (niveau débutant) et anglais (niveau avancé). Un moyen ludique et efficace de renforcer ton vocabulaire tout en t'amusant !"

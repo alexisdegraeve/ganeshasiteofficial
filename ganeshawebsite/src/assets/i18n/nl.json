@@ -140,6 +140,10 @@
         "charsleft": "tekens over"
     },
     "GAMES": {
+        "GaneshaOxo": {
+            "title": "Ganesha Oxo",
+            "description": "Het klassieke OXO-spel, volledig ontworpen en ontwikkeld met ReactJS 19. Smartphone-vriendelijk, snel en leuk. Veel speelplezier!"
+        },
         "LangCards": {
             "title": "Ganesha - Lang Cards",
             "description": "Een flashcardspel om talen te leren, waaronder Nederlands (niveau B 2.4), Spaans (beginnersniveau) en Engels (gevorderd niveau). Een leuke en speelse manier om je woordenschat te versterken!"
