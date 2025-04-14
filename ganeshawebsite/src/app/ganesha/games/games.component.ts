@@ -13,6 +13,14 @@ import { LanguageService } from 'src/app/shared/language.service';
 export class GamesComponent {
   games = [
     {
+      title: 'GAMES.GaneshaFour.title',  // Clé de traduction
+      description: 'GAMES.GaneshaFour.description',  // Clé de traduction
+      image: 'assets/img/ganesha_four.png',
+      playUrl: 'https://connectfour.ganesha.ovh/',
+      githubUrl: 'https://github.com/alexisdegraeve/ganeshafour',
+      imageLoaded: false
+    },
+    {
       title: 'GAMES.GaneshaOxo.title',  // Clé de traduction
       description: 'GAMES.GaneshaOxo.description',  // Clé de traduction
       image: 'assets/img/ganeshaoxo.png',

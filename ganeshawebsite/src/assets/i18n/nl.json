@@ -140,6 +140,10 @@
         "charsleft": "tekens over"
     },
     "GAMES": {
+        "GaneshaFour": {
+            "title": "Ganesha Four",
+            "description": "Een vernieuwde versie van Vier op een Rij, ontwikkeld met Angular 19 en Bootstrap 5.3.3. Design en animaties door mij ontworpen. Compatibel met smartphones. Good Game!"
+        },
         "GaneshaOxo": {
             "title": "Ganesha Oxo",
             "description": "Het klassieke OXO-spel, volledig ontworpen en ontwikkeld met ReactJS 19. Smartphone-vriendelijk, snel en leuk. Veel speelplezier!"

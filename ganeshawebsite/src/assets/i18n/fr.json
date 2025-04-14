@@ -139,6 +139,10 @@
         "charsleft": "caractères restants"
     },
     "GAMES": {
+        "GaneshaFour": {
+            "title": "Ganesha Four",
+            "description": "Le jeu du Puissance 4 revisité, développé avec Angular 19 et Bootstrap 5.3.3. Design et animations réalisés par mes soins. Compatible smartphone. Good Game !"
+        },
         "GaneshaOxo": {
             "title": "Ganesha Oxo",
             "description": "Le classique jeu OXO, entièrement designé et développé avec ReactJS 19. Compatible smartphone, rapide et fun. Bonne partie !"

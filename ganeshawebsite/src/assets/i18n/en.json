@@ -140,6 +140,10 @@
         "charsleft": "characters remaining"
     },
     "GAMES": {
+        "GaneshaFour": {
+            "title": "Ganesha Four",
+            "description": "A fresh take on Connect Four, developed using Angular 19 and Bootstrap 5.3.3. Design and animations crafted by me. Mobile-friendly. Good Game!"
+        },
         "GaneshaOxo": {
             "title": "Ganesha Oxo",
             "description": "The classic OXO game, fully designed and developed using ReactJS 19. Mobile-friendly, fast, and fun. Good game!"
