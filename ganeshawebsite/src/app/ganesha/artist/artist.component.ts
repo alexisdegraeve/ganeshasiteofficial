@@ -17,6 +17,12 @@ export class ArtistComponent {
 
   cardsData = [
     {
+      icon: 'bi bi-briefcase-fill', // Exemple d'icône FontAwesome
+      title: 'ARTIST.title-portfolio',
+      description: 'ARTIST.resume-portfolio',
+      url: '/portfolio'
+    },
+    {
       icon: 'bi bi-brush-fill', // Exemple d'icône FontAwesome
       title: 'ARTIST.title-expert',
       description: 'ARTIST.resume-expert',
