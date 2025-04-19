@@ -18,7 +18,14 @@ export class PortfolioComponent {
       image: 'assets/img/games.jpg',
       linkInternal: '/games',
       imageLoaded: false
-      },
+    },
+    {
+      title: 'PORTFOLIO.title-workshop',
+      description: 'PORTFOLIO.desc-workshop',
+      image: 'assets/img/designer.jpg',
+      linkInternal: '/games',
+      imageLoaded: false
+    },
     {
       title: 'PORTFOLIO.title-architecture',
       description: 'PORTFOLIO.desc-architecture',
@@ -42,12 +49,12 @@ export class PortfolioComponent {
       link: 'http://vigna.be',
       imageLoaded: false
     },
-    {
-      title: 'PORTFOLIO.title-expensemanagement',
-      description: 'PORTFOLIO.desc-expensemanagement',
-      image: 'assets/img/vigna_gestionfrais02.jpeg',
-      imageLoaded: false
-    },
+    // {
+    //   title: 'PORTFOLIO.title-expensemanagement',
+    //   description: 'PORTFOLIO.desc-expensemanagement',
+    //   image: 'assets/img/vigna_gestionfrais02.jpeg',
+    //   imageLoaded: false
+    // },
     {
       title: 'PORTFOLIO.title-promockup',
       description: 'PORTFOLIO.desc-promockup',
