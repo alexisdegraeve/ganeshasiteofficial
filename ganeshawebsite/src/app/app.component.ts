@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ThemeService } from './shared/theme.service';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -18,7 +18,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.isLoading = true;
   }
 
-  constructor(private themeService: ThemeService, translate: TranslateService) {
+  constructor(private themeService: ThemeService, translate: TranslateService, private cdr: ChangeDetectorRef) {
     // Vérifiez si la date actuelle est entre le 1er décembre et le 10 janvier
     const currentDate = new Date();
     const startDate = new Date(currentDate.getFullYear(), 11, 1); // 1er décembre
@@ -30,7 +30,10 @@ export class AppComponent implements OnInit, AfterViewInit {
     translate.use('en');
   }
   ngAfterViewInit(): void {
-    this.isLoading = false;
+    setTimeout(() => {
+      this.isLoading = false;
+      this.cdr.detectChanges(); // Déclenche un check manuel
+    });
   }
 
 
