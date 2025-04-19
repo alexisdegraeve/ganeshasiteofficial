@@ -23,7 +23,7 @@ export class PortfolioComponent {
       title: 'PORTFOLIO.title-workshop',
       description: 'PORTFOLIO.desc-workshop',
       image: 'assets/img/designer.jpg',
-      linkInternal: '/games',
+      linkInternal: '/workshop',
       imageLoaded: false
     },
     {
