@@ -1,1 +1,39 @@
-<p>workshop works!</p>
+<div class="container py-4">
+
+    <div class="general-container workshop-container">
+        <div class="rainbow-bg"></div>
+    </div>
+
+    <div *ngIf="selectedCategory" id="workshopCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div *ngFor="let image of selectedCategory.images; let i = index" [class]="'carousel-item' + (i === 0 ? ' active' : '')">
+
+                <div class="image-wrapper">
+                    <!-- Skeleton -->
+                    <div class="skeleton" [class.hidden]="image.imageLoaded">
+                        <div class="placeholder carousel-middle"></div>
+                    </div>
+
+                    <!-- Image -->
+                    <img [src]="image.img" [alt]="image.alt" (load)="onImageLoad(i)" class="carousel-image" [class.hidden]="!image.imageLoaded">
+                </div>
+
+                <div class="carousel-caption d-none d-md-block" [class.hidden]="!image.imageLoaded">
+                    <h5>{{ image.alt }}</h5>
+                    <p>{{ image.comment }}</p>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#workshopCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#workshopCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+</div>
