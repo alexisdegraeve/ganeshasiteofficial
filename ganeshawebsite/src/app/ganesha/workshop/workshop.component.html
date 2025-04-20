@@ -7,7 +7,7 @@
 
 
         <div *ngIf="selectedCategory?.images?.length" class="carousel-container">
-            <carousel [showIndicators]="true" [itemsPerSlide]="1" [singleSlideOffset]="false" [isAnimated]="false">
+            <carousel [showIndicators]="true" [itemsPerSlide]="1" [singleSlideOffset]="true" [isAnimated]="true" [interval]="10000">
                 <slide *ngFor="let image of selectedCategory.images">
                     <div class="image-wrapper">
                         <!-- Skeleton -->
@@ -18,8 +18,8 @@
                         <!-- Image -->
                         <div class="caption-image-wrapper" [class.hidden]="!image.imageLoaded">
                             <div class="caption-image" [class.hidden]="!image.imageLoaded">
-                                <h5>{{ image.alt }}</h5>
-                                <p>{{ image.comment }}</p>
+                                <h5>{{ image.alt | translate }}</h5>
+                                <p>{{ image.comment | translate }}</p>
                             </div>
 
                             <img [src]="image.img" [alt]="image.alt" (load)="onImageLoad(image)" class="carousel-image" [class.hidden]="!image.imageLoaded">

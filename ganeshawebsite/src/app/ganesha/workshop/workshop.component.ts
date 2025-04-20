@@ -18,20 +18,20 @@ export class WorkshopComponent  {
     images: [
       {
         img: 'assets/img/workshop/card.jpg',
-        alt: 'Changement de la couleur des yeux 1',
-        comment: 'Utilisation des modes de fusion et calques de réglage',
+        alt: 'alt-eye',
+        comment: 'comment-eye',
         imageLoaded: false
       },
       {
         img: 'assets/img/workshop/card.jpg',
-        alt: 'Changement de la couleur des yeux 2',
-        comment: 'Autre méthode avec masque',
+        alt: 'alt-masque',
+        comment: 'comment-masque',
         imageLoaded: false
       },
       {
         img: 'assets/img/workshop/card.jpg',
-        alt: 'Changement de la couleur des yeux 3',
-        comment: 'Encore une variation sympa',
+        alt: 'alt-variation',
+        comment: 'comment-variation',
         imageLoaded: false
       }
     ]

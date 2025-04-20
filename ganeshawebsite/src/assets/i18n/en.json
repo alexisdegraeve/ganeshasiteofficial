@@ -183,5 +183,13 @@
         "resume-unamur": "I completed a bachelor's and master's in computer science with an adjusted schedule at the University of Namur. A high-quality education I highly recommend!",
         "title-chatbot": "Chatbot dans un escape game",
         "resume-chatbot": "For my Master’s thesis at the University of Namur, I developed an immersive chatbot for an escape game, blending design and technology."
+    },
+    "WORSHOP": {
+        "alt-eye": "Changement de la couleur des yeux 1",
+        "comment-eye": "Utilisation des modes de fusion et calques de réglage",
+        "alt-masque": "Changement de la couleur des yeux 2",
+        "comment-masque": "Autre méthode avec masque",
+        "alt-variation": "Changement de la couleur des yeux 3",
+        "comment-variation": "Encore une variation sympa"
     }
 }
