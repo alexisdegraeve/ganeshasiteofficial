@@ -410,3 +410,10 @@
         color: white;
         /* Texte blanc */
     }
+
+    @media (max-width: 768px) {
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #252728;
+        }
+    }
