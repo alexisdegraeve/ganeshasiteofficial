@@ -22,7 +22,7 @@
                                 <p>{{ image.comment | translate }}</p>
                             </div>
 
-                            <img [src]="image.img" [alt]="image.alt" (load)="onImageLoad(image)" class="carousel-image" [class.hidden]="!image.imageLoaded">
+                            <img [src]="image.img" [alt]="image.alt" (click)="openModal(image)" (load)="onImageLoad(image)" class="carousel-image" [class.hidden]="!image.imageLoaded">
                         </div>
                     </div>
                 </slide>
@@ -30,3 +30,18 @@
         </div>
     </div>
 </div>
+
+<!-- Modal ngx-bootstrap -->
+<ng-template #modalTemplate>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{ selectedImage?.alt | translate }}</h5>
+                <button type="button" class="btn-close" aria-label="Close" (click)="closeModal()"></button>
+            </div>
+            <div class="modal-body">
+                <img [src]="selectedImage?.img" class="img-fluid" alt="Enlarged Image">
+            </div>
+        </div>
+    </div>
+</ng-template>

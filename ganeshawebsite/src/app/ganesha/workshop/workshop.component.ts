@@ -1,17 +1,21 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, TemplateRef, ViewChild } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
-import { CarouselConfig, CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { BsModalService, BsModalRef, ModalModule } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-workshop',
   templateUrl: './workshop.component.html',
-  imports: [CommonModule, TranslateModule, CarouselModule],
+  imports: [CommonModule, TranslateModule, CarouselModule, ModalModule ],
   styleUrls: ['./workshop.component.scss'],
 })
 export class WorkshopComponent  {
   selectedCategory: any = null;
+  selectedImage: any = null;
+  bsModalRef: BsModalRef | null = null;
+  @ViewChild('modalTemplate') modalTemplate!: TemplateRef<any>;
 
   category = {
     title: 'Photoshop: Changement des yeux',
@@ -37,7 +41,7 @@ export class WorkshopComponent  {
     ]
   };
 
-  constructor(private translate: TranslateService, private languageService: LanguageService, private cdr: ChangeDetectorRef) {
+  constructor(private translate: TranslateService, private languageService: LanguageService, private cdr: ChangeDetectorRef, private modalService: BsModalService) {
     this.languageService.currentLang$.subscribe((lang) => {
       this.translate.use(lang);
     });
@@ -55,4 +59,18 @@ export class WorkshopComponent  {
     image.imageLoaded = true;
     this.cdr.detectChanges();
   }
+
+
+ // Ouvrir le modal avec l'image sélectionnée
+ openModal(image: any): void {
+  this.selectedImage = image;
+  // Ouvrir le modal
+  this.bsModalRef = this.modalService.show(this.modalTemplate);
+}
+
+// Fermer le modal
+closeModal(): void {
+  this.bsModalRef?.hide();
+}
+
 }
