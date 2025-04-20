@@ -1,29 +1,33 @@
 <div class="container py-4">
-    <div class="general-container workshop-container">
-        <div class="rainbow-bg"></div>
-    </div>
+    <div class="carousel-wrapper">
+        <div class="general-container workshop-container">
+            <div class="rainbow-bg"></div>
+        </div>
 
 
 
-    <div *ngIf="selectedCategory?.images?.length" class="carousel-container">
-        <carousel [showIndicators]="true" [itemsPerSlide]="1" [singleSlideOffset]="true" [isAnimated]="true">
-            <slide *ngFor="let image of selectedCategory.images">
-                <div class="image-wrapper">
-                    <!-- Skeleton -->
-                    <div class="skeleton" [class.hidden]="image.imageLoaded">
-                        <div class="placeholder carousel-middle"></div>
+        <div *ngIf="selectedCategory?.images?.length" class="carousel-container">
+            <carousel [showIndicators]="true" [itemsPerSlide]="1" [singleSlideOffset]="true" [isAnimated]="false">
+                <slide *ngFor="let image of selectedCategory.images">
+                    <div class="image-wrapper">
+                        <!-- Skeleton -->
+                        <div class="skeleton" [class.hidden]="image.imageLoaded">
+                            <div class="placeholder carousel-middle"></div>
+                        </div>
+
+                        <!-- Image -->
+                        <div class="caption-image" [class.hidden]="!image.imageLoaded">
+                            <h5>{{ image.alt }}</h5>
+                            <p>{{ image.comment }}</p>
+                        </div>
+
+                        <img [src]="image.img" [alt]="image.alt" (load)="onImageLoad(image)" class="carousel-image" [class.hidden]="!image.imageLoaded">
+
+
+
                     </div>
-
-                    <!-- Image -->
-                    <img [src]="image.img" [alt]="image.alt" (load)="onImageLoad(image)" class="carousel-image" [class.hidden]="!image.imageLoaded">
-
-                    <!-- Caption -->
-                    <div class="carousel-caption d-none d-md-block" [class.hidden]="!image.imageLoaded">
-                        <h5>{{ image.alt }}</h5>
-                        <p>{{ image.comment }}</p>
-                    </div>
-                </div>
-            </slide>
-        </carousel>
+                </slide>
+            </carousel>
+        </div>
     </div>
 </div>

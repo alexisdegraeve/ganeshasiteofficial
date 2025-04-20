@@ -1,8 +1,9 @@
 .image-wrapper {
     position: relative;
-    height: 500px;
+    height: 17rem;
     overflow: hidden;
-    border-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     .carousel-image,
     .skeleton {
         position: absolute;
@@ -11,6 +12,7 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
+        object-position: center;
     }
     .skeleton {
         background-color: #e0e0e0;
@@ -42,9 +44,9 @@
 }
 
 .workshop-container {
-    height: 3rem;
-    border-left: 0.5rem solid rgba(150, 150, 150, 0.5);
+    height: 1rem;
     background: #ddd;
+    border-left: unset;
 }
 
 .rainbow-bg {
@@ -52,7 +54,7 @@
     height: 100%;
     background: linear-gradient(270deg, #ff5e62, #ff9966, #faff70, #00f2fe, #9b5de5);
     background-size: 1000% 1000%;
-    animation: rainbowFlow 20s ease infinite;
+    animation: rainbowFlow 120s ease infinite;
     padding-left: 1rem;
 }
 
@@ -107,10 +109,18 @@
     margin: auto;
     text-align: center;
     z-index: 300;
+    h5 {
+        color: #fff;
+    }
 }
 
 .carousel-container {
     position: relative;
+    background: #252728;
+    padding: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    z-index: 2;
     .carousel {
         width: 100%;
     }
@@ -120,4 +130,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carousel-wrapper {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 3rem;
+}
+
+.caption-image {
+    font-size: 1rem;
+    h5 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+    }
+    p {
+        font-size: 0.85rem;
+        color: #ccc;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-wrapper {
+        height: 22rem;
+    }
 }
