@@ -183,5 +183,13 @@
         "resume-unamur": "Ik heb een bachelor en master in informatica gevolgd in een aangepast uurrooster aan de Universiteit van Namen. Een kwaliteitsopleiding die ik sterk aanbeveel!",
         "title-chatbot": "Chatbot dans un escape game",
         "resume-chatbot": "Voor mijn masterproef aan de Universiteit van Namen ontwikkelde ik een meeslepende chatbot voor een escape game, waarbij ik design en technologie combineerde."
+    },
+    "WORSHOP": {
+        "alt-eye": "Changement de la couleur des yeux 1",
+        "comment-eye": "Utilisation des modes de fusion et calques de réglage",
+        "alt-masque": "Changement de la couleur des yeux 2",
+        "comment-masque": "Autre méthode avec masque",
+        "alt-variation": "Changement de la couleur des yeux 3",
+        "comment-variation": "Encore une variation sympa"
     }
 }

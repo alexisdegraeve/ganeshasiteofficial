@@ -18,20 +18,20 @@ export class WorkshopComponent  {
     images: [
       {
         img: 'assets/img/workshop/card.jpg',
-        alt: 'alt-eye',
-        comment: 'comment-eye',
+        alt: 'WORKSHOP.alt-eye',
+        comment: 'WORKSHOP.comment-eye',
         imageLoaded: false
       },
       {
         img: 'assets/img/workshop/card.jpg',
-        alt: 'alt-masque',
-        comment: 'comment-masque',
+        alt: 'WORKSHOP.alt-masque',
+        comment: 'WORKSHOP.comment-masque',
         imageLoaded: false
       },
       {
         img: 'assets/img/workshop/card.jpg',
-        alt: 'alt-variation',
-        comment: 'comment-variation',
+        alt: 'WORKSHOP.alt-variation',
+        comment: 'WORKSHOP.comment-variation',
         imageLoaded: false
       }
     ]
