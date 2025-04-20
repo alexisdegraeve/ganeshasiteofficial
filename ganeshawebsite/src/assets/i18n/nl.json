@@ -185,11 +185,14 @@
         "resume-chatbot": "Voor mijn masterproef aan de Universiteit van Namen ontwikkelde ik een meeslepende chatbot voor een escape game, waarbij ik design en technologie combineerde."
     },
     "WORKSHOP": {
-        "alt-eye": "Changement de la couleur des yeux 1",
-        "comment-eye": "Utilisation des modes de fusion et calques de réglage",
-        "alt-masque": "Changement de la couleur des yeux 2",
-        "comment-masque": "Autre méthode avec masque",
-        "alt-variation": "Changement de la couleur des yeux 3",
-        "comment-variation": "Encore une variation sympa"
+        "alt-eye-enhancement": "Oogverbetering",
+        "comment-eye-enhancement": "Liquify gebruikt voor stijlverandering en Healing Brush Tool voor het verminderen van sproeten.",
+
+        "alt-object-selection-mirror": "Objectselectiegereedschap & Spiegeleffect",
+        "comment-object-selection-mirror": "Objectselectiegereedschap toegepast en een fusie-masker gebruikt voor het spiegeleffect op de opdracht.",
+
+        "alt-color-overlay-destruction": "Kleuroverlay en tekstvernietiging",
+        "comment-color-overlay-destruction": "Kleuroverlay gebruikt via een fusie-masker en perspectief voor het effect van tekstvernietiging."
     }
+
 }

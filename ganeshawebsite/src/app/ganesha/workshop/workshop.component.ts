@@ -17,21 +17,21 @@ export class WorkshopComponent  {
     title: 'Photoshop: Changement des yeux',
     images: [
       {
-        img: 'assets/img/workshop/card.jpg',
-        alt: 'WORKSHOP.alt-eye',
-        comment: 'WORKSHOP.comment-eye',
+        img: 'assets/img/workshop/workshop_visage.jpg',
+        alt: 'WORKSHOP.alt-eye-enhancement',
+        comment: 'WORKSHOP.comment-eye-enhancement',
         imageLoaded: false
       },
       {
-        img: 'assets/img/workshop/card.jpg',
-        alt: 'WORKSHOP.alt-masque',
-        comment: 'WORKSHOP.comment-masque',
+        img: 'assets/img/workshop/workshop_barbie.jpg',
+        alt: 'WORKSHOP.alt-object-selection-mirror',
+        comment: 'WORKSHOP.comment-object-selection-mirror',
         imageLoaded: false
       },
       {
-        img: 'assets/img/workshop/card.jpg',
-        alt: 'WORKSHOP.alt-variation',
-        comment: 'WORKSHOP.comment-variation',
+        img: 'assets/img/workshop/workshop_taxi.jpg',
+        alt: 'WORKSHOP.alt-color-overlay-destruction',
+        comment: 'WORKSHOP.comment-color-overlay-destruction',
         imageLoaded: false
       }
     ]

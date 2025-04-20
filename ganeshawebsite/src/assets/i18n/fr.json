@@ -186,11 +186,13 @@
         "resume-chatbot": "Pour mon mémoire de Master à l'Université de Namur, j’ai développé un chatbot immersif pour un escape game, alliant design et technologie."
     },
     "WORKSHOP": {
-        "alt-eye": "Changement de la couleur des yeux 1",
-        "comment-eye": "Utilisation des modes de fusion et calques de réglage",
-        "alt-masque": "Changement de la couleur des yeux 2",
-        "comment-masque": "Autre méthode avec masque",
-        "alt-variation": "Changement de la couleur des yeux 3",
-        "comment-variation": "Encore une variation sympa"
+        "alt-eye-enhancement": "Amélioration des yeux",
+        "comment-eye-enhancement": "Utilisation de Liquify pour changer le style et du Healing Brush Tool pour réduire les taches de rousseur.",
+
+        "alt-object-selection-mirror": "Outil de sélection d'objet & Effet miroir",
+        "comment-object-selection-mirror": "Application de l'outil de sélection d'objet et utilisation d'un masque de fusion pour l'effet miroir sur la commande.",
+
+        "alt-color-overlay-destruction": "Incrustation de couleur et destruction du texte",
+        "comment-color-overlay-destruction": "Utilisation de l'incrustation de couleur via un masque de fusion et perspective pour l'effet de destruction du texte."
     }
 }

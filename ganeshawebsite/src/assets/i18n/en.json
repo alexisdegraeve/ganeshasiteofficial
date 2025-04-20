@@ -185,11 +185,11 @@
         "resume-chatbot": "For my Master’s thesis at the University of Namur, I developed an immersive chatbot for an escape game, blending design and technology."
     },
     "WORKSHOP": {
-        "alt-eye": "Changement de la couleur des yeux 1",
-        "comment-eye": "Utilisation des modes de fusion et calques de réglage",
-        "alt-masque": "Changement de la couleur des yeux 2",
-        "comment-masque": "Autre méthode avec masque",
-        "alt-variation": "Changement de la couleur des yeux 3",
-        "comment-variation": "Encore une variation sympa"
+        "alt-eye-enhancement": "What was done: Eye enhancement",
+        "comment-eye-enhancement": "Used Liquify for style change and Healing Brush Tool for freckle reduction.",
+        "alt-object-selection-mirror": "Object Selection Tool & Mirror Effect",
+        "comment-object-selection-mirror": "Applied Object Selection Tool and used a Fusion Mask for the mirror effect on the command.",
+        "alt-color-overlay-destruction": "Color Overlay and Text Destruction",
+        "comment-color-overlay-destruction": "Used Color Overlay via a Fusion Mask and Perspective for text destruction effect."
     }
 }
