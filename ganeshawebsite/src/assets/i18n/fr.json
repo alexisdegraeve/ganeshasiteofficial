@@ -193,6 +193,18 @@
         "comment-object-selection-mirror": "Application de l'outil de sélection d'objet et utilisation d'un masque de fusion pour l'effet miroir sur la commande.",
 
         "alt-color-overlay-destruction": "Incrustation de couleur et destruction du texte",
-        "comment-color-overlay-destruction": "Utilisation de l'incrustation de couleur via un masque de fusion et perspective pour l'effet de destruction du texte."
+        "comment-color-overlay-destruction": "Utilisation de l'incrustation de couleur via un masque de fusion et perspective pour l'effet de destruction du texte.",
+        "alt-clone-tool-photoshop": "Outil Tampon avec Photoshop",
+        "comment-clone-tool-photoshop": "Utilisation de l’outil Tampon pour corriger ou dupliquer des éléments de l’image.",
+
+        "alt-animal-relief-mask-shadow": "Animal en relief grâce au détourage et masque avec ombrage",
+        "comment-animal-relief-mask-shadow": "Détourage précis de l’animal et ajout d’un masque avec ombre pour effet de relief.",
+
+        "alt-bw-color-cover": "Réalisation d’une couverture couleur et noir & blanc",
+        "comment-bw-color-cover": "Création graphique combinant des zones en couleur et d'autres en noir & blanc pour un effet artistique.",
+
+        "alt-water-text-effect": "Effet de texte sur l'eau",
+        "comment-water-text-effect": "Ajout d’un effet de texte intégré à la surface de l’eau avec reflet et ondulation."
+
     }
 }

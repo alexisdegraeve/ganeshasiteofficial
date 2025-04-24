@@ -190,6 +190,18 @@
         "alt-object-selection-mirror": "Object Selection Tool & Mirror Effect",
         "comment-object-selection-mirror": "Applied Object Selection Tool and used a Fusion Mask for the mirror effect on the command.",
         "alt-color-overlay-destruction": "Color Overlay and Text Destruction",
-        "comment-color-overlay-destruction": "Used Color Overlay via a Fusion Mask and Perspective for text destruction effect."
+        "comment-color-overlay-destruction": "Used Color Overlay via a Fusion Mask and Perspective for text destruction effect.",
+        "alt-clone-tool-photoshop": "Clone Tool with Photoshop",
+        "comment-clone-tool-photoshop": "Used the Clone Tool to fix or duplicate parts of the image.",
+
+        "alt-animal-relief-mask-shadow": "Animal in relief using cut-out and shadow mask",
+        "comment-animal-relief-mask-shadow": "Accurate cut-out of the animal with a mask and shadow for a relief effect.",
+
+        "alt-bw-color-cover": "Creation of a cover in color and black & white",
+        "comment-bw-color-cover": "Graphic design combining color and black & white areas for an artistic effect.",
+
+        "alt-water-text-effect": "Text effect on water",
+        "comment-water-text-effect": "Added a text effect integrated into the water surface with reflection and ripple."
+
     }
 }

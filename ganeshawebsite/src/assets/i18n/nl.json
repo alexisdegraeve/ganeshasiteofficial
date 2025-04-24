@@ -192,7 +192,19 @@
         "comment-object-selection-mirror": "Objectselectiegereedschap toegepast en een fusie-masker gebruikt voor het spiegeleffect op de opdracht.",
 
         "alt-color-overlay-destruction": "Kleuroverlay en tekstvernietiging",
-        "comment-color-overlay-destruction": "Kleuroverlay gebruikt via een fusie-masker en perspectief voor het effect van tekstvernietiging."
+        "comment-color-overlay-destruction": "Kleuroverlay gebruikt via een fusie-masker en perspectief voor het effect van tekstvernietiging.",
+        "alt-clone-tool-photoshop": "Kloonstempel gereedschap met Photoshop",
+        "comment-clone-tool-photoshop": "Gebruik van het kloonstempel om beeldonderdelen te corrigeren of dupliceren.",
+
+        "alt-animal-relief-mask-shadow": "Dier in reliëf door uitsnijden en masker met schaduw",
+        "comment-animal-relief-mask-shadow": "Nauwkeurige uitsnijding van het dier met een masker en schaduw voor reliëfeffect.",
+
+        "alt-bw-color-cover": "Ontwerp van een cover in kleur en zwart-wit",
+        "comment-bw-color-cover": "Grafische creatie met gekleurde en zwart-witte zones voor een artistiek effect.",
+
+        "alt-water-text-effect": "Teksteffect op water",
+        "comment-water-text-effect": "Toevoegen van teksteffect op het wateroppervlak met reflectie en rimpeling."
+
     }
 
 }

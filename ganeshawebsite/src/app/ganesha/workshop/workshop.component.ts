@@ -37,6 +37,30 @@ export class WorkshopComponent  {
         alt: 'WORKSHOP.alt-color-overlay-destruction',
         comment: 'WORKSHOP.comment-color-overlay-destruction',
         imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_cat.jpg',
+        alt: 'WORKSHOP.alt-clone-tool-photoshop',
+        comment: 'WORKSHOP.comment-clone-tool-photoshop',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_computer.jpg',
+        alt: 'WORKSHOP.alt-animal-relief-mask-shadow',
+        comment: 'WORKSHOP.comment-animal-relief-mask-shadow',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_cover.jpg',
+        alt: 'WORKSHOP.alt-bw-color-cover',
+        comment: 'WORKSHOP.comment-bw-color-cover',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_water.jpg',
+        alt: 'WORKSHOP.alt-water-text-effect',
+        comment: 'WORKSHOP.comment-water-text-effect',
+        imageLoaded: false
       }
     ]
   };
