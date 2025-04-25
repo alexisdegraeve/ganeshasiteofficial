@@ -61,6 +61,36 @@ export class WorkshopComponent  {
         alt: 'WORKSHOP.alt-water-text-effect',
         comment: 'WORKSHOP.comment-water-text-effect',
         imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_dance.jpg',
+        alt: 'WORKSHOP.alt-dancer-mask',
+        comment: 'WORKSHOP.comment-dancer-mask',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_livingroom.jpg',
+        alt: 'WORKSHOP.alt-white-tiger-livingroom',
+        comment: 'WORKSHOP.comment-white-tiger-livingroom',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_alexis.jpg',
+        alt: 'WORKSHOP.alt-people-perspective-correction',
+        comment: 'WORKSHOP.comment-people-perspective-correction',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_panorama.jpg',
+        alt: 'WORKSHOP.alt-panorama-composition',
+        comment: 'WORKSHOP.comment-panorama-composition',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_sofa.jpg',
+        alt: 'WORKSHOP.alt-frame-ai-mask',
+        comment: 'WORKSHOP.comment-frame-ai-mask',
+        imageLoaded: false
       }
     ]
   };

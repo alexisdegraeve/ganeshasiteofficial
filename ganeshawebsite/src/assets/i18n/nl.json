@@ -203,7 +203,22 @@
         "comment-bw-color-cover": "Grafische creatie met gekleurde en zwart-witte zones voor een artistiek effect.",
 
         "alt-water-text-effect": "Teksteffect op water",
-        "comment-water-text-effect": "Toevoegen van teksteffect op het wateroppervlak met reflectie en rimpeling."
+        "comment-water-text-effect": "Toevoegen van teksteffect op het wateroppervlak met reflectie en rimpeling.",
+        "alt-dancer-mask": "Fusionmasker met dansers",
+        "comment-dancer-mask": "Een fusionmasker gebruikt om meerdere dansers visueel dynamisch samen te voegen.",
+
+        "alt-white-tiger-livingroom": "Woonkamer met witte tijger in reliëf",
+        "comment-white-tiger-livingroom": "Een fusionmasker en schaduwen toegepast om een witte tijger in een woonkamer te accentueren.",
+
+        "alt-people-perspective-correction": "Fusionmasker met mensen (foto rechtzetten)",
+        "comment-people-perspective-correction": "Een fusionmasker en perspectiefcorrectie gebruikt om een groepsfoto recht te zetten.",
+
+        "alt-panorama-composition": "Panorama en compositie met rechtgezette foto's",
+        "comment-panorama-composition": "Panoramacompositie gemaakt met meerdere foto’s en correctie van perspectief voor consistentie.",
+
+        "alt-frame-ai-mask": "Fusionmasker met kaders en AI-generatie",
+        "comment-frame-ai-mask": "AI-gegenereerde beelden geïntegreerd in kaders met een fusionmasker."
+
 
     }
 

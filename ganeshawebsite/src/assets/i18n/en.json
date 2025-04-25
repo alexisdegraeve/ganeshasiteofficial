@@ -201,7 +201,22 @@
         "comment-bw-color-cover": "Graphic design combining color and black & white areas for an artistic effect.",
 
         "alt-water-text-effect": "Text effect on water",
-        "comment-water-text-effect": "Added a text effect integrated into the water surface with reflection and ripple."
+        "comment-water-text-effect": "Added a text effect integrated into the water surface with reflection and ripple.",
+        "alt-dancer-mask": "Fusion Mask with dancers",
+        "comment-dancer-mask": "Used a Fusion Mask to blend multiple dancing figures for dynamic visual balance.",
+
+        "alt-white-tiger-livingroom": "Living room with white tiger in relief",
+        "comment-white-tiger-livingroom": "Applied a Fusion Mask and shadows to bring out a white tiger in a living room scene.",
+
+        "alt-people-perspective-correction": "Fusion Mask with people (photo straightening)",
+        "comment-people-perspective-correction": "Used a Fusion Mask and perspective correction to align multiple people in a group photo.",
+
+        "alt-panorama-composition": "Panorama and photo composition with straightening",
+        "comment-panorama-composition": "Created a panoramic composition with multiple photos and applied straightening tools for coherence.",
+
+        "alt-frame-ai-mask": "Fusion Mask with frames and AI-generated content",
+        "comment-frame-ai-mask": "Used Fusion Mask to integrate photo frames and AI-generated artwork seamlessly into a single image."
+
 
     }
 }

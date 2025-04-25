@@ -204,7 +204,22 @@
         "comment-bw-color-cover": "Création graphique combinant des zones en couleur et d'autres en noir & blanc pour un effet artistique.",
 
         "alt-water-text-effect": "Effet de texte sur l'eau",
-        "comment-water-text-effect": "Ajout d’un effet de texte intégré à la surface de l’eau avec reflet et ondulation."
+        "comment-water-text-effect": "Ajout d’un effet de texte intégré à la surface de l’eau avec reflet et ondulation.",
+        "alt-dancer-mask": "Masque de fusion avec des danseurs",
+        "comment-dancer-mask": "Utilisation d’un masque de fusion pour intégrer plusieurs danseurs avec un effet visuel dynamique.",
+
+        "alt-white-tiger-livingroom": "Salon avec tigre blanc en relief",
+        "comment-white-tiger-livingroom": "Ajout d’un masque de fusion et d’ombres pour faire ressortir un tigre blanc dans un salon.",
+
+        "alt-people-perspective-correction": "Masque de fusion avec des personnes (redressement de photo)",
+        "comment-people-perspective-correction": "Application d’un masque de fusion et correction de perspective pour redresser une photo de groupe.",
+
+        "alt-panorama-composition": "Panorama et composition avec redressement de photos",
+        "comment-panorama-composition": "Création d’un panorama à partir de plusieurs photos avec redressement pour plus de cohérence.",
+
+        "alt-frame-ai-mask": "Masque de fusion avec des cadres et génération IA",
+        "comment-frame-ai-mask": "Intégration d’images générées par IA dans des cadres à l’aide d’un masque de fusion."
+
 
     }
 }
