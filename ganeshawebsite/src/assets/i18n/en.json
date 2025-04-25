@@ -208,15 +208,13 @@
         "alt-white-tiger-livingroom": "Living room with white tiger in relief",
         "comment-white-tiger-livingroom": "Applied a Fusion Mask and shadows to bring out a white tiger in a living room scene.",
 
-        "alt-people-perspective-correction": "Fusion Mask with people (photo straightening)",
-        "comment-people-perspective-correction": "Used a Fusion Mask and perspective correction to align multiple people in a group photo.",
+        "alt-people-perspective-correction": "Fusion mask with one person (photo correction)",
+        "comment-people-perspective-correction": "Applied a fusion mask and perspective correction on a personal portrait.",
 
-        "alt-panorama-composition": "Panorama and photo composition with straightening",
-        "comment-panorama-composition": "Created a panoramic composition with multiple photos and applied straightening tools for coherence.",
+        "alt-panorama-composition": "Panorama and composition with photo correction",
+        "comment-panorama-composition": "Created a panorama from multiple photos with correction and an artificially generated sky.",
 
-        "alt-frame-ai-mask": "Fusion Mask with frames and AI-generated content",
-        "comment-frame-ai-mask": "Used Fusion Mask to integrate photo frames and AI-generated artwork seamlessly into a single image."
-
-
+        "alt-frame-ai-mask": "Fusion mask with frames and AI generation",
+        "comment-frame-ai-mask": "Integrated images into frames using a fusion mask and generated cats with AI."
     }
 }

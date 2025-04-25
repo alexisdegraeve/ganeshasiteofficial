@@ -211,15 +211,14 @@
         "alt-white-tiger-livingroom": "Salon avec tigre blanc en relief",
         "comment-white-tiger-livingroom": "Ajout d’un masque de fusion et d’ombres pour faire ressortir un tigre blanc dans un salon.",
 
-        "alt-people-perspective-correction": "Masque de fusion avec des personnes (redressement de photo)",
-        "comment-people-perspective-correction": "Application d’un masque de fusion et correction de perspective pour redresser une photo de groupe.",
+        "alt-people-perspective-correction": "Masque de fusion avec une personne (redressement de photo)",
+        "comment-people-perspective-correction": "Application d’un masque de fusion et correction de perspective sur une photo personnelle.",
 
         "alt-panorama-composition": "Panorama et composition avec redressement de photos",
-        "comment-panorama-composition": "Création d’un panorama à partir de plusieurs photos avec redressement pour plus de cohérence.",
+        "comment-panorama-composition": "Création d’un panorama à partir de plusieurs photos, avec redressement et ciel généré artificiellement.",
 
         "alt-frame-ai-mask": "Masque de fusion avec des cadres et génération IA",
-        "comment-frame-ai-mask": "Intégration d’images générées par IA dans des cadres à l’aide d’un masque de fusion."
-
+        "comment-frame-ai-mask": "Intégration d’images dans des cadres avec masque de fusion et génération de chats via IA."
 
     }
 }
