@@ -87,6 +87,18 @@ export class WorkshopComponent  {
         imageLoaded: false
       },
       {
+        img: 'assets/img/workshop/workshop_namur_panorama.jpg',
+        alt: 'WORKSHOP.alt-panorama-composition',
+        comment: 'WORKSHOP.comment-panorama-composition',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_namur_panorama_second.jpg',
+        alt: 'WORKSHOP.alt-panorama-composition',
+        comment: 'WORKSHOP.comment-panorama-composition',
+        imageLoaded: false
+      },
+      {
         img: 'assets/img/workshop/workshop_sofa.jpg',
         alt: 'WORKSHOP.alt-frame-ai-mask',
         comment: 'WORKSHOP.comment-frame-ai-mask',
