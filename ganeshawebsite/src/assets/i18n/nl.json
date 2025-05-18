@@ -65,8 +65,14 @@
     "PORTFOLIO": {
         "citation": "Eenvoud is het principe van kunst.",
 
-        "title-workshop": "Workshop",
-        "desc-workshop": "Grafische creaties uit mijn opleidingen, met een combinatie van techniek en creativiteit. Focus op Adobe-tools: Photoshop, Illustrator en InDesign.",
+        "title-workshop-photoshop": "Adobe Photoshop (Workshop)",
+        "desc-workshop-photoshop": "Grafische creaties uit mijn opleiding, waarbij techniek en creativiteit samenkomen.",
+
+        "title-workshop-indesign": "Adobe InDesign (Workshop)",
+        "desc-workshop-indesign": "Een tijdschrift van 4 pagina’s, een flyer en een poster ontworpen — een combinatie van techniek en creativiteit.",
+
+        "title-workshop-illustrator": "Adobe Illustrator (Workshop)",
+        "desc-workshop-illustrator": "Ontwerpen van iconen en vectorillustraties — een mix van technische vaardigheid en creativiteit.",
 
         "title-games": "Games",
         "desc-games": "Als ontwerper en ontwikkelaar maak ik interactieve spellen met zorgvuldig design, volledig responsive op alle apparaten. Technologieën: Angular en ReactJS voor hoge prestaties en soepele interactie.",

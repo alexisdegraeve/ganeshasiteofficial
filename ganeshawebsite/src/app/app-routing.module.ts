@@ -16,7 +16,9 @@ import { DesignerComponent } from './ganesha/designer/designer.component';
 import { MusicComponent } from './ganesha/music/music.component';
 import { AnimalComponent } from './ganesha/animal/animal.component';
 import { HumanComponent } from './ganesha/human/human.component';
-import { WorkshopComponent } from './ganesha/workshop/workshop.component';
+import { AdobePhotoshopComponent } from './adobe-photoshop/adobe-photoshop.component';
+import { AdobeInDesignComponent } from './adobe-in-design/adobe-in-design.component';
+import { AdobeIllustratorComponent } from './adobe-illustrator/adobe-illustrator.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -35,7 +37,9 @@ const routes: Routes = [
   { path: 'music', component: MusicComponent },
   { path: 'animal', component: AnimalComponent },
   { path: 'human', component: HumanComponent },
-  { path: 'workshop', component: WorkshopComponent },
+  { path: 'photoshop', component: AdobePhotoshopComponent },
+  { path: 'indesign', component: AdobeInDesignComponent },
+  { path: 'illustrator', component: AdobeIllustratorComponent },
   { path: '**', component: NotfoundComponent } // Route 404 pour URL incorrecte
 ];
 

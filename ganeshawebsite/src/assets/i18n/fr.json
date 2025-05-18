@@ -65,9 +65,14 @@
     "PORTFOLIO": {
         "citation": "La simplicité est le principe de l'art.",
 
-        "title-workshop": "Workshop",
-        "desc-workshop": "Réalisations graphiques issues de mes formations, alliant technique et créativité. Focus sur les outils Adobe: Photoshop, Illustrator et InDesign.",
+        "title-workshop-photoshop": "Adobe Photoshop (Workshop)",
+        "desc-workshop-photoshop": "Créations graphiques issues de mes sessions de formation, alliant technique et créativité.",
 
+        "title-workshop-indesign": "Adobe InDesign (Workshop)",
+        "desc-workshop-indesign": "Création d’un magazine de 4 pages, d’un flyer et d’une affiche — alliant technique et créativité.",
+
+        "title-workshop-illustrator": "Adobe Illustrator (Workshop)",
+        "desc-workshop-illustrator": "Création d’icônes et de dessins vectoriels — un mélange de compétence technique et de créativité.",
 
         "title-games": "Games",
         "desc-games": "En tant que designer et développeur, je crée des jeux interactifs avec un design soigné, responsives sur tous les appareils. Technologies: Angular et ReactJS pour garantir des performances élevées et une expérience fluide.",

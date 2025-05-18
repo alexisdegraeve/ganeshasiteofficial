@@ -20,10 +20,24 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
-      title: 'PORTFOLIO.title-workshop',
-      description: 'PORTFOLIO.desc-workshop',
+      title: 'PORTFOLIO.title-workshop-photoshop',
+      description: 'PORTFOLIO.desc-workshop-photoshop',
       image: 'assets/img/designer.jpg',
-      linkInternal: '/workshop',
+      linkInternal: '/photoshop',
+      imageLoaded: false
+    },
+    {
+      title: 'PORTFOLIO.title-workshop-indesign',
+      description: 'PORTFOLIO.desc-workshop-indesign',
+      image: 'assets/img/designer.jpg',
+      linkInternal: '/indesign',
+      imageLoaded: false
+    },
+    {
+      title: 'PORTFOLIO.title-workshop-illustrator',
+      description: 'PORTFOLIO.desc-workshop-illustrator',
+      image: 'assets/img/designer.jpg',
+      linkInternal: '/illustrator',
       imageLoaded: false
     },
     {
