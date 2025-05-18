@@ -1,1 +1,29 @@
-<p>adobe-in-design works!</p>
+<div class="container py-4">
+    <div class="mb-5">
+        <blockquote class="blockquote">
+            <p class="mb-3 fst-italic">
+                <i class="bi bi-apple me-2"></i> "Design is not just what it looks like and feels like. Design is how it works."
+            </p>
+            <footer class="blockquote-footer">
+                Steve Jobs
+            </footer>
+        </blockquote>
+    </div>
+
+    <!-- Galerie d'images -->
+    <div class="row g-4">
+        <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
+            <div class="card shadow-sm position-relative" (click)="openImageInModal(image)">
+                <div class="card-body">
+                    <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded">
+                    <div class="overlay"></div>
+                </div>
+                <div class="card-footer p-2">
+                    <p class="card-text text-center">{{ image.alt }}</p>
+                    <a *ngIf="image.pdf " [href]="image.pdf " class="btn btn-outline-light mt-3 mb-4" download [innerHTML]="( 'PORTFOLIO.btn-download' | translate) ">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
