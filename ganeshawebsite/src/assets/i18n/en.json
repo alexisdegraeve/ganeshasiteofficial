@@ -222,5 +222,12 @@
 
         "alt-frame-ai-mask": "Fusion mask with frames and AI generation",
         "comment-frame-ai-mask": "Integrated images into frames using a fusion mask and generated cats with AI."
+    },
+    "INDESIGN": {
+        "quote-vogue": "'Vogue' is the best of everything that fashion can offer, and I think we point the way. We are, you know, a glamorous girlfriend.",
+        "alt-poster-games": "Video Games Festival (Poster)",
+        "alt-flyer-games": "Video Games Festival (Flyer)",
+        "alt-magazine-travel": "Alexis Voyage (Travel Magazine)"
     }
+
 }

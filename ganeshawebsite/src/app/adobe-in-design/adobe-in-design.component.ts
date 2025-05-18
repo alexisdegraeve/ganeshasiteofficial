@@ -18,9 +18,9 @@ export class AdobeInDesignComponent {
     {
       title: 'Logos',
       images: [
-        { url: 'assets/pdf/alexis_video_poster.pdf', pdf: 'assets/pdf/jeux_video_poster.pdf', alt: 'Poster Games' },
-        { url: 'assets/pdf/alexis_games_flyer.pdf', pdf: 'assets/pdf/games_flyer.pdf', alt: 'Flyer Games' },
-        { url: 'assets/pdf/alexis_magazine_voyage_05.pdf', pdf: 'assets/pdf/magazine_voyage.pdf', alt: 'Travel Magazine' },
+        { url: 'assets/img/preview_poster_jeux_video.jpg', pdf: 'assets/pdf/jeux_video_poster.pdf', alt: 'INDESIGN.alt-poster-games' },
+        { url: 'assets/img/preview_flyer_jeux_video.jpg', pdf: 'assets/pdf/games_flyer.pdf', alt: 'INDESIGN.alt-flyer-games' },
+        { url: 'assets/img/preview_magazine_voyage.jpg', pdf: 'assets/pdf/magazine_voyage.pdf', alt: 'INDESIGN.alt-magazine-travel' },
       ]
     }
   ];

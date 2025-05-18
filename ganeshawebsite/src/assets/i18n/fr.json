@@ -224,6 +224,12 @@
 
         "alt-frame-ai-mask": "Masque de fusion avec des cadres et génération IA",
         "comment-frame-ai-mask": "Intégration d’images dans des cadres avec masque de fusion et génération de chats via IA."
+    },
+    "INDESIGN": {
+        "quote-vogue": "'Vogue', c’est le meilleur de tout ce que la mode peut offrir, et je pense que nous montrons la voie. Nous sommes, vous savez, une petite amie glamour.",
 
+        "alt-poster-games": "Festival de Jeux Vidéo (Poster)",
+        "alt-flyer-games": "Festival de Jeux Vidéo (Flyer)",
+        "alt-magazine-travel": "Alexis Voyage (Magazine de voyage)"
     }
 }

@@ -226,8 +226,13 @@
         "alt-frame-ai-mask": "Fusionmasker met kaders en AI-generatie",
         "comment-frame-ai-mask": "Beelden geïntegreerd in kaders met een fusionmasker en katten gegenereerd via AI."
 
+    },
+    "INDESIGN": {
+        "quote-vogue": "'Vogue' is het beste van alles wat mode te bieden heeft, en ik denk dat wij de richting aangeven. We zijn, weet je, een glamoureuze vriendin.",
 
-
+        "alt-poster-games": "Videogamefestival (Poster)",
+        "alt-flyer-games": "Videogamefestival (Flyer)",
+        "alt-magazine-travel": "Alexis Voyage (Reismagazine)"
     }
 
 }

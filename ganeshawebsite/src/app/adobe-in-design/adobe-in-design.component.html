@@ -2,10 +2,10 @@
     <div class="mb-5">
         <blockquote class="blockquote">
             <p class="mb-3 fst-italic">
-                <i class="bi bi-apple me-2"></i> "Design is not just what it looks like and feels like. Design is how it works."
+                <i class="bi bi-apple me-2"></i> {{ 'INDESIGN.quote-vogue' | translate }}
             </p>
             <footer class="blockquote-footer">
-                Steve Jobs
+                Anna Wintour
             </footer>
         </blockquote>
     </div>
@@ -19,7 +19,7 @@
                     <div class="overlay"></div>
                 </div>
                 <div class="card-footer p-2">
-                    <p class="card-text text-center">{{ image.alt }}</p>
+                    <p class="card-text text-center">{{ image.alt | translate}}</p>
                     <a *ngIf="image.pdf " [href]="image.pdf " class="btn btn-outline-light mt-3 mb-4" download [innerHTML]="( 'PORTFOLIO.btn-download' | translate) ">
                     </a>
                 </div>
