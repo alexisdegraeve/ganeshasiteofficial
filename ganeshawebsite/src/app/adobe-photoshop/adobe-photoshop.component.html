@@ -1,1 +1,32 @@
-<p>adobe-photoshop works!</p>
+<div class="container py-4">
+    <div class="carousel-wrapper">
+        <div class="general-container workshop-container">
+            <div class="rainbow-bg"></div>
+        </div>
+
+
+
+        <div *ngIf="selectedCategory?.images?.length" class="carousel-container">
+            <carousel [showIndicators]="true" [itemsPerSlide]="1" [singleSlideOffset]="true" [isAnimated]="true" [interval]="10000">
+                <slide *ngFor="let image of selectedCategory.images">
+                    <div class="image-wrapper">
+                        <!-- Skeleton -->
+                        <div class="skeleton" [class.hidden]="image.imageLoaded">
+                            <div class="placeholder carousel-middle"></div>
+                        </div>
+
+                        <!-- Image -->
+                        <div class="caption-image-wrapper" [class.hidden]="!image.imageLoaded">
+                            <div class="caption-image" [class.hidden]="!image.imageLoaded">
+                                <h5>{{ image.alt | translate }}</h5>
+                                <p>{{ image.comment | translate }}</p>
+                            </div>
+
+                            <img [src]="image.img" [alt]="image.alt" (load)="onImageLoad(image)" class="carousel-image" [class.hidden]="!image.imageLoaded">
+                        </div>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+    </div>
+</div>
