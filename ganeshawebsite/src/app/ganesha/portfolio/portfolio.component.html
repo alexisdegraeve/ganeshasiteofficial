@@ -18,23 +18,27 @@
         <div class=" row g-4 ">
             <!-- Card Template -->
             <div class="col-md-4 " *ngFor="let category of categories; let i=index ">
-                <div class="card shadow ">
+                <div class="card h-100 shadow ">
                     <!-- Placeholder while image is loading -->
                     <div *ngIf="!category.imageLoaded " class="placeholder-glow ">
                         <div class="placeholder rounded " style="width: 100%; height: 200px; "></div>
                     </div>
                     <!-- Image -->
-                    <img [hidden]="!category.imageLoaded " [src]="category.image " [class]="category.class " class="card-img-top " [alt]="category.title " (load)="onImageLoad(i) ">
-                    <div class="card-body portfolio-body ">
+                    <div class="img-container" [hidden]="!category.imageLoaded ">
+                        <img [hidden]="!category.imageLoaded " [src]="category.image " [class]="category.class " class="card-img-top " [alt]="category.title " (load)="onImageLoad(i) ">
+                    </div>
+
+                    <div class="card-body flex-grow-1 portfolio-body">
                         <h5 class="card-title " [innerHTML]="(category.title | translate) "></h5>
                         <p class="card-text " [innerHTML]="(category.description | translate) "></p>
-                        <button *ngIf="category.gallery " class="btn btn-outline-light mt-3 mb-4 " data-bs-toggle="modal " data-bs-target="#galleryModal " (click)="loadGallery(category) " [innerHTML]="( 'PORTFOLIO.btn-viewgallery' | translate) ">
+                        <div class="skeleton skeleton-button btn btn-outline-light mt-3 mb-4" *ngIf="!category.imageLoaded "></div>
+                        <button [hidden]="!category.imageLoaded " *ngIf="category.gallery " class="btn btn-outline-light mt-3 mb-4 " data-bs-toggle="modal " data-bs-target="#galleryModal " (click)="loadGallery(category) " [innerHTML]="( 'PORTFOLIO.btn-viewgallery' | translate) ">
                   </button>
-                        <a *ngIf="category.linkInternal " [routerLink]="category.linkInternal " class="btn btn-outline-light mt-3 mb-4 " [innerHTML]="( 'PORTFOLIO.btn-visit' | translate) ">
+                        <a [hidden]="!category.imageLoaded " *ngIf="category.linkInternal " [routerLink]="category.linkInternal " class="btn btn-outline-light mt-3 mb-4 " [innerHTML]="( 'PORTFOLIO.btn-visit' | translate) ">
                         </a>
-                        <a *ngIf="category.link " [href]="category.link " class="btn btn-outline-light mt-3 mb-4" target="_blank " [innerHTML]="( 'PORTFOLIO.btn-visit' | translate) ">
+                        <a [hidden]="!category.imageLoaded " *ngIf="category.link " [href]="category.link " class="btn btn-outline-light mt-3 mb-4" target="_blank " [innerHTML]="( 'PORTFOLIO.btn-visit' | translate) ">
                         </a>
-                        <a *ngIf="category.download " [href]="category.download " class="btn btn-outline-light mt-3 mb-4" download [innerHTML]="( 'PORTFOLIO.btn-download' | translate) ">
+                        <a [hidden]="!category.imageLoaded " *ngIf="category.download " [href]="category.download " class="btn btn-outline-light mt-3 mb-4" download [innerHTML]="( 'PORTFOLIO.btn-download' | translate) ">
                         </a>
                     </div>
                 </div>

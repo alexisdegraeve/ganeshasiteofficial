@@ -37,6 +37,12 @@
     object-fit: contain !important;
 }
 
+.logo-adobe {
+    object-fit: contain !important;
+    height: 8rem !important;
+    width: 8rem !important;
+}
+
 .gallery {
     max-width: 30rem;
 }
@@ -104,4 +110,12 @@
     100% {
         clip-path: circle(15rem at -15rem center);
     }
+}
+
+.img-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
 }

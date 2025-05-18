@@ -29,15 +29,17 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-workshop-indesign',
       description: 'PORTFOLIO.desc-workshop-indesign',
-      image: 'assets/img/designer.jpg',
+      image: 'assets/img/logo_indesign.svg',
       linkInternal: '/indesign',
+      class: 'logo-adobe',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-workshop-illustrator',
       description: 'PORTFOLIO.desc-workshop-illustrator',
-      image: 'assets/img/designer.jpg',
-      linkInternal: '/illustrator',
+      image: 'assets/img/logo_illustrator.svg',
+      class: 'logo-adobe',
+      // linkInternal: '/illustrator',
       imageLoaded: false
     },
     {
