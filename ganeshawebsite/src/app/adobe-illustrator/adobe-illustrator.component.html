@@ -1,1 +1,41 @@
-<p>adobe-illustrator works!</p>
+<div class="container py-4">
+    <div class="mb-5">
+        <blockquote class="blockquote">
+            <p class="mb-3 fst-italic">
+                <i class="bi bi-apple me-2"></i> "Design is not just what it looks like and feels like. Design is how it works."
+            </p>
+            <footer class="blockquote-footer">
+                Steve Jobs
+            </footer>
+        </blockquote>
+    </div>
+
+    <!-- Galerie d'images -->
+    <div class="row g-4">
+        <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
+            <div class="card shadow-sm position-relative" (click)="openImageInModal(image)">
+                <div class="card-body">
+                    <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded">
+                    <div class="overlay"></div>
+                </div>
+                <div class="card-footer p-2">
+                    <p class="card-text text-center">{{ image.alt }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for displaying large images -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="galleryModalLabel">{{ selectedImage?.alt }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img *ngIf="selectedImage" [src]="selectedImage.url" class="img-fluid rounded" alt="{{ selectedImage.alt }}">
+            </div>
+        </div>
+    </div>

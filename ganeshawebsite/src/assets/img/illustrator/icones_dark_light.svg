@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318 277">
+  <defs>
+    <style>
+      .a {
+        fill: #657cbc;
+      }
+
+      .b, .c, .e, .j {
+        fill: #fff;
+      }
+
+      .c, .e, .f, .h, .i, .j {
+        stroke: #1d1d1b;
+      }
+
+      .c, .e, .f, .g, .h, .i, .j {
+        stroke-miterlimit: 10;
+      }
+
+      .d {
+        fill: #1d1d1b;
+      }
+
+      .e {
+        stroke-width: 0.35px;
+      }
+
+      .f, .g, .h, .i {
+        fill: none;
+      }
+
+      .g {
+        stroke: #000;
+        stroke-width: 0.94px;
+      }
+
+      .h {
+        stroke-width: 0.24px;
+      }
+
+      .i {
+        stroke-width: 0.28px;
+      }
+
+      .j {
+        stroke-width: 0.25px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="a" x="21" y="6" width="99" height="99.21"/>
+    <path class="b" d="M0,0ZM0,0ZM0,0ZM0,0ZM0,0Z" transform="translate(-88 -150)"/>
+    <path class="c" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path class="c" d="M0,0Z" transform="translate(-88 -150)"/>
+    <circle class="d" cx="129" cy="140" r="5"/>
+    <circle class="e" cx="129" cy="140" r="2"/>
+    <g>
+      <polygon class="c" points="20 198 20 194 2 194 2 206 5 206 5 198 20 198"/>
+      <polygon class="c" points="20 198 20 206 5 206 5 210 24 210 24 198 20 198"/>
+      <rect class="d" x="5" y="198" width="14" height="8.49"/>
+    </g>
+    <circle class="d" cx="64" cy="196" r="2"/>
+    <circle class="d" cx="76" cy="197" r="2"/>
+    <circle class="d" cx="70" cy="202" r="1"/>
+    <path class="d" d="M0,0Z" transform="translate(-88 -150)"/>
+    <rect class="f" x="1" y="131" width="24" height="16.9"/>
+    <path class="d" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path class="d" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path class="d" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path class="d" d="M0,0Z" transform="translate(-88 -150)"/>
+    <g>
+      <polyline class="f" points="126 195 116 195 116 212 126 212"/>
+      <polyline class="f" points="133 212 141 212 141 195 133 195"/>
+    </g>
+    <path class="f" d="M0,0Z" transform="translate(-88 -150)"/>
+    <circle class="d" cx="70" cy="259" r="2"/>
+    <line class="f" x1="68" y1="268" x2="72" y2="268"/>
+    <line class="f" x1="70" y1="269" x2="70" y2="266"/>
+    <line class="f" x1="68" y1="273" x2="72" y2="273"/>
+    <path class="f" d="M0,0Z" transform="translate(-88 -150)"/>
+    <circle class="f" cx="70" cy="259" r="6"/>
+    <circle class="d" cx="129" cy="261" r="4"/>
+    <path class="d" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path d="M0,0Z" transform="translate(-88 -150)"/>
+    <circle cx="250" cy="10" r="10"/>
+    <path d="M0,0Z" transform="translate(-88 -150)"/>
+    <rect class="g" x="181" y="135" width="19" height="12.33"/>
+    <polygon points="254 135 251 135 251 131 249 131 249 135 246 135 246 137 249 137 249 140 251 140 251 137 254 137 254 135"/>
+    <path d="M0,0ZM0,0Z" transform="translate(-88 -150)"/>
+    <path class="d" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path class="d" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path d="M0,0Z" transform="translate(-88 -150)"/>
+    <path class="f" d="M0,0ZM0,0ZM0,0Z" transform="translate(-88 -150)"/>
+    <line class="f" x1="178" y1="205" x2="178" y2="201"/>
+    <path class="h" d="M0,0H0" transform="translate(-88 -150)"/>
+    <path class="d" d="M0,0ZM0,0Z" transform="translate(-88 -150)"/>
+    <line class="i" x1="199" y1="269" x2="197" y2="268"/>
+    <path class="h" d="M0,0" transform="translate(-88 -150)"/>
+    <path class="h" d="M0,0" transform="translate(-88 -150)"/>
+    <line class="h" x1="200" y1="266" x2="200" y2="266"/>
+    <path class="h" d="M0,0" transform="translate(-88 -150)"/>
+    <polygon class="d" points="194 268 195 264 195 262 190 262 192 257 189 257 187 264 188 264 190 264 192 264 191 268 187 268 191 273 196 268 194 268"/>
+    <rect class="d" x="250" y="268" width="10" height="1.4"/>
+    <polygon class="d" points="250 264 255 266 255 262 250 264"/>
+    <polygon class="d" points="255 264 259 266 259 262 255 264"/>
+    <path class="d" d="M0,0ZM0,0Z" transform="translate(-88 -150)"/>
+    <circle class="d" cx="244" cy="265" r="1"/>
+    <path class="f" d="M0,0V0H0V0Z" transform="translate(-88 -150)"/>
+    <path class="j" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path class="j" d="M0,0Z" transform="translate(-88 -150)"/>
+    <path class="f" d="M0,0H0V0Z" transform="translate(-88 -150)"/>
+    <rect class="d" x="302" y="260" width="2" height="3.78"/>
+    <rect class="d" x="310" y="260" width="2" height="3.78"/>
+    <rect class="d" x="302" y="266" width="4" height="0.91"/>
+    <polygon class="d" points="312 266 312 265 311 265 311 266 309 266 309 267 311 267 311 269 312 269 312 267 313 267 313 266 312 266"/>
+    <path class="d" d="M0,0ZM0,0Z" transform="translate(-88 -150)"/>
+    <polygon points="313 198 313 200 313 201 313 207 302 207 301 207 299 207 299 209 315 209 315 198 313 198"/>
+    <polygon points="316 202 316 204 316 204 316 211 305 211 304 211 302 211 302 212 318 212 318 202 316 202"/>
+  </g>
+</svg>

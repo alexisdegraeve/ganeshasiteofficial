@@ -39,7 +39,7 @@ export class PortfolioComponent {
       description: 'PORTFOLIO.desc-workshop-illustrator',
       image: 'assets/img/logo_illustrator.svg',
       class: 'logo-adobe',
-      // linkInternal: '/illustrator',
+      linkInternal: '/illustrator',
       imageLoaded: false
     },
     {
