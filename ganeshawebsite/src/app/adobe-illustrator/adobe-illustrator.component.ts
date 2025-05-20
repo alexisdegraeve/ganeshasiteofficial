@@ -17,10 +17,10 @@ export class AdobeIllustratorComponent {
     {
       title: 'Logos',
       images: [
-        { url: 'assets/img/illustrator/icones_dark_light.png', alt: 'Logos Light Mode / Dark Mode', class: 'icones_dark_light' },
-        { url: 'assets/img/illustrator/cat.svg', alt: 'Logos Light Mode / Dark Mode', class: 'cat' },
-        { url: 'assets/img/illustrator/frisko.svg', alt: 'Frisko' },
-        { url: 'assets/img/illustrator/texte_city_bread.svg', alt: 'City Bread' },
+        { url: 'assets/img/illustrator/icones_dark_light.png', alt: 'Icons for light and dark mode, created in vector format using Pathfinder and the Shape Builder Tool.', class: 'icones_dark_light' },
+        { url: 'assets/img/illustrator/cat.svg', alt: 'Wireframe-style cat illustration created using Illustrator\’s Blend Tool.', class: 'cat' },
+        { url: 'assets/img/illustrator/friskos.png', alt: 'Ice cream illustrations created using clipping masks.', class: 'friskos' },
+        { url: 'assets/img/illustrator/shoe.png', alt: 'High heel shoe illustration created using the Pen Tool and AI-generated fills.', class: 'shoe' },
       ]
     }
   ];
