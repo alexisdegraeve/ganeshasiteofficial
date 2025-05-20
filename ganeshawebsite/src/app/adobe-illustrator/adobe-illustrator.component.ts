@@ -17,7 +17,10 @@ export class AdobeIllustratorComponent {
     {
       title: 'Logos',
       images: [
-        { url: 'assets/img/illustrator/icones_dark_light.svg', alt: 'Logos Light Mode / Dark Mode' },
+        { url: 'assets/img/illustrator/icones_dark_light.png', alt: 'Logos Light Mode / Dark Mode', class: 'icones_dark_light' },
+        { url: 'assets/img/illustrator/cat.svg', alt: 'Logos Light Mode / Dark Mode', class: 'cat' },
+        { url: 'assets/img/illustrator/frisko.svg', alt: 'Frisko' },
+        { url: 'assets/img/illustrator/texte_city_bread.svg', alt: 'City Bread' },
       ]
     }
   ];
