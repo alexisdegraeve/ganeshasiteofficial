@@ -21,6 +21,11 @@
 
 .card {
     position: relative;
+    .card-footer {
+        p {
+            font-size: 0.85rem;
+        }
+    }
     .card-body {
         min-height: 10rem;
         align-items: center;
@@ -70,4 +75,8 @@
 
 .shoe {
     background-color: #000;
+}
+
+.flamingos {
+    background-color: #f9e5ee;
 }
