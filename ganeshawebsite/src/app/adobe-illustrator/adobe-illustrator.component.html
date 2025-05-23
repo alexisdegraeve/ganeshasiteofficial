@@ -35,7 +35,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img *ngIf="selectedImage" [src]="selectedImage.url" class="img-fluid rounded p-4" alt="{{ selectedImage.alt }}" [ngClass]="selectedImage?.class">
+                <img *ngIf="selectedImage" [src]="selectedImage.url" class="img-fluid rounded p-4" alt="{{ selectedImage.alt }}" [ngClass]="selectedImage.class">
             </div>
         </div>
     </div>
