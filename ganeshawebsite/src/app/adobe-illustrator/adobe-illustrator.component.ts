@@ -22,6 +22,7 @@ export class AdobeIllustratorComponent {
         { url: 'assets/img/illustrator/flamingos.png', alt: 'Wireframe-style flamingos illustration created using Illustrator\’s Blend Tool. In the style of Andrea Minini.', class: 'flamingos' },
         { url: 'assets/img/illustrator/cat.svg', alt: 'Wireframe-style cat illustration created using Illustrator\’s Blend Tool. In the style of Andrea Minini.', class: 'cat' },
         { url: 'assets/img/illustrator/cat_stand.png', alt: 'Wireframe-style cat illustration created using Illustrator\’s Blend Tool. In the style of Andrea Minini.', class: 'cat-stand' },
+        { url: 'assets/img/illustrator/cat_face.png', alt: 'Wireframe-style cat illustration created using Illustrator\’s Blend Tool. In the style of Andrea Minini.', class: 'cat-face' },
         { url: 'assets/img/illustrator/friskos.png', alt: 'Ice cream illustrations created using clipping masks.', class: 'friskos' },
         { url: 'assets/img/illustrator/shoe.png', alt: 'High heel shoe illustration created using the Pen Tool and AI-generated fills.', class: 'shoe' },
       ]
