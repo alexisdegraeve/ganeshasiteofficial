@@ -19,6 +19,7 @@ export class AdobeIllustratorComponent {
       images: [
         { url: 'assets/img/illustrator/icones_dark_light.png', alt: 'Icons for light and dark mode, created in vector format using Pathfinder and the Shape Builder Tool.', class: 'icones_dark_light' },
         { url: 'assets/img/illustrator/icones_plank.svg', alt: 'A set of plank icons created in vector format using Illustrator’s Pathfinder and Shape Builder tools', class: 'icones_plank' },
+        { url: 'assets/img/illustrator/elephant.png', alt: 'Wireframe-style elephant illustration created using Illustrator\’s Blend Tool. In the style of Andrea Minini.', class: 'elephant' },
         { url: 'assets/img/illustrator/flamingos.png', alt: 'Wireframe-style flamingos illustration created using Illustrator\’s Blend Tool. In the style of Andrea Minini.', class: 'flamingos' },
         { url: 'assets/img/illustrator/cat.svg', alt: 'Wireframe-style cat illustration created using Illustrator\’s Blend Tool. In the style of Andrea Minini.', class: 'cat' },
         { url: 'assets/img/illustrator/cat_stand.png', alt: 'Wireframe-style cat illustration created using Illustrator\’s Blend Tool. In the style of Andrea Minini.', class: 'cat-stand' },
