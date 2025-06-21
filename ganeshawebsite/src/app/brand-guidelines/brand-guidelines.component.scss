@@ -7,6 +7,7 @@
             .card-body {
                 padding-top: 3.125rem;
                 padding-left: 5.625rem;
+                padding-bottom: 3.125rem;
                 h3 {
                     margin-top: 32px;
                 }
@@ -25,14 +26,32 @@
                     .rect-color {
                         width: 6.25rem;
                         height: 6.25rem;
+                        .text-color {
+                            font-size: 12px;
+                        }
                     }
                 }
                 .rect-color {
                     width: 12.5rem;
                     height: 12.5rem;
                     border-radius: 0.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .text-color {
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #000;
+                        margin-bottom: 20px;
+                        text-transform: uppercase;
+                        display: flex;
+                    }
                     &.first {
                         background-color: $color-1;
+                        .text-color {
+                            color: #fff;
+                        }
                     }
                     &.second {
                         background-color: $color-2;
@@ -48,6 +67,12 @@
                     }
                     &.sixth {
                         background-color: $color-6;
+                    }
+                    &.seventh {
+                        background-color: $color-7;
+                        .text-color {
+                            color: #fff;
+                        }
                     }
                 }
             }
@@ -65,8 +90,12 @@
                 .rects {
                     &.small {
                         .rect-color {
-                            width: 3.25rem;
-                            height: 3.25rem;
+                            width: 5.25rem;
+                            height: 5.25rem;
+                            .text-color {
+                                font-size: 10px;
+                                margin-bottom: 10px;
+                            }
                         }
                     }
                     .rect-color {
