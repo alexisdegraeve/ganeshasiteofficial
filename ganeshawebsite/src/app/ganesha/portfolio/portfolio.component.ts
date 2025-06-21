@@ -22,8 +22,9 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-brand-guidelines',
       description: 'PORTFOLIO.desc-brand-guidelines',
-      image: 'assets/img/designer.jpg',
+      image: 'assets/ganesha-logo-h-02.svg',
       linkInternal: '/brandguidelines',
+      class: 'guidelines',
       imageLoaded: false
     },
     {

@@ -1,121 +1,128 @@
-.card img {
-    max-height: 200px;
-    object-fit: cover;
-}
-
-.modal-body img {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.modal-body img:hover {
-    transform: scale(1.05);
-}
-
-.card-text {
-    font-size: 0.9rem;
-    color: #d2d2d2;
-    height: 100%;
-    margin-bottom: auto;
-}
-
-.card-body {
-    min-height: 13rem;
-}
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
-.placeholder {
-    height: 200px;
-    width: 100%;
-}
-
-.logo {
-    object-fit: contain !important;
-}
-
-.logo-adobe {
-    object-fit: contain !important;
-    height: 8rem !important;
-    width: 8rem !important;
-}
-
-.gallery {
-    max-width: 30rem;
-}
-
-.moon {
-    background: #f3f3e2;
-    height: 15rem;
-    width: 15rem;
-    border-radius: 50%;
-    // clip-path: circle(15rem at 8rem 8rem);
-    // animation: circle 10s infinite;
-    // transition: clip-path 1s;
-    box-shadow: 0 0 30px 15px rgba(255, 236, 127, 0.8), 0 0 50px 30px rgba(255, 200, 100, 0.6), 0 0 80px 50px rgba(255, 140, 50, 0.4);
-    overflow: hidden;
-    position: relative;
-}
-
-.eclipse {
-    height: 15rem;
-    width: 15rem;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    opacity: 0;
-    /* Commence invisible */
-    /* Commence en dehors du soleil */
-    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
-    /* Ajoute un effet d'ombre plus doux */
-    animation: eclipsemove 15s ease-in-out infinite;
-}
-
-@keyframes eclipsemove {
-    0% {
-        transform: translateX(-100%);
-        /* Position initiale */
-        opacity: 0;
-        /* Eclipse invisible au départ */
-    }
-    45% {
-        transform: translateX(-200%);
-        opacity: 0.5;
-        /* Eclipse commence à devenir visible */
-    }
-    55% {
-        transform: translateX(-250%);
-        opacity: 1;
-        /* Eclipse totalement visible (au moment de l'éclipse) */
-    }
-    100% {
-        transform: translateX(-300%);
-        opacity: 1;
-        /* Eclipse continue après l'éclipse totale */
-    }
-}
-
-@keyframes circle {
-    0% {
-        clip-path: circle(15rem at 8rem center);
-    }
-    50% {
-        clip-path: circle(15rem at 0rem center);
-    }
-    100% {
-        clip-path: circle(15rem at -15rem center);
-    }
-}
-
-.img-container {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #000;
-}
+        @use '../../../variables.scss' as *;
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+        
+        .modal-body img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .modal-body img:hover {
+            transform: scale(1.05);
+        }
+        
+        .card-text {
+            font-size: 0.9rem;
+            color: #d2d2d2;
+            height: 100%;
+            margin-bottom: auto;
+        }
+        
+        .card-body {
+            min-height: 13rem;
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .placeholder {
+            height: 200px;
+            width: 100%;
+        }
+        
+        .logo {
+            object-fit: contain !important;
+        }
+        
+        .logo-adobe {
+            object-fit: contain !important;
+            height: 8rem !important;
+            width: 8rem !important;
+        }
+        
+        .guidelines {
+            object-fit: contain !important;
+            padding: 2rem;
+            background: $color-8;
+        }
+        
+        .gallery {
+            max-width: 30rem;
+        }
+        
+        .moon {
+            background: #f3f3e2;
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            // clip-path: circle(15rem at 8rem 8rem);
+            // animation: circle 10s infinite;
+            // transition: clip-path 1s;
+            box-shadow: 0 0 30px 15px rgba(255, 236, 127, 0.8), 0 0 50px 30px rgba(255, 200, 100, 0.6), 0 0 80px 50px rgba(255, 140, 50, 0.4);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .eclipse {
+            height: 15rem;
+            width: 15rem;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            opacity: 0;
+            /* Commence invisible */
+            /* Commence en dehors du soleil */
+            filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8));
+            /* Ajoute un effet d'ombre plus doux */
+            animation: eclipsemove 15s ease-in-out infinite;
+        }
+        
+        @keyframes eclipsemove {
+            0% {
+                transform: translateX(-100%);
+                /* Position initiale */
+                opacity: 0;
+                /* Eclipse invisible au départ */
+            }
+            45% {
+                transform: translateX(-200%);
+                opacity: 0.5;
+                /* Eclipse commence à devenir visible */
+            }
+            55% {
+                transform: translateX(-250%);
+                opacity: 1;
+                /* Eclipse totalement visible (au moment de l'éclipse) */
+            }
+            100% {
+                transform: translateX(-300%);
+                opacity: 1;
+                /* Eclipse continue après l'éclipse totale */
+            }
+        }
+        
+        @keyframes circle {
+            0% {
+                clip-path: circle(15rem at 8rem center);
+            }
+            50% {
+                clip-path: circle(15rem at 0rem center);
+            }
+            100% {
+                clip-path: circle(15rem at -15rem center);
+            }
+        }
+        
+        .img-container {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+        }
