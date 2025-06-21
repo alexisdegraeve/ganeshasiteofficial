@@ -65,7 +65,7 @@
                 left: 0;
                 height: 100%;
                 width: $band-width;
-                background-image: repeating-linear-gradient( to bottom, $color-1 0, $color-1 $band-height, $color-2 $band-height, $color-2 $band-height * 2, $color-3 $band-height * 2, $color-3 $band-height * 3, $color-4 $band-height * 3, $color-4 $band-height * 4);
+                background-image: repeating-linear-gradient( to bottom, $color-1 0, $color-1 $band-height, $color-c1 $band-height, $color-c1 $band-height * 2, $color-c2 $band-height * 2, $color-c2 $band-height * 3, $color-c3 $band-height * 3, $color-c3 $band-height * 4);
             }
             .rects {
                 display: flex;
