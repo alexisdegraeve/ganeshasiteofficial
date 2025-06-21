@@ -1,0 +1,54 @@
+@use '../../variables.scss' as *;
+$band-height: 150px;
+$band-width: 8px;
+.brandguidelines {
+    position: relative;
+    border-radius: unset;
+    .card-body {
+        padding-top: 3.125rem;
+        padding-left: 5.625rem;
+        h3 {
+            margin-top: 32px;
+        }
+    }
+    .color-band {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: $band-width;
+        background-image: repeating-linear-gradient( to bottom, $color-1 0, $color-1 $band-height, $color-2 $band-height, $color-2 $band-height * 2, $color-3 $band-height * 2, $color-3 $band-height * 3, $color-4 $band-height * 3, $color-4 $band-height * 4);
+    }
+    .rects {
+        display: flex;
+        gap: 1rem;
+        &.small {
+            .rect-color {
+                width: 6.25rem;
+                height: 6.25rem;
+            }
+        }
+        .rect-color {
+            width: 12.5rem;
+            height: 12.5rem;
+            border-radius: 0.5rem;
+            &.first {
+                background-color: $color-1;
+            }
+            &.second {
+                background-color: $color-2;
+            }
+            &.third {
+                background-color: $color-3;
+            }
+            &.fourth {
+                background-color: $color-4;
+            }
+            &.fifth {
+                background-color: $color-5;
+            }
+            &.sixth {
+                background-color: $color-6;
+            }
+        }
+    }
+}
