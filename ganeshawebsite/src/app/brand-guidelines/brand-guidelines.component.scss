@@ -9,6 +9,15 @@
         .card-guidelines {
             position: relative;
             border-radius: unset;
+            .visitcard-front {
+                height: 14rem;
+                width: auto;
+                margin-right: 1rem;
+            }
+            .visitcard-back {
+                height: 14rem;
+                width: auto;
+            }
             .logo-v {
                 .row {
                     margin-top: 1rem;
