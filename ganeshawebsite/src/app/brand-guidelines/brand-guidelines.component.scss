@@ -1,13 +1,26 @@
         @use '../../variables.scss' as *;
         $band-height: 150px;
         $band-width: 8px;
+        section {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        
         .card-guidelines {
             position: relative;
             border-radius: unset;
+            .typo {
+                font-size: 16px;
+                font-family: 'Segoe UI', sans-serif;
+            }
+            .quote {
+                text-align: justify;
+                padding: 0;
+                margin: 0;
+                padding-left: 2rem;
+            }
             .card-body {
-                padding-top: 3.125rem;
-                padding-left: 5.625rem;
-                padding-bottom: 3.125rem;
+                padding: 3.125rem 5.625rem;
                 h3 {
                     margin-top: 32px;
                 }
@@ -81,8 +94,7 @@
         @media (max-width: 768px) {
             .card-guidelines {
                 .card-body {
-                    padding-top: 2.125rem;
-                    padding-left: 3.625rem;
+                    padding: 2.125rem 3.625rem;
                     h3 {
                         margin-top: 32px;
                     }
