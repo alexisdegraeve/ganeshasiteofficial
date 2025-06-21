@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-brand-guidelines',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './brand-guidelines.component.html',
   styleUrl: './brand-guidelines.component.scss'
 })
