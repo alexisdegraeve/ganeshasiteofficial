@@ -20,6 +20,13 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
+      title: 'PORTFOLIO.title-brand-guidelines',
+      description: 'PORTFOLIO.desc-brand-guidelines',
+      image: 'assets/img/designer.jpg',
+      linkInternal: '/brandguidelines',
+      imageLoaded: false
+    },
+    {
       title: 'PORTFOLIO.title-workshop-photoshop',
       description: 'PORTFOLIO.desc-workshop-photoshop',
       image: 'assets/img/designer.jpg',

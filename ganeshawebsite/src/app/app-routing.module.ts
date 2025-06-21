@@ -19,6 +19,7 @@ import { HumanComponent } from './ganesha/human/human.component';
 import { AdobePhotoshopComponent } from './adobe-photoshop/adobe-photoshop.component';
 import { AdobeInDesignComponent } from './adobe-in-design/adobe-in-design.component';
 import { AdobeIllustratorComponent } from './adobe-illustrator/adobe-illustrator.component';
+import { BrandGuidelinesComponent } from './brand-guidelines/brand-guidelines.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -40,6 +41,7 @@ const routes: Routes = [
   { path: 'photoshop', component: AdobePhotoshopComponent },
   { path: 'indesign', component: AdobeInDesignComponent },
   { path: 'illustrator', component: AdobeIllustratorComponent },
+  { path: 'brandguidelines', component: BrandGuidelinesComponent },
   { path: '**', component: NotfoundComponent } // Route 404 pour URL incorrecte
 ];
 
