@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { fromEvent, from } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
+import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
 
 declare var bootstrap: any; // Déclarez Bootstrap JS pour utilisation
 
@@ -9,7 +10,7 @@ declare var bootstrap: any; // Déclarez Bootstrap JS pour utilisation
   selector: 'app-gallery-arch',
   templateUrl: './gallery-arch.component.html',
   styleUrls: ['./gallery-arch.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule, PageHeaderComponent]
 })
 export class GalleryArchComponent implements OnInit, AfterViewInit {
   selectedTab = 0;

@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
+import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, PageHeaderComponent],
 })
 export class AboutComponent {
   isLoadingAlexis = true; // Etat de chargement de l'image d'Alexis

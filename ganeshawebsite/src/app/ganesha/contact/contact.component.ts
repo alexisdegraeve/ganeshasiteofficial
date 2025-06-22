@@ -5,12 +5,13 @@ import { CommonModule } from '@angular/common';
 import emailjs  from '@emailjs/browser';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
+import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  imports: [CommonModule, ReactiveFormsModule, TranslateModule]
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule, PageHeaderComponent]
 })
 export class ContactComponent {
   contactForm: FormGroup;

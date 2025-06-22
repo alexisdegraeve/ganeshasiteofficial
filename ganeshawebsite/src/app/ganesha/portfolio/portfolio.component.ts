@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
+import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss'],
-  imports: [CommonModule, RouterModule, TranslateModule]
+  imports: [CommonModule, RouterModule, TranslateModule, PageHeaderComponent]
 })
 export class PortfolioComponent {
   categories = [

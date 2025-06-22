@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
 
 declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
 
@@ -7,7 +8,7 @@ declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstra
   selector: 'app-gallery-logo',
   templateUrl: './gallery-logo.component.html',
   styleUrls: ['./gallery-logo.component.scss'],
-  imports: [CommonModule]
+  imports: [CommonModule, PageHeaderComponent]
 })
 export class GalleryLogoComponent {
   selectedTab = 0;

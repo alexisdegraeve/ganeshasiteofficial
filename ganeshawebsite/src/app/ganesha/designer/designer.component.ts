@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
+import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
 
 @Component({
   selector: 'app-designer',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, PageHeaderComponent],
   templateUrl: './designer.component.html',
   styleUrl: './designer.component.scss'
 })

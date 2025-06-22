@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component,  OnInit, AfterViewInit } from '@angular/core';
 import { fromEvent, from } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
+import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
 
 declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
 
@@ -9,7 +10,7 @@ declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstra
   selector: 'app-gallery3d',
   templateUrl: './gallery3d.component.html',
   styleUrl: './gallery3d.component.scss',
-  imports: [CommonModule]
+  imports: [CommonModule, PageHeaderComponent]
 })
 export class Gallery3dComponent {
   selectedTab = 0;

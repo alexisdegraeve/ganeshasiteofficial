@@ -1,4 +1,5 @@
 <div class="container py-4">
+    <app-page-header [title]="'ARTIST.title-animal'" [back]="'/artist'"></app-page-header>
     <div class="general-container">
         <div class="cat">
             <div class="cat-mask">
@@ -17,9 +18,6 @@
     </div>
 
     <div class="middle-content mt-0">
-        <h5 *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-animal' | translate)"></h5>
-        <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-
         <p *ngIf="translationsLoaded" class="mt-4" [innerHTML]="('ARTIST.animal-1' | translate)"></p>
         <div *ngIf="!translationsLoaded" class="skeleton skeleton-text mt-4"></div>
 
