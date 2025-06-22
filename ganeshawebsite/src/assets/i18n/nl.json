@@ -235,7 +235,13 @@
 
         "alt-poster-games": "Videogamefestival (Poster)",
         "alt-flyer-games": "Videogamefestival (Flyer)",
-        "alt-magazine-travel": "Alexis Voyage (Reismagazine)"
+        "alt-magazine-travel": "Alexis Voyage (Reismagazine)",
+        "choco-blanc-brand": "Choco Blanc huisstijl",
+        "choco-blanc-envelope": "Choco Blanc envelopontwerp",
+        "choco-blanc-thank-card": "Choco Blanc bedankkaart",
+        "choco-blanc-business-card": "Choco Blanc visitekaartje",
+        "choco-blanc-letterhead": "Choco Blanc briefhoofd"
+
     }
 
 }

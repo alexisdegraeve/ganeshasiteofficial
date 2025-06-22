@@ -16,7 +16,7 @@
         <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
             <div class="card shadow-sm position-relative" (click)="openImageInModal(image)">
                 <div class="card-body">
-                    <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded">
+                    <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded" [style.width.rem]="image.width">
                 </div>
                 <div class="card-footer p-2">
                     <p class="card-text text-center">{{ image.alt | translate}}</p>

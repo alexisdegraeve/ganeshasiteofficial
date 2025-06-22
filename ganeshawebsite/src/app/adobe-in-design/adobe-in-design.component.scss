@@ -25,11 +25,13 @@
         min-height: 10rem;
         align-items: center;
         display: flex;
+        background: #fff;
+        height: 25rem;
     }
     .card-img-top {
         transition: none;
-        height: 16rem;
-        width: auto;
+        height: auto;
+        width: 10rem;
         display: flex;
         justify-content: center;
         align-items: center;
