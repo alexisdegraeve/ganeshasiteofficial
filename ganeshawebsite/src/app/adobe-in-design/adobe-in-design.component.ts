@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { PageHeaderComponent } from '../shared/page-header/page-header.component';
 
 declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
 
@@ -8,7 +9,7 @@ declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstra
   selector: 'app-adobe-in-design',
   templateUrl: './adobe-in-design.component.html',
   styleUrl: './adobe-in-design.component.scss',
-  imports: [CommonModule, TranslateModule]
+  imports: [CommonModule, TranslateModule, PageHeaderComponent]
 })
 export class AdobeInDesignComponent {
   selectedTab = 0;

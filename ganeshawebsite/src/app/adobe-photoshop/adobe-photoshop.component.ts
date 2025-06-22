@@ -4,10 +4,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { BsModalService, BsModalRef, ModalModule } from 'ngx-bootstrap/modal';
+import { PageHeaderComponent } from '../shared/page-header/page-header.component';
 
 @Component({
   selector: 'app-adobe-photoshop',
-  imports: [CommonModule, TranslateModule, CarouselModule, ModalModule ],
+  imports: [CommonModule, TranslateModule, CarouselModule, ModalModule, PageHeaderComponent ],
   templateUrl: './adobe-photoshop.component.html',
   styleUrl: './adobe-photoshop.component.scss'
 })

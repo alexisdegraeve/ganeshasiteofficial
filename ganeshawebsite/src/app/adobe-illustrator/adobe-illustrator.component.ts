@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { PageHeaderComponent } from '../shared/page-header/page-header.component';
 
 declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
 
@@ -7,7 +8,7 @@ declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstra
   selector: 'app-adobe-illustrator',
   templateUrl: './adobe-illustrator.component.html',
   styleUrl: './adobe-illustrator.component.scss',
-  imports: [CommonModule]
+  imports: [CommonModule, PageHeaderComponent]
 })
 export class AdobeIllustratorComponent {
   selectedTab = 0;
