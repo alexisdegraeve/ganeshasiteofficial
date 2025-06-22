@@ -1,0 +1,15 @@
+@use '../../../variables.scss' as *;
+.page-header {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    .bi-chevron-left {
+        font-size: 1.25rem;
+    }
+    a {
+        color: rgba(255, 255, 255, 0.55);
+        text-decoration: none;
+        &:hover {
+            color: $color-3;
+        }
+    }
+}

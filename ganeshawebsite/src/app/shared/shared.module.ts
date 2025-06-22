@@ -7,6 +7,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { HttpClient } from '@angular/common/http';
     RouterModule,
     HeaderComponent,
     FooterComponent,
+    PageHeaderComponent,
     TranslateModule.forChild({
       defaultLanguage: 'en'
     })
@@ -21,6 +23,7 @@ import { HttpClient } from '@angular/common/http';
   exports : [
     HeaderComponent,
     FooterComponent,
+    PageHeaderComponent,
     CommonModule,
     TranslateModule
   ],
