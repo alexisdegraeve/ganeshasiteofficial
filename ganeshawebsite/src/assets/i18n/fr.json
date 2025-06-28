@@ -194,6 +194,15 @@
         "resume-chatbot": "Pour mon mémoire de Master à l'Université de Namur, j’ai développé un chatbot immersif pour un escape game, alliant design et technologie."
     },
     "WORKSHOP": {
+        "alt-mirror-shadow-technique": "Technique du miroir et ombres artificielles",
+        "comment-mirror-shadow-technique": "Création de reflets et d’ombres sur 7 vignettes colorisées selon les teintes de l’arc-en-ciel.",
+
+        "alt-ninja-polaroid": "Ninja sur polaroïd",
+        "comment-ninja-polaroid": "Effets de reliefs et brosses personnalisées pour une composition dynamique en style polaroïd.",
+
+        "alt-pattern-explosion": "Explosion de carrés",
+        "comment-pattern-explosion": "Création d’un motif à base de carrés éclatés et utilisation de grilles répétées grâce à la définition de motif.",
+
         "alt-eye-enhancement": "Amélioration des yeux",
         "comment-eye-enhancement": "Utilisation de Liquify pour changer le style et du Healing Brush Tool pour réduire les taches de rousseur.",
 

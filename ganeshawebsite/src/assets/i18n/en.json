@@ -194,6 +194,15 @@
         "resume-chatbot": "For my Master’s thesis at the University of Namur, I developed an immersive chatbot for an escape game, blending design and technology."
     },
     "WORKSHOP": {
+        "alt-mirror-shadow-technique": "Mirror and artificial shadow technique",
+        "comment-mirror-shadow-technique": "Creating reflections and shadows on 7 tinted thumbnails using rainbow-inspired colors.",
+
+        "alt-ninja-polaroid": "Ninja on Polaroid",
+        "comment-ninja-polaroid": "Use of relief effects and custom brushes to create a dynamic composition in a Polaroid layout.",
+
+        "alt-pattern-explosion": "Exploding squares pattern",
+        "comment-pattern-explosion": "Exploded square effects created through pattern definition and grid repetition techniques.",
+
         "alt-eye-enhancement": "What was done: Eye enhancement",
         "comment-eye-enhancement": "Used Liquify for style change and Healing Brush Tool for freckle reduction.",
         "alt-object-selection-mirror": "Object Selection Tool & Mirror Effect",

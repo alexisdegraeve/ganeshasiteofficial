@@ -22,6 +22,24 @@ export class AdobePhotoshopComponent  {
     title: 'Photoshop: Changement des yeux',
     images: [
       {
+        img: 'assets/img/workshop/workshop_rainbow.jpg',
+        alt: 'WORKSHOP.alt-mirror-shadow-technique',
+        comment: 'WORKSHOP.comment-mirror-shadow-technique',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_ninja.jpg',
+        alt: 'WORKSHOP.alt-ninja-polaroid',
+        comment: 'WORKSHOP.comment-ninja-polaroid',
+        imageLoaded: false
+      },
+      {
+        img: 'assets/img/workshop/workshop_square_shuffle.jpg',
+        alt: 'WORKSHOP.alt-pattern-explosion',
+        comment: 'WORKSHOP.comment-pattern-explosion',
+        imageLoaded: false
+      },
+      {
         img: 'assets/img/workshop/workshop_visage.jpg',
         alt: 'WORKSHOP.alt-eye-enhancement',
         comment: 'WORKSHOP.comment-eye-enhancement',
