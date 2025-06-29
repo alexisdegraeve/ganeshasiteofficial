@@ -37,9 +37,13 @@
 
     <!-- Copyright -->
 
-    <div class="text-center copyright-txt d-flex justify-content-center">
-        <div [innerHtml]="('FOOTER.copyright' | translate)"></div><span class="mx-2">|</span>
-        <a routerLink="/credits" class="link-warning text-decoration-none" [innerHtml]="('FOOTER.footer-legal-link' | translate)"></a>
+    <div class="text-center copyright-txt d-flex flex-column flex-md-row justify-content-center align-items-center">
+        <div [innerHTML]="'FOOTER.copyright' | translate"></div>
+
+        <!-- Le séparateur visible uniquement à partir de md (tablette) -->
+        <span class="mx-2 d-none d-md-inline">|</span>
+
+        <a routerLink="/credits" class="link-warning text-decoration-none mt-md-0" [innerHTML]="'FOOTER.footer-legal-link' | translate"></a>
     </div>
     <!-- Copyright -->
 </footer>
