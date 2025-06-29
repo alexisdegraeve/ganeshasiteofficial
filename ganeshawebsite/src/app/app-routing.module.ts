@@ -20,6 +20,7 @@ import { AdobePhotoshopComponent } from './adobe-photoshop/adobe-photoshop.compo
 import { AdobeInDesignComponent } from './adobe-in-design/adobe-in-design.component';
 import { AdobeIllustratorComponent } from './adobe-illustrator/adobe-illustrator.component';
 import { BrandGuidelinesComponent } from './brand-guidelines/brand-guidelines.component';
+import { CreditsComponent } from './credits/credits.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -42,6 +43,7 @@ const routes: Routes = [
   { path: 'indesign', component: AdobeInDesignComponent },
   { path: 'illustrator', component: AdobeIllustratorComponent },
   { path: 'brandguidelines', component: BrandGuidelinesComponent },
+  { path: 'credits', component: CreditsComponent },
   { path: '**', component: NotfoundComponent } // Route 404 pour URL incorrecte
 ];
 
