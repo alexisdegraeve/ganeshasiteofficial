@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-credits',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './credits.component.html',
   styleUrl: './credits.component.scss'
 })

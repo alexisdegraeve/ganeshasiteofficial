@@ -16,7 +16,8 @@
         "contact-description": "Neem contact met mij op"
     },
     "FOOTER": {
-        "copyright": "© Juni 2025 Alle rechten voorbehouden Ganesha <i class='fa fa - cloud'></i> Alexis Degraeve"
+        "copyright": "© Juni 2025 Alle rechten voorbehouden Ganesha <i class='fa fa - cloud'></i> Alexis Degraeve",
+        "footer-legal-link": "Wettelijke info"
     },
     "ARTIST": {
         "citation": "Animatie kan uitleggen wat de menselijke geest kan bedenken.",
@@ -251,6 +252,23 @@
         "choco-blanc-business-card": "Choco Blanc visitekaartje",
         "choco-blanc-letterhead": "Choco Blanc briefhoofd"
 
+    },
+    "LEGAL": {
+        "title": "Wettelijke vermeldingen & Credits",
+        "intro": "Deze site is ontworpen en ontwikkeld voor <strong>educatieve en niet-commerciële</strong> doeleinden. Alle inhoud wordt gebruikt in een persoonlijk didactisch kader.",
+
+        "design-title": "🎨 Ontwerp & Visuele Identiteit",
+        "design-content": "<ul class='list-unstyled ms-3'><li>Het ontwerp van <strong>Ganesha.ovh</strong> is volledig gemaakt door <strong>Alexis Degraeve</strong>.</li><li>Het logo en de visuele identiteit zijn originele creaties. Hergebruik vereist voorafgaande toestemming.</li><li>Het ontwerp van het spel <strong>Ganopoly</strong> is een originele creatie en vereist mijn schriftelijke goedkeuring voor gebruik.</li></ul>",
+
+        "images-title": "📷 Afbeeldingen & Bronnen",
+        "images-content": "Gebruikte afbeeldingen komen van <a href='https://pixabay.com/' target='_blank' rel='noopener' class='link-warning text-decoration-none'>Pixabay</a> onder een vrije licentie. Meer info hier: <a href='https://pixabay.com/service/license-summary/' target='_blank' rel='noopener' class='link-warning text-decoration-none'>Pixabay Licentievoorwaarden</a>.",
+        "images-note": "Photoshop-montages (zoals ninja's, landschappen, effecten) zijn gemaakt met vrije bronnen. Volledige traceerbaarheid is niet gegarandeerd, maar het gebruik is toegestaan.",
+
+        "inspiration-title": "📌 Inspiratie",
+        "inspiration-content": "Sommige Illustrator-reproducties zijn geïnspireerd op het werk van <strong>Andrea Minini</strong>, uitsluitend voor educatieve doeleinden.",
+
+        "info-title": "Extra informatie",
+        "info-content": "Spellen zoals <strong>Ganopoly</strong> of <strong>Gano</strong> zijn originele creaties, geïnspireerd door bestaande concepten en bedoeld voor persoonlijk en didactisch gebruik. Er is geen commercieel doel."
     }
 
 }

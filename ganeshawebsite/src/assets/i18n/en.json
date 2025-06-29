@@ -16,7 +16,8 @@
         "contact-description": "Get in touch with me"
     },
     "FOOTER": {
-        "copyright": "© June 2025 All rights reserved Ganesha <i class='fa fa - cloud'></i> Alexis Degraeve"
+        "copyright": "© June 2025 All rights reserved Ganesha <i class='fa fa - cloud'></i> Alexis Degraeve",
+        "footer-legal-link": "Legal notice"
     },
     "ARTIST": {
         "citation": "Animation can explain whatever the mind of man can conceive.",
@@ -246,6 +247,22 @@
         "choco-blanc-business-card": "Choco Blanc Business Card",
         "choco-blanc-letterhead": "Choco Blanc Letterhead"
 
-    }
+    },
+    "LEGAL": {
+        "title": "Legal Notice & Credits",
+        "intro": "This website was designed and developed for <strong>educational and non-commercial</strong> purposes. All content is used in a personal didactic context.",
 
+        "design-title": "🎨 Design & Visual Identity",
+        "design-content": "<ul class='list-unstyled ms-3'><li>The design of the <strong>Ganesha.ovh</strong> site was entirely created by <strong>Alexis Degraeve</strong>.</li><li>The logo and visual identity are original creations. Any reuse requires prior authorization.</li><li>The design of the game <strong>Ganopoly</strong> is an original work. Usage requires my written approval.</li></ul>",
+
+        "images-title": "📷 Images & Resources",
+        "images-content": "Images used in graphic projects come from <a href='https://pixabay.com/' target='_blank' rel='noopener' class='link-warning text-decoration-none'>Pixabay</a> under a free license. License details are available here: <a href='https://pixabay.com/service/license-summary/' target='_blank' rel='noopener' class='link-warning text-decoration-none'>Pixabay License Terms</a>.",
+        "images-note": "Photoshop montages (e.g., ninja, landscapes, effects) were made from free resources. Exact image origins may not be fully traceable, but usage remains within allowed limits.",
+
+        "inspiration-title": "📌 Inspirations",
+        "inspiration-content": "Some reproductions in Adobe Illustrator were inspired by the graphic style of <strong>Andrea Minini</strong>, purely for educational purposes without any commercial intent.",
+
+        "info-title": "Additional Information",
+        "info-content": "Games like <strong>Ganopoly</strong> and <strong>Gano</strong> are original creations inspired by known concepts, but redesigned for personal and educational use. None of the site’s content is for profit."
+    }
 }
