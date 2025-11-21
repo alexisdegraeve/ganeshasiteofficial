@@ -101,7 +101,7 @@
         "desc-promockup": "Find professional mockups for your projects.",
 
         "title-3D": "3D",
-        "desc-3D": "Creative 3D designs with 3DS Max.",
+        "desc-3D": "Creative 3D designs with 3DS Max, Blender.",
 
         "title-logodesign": "Logo Design",
         "desc-logodesign": "Creative logo designs for your brand.",
@@ -244,6 +244,10 @@
         "alt-frame-ai-mask": "Fusion mask with frames and AI generation",
         "comment-frame-ai-mask": "Integrated images into frames using a fusion mask and generated cats with AI."
     },
+    "FIGMA": {
+        "quote-figma": "Figma turns my ideas into living shapes — a space where creativity and collaboration come together.",
+        "alt-logos": "Logo design exercise made in Figma, inspired by a LinkedIn Learning course. I adapted a tutorial originally for Illustrator and recreated it fully in Figma, improving my precision, visual balance, and skills with shapes, gradients, and composition."
+    },
     "INDESIGN": {
         "quote-vogue": "'Vogue' is the best of everything that fashion can offer, and I think we point the way. We are, you know, a glamorous girlfriend.",
         "alt-poster-games": "Video Games Festival (Poster)",
@@ -256,7 +260,7 @@
         "choco-blanc-letterhead": "Choco Blanc Letterhead"
 
     },
-    "LEGAL": {
+    "LEG AL": {
         "title": "Legal Notice & Credits",
         "intro": "This website was designed and developed for <strong>educational and non-commercial</strong> purposes. All content is used in a personal didactic context.",
 

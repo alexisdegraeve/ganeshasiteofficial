@@ -100,7 +100,7 @@
         "desc-promockup": "Trouvez des mockups professionnels pour vos projets.",
 
         "title-3D": "3D",
-        "desc-3D": "Créations 3D avec 3DS Max.",
+        "desc-3D": "Créations 3D avec 3DS Max, Blender.",
 
         "title-logodesign": "Création de logos",
         "desc-logodesign": "Conception de logos créatifs pour votre marque.",
@@ -245,6 +245,10 @@
 
         "alt-frame-ai-mask": "Masque de fusion avec des cadres et génération IA",
         "comment-frame-ai-mask": "Intégration d’images dans des cadres avec masque de fusion et génération de chats via IA."
+    },
+    "FIGMA": {
+        "quote-figma": "Figma transforme mes idées en formes vivantes — un espace où créativité et collaboration se rencontrent",
+        "alt-logos": "Exercice de création de logo réalisé dans Figma, inspiré d’un cours LinkedIn Learning. J’ai adapté un tutoriel prévu pour Illustrator et tout recréé dans Figma, ce qui m’a permis d’améliorer ma précision, mon sens de l’équilibre visuel et ma maîtrise des formes, dégradés et compositions."
     },
     "INDESIGN": {
         "quote-vogue": "'Vogue', c’est le meilleur de tout ce que la mode peut offrir, et je pense que nous montrons la voie. Nous sommes, vous savez, une petite amie glamour.",

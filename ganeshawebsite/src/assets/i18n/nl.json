@@ -101,7 +101,7 @@
         "desc-promockup": "Vind professionele mockups voor je projecten.",
 
         "title-3D": "3D",
-        "desc-3D": "Creatieve 3D-projecten met 3DS Max.",
+        "desc-3D": "Creatieve 3D-projecten met 3DS Max, Blender.",
 
         "title-logodesign": "Logo-ontwerp",
         "desc-logodesign": "Creatieve logo-ontwerpen voor je merk.",
@@ -248,6 +248,10 @@
         "alt-frame-ai-mask": "Fusionmasker met kaders en AI-generatie",
         "comment-frame-ai-mask": "Beelden geïntegreerd in kaders met een fusionmasker en katten gegenereerd via AI."
 
+    },
+    "FIGMA": {
+        "quote-figma": "Figma verandert mijn ideeën in levende vormen — een plek waar creativiteit en samenwerking samenkomen.",
+        "alt-logos": "Logooefening gemaakt in Figma, geïnspireerd door een LinkedIn Learning-cursus. Ik paste een Illustrator-tutorial aan en maakte alles opnieuw in Figma, waardoor ik mijn nauwkeurigheid, visuele balans en vaardigheden met vormen, kleurverlopen en compositie verbeterde."
     },
     "INDESIGN": {
         "quote-vogue": "'Vogue' is het beste van alles wat mode te bieden heeft, en ik denk dat wij de richting aangeven. We zijn, weet je, een glamoureuze vriendin.",

@@ -4,11 +4,8 @@
     <div class="mb-5">
         <blockquote class="blockquote">
             <p class="mb-3 fst-italic">
-                {{ 'INDESIGN.quote-vogue' | translate }}
+                {{ 'FIGMA.quote-figma' | translate }}
             </p>
-            <footer class="blockquote-footer">
-                Anna Wintour
-            </footer>
         </blockquote>
     </div>
 
@@ -16,7 +13,7 @@
     <div class="row g-4">
         <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
             <div class="card shadow-sm position-relative" (click)="openImageInModal(image)" style="cursor:pointer">
-                <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded" [style.width.rem]="image.width">
+                <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded">
                 <div class="card-footer p-2">
                     <p class="card-text text-center">{{ image.alt | translate }}</p>
                     <!-- Suppression du lien target="_blank" -->

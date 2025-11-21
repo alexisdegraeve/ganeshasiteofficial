@@ -19,8 +19,8 @@ export class FigmaComponent {
     {
       title: 'Logos',
       images: [
-        { url: 'assets/img/plank_logos_adg.png', img: 'assets/img/plank_logos_adg.png', alt: 'INDESIGN.alt-poster-games', width: 15 },
-        { url: 'assets/img/plank_logos_2_adg.png', img: 'assets/img/plank_logos_2_adg.png', alt: 'INDESIGN.alt-poster-games', width: 15 },
+        { url: 'assets/img/plank_logos_adg.png', img: 'assets/img/plank_logos_adg.png', alt: 'FIGMA.alt-logos', width: 15 },
+        { url: 'assets/img/plank_logos_2_adg.png', img: 'assets/img/plank_logos_2_adg.png', alt: 'FIGMA.alt-logos', width: 15 },
       ]
     }
   ];

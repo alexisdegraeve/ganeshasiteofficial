@@ -19,6 +19,23 @@ export class Gallery3dComponent {
 
   archGallery = [
     {
+      title: 'Workshop Blender',
+      images: [
+        { img: 'assets/img/3d/interior_design_2.png', alt: 'I followed the “Interior Design with Blender: Build an Advanced 3D Scene” tutorial to learn and improve 😊 Modeling, texturing, and lighting all done by me.' },
+      ]
+    },
+    {
+      title: 'Workshop 3ds Max',
+      images: [
+        { img: 'assets/img/3d/armchair.jpg', alt: ' I modeled a round sofa in an attic with a warm sunset HDRI atmosphere. Modeling, texturing, and lighting done by me 😄'},
+        { img: 'assets/img/3d/swingchair.jpg', alt: 'A Swing Chair! Modeled in 3ds Max, with texturing and HDRI lighting all done by me ✨'},
+        { img: 'assets/img/3d/cofee_machine.png', alt: 'A coffee machine fully modeled in 3ds Max, based on a tutorial! Modeling, texturing, and lighting all done by me. What else? 😉' },
+        { img: 'assets/img/3d/fauteuil_barcelona.jpg', alt: 'I recreated the iconic Barcelona Chair following a tutorial in 3ds Max! A great exercise in modeling, texturing, and lighting.' },
+        { img: 'assets/img/3d/orange_juice.jpg', alt: '“Product Presentation Workflow” tutorial by Zaheer Mukhtar in 3ds Max! I modeled, lit, and textured my own scene — a great exercise to improve my product visualization skills' },
+        { img: 'assets/img/3d/bedroom.jpg', alt: ' I created a bed in 3ds Max using the Cloth technique for the sheets — showing visible stitches and detailed materials, modeling, texturing, and lighting, all done by me.'},
+      ]
+    },
+    {
       title: 'MotorCycle Modelling',
       images: [
         { img: 'assets/img/3d/moto/wip_moto01b.jpg', alt: 'WIP MotorCycle - Modelling' },
