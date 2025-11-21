@@ -13,6 +13,14 @@ import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.comp
 })
 export class GamesComponent {
   games = [
+        {
+      title: 'GAMES.GaneshaSudoku.title',  // Clé de traduction
+      description: 'GAMES.GaneshaSudoku.description',  // Clé de traduction
+      image: 'assets/img/ganesha_sudoku.png',
+      playUrl: 'https://sudoku.ganesha.ovh/',
+      githubUrl: 'https://github.com/alexisdegraeve/ganeshasudoku',
+      imageLoaded: false
+    },
     {
       title: 'GAMES.GaneshaFour.title',  // Clé de traduction
       description: 'GAMES.GaneshaFour.description',  // Clé de traduction

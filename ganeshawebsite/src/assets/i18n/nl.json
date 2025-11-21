@@ -155,6 +155,11 @@
         "charsleft": "tekens over"
     },
     "GAMES": {
+        "GaneshaSudoku": {
+            "title": "Ganesha Sudoku",
+            "description": "Een volledige Sudoku-game, volledig ontworpen en ontwikkeld door mijzelf met React 19.2, ViteJS en Chakra-UI. De puzzels worden gegenereerd met een backtracking-algoritme. Design en UX/UI door mijzelf gemaakt. Mobielvriendelijk. Veel plezier!"
+        },
+
         "GaneshaFour": {
             "title": "Ganesha Four",
             "description": "Een vernieuwde versie van Vier op een Rij, ontwikkeld met Angular 19 en Bootstrap 5.3.3. Design en animaties door mij ontworpen. Compatibel met smartphones. Good Game!"

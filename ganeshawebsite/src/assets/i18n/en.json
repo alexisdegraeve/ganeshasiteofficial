@@ -155,6 +155,10 @@
         "charsleft": "characters remaining"
     },
     "GAMES": {
+        "GaneshaSudoku": {
+            "title": "Ganesha Sudoku",
+            "description": "A full Sudoku game, entirely designed and developed by me using React 19.2, ViteJS, and Chakra-UI. Puzzle grids are generated with a backtracking algorithm. Design and UX/UI crafted by myself. Mobile-friendly. Enjoy the game!"
+        },
         "GaneshaFour": {
             "title": "Ganesha Four",
             "description": "A fresh take on Connect Four, developed using Angular 19 and Bootstrap 5.3.3. Design and animations crafted by me. Mobile-friendly. Good Game!"
