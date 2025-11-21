@@ -29,6 +29,13 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
+      title: 'PORTFOLIO.title-workshop-figma',
+      description: 'PORTFOLIO.desc-workshop-figma',
+      image: 'assets/img/designer.jpg',
+      linkInternal: '/photoshop',
+      imageLoaded: false
+    },
+    {
       title: 'PORTFOLIO.title-workshop-photoshop',
       description: 'PORTFOLIO.desc-workshop-photoshop',
       image: 'assets/img/designer.jpg',
