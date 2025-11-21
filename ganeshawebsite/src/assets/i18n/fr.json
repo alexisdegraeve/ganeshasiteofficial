@@ -113,7 +113,8 @@
 
         "btn-visit": "Visiter",
         "btn-download": "Télécharger",
-        "btn-viewgallery": "Voir la galerie"
+        "btn-viewgallery": "Voir la galerie",
+        "btn-view": "Voir"
     },
     "ABOUT": {
         "citation": "Ceci n'est pas une pipe !",

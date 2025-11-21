@@ -1,0 +1,29 @@
+<div class="container py-4">
+    <app-page-header [title]="'PORTFOLIO.title-workshop-figma'" [back]="'/portfolio'"></app-page-header>
+    <div class="mb-5">
+        <blockquote class="blockquote">
+            <p class="mb-3 fst-italic">
+                {{ 'INDESIGN.quote-vogue' | translate }}
+            </p>
+            <footer class="blockquote-footer">
+                Anna Wintour
+            </footer>
+        </blockquote>
+    </div>
+
+    <!-- Galerie d'images -->
+    <div class="row g-4">
+        <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
+            <div class="card shadow-sm position-relative" (click)="openImageInModal(image)">
+                <div class="card-body">
+                    <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded" [style.width.rem]="image.width">
+                </div>
+                <div class="card-footer p-2">
+                    <p class="card-text text-center">{{ image.alt | translate}}</p>
+                    <a *ngIf="image.img " target="_blank" [href]="image.img " class="btn btn-outline-light mt-3 mb-4" [innerHTML]="( 'PORTFOLIO.btn-view' | translate) ">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

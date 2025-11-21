@@ -17,10 +17,11 @@ import { MusicComponent } from './ganesha/music/music.component';
 import { AnimalComponent } from './ganesha/animal/animal.component';
 import { HumanComponent } from './ganesha/human/human.component';
 import { AdobePhotoshopComponent } from './adobe-photoshop/adobe-photoshop.component';
-import { AdobeInDesignComponent } from './adobe-in-design/adobe-in-design.component';
+import { FigmaComponent } from './figma/figma.component';
 import { AdobeIllustratorComponent } from './adobe-illustrator/adobe-illustrator.component';
 import { BrandGuidelinesComponent } from './brand-guidelines/brand-guidelines.component';
 import { CreditsComponent } from './credits/credits.component';
+import { AdobeInDesignComponent } from './adobe-in-design/adobe-in-design.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'human', component: HumanComponent },
   { path: 'photoshop', component: AdobePhotoshopComponent },
   { path: 'indesign', component: AdobeInDesignComponent },
+  { path: 'figma', component: FigmaComponent },
   { path: 'illustrator', component: AdobeIllustratorComponent },
   { path: 'brandguidelines', component: BrandGuidelinesComponent },
   { path: 'credits', component: CreditsComponent },

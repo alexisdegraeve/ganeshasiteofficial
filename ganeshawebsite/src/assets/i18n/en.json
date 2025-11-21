@@ -114,7 +114,8 @@
 
         "btn-visit": "Visit",
         "btn-download": "Download",
-        "btn-viewgallery": "View Gallery"
+        "btn-viewgallery": "View Gallery",
+        "btn-view": "View"
     },
     "ABOUT": {
         "citation": "This is not a pipe!",

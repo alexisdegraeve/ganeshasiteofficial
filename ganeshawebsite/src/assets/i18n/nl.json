@@ -114,7 +114,8 @@
 
         "btn-visit": "Bezoeken",
         "btn-download": "Downloaden",
-        "btn-viewgallery": "Galerij bekijken"
+        "btn-viewgallery": "Galerij bekijken",
+        "btn-view": "Bekijken"
     },
     "ABOUT": {
         "citation": "Dit is geen pijp!",

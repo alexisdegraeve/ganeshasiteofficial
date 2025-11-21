@@ -32,7 +32,7 @@ export class PortfolioComponent {
       title: 'PORTFOLIO.title-workshop-figma',
       description: 'PORTFOLIO.desc-workshop-figma',
       image: 'assets/img/figma-logo.svg',
-      linkInternal: '/photoshop',
+      linkInternal: '/figma',
       class: 'figma',
       imageLoaded: false
     },
