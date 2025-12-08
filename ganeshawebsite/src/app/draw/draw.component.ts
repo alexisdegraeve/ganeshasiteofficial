@@ -1,0 +1,49 @@
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { PageHeaderComponent } from '../shared/page-header/page-header.component';
+
+declare var bootstrap: any; // Pour utiliser Bootstrap JS
+
+@Component({
+  selector: 'app-draw',
+  templateUrl: './draw.component.html',
+  styleUrls: ['./draw.component.scss'],
+  imports: [CommonModule, TranslateModule, PageHeaderComponent]
+})
+export class DrawComponent {
+  selectedTab = 0;
+  selectedImage: { url: string; alt: string } | null = null;
+
+  archGallery = [
+    {
+      title: 'Logos',
+      images: [
+        { url: 'assets/img/draw/draw_anna_frozen.jpg', img: 'assets/img/draw/draw_anna_frozen.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_bird.jpg', img: 'assets/img/draw/draw_bird.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_lion.jpg', img: 'assets/img/draw/draw_lion.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_nick_wilde_zootopia.jpg', img: 'assets/img/draw/draw_nick_wilde_zootopia.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_owl.jpg', img: 'assets/img/draw/draw_owl.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_scoobydoo.jpg', img: 'assets/img/draw/draw_scoobydoo.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_skull.jpg', img: 'assets/img/draw/draw_skull.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_stitch.jpg', img: 'assets/img/draw/draw_stitch.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_super_mario.jpg', img: 'assets/img/draw/draw_super_mario.jpg', alt: 'draw', width: 15 },
+      ]
+    }
+  ];
+
+  selectTab(index: number) {
+    this.selectedTab = index;
+  }
+
+
+openImageInModal(image: { url: string; alt: string }) {
+  this.selectedImage = image;
+
+  const modalElement = document.getElementById('galleryModal');
+  if (modalElement) {
+    const modal = new bootstrap.Modal(modalElement);
+    modal.show();
+  }
+}
+}

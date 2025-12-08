@@ -22,6 +22,7 @@ import { AdobeIllustratorComponent } from './adobe-illustrator/adobe-illustrator
 import { BrandGuidelinesComponent } from './brand-guidelines/brand-guidelines.component';
 import { CreditsComponent } from './credits/credits.component';
 import { AdobeInDesignComponent } from './adobe-in-design/adobe-in-design.component';
+import { DrawComponent } from './draw/draw.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -43,6 +44,7 @@ const routes: Routes = [
   { path: 'photoshop', component: AdobePhotoshopComponent },
   { path: 'indesign', component: AdobeInDesignComponent },
   { path: 'figma', component: FigmaComponent },
+  { path: 'draw', component: DrawComponent },
   { path: 'illustrator', component: AdobeIllustratorComponent },
   { path: 'brandguidelines', component: BrandGuidelinesComponent },
   { path: 'credits', component: CreditsComponent },
