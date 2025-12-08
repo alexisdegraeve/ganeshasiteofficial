@@ -51,8 +51,9 @@
             }
             
             .figma {
-                object-fit: contain !important;
-                padding: 2rem;
+                object-fit: cover !important;
+                object-position: top;
+                padding: 0;
                 background: #000;
             }
             

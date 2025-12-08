@@ -47,7 +47,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-workshop-figma',
       description: 'PORTFOLIO.desc-workshop-figma',
-      image: 'assets/img/figma-logo.svg',
+      image: 'assets/img/plank_logos_adg.png',
       linkInternal: '/figma',
       class: 'figma',
       imageLoaded: false
@@ -55,7 +55,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-workshop-photoshop',
       description: 'PORTFOLIO.desc-workshop-photoshop',
-      image: 'assets/img/designer.jpg',
+      image: 'assets/img/workshop/workshop_ninja.jpg',
       linkInternal: '/photoshop',
       imageLoaded: false
     },
