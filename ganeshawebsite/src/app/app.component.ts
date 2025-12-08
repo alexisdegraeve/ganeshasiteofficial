@@ -23,7 +23,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     const currentDate = new Date();
     const startDate = new Date(currentDate.getFullYear(), 11, 1); // 1er décembre
     const endDate = new Date(currentDate.getFullYear() + 1, 0, 10); // 10 janvier
-    this.isWinterSeason = (currentDate >= startDate && currentDate <= endDate);
+    this.isWinterSeason = false; //(currentDate >= startDate && currentDate <= endDate);
     // this language will be used as a fallback when a translation isn't found in the current language
     translate.setDefaultLang('en');
     // the lang to use, if the lang isn't available, it will use the current loader to get them
