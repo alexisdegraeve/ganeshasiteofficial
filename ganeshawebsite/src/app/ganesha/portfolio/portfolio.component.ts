@@ -29,6 +29,14 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
+      title: 'PORTFOLIO.title-workshop-draw',
+      description: 'PORTFOLIO.desc-workshop-draw',
+      image: 'assets/img/draw/draw_nick_wilde_zootopia.jpg',
+      linkInternal: '/figma',
+      class: 'draw',
+      imageLoaded: false
+    },
+    {
       title: 'PORTFOLIO.title-workshop-figma',
       description: 'PORTFOLIO.desc-workshop-figma',
       image: 'assets/img/figma-logo.svg',

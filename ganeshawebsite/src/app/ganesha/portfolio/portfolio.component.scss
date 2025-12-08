@@ -3,63 +3,69 @@
                 max-height: 200px;
                 object-fit: cover;
             }
-
+            
             .modal-body img {
                 transition: transform 0.3s ease;
                 cursor: pointer;
             }
-
+            
             .modal-body img:hover {
                 transform: scale(1.05);
             }
-
+            
             .card-text {
                 font-size: 0.9rem;
                 color: #d2d2d2;
                 height: 100%;
                 margin-bottom: auto;
             }
-
+            
             .card-body {
                 min-height: 13rem;
             }
-
+            
             .card-img-top {
                 height: 200px;
                 object-fit: cover;
             }
-
+            
             .placeholder {
                 height: 200px;
                 width: 100%;
             }
-
+            
             .logo {
                 object-fit: contain !important;
             }
-
+            
             .logo-adobe {
                 object-fit: contain !important;
                 height: 8rem !important;
                 width: 8rem !important;
             }
-
+            
+            .draw {
+                object-fit: contain !important;
+                padding: 0rem;
+                background: #fff;
+            }
+            
             .figma {
                 object-fit: contain !important;
                 padding: 2rem;
                 background: #000;
             }
-
+            
             .guidelines {
                 object-fit: contain !important;
                 padding: 2rem;
                 background: $color-8;
             }
-
+            
             .gallery {
                 max-width: 30rem;
             }
-
+            
             .moon {
                 background: #f3f3e2;
                 height: 15rem;
@@ -72,7 +78,7 @@
                 overflow: hidden;
                 position: relative;
             }
-
+            
             .eclipse {
                 height: 15rem;
                 width: 15rem;
@@ -88,7 +94,7 @@
                 /* Ajoute un effet d'ombre plus doux */
                 animation: eclipsemove 15s ease-in-out infinite;
             }
-
+            
             @keyframes eclipsemove {
                 0% {
                     transform: translateX(-100%);
@@ -112,7 +118,7 @@
                     /* Eclipse continue après l'éclipse totale */
                 }
             }
-
+            
             @keyframes circle {
                 0% {
                     clip-path: circle(15rem at 8rem center);
@@ -124,7 +130,7 @@
                     clip-path: circle(15rem at -15rem center);
                 }
             }
-
+            
             .img-container {
                 height: 200px;
                 display: flex;
