@@ -37,6 +37,14 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
+      title: 'PORTFOLIO.title-3D',
+      description: 'PORTFOLIO.desc-3D',
+      image: 'assets/img/3d/bag_leather.png',
+      linkInternal: '/gallery3D',
+      class: 'threed',
+      imageLoaded: false
+    },
+    {
       title: 'PORTFOLIO.title-workshop-figma',
       description: 'PORTFOLIO.desc-workshop-figma',
       image: 'assets/img/figma-logo.svg',
@@ -104,13 +112,6 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
-      title: 'PORTFOLIO.title-3D',
-      description: 'PORTFOLIO.desc-3D',
-      image: 'assets/img/3d_elephant.jpeg',
-      linkInternal: '/gallery3D',
-      imageLoaded: false
-    },
-    {
       title: 'PORTFOLIO.title-logodesign',
       description: 'PORTFOLIO.desc-logodesign',
       image: 'assets/img/logos/logo_folder.png',
@@ -144,9 +145,9 @@ export class PortfolioComponent {
     this.categories[index].imageLoaded = true; // Marque l'image comme chargée
   }
 
-    constructor(private translate: TranslateService, private languageService: LanguageService) {
-      this.languageService.currentLang$.subscribe((lang) => {
-        this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
-      });
-    }
+  constructor(private translate: TranslateService, private languageService: LanguageService) {
+    this.languageService.currentLang$.subscribe((lang) => {
+      this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+    });
+  }
 }

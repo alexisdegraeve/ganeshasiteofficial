@@ -27,7 +27,9 @@ export class Gallery3dComponent {
     {
       title: 'Workshop 3ds Max',
       images: [
-        { img: 'assets/img/3d/armchair.jpg', alt: ' I modeled a round sofa in an attic with a warm sunset HDRI atmosphere. Modeling, texturing, and lighting done by me 😄'},
+        { img: 'assets/img/3d/bag_leather.png', alt: 'I created a leather bag in 3ds Max — stitching, zipper, details, and HDRI lighting.'},
+        { img: 'assets/img/3d/bottle_nike.png', alt: 'I modelled a Nike sports bottle in 3ds Max, including texturing, lighting and HDRI rendering.'},
+        { img: 'assets/img/3d/armchair.jpg', alt: ' I modeled a round sofa in an attic with a warm sunset HDRI atmosphere. Modeling, texturing, and lighting.'},
         { img: 'assets/img/3d/swingchair.jpg', alt: 'A Swing Chair! Modeled in 3ds Max, with texturing and HDRI lighting all done by me ✨'},
         { img: 'assets/img/3d/cofee_machine.png', alt: 'A coffee machine fully modeled in 3ds Max, based on a tutorial! Modeling, texturing, and lighting all done by me. What else? 😉' },
         { img: 'assets/img/3d/fauteuil_barcelona.jpg', alt: 'I recreated the iconic Barcelona Chair following a tutorial in 3ds Max! A great exercise in modeling, texturing, and lighting.' },
