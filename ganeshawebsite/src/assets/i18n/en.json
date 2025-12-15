@@ -162,6 +162,10 @@
         "charsleft": "characters remaining"
     },
     "GAMES": {
+        "GaneshaBattlefield": {
+            "title": "Ganesha Battlefield",
+            "description": "<p>Ganesha Battlefield is a strategy Battleship game, fully designed and developed by me.</p><ul><li>Design and UX/UI crafted by myself (Figma → implementation)</li><li>Developed with Angular 21 and Bootstrap 5</li><li>Computer AI with medium difficulty, analyzes approximate ship positions</li><li>Responsive and mobile-friendly</li></ul><p>Play now: <a href='https://www.battleship.ganesha.ovh/'>https://www.battleship.ganesha.ovh/</a></p>"
+        },
         "GaneshaSudoku": {
             "title": "Ganesha Sudoku",
             "description": "A full Sudoku game, entirely designed and developed by me using React 19.2, ViteJS, and Chakra-UI. Puzzle grids are generated with a backtracking algorithm. Design and UX/UI crafted by myself. Mobile-friendly. Enjoy the game!"

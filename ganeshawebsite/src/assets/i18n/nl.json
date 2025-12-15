@@ -163,6 +163,10 @@
         "charsleft": "tekens over"
     },
     "GAMES": {
+        "GaneshaBattlefield": {
+            "title": "Ganesha Battlefield",
+            "description": "<p>Ganesha Battlefield is een strategisch Zeeslag-spel, volledig door mij ontworpen en ontwikkeld.</p><ul><li>Design en UX/UI door mijzelf gemaakt (Figma → implementatie)</li><li>Ontwikkeld met Angular 21 en Bootstrap 5</li><li>Middelmatige AI die de scheepsposities ongeveer analyseert</li><li>Responsive en mobielvriendelijk</li></ul><p>Speel nu: <a href='https://www.battleship.ganesha.ovh/'>https://www.battleship.ganesha.ovh/</a></p>"
+        },
         "GaneshaSudoku": {
             "title": "Ganesha Sudoku",
             "description": "Een volledige Sudoku-game, volledig ontworpen en ontwikkeld door mijzelf met React 19.2, ViteJS en Chakra-UI. De puzzels worden gegenereerd met een backtracking-algoritme. Design en UX/UI door mijzelf gemaakt. Mobielvriendelijk. Veel plezier!"
