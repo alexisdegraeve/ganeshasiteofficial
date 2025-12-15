@@ -9,7 +9,7 @@
                     <div class="placeholder rounded" style="width: 100%; height: 200px;"></div>
                 </div>
                 <!-- Image du jeu -->
-                <img [hidden]="!game.imageLoaded" [src]="game.image" class="card-img-top" [alt]="game.title" (load)="onImageLoad(i)">
+                <img [hidden]="!game.imageLoaded" [src]="game.image" class="card-img-top {{ game.class }}" [alt]="game.title" (load)="onImageLoad(i)">
                 <div class="card-body">
                     <!-- Titre du jeu avec traduction -->
                     <h5 class="card-title">{{ game.title | translate }}</h5>

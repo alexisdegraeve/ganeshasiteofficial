@@ -16,7 +16,8 @@ export class GamesComponent {
      {
       title: 'GAMES.GaneshaBattlefield.title',  // Clé de traduction
       description: 'GAMES.GaneshaBattlefield.description',  // Clé de traduction
-      image: 'assets/img/ganesha_sudoku.png',
+      image: 'assets/img/ganesha_battleship.png',
+      class: 'battlefield',
       playUrl: 'https://www.battleship.ganesha.ovh/',
       githubUrl: 'https://github.com/alexisdegraeve/ganeshabattleship',
       imageLoaded: false
