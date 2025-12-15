@@ -19,6 +19,7 @@ export class FigmaComponent {
     {
       title: 'Logos',
       images: [
+        { url: 'assets/img/draw/draw_nick_figma.jpg', img: 'assets/img/draw/raw_nick_figma.jpg', alt: 'FIGMA.nick-wilde', width: 15 },
         { url: 'assets/img/plank_logos_adg.png', img: 'assets/img/plank_logos_adg.png', alt: 'FIGMA.alt-logos', width: 15 },
         { url: 'assets/img/plank_logos_2_adg.png', img: 'assets/img/plank_logos_2_adg.png', alt: 'FIGMA.alt-logos', width: 15 },
       ]

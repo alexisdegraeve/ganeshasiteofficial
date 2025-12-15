@@ -31,7 +31,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-workshop-draw',
       description: 'PORTFOLIO.desc-workshop-draw',
-      image: 'assets/img/draw/draw_nick_wilde_zootopia.jpg',
+      image: 'assets/img/draw/draw_elsa.jpg',
       linkInternal: '/draw',
       class: 'draw',
       imageLoaded: false

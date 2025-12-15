@@ -19,9 +19,12 @@ export class DrawComponent {
     {
       title: 'Logos',
       images: [
+        { url: 'assets/img/draw/draw_elsa.jpg', img: 'assets/img/draw/draw_elsa.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_beauty_disney.jpg', img: 'assets/img/draw/draw_beauty_disney.jpg', alt: 'draw', width: 15 },
         { url: 'assets/img/draw/draw_anna_frozen.jpg', img: 'assets/img/draw/draw_anna_frozen.jpg', alt: 'draw', width: 15 },
         { url: 'assets/img/draw/draw_bird.jpg', img: 'assets/img/draw/draw_bird.jpg', alt: 'draw', width: 15 },
         { url: 'assets/img/draw/draw_lion.jpg', img: 'assets/img/draw/draw_lion.jpg', alt: 'draw', width: 15 },
+        { url: 'assets/img/draw/draw_judy_hopps_zootopia.jpg', img: 'assets/img/draw/draw_judy_hopps_zootopia.jpg', alt: 'draw', width: 15 },
         { url: 'assets/img/draw/draw_nick_wilde_zootopia.jpg', img: 'assets/img/draw/draw_nick_wilde_zootopia.jpg', alt: 'draw', width: 15 },
         { url: 'assets/img/draw/draw_owl.jpg', img: 'assets/img/draw/draw_owl.jpg', alt: 'draw', width: 15 },
         { url: 'assets/img/draw/draw_scoobydoo.jpg', img: 'assets/img/draw/draw_scoobydoo.jpg', alt: 'draw', width: 15 },
