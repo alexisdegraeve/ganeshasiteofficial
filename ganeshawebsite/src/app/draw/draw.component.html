@@ -12,10 +12,18 @@
     <!-- Galerie d'images -->
     <div class="row g-4">
         <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
-            <div class="card shadow-sm position-relative" (click)="openImageInModal(image)" style="cursor:pointer">
-                <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded draw">
+            <div class="card shadow-sm image-card" (click)="openImageInModal(image)">
+
+                <!-- SPINNER -->
+                <div class="spinner-overlay" *ngIf="!image.loaded">
+                    <div class="spinner-border text-light" role="status"></div>
+                </div>
+
+                <!-- IMAGE -->
+                <img [attr.loading]="'lazy'" [src]="image.url" [alt]="image.alt" class="card-img-top rounded draw fade-img" (load)="image.loaded = true" [class.loaded]="image.loaded">
             </div>
         </div>
+
     </div>
 </div>
 
