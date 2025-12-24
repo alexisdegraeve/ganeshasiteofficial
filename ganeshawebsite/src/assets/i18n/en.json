@@ -256,9 +256,12 @@
         "comment-frame-ai-mask": "Integrated images into frames using a fusion mask and generated cats with AI."
     },
     "FIGMA": {
+
         "quote-figma": "Figma turns my ideas into living shapes — a space where creativity and collaboration come together.",
         "alt-logos": "Logo design exercise made in Figma, inspired by a LinkedIn Learning course. I adapted a tutorial originally for Illustrator and recreated it fully in Figma, improving my precision, visual balance, and skills with shapes, gradients, and composition.",
-        "nick-wilde": "Vector drawing exercise of Nick Wilde from Zootopia. I first drew him by hand, then manually recreated him in Figma, which allowed me to practice precision and control over vector shapes."
+        "nick-wilde": "Vector drawing exercise of Nick Wilde from Zootopia. I first drew him by hand, then manually recreated him in Figma, which allowed me to practice precision and control over vector shapes.",
+        "ganesha-battlefield": "Design boards for Ganesha Battlefield, a game inspired by naval combat. I recreated the game design, highlighting the ships and making the interface user-friendly on both smartphone and desktop.",
+        "ganopoly-deal": "Design boards for Ganopoly Deal, the Monopoly parody inspired by Monopoly Deal. I recreated the game design, created the character Ganesha whose expression changes depending on winning or losing, and designed the cards to give a modern look & feel."
     },
     "INDESIGN": {
         "quote-vogue": "'Vogue' is the best of everything that fashion can offer, and I think we point the way. We are, you know, a glamorous girlfriend.",
