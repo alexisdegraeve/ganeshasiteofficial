@@ -162,6 +162,10 @@
         "charsleft": "characters remaining"
     },
     "GAMES": {
+        "GanopolyDeal": {
+            "title": "Ganopoly Deal",
+            "description": "<p>Ganopoly Deal is a strategic card game inspired by Monopoly, fully designed and developed by me.</p><ul><li>Design and UX/UI crafted by myself (Figma → implementation)</li><li>Developed with Angular 21 and Bootstrap 5</li><li>Medium difficulty AI for computer opponents</li><li>Responsive and mobile-friendly</li></ul>"
+        },
         "GaneshaBattlefield": {
             "title": "Ganesha Battlefield",
             "description": "<p>Ganesha Battlefield is a strategy Battleship game, fully designed and developed by me.</p><ul><li>Design and UX/UI crafted by myself (Figma → implementation)</li><li>Developed with Angular 21 and Bootstrap 5</li><li>Computer AI with medium difficulty, analyzes approximate ship positions</li><li>Responsive and mobile-friendly</li></ul>"

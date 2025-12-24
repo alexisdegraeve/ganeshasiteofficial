@@ -3,6 +3,11 @@ img.battlefield.card-img-top {
     background: linear-gradient(180deg, #018fcf, #027bb3);
 }
 
+img.ganopolydeal.card-img-top {
+    object-fit: contain !important;
+    background: #3e4b7b;
+}
+
 .card img {
     max-height: 200px;
     object-fit: cover;

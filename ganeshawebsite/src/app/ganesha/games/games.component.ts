@@ -14,6 +14,15 @@ import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.comp
 export class GamesComponent {
   games = [
      {
+      title: 'GAMES.GanopolyDeal.title',  // Clé de traduction
+      description: 'GAMES.GanopolyDeal.description',  // Clé de traduction
+      image: 'assets/img/logo-ganopoly-deal.svg',
+      class: 'ganopolydeal',
+      playUrl: 'https://www.ganopolydeal.ganesha.ovh/',
+      githubUrl: 'https://github.com/alexisdegraeve/ganopolydeal',
+      imageLoaded: false
+     },
+     {
       title: 'GAMES.GaneshaBattlefield.title',  // Clé de traduction
       description: 'GAMES.GaneshaBattlefield.description',  // Clé de traduction
       image: 'assets/img/ganesha_battleship.png',
