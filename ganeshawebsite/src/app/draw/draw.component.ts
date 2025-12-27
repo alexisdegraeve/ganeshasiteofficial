@@ -19,6 +19,8 @@ export class DrawComponent {
     {
       title: 'Logos',
       images: [
+        { url: 'assets/img/draw/draw_santaclaus.jpg', img: 'assets/img/draw/draw_santaclaus.jpg', alt: 'draw', width: 15, loaded: false},
+        { url: 'assets/img/draw/draw_elfe.jpg', img: 'assets/img/draw/draw_elfe.jpg', alt: 'draw', width: 15, loaded: false},
         { url: 'assets/img/draw/draw_grinch.jpg', img: 'assets/img/draw/draw_grinch.jpg', alt: 'draw', width: 15, loaded: false},
         { url: 'assets/img/draw/draw_mufasa.jpg', img: 'assets/img/draw/draw_mufasa.jpg', alt: 'draw', width: 15, loaded: false },
         { url: 'assets/img/draw/draw_elsa.jpg', img: 'assets/img/draw/draw_elsa.jpg', alt: 'draw', width: 15, loaded: false },
