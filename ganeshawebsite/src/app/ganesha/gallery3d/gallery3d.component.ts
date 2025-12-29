@@ -25,19 +25,34 @@ export class Gallery3dComponent {
           img: 'assets/img/3d/blender/blender_ikea_kallax.png',
           alt: `
           High-detail 3D model of the IKEA KALLAX unit created
-    <ul>
-      <li>Beveled panel geometry for realistic edges</li>
-      <li>Black and white material variants</li>
-      <li>Wood material textures for the black version</li>
-      <li>Custom procedural box pattern</li>
-      <li>Sculpted surface relief details</li>
-      <li>Solidify-based thickness and seam modeling</li>
-      <li>Spin tool for rotational geometry creation</li>
-      <li>Snap alignment for precise mesh positioning</li>
-      <li>HDRI environment lighting for natural illumination</li>
-    </ul>
-    `
+          <ul>
+            <li>Beveled panel geometry for realistic edges</li>
+            <li>Black and white material variants</li>
+            <li>Wood material textures for the black version</li>
+            <li>Custom procedural box pattern</li>
+            <li>Sculpted surface relief details</li>
+            <li>Solidify-based thickness and seam modeling</li>
+            <li>Spin tool for rotational geometry creation</li>
+            <li>Snap alignment for precise mesh positioning</li>
+            <li>HDRI environment lighting for natural illumination</li>
+          </ul>
+          `
         },
+        {
+          img: 'assets/img/3d/blender/blender_dishes_cups.png',
+          alt: `
+          Hard-surface 3D modeling of plates and coffee cups in Blender
+          <ul>
+            <li>Solidify modifier for realistic wall thickness</li>
+            <li>Bridge Faces / Bridge Edge Loops for clean topology connections</li>
+            <li>Early-stage UV mapping for texture placement</li>
+            <li>Object array usage for duplication and alignment</li>
+            <li>Custom textures created in Adobe Photoshop and Illustrator</li>
+            <li>HDRI environment lighting for realistic reflections and illumination</li>
+          </ul>
+          `
+        }
+
       ],
     },
     {
