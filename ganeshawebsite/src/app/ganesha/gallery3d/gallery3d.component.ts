@@ -41,7 +41,7 @@ export class Gallery3dComponent {
         {
           img: 'assets/img/3d/blender/blender_dishes_cups.png',
           alt: `
-          Hard-surface 3D modeling of plates and coffee cups in Blender
+          Hard-surface 3D modeling of plates and coffee cups
           <ul>
             <li>Solidify modifier for realistic wall thickness</li>
             <li>Bridge Faces / Bridge Edge Loops for clean topology connections</li>
