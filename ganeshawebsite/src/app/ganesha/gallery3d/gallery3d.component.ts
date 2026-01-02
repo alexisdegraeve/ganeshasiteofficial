@@ -22,6 +22,31 @@ export class Gallery3dComponent {
       title: 'Blender (EPFC)',
       images: [
         {
+          img: 'assets/img/3d/blender/hommage_magritte_la_pipe.png',
+          alt: `
+            High-detail 3D reinterpretation of René Magritte’s iconic pipe artwork
+            “Ceci n'est pas une pipe.”
+            <ul>
+              <li>Faithful blockout based on original painting proportions</li>
+              <li>Subdivision surface modeling for smooth organic curves</li>
+              <li>Procedural wood shader with subtle grain variations</li>
+              <li>Soft studio lighting for balanced shadows and depth</li>
+              <li>Final color grading for a warm, museum-like atmosphere</li>
+            </ul>
+            `
+        }, {
+          img: 'assets/img/3d/blender/hommage_magritte_chambre_ecoute.png',
+          alt: `
+            High-detail 3D homage to René Magritte’s “La Chambre d’Écoute”
+            <ul>
+              <li>Faithful architectural blockout and proportions</li>
+              <li>Smooth subdivision modeling for apple volume</li>
+              <li>Procedural materials for walls and floor</li>
+              <li>Soft global illumination and natural light setup</li>
+            </ul>
+            `
+        },
+        {
           img: 'assets/img/3d/blender/blender_ikea_kallax.png',
           alt: `
           High-detail 3D model of the IKEA KALLAX unit created
