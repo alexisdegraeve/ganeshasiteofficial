@@ -22,6 +22,20 @@ export class Gallery3dComponent {
       title: 'Blender (EPFC)',
       images: [
         {
+          img: 'assets/img/3d/blender/blender_piano_roland_f130.png',
+          alt: `
+              High-detail 3D recreation of the Roland F-130 R digital piano.
+              <ul>
+                <li>Clean quad-based topology optimized for Subdivision Surface</li>
+                <li>Precision bevel workflow for realistic edge softening</li>
+                <li>Array-based duplication for perfectly aligned piano keys</li>
+                <li>Custom materials for wood, plastic keys, and metal pedals</li>
+                <li>Two-point studio lighting setup for balanced highlights and shadows</li>
+                <li>Rendered with Blender Cycles for photorealistic results</li>
+              </ul>
+            `
+        },
+        {
           img: 'assets/img/3d/blender/hommage_magritte_la_pipe.png',
           alt: `
             High-detail 3D reinterpretation of René Magritte’s iconic pipe artwork
