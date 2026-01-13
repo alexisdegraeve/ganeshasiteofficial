@@ -19,7 +19,7 @@ export class Gallery3dComponent {
 
   archGallery = [
     {
-      title: 'Blender (EPFC)',
+      title: 'Blender',
       images: [
         {
           img: 'assets/img/3d/blender/blender_piano_roland_f130.png',
