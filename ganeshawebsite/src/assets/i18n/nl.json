@@ -66,23 +66,23 @@
     "PORTFOLIO": {
         "citation": "Eenvoud is het principe van kunst.",
 
-        "title-workshop-draw": "Handtekening (Workshop)",
+        "title-workshop-draw": "Handtekening ",
         "desc-workshop-draw": "Handgetekende illustraties met nauwkeurige verhoudingen, artistieke creativiteit en oog voor detail. Perfect om je visuele en ontwerpvaardigheden aan potentiële werkgevers te tonen.",
 
 
         "title-brand-guidelines": "Brand Guidelines",
         "desc-brand-guidelines": "Overzicht van mijn visuele identiteit: logo, kleurenpalet, typografie en grafische richtlijnen voor een sterke en consistente uitstraling.",
 
-        "title-workshop-figma": "Figma (Workshop)",
+        "title-workshop-figma": "Figma ",
         "desc-workshop-figma": "Interactieve mockups, webpagina’s, logo’s en designsystemen gemaakt met Figma, die creativiteit en precisie laten zien. Klik om mijn projecten te ontdekken!",
 
-        "title-workshop-photoshop": "Adobe Photoshop (Workshop)",
+        "title-workshop-photoshop": "Adobe Photoshop ",
         "desc-workshop-photoshop": "Grafische creaties uit mijn opleiding, waarbij techniek en creativiteit samenkomen.",
 
-        "title-workshop-indesign": "Adobe InDesign (Workshop)",
+        "title-workshop-indesign": "Adobe InDesign ",
         "desc-workshop-indesign": "Een tijdschrift van 4 pagina’s, een flyer en een poster ontworpen — een combinatie van techniek en creativiteit.",
 
-        "title-workshop-illustrator": "Adobe Illustrator (Workshop)",
+        "title-workshop-illustrator": "Adobe Illustrator ",
         "desc-workshop-illustrator": "Ontwerpen van iconen en vectorillustraties — een mix van technische vaardigheid en creativiteit.",
 
         "title-games": "Games",
@@ -105,13 +105,13 @@
         "desc-promockup": "Vind professionele mockups voor je projecten.",
 
         "title-3D": "3D",
-        "desc-3D": "Creatieve 3D-projecten met 3DS Max, Blender.",
+        "desc-3D": "3D-modellering, belichting en texturering met Blender en 3ds Max.",
 
         "title-logodesign": "Logo-ontwerp",
         "desc-logodesign": "Creatieve logo-ontwerpen voor je merk.",
 
-        "title-mockups": "Mockups",
-        "desc-mockups": "Creatieve mockups met Figma, Zeplin.",
+        "title-mockups": "Wireframes",
+        "desc-mockups": "Low- en high-fidelity prototypes gemaakt met Figma en Zeplin.",
 
         "title-ganeshalearning": "Ganesha Learning",
         "desc-ganeshalearning": "🎓 Op dit kanaal bieden we uitgebreide tutorials over Angular 19 en andere essentiële frontend-onderwerpen. Beheers HTML, CSS en het krachtige Angular-framework om moderne webapplicaties te bouwen.",

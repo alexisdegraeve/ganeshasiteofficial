@@ -66,22 +66,22 @@
     "PORTFOLIO": {
         "citation": "La simplicité est le principe de l'art.",
 
-        "title-workshop-draw": "Dessin à la main (Atelier)",
+        "title-workshop-draw": "Dessin à la main",
         "desc-workshop-draw": "Dessins à la main démontrant des proportions précises, une créativité artistique et une attention aux détails. Idéal pour montrer votre talent visuel et votre sens du design aux recruteurs.",
 
         "title-brand-guidelines": "Brand Guidelines",
         "desc-brand-guidelines": "Présentation de mon identité visuelle : logo, couleurs, typographies et principes graphiques pour garantir cohérence et impact visuel.",
 
-        "title-workshop-figma": "Figma (Workshop)",
+        "title-workshop-figma": "Figma ",
         "desc-workshop-figma": "Maquettes interactives, pages web, logos et systèmes de design réalisés avec Figma, alliant créativité et précision. Cliquez pour découvrir mes projets !",
 
-        "title-workshop-photoshop": "Adobe Photoshop (Workshop)",
+        "title-workshop-photoshop": "Adobe Photoshop ",
         "desc-workshop-photoshop": "Créations graphiques issues de mes sessions de formation, alliant technique et créativité.",
 
-        "title-workshop-indesign": "Adobe InDesign (Workshop)",
+        "title-workshop-indesign": "Adobe InDesign ",
         "desc-workshop-indesign": "Création d’un magazine de 4 pages, d’un flyer et d’une affiche — alliant technique et créativité.",
 
-        "title-workshop-illustrator": "Adobe Illustrator (Workshop)",
+        "title-workshop-illustrator": "Adobe Illustrator ",
         "desc-workshop-illustrator": "Création d’icônes et de dessins vectoriels — un mélange de compétence technique et de créativité.",
 
         "title-games": "Games",
@@ -103,13 +103,13 @@
         "desc-promockup": "Trouvez des mockups professionnels pour vos projets.",
 
         "title-3D": "3D",
-        "desc-3D": "Créations 3D avec 3DS Max, Blender.",
+        "desc-3D": "Modélisation 3D, éclairage et texturage avec Blender et 3ds Max.",
 
         "title-logodesign": "Création de logos",
         "desc-logodesign": "Conception de logos créatifs pour votre marque.",
 
-        "title-mockups": "Mockups",
-        "desc-mockups": "Mockups créatifs avec Figma, Zeplin.",
+        "title-mockups": "Wireframes",
+        "desc-mockups": "Prototypes basse et haute fidélité réalisés avec Figma et Zeplin.",
 
         "title-ganeshalearning": "Ganesha Learning",
         "desc-ganeshalearning": "🎓 Sur cette chaîne, nous proposons des tutoriels complets sur Angular 19 et d'autres sujets essentiels du frontend. Maîtrisez HTML, CSS et le puissant framework Angular pour créer des applications web modernes.",

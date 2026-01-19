@@ -31,7 +31,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-workshop-draw',
       description: 'PORTFOLIO.desc-workshop-draw',
-      image: 'assets/img/draw/draw_elsa.jpg',
+      image: 'assets/img/draw/draw_red_panda.jpg',
       linkInternal: '/draw',
       class: 'draw',
       imageLoaded: false
@@ -39,7 +39,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-3D',
       description: 'PORTFOLIO.desc-3D',
-      image: 'assets/img/3d/bag_leather.png',
+      image: 'assets/img/3d/blender/blender_stairs.png',
       linkInternal: '/gallery3D',
       class: 'threed',
       imageLoaded: false
@@ -50,6 +50,13 @@ export class PortfolioComponent {
       image: 'assets/img/plank_logos_adg.png',
       linkInternal: '/figma',
       class: 'figma',
+      imageLoaded: false
+    },
+    {
+      title: 'PORTFOLIO.title-mockups',
+      description: 'PORTFOLIO.desc-mockups',
+      image: 'assets/img/mockups.jpeg',
+      linkInternal: '/mockups',
       imageLoaded: false
     },
     {
@@ -117,13 +124,6 @@ export class PortfolioComponent {
       image: 'assets/img/logos/logo_folder.png',
       linkInternal: '/gallerylogo',
       class: 'logo',
-      imageLoaded: false
-    },
-    {
-      title: 'PORTFOLIO.title-mockups',
-      description: 'PORTFOLIO.desc-mockups',
-      image: 'assets/img/mockups.jpeg',
-      linkInternal: '/mockups',
       imageLoaded: false
     },
     {
