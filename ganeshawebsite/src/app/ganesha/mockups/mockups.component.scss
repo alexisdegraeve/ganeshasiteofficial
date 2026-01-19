@@ -28,12 +28,14 @@
     }
     .card-img-top {
         transition: none;
-        height: auto;
-        width: 128px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top left;
     }
     .overlay {
         position: absolute;
@@ -54,4 +56,14 @@
 
 .modal-header {
     border-bottom: unset;
+}
+
+.img-fixed {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }

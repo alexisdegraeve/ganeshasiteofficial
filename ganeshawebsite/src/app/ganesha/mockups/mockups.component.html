@@ -23,13 +23,17 @@
     <!-- Galerie d'images -->
     <div class="row g-4">
         <div class="col-sm-6 col-md-4" *ngFor="let image of archGallery[selectedTab].images">
-            <div class="card shadow-sm position-relative" (click)="openImageInModal(image)">
-                <div class="card-body">
+            <div class="card shadow-sm h-100 d-flex flex-column position-relative">
+                <div class="card-body cursor-pointer" (click)="openImageInModal(image)">
                     <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded">
-                    <div class="overlay"></div>
                 </div>
-                <div class="card-footer p-2">
-                    <p class="card-text text-center">{{ image.alt }}</p>
+                <div class="card-footer mt-auto text-end">
+                    <p class="card-text mb-2 text-center">{{ image.alt }}</p>
+
+                    <!-- Bouton PDF (optionnel) -->
+                    <a *ngIf="image.pdf" [href]="image.pdf" download class="btn btn-outline-light btn-sm" (click)="$event.stopPropagation()">
+                        <i class="fa fa-file-pdf me-2"></i> <span [innerHTML]="( 'PORTFOLIO.btn-download' | translate) "></span>
+                    </a>
                 </div>
             </div>
         </div>

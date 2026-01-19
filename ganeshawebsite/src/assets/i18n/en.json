@@ -73,7 +73,7 @@
         "desc-brand-guidelines": "Overview of my visual identity: logo, color palette, typography, and graphic principles to ensure consistency and visual impact.",
 
         "title-workshop-figma": "Figma ",
-        "desc-workshop-figma": "Interactive mockups, web pages, logos, and design systems crafted with Figma, showcasing both creativity and precision. Click to explore my projects!",
+        "desc-workshop-figma": "Interactive mockups, web pages, logos, and design systems crafted with Figma, showcasing both creativity and precision.",
 
         "title-workshop-photoshop": "Adobe Photoshop ",
         "desc-workshop-photoshop": "Graphic creations from my training sessions, combining technique and creativity.",
@@ -259,6 +259,7 @@
 
         "quote-figma": "Figma turns my ideas into living shapes — a space where creativity and collaboration come together.",
         "alt-logos": "Logo design exercise made in Figma, inspired by a LinkedIn Learning course. I adapted a tutorial originally for Illustrator and recreated it fully in Figma, improving my precision, visual balance, and skills with shapes, gradients, and composition.",
+        "alt-qfdn": "Logo proposals for “Quelques Femmes du Numérique”, a website showcasing portraits of women in the digital field.",
         "nick-wilde": "Vector drawing exercise of Nick Wilde from Zootopia. I first drew him by hand, then manually recreated him in Figma, which allowed me to practice precision and control over vector shapes.",
         "ganesha-battlefield": "Design boards for Ganesha Battlefield, a game inspired by naval combat. I recreated the game design, highlighting the ships and making the interface user-friendly on both smartphone and desktop.",
         "ganopoly-deal": "Design boards for Ganopoly Deal, the Monopoly parody inspired by Monopoly Deal. I recreated the game design, created the character Ganesha whose expression changes depending on winning or losing, and designed the cards to give a modern look & feel."

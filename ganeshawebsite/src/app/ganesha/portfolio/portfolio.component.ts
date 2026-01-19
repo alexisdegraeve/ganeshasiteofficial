@@ -47,7 +47,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-workshop-figma',
       description: 'PORTFOLIO.desc-workshop-figma',
-      image: 'assets/img/plank_logos_adg.png',
+      image: 'assets/img/logos/qfdn_new.svg',
       linkInternal: '/figma',
       class: 'figma',
       imageLoaded: false

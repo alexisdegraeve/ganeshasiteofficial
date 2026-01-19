@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
 
 declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
@@ -8,16 +9,18 @@ declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstra
   selector: 'app-mockups',
   templateUrl: './mockups.component.html',
   styleUrls: ['./mockups.component.scss'],
-  imports: [CommonModule, PageHeaderComponent]
+  imports: [CommonModule, PageHeaderComponent, TranslateModule]
 })
 export class MockupsComponent {
   selectedTab = 0;
-  selectedImage: { url: string; alt: string } | null = null;
+  selectedImage: { url: string; alt: string;  pdf?: string } | null = null;
 
   archGallery = [
     {
       title: 'Mockups',
       images: [
+        { url: 'assets/img/wireframes/wireframe_sport.png', alt:  'Low-fidelity wireframe for a sports mobile application', pdf: 'assets/pdf/wireframe_application_sport_adg.pdf' },
+        { url: 'assets/img/wireframes/mockup_wellness.png', alt:  'High-fidelity mockup for a wellness website redesign'  },
         { url: 'assets/img/mockups/hackaton2024/priflex.jpeg', alt: 'Hackaton 2024' },
         // { url: 'assets/img/mockups/iba_pridex/pridex_logo.svg', alt: 'IBA Pridex' },
       ]
