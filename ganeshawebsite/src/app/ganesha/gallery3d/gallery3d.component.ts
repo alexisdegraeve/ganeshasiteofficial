@@ -22,6 +22,19 @@ export class Gallery3dComponent {
       title: 'Blender',
       images: [
         {
+          img: 'assets/img/3d/blender/blender_stairs.png',
+          alt: `
+              High-detail 3D staircase railing created in Blender
+              <ul>
+                <li>Screw modifier with Empty object as axis for spiral shape</li>
+                <li>Array modifier for repeating railing segments</li>
+                <li>Subdivision surface modeling for smooth curves</li>
+                <li>Custom materials and textures for realistic finish</li>
+                <li>Soft studio lighting for balanced shadows and highlights</li>
+              </ul>
+            `
+        },
+        {
           img: 'assets/img/3d/blender/blender_piano_roland_f130.png',
           alt: `
               High-detail 3D recreation of the Roland F-130 R digital piano.

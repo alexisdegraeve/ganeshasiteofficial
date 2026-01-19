@@ -19,6 +19,8 @@ export class DrawComponent {
     {
       title: 'Logos',
       images: [
+        { url: 'assets/img/draw/draw_flamand_rose.jpg', img: 'assets/img/draw/draw_flamand_rose.jpg', alt: 'draw', width: 15, loaded: false },
+        { url: 'assets/img/draw/draw_red_panda.jpg', img: 'assets/img/draw/draw_red_panda.jpg', alt: 'draw', width: 15, loaded: false },
         { url: 'assets/img/draw/draw_wolverine.jpg', img: 'assets/img/draw/draw_wolverine.jpg', alt: 'draw', width: 15, loaded: false},
         { url: 'assets/img/draw/draw_miles_morales.jpg', img: 'assets/img/draw/draw_miles_morales.jpg', alt: 'draw', width: 15, loaded: false},
         { url: 'assets/img/draw/draw_spiderman.jpg', img: 'assets/img/draw/draw_spiderman.jpg', alt: 'draw', width: 15, loaded: false},
