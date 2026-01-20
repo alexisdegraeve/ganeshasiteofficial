@@ -48,14 +48,14 @@ export class PortfolioComponent {
       title: 'PORTFOLIO.title-digital-draw',
       description: 'PORTFOLIO.desc-workshop-illustrator',
       image: 'assets/img/illustrator/cat.svg',
-      class: 'logo-adobe',
+      class: 'logo-digital',
       linkInternal: '/illustrator',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-mockups',
       description: 'PORTFOLIO.desc-mockups',
-      image: 'assets/img/mockups.jpeg',
+      image: 'assets/img/wireframes/wireframe_sport.png',
       linkInternal: '/mockups',
       imageLoaded: false
     },

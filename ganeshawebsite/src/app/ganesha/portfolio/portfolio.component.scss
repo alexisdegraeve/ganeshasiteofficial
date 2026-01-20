@@ -39,9 +39,12 @@
             }
 
             .logo-adobe {
-                //object-fit: contain !important;
-                //max-height: unset !important;
-                //height: 14.5rem !important;
+                object-fit: contain !important;
+                height: 8rem !important;
+                width: 8rem !important;
+            }
+
+            .logo-digital {
                 object-position: 0 -8rem;
             }
 
