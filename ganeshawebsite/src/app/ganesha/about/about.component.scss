@@ -187,8 +187,11 @@ ul {
             .timeline-content {
                 flex: 1;
                 .card {
-                    border-radius: 0.75rem;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    // border-radius: 0.75rem;
+                    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    background-color: transparent;
+                    border: unset;
+                    box-shadow: unset;
                     transition: transform 0.3s;
                 }
                 .card:hover {
