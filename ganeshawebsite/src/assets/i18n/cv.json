@@ -1,0 +1,148 @@
+{
+    "title": {
+        "fr": "Mon Parcours",
+        "en": "My Journey",
+        "nl": "Mijn Loopbaan"
+    },
+    "aboutMe": {
+        "fr": "Passionné par le design graphique et la technologie, je suis spécialisé en UX/UI Design, créant des expériences centrées utilisateur, pixel-perfect et responsives. Mon travail combine esthétique, fonctionnalité et utilisabilité.",
+        "en": "Passionate about graphic design and technology, I specialize in UX/UI Design with a focus on creating user-centered, pixel-perfect, and responsive experiences.",
+        "nl": "Passie voor grafisch ontwerp en technologie, gespecialiseerd in UX/UI Design met focus op gebruiksvriendelijke, pixel-perfecte en responsieve ervaringen."
+    },
+    "coreSkills": {
+        "fr": ["UX/UI Design", "Prototypage & Wireframing", "Recherche utilisateur & Tests", "Design d'interaction", "Responsive Design", "Design Systems", "Figma, Zeplin, Sketch", "Adobe XD, Photoshop, Illustrator", "Modélisation 3D"],
+        "en": ["UX/UI Design", "Prototyping & Wireframing", "User Research & Testing", "Interaction Design", "Responsive Design", "Design Systems", "Figma, Zeplin, Sketch", "Adobe XD, Photoshop, Illustrator", "3D Modeling"],
+        "nl": ["UX/UI Design", "Prototyping & Wireframing", "Gebruikersonderzoek & Testing", "Interaction Design", "Responsive Design", "Design Systems", "Figma, Zeplin, Sketch", "Adobe XD, Photoshop, Illustrator", "3D Modellering"]
+    },
+    "technologies": {
+        "fr": ["Frontend: Angular 19, ReactJS, Vue.js, Flask, HTML5, CSS3", "Librairies: Bootstrap, Angular Material, Ionic, Tailwind, SCSS", "JS: ES6+", "Autres outils: Git, Azure, Figma, Zeplin, Adobe Photoshop/Illustrator, 3DS Max"],
+        "en": ["Frontend: Angular 19, ReactJS, Vue.js, Flask, HTML5, CSS3", "Libraries/Frameworks: Bootstrap, Angular Material, Ionic, Tailwind, SCSS", "JavaScript: ES6+", "Other Tools: Git, Azure, Figma, Zeplin, Adobe Photoshop/Illustrator, 3DS Max"],
+        "nl": ["Frontend: Angular 19, ReactJS, Vue.js, Flask, HTML5, CSS3", "Bibliotheken: Bootstrap, Angular Material, Ionic, Tailwind, SCSS", "JavaScript: ES6+", "Andere Tools: Git, Azure, Figma, Zeplin, Adobe Photoshop/Illustrator, 3DS Max"]
+    },
+    "education": [{
+            "period": "2018-2023",
+            "title": {
+                "fr": "Master en Informatique @ UNamur (mention distinction)",
+                "en": "Master in Computer Science @ UNamur (Graduated with distinction)",
+                "nl": "Master in Informatica @ UNamur (afgestudeerd met onderscheiding)"
+            },
+            "details": {
+                "fr": "Thèse: Chatbot dans un Escape Game",
+                "en": "Thesis: Chatbot in an Escape Game",
+                "nl": "Scriptie: Chatbot in een Escape Game"
+            },
+            "color": "#FF6B6B"
+        },
+        {
+            "period": "2000-2003",
+            "title": {
+                "fr": "Bachelor en IT @ I.S.F.C.E.",
+                "en": "Bachelor in IT @ I.S.F.C.E.",
+                "nl": "Bachelor in IT @ I.S.F.C.E."
+            },
+            "color": "#FFD93D"
+        }
+    ],
+    "experience": [{
+            "period": "07/2025 – 10/2025",
+            "company": "EXTIA (Client: VERITY)",
+            "role": "Frontend Developer & UX/UI Designer",
+            "description": {
+                "fr": "Contribué aux applications Ores et EasyConso en tant que UX/UI Designer et Frontend Developer. Création de mockups UI, interfaces responsives et visualisation de données.",
+                "en": "Contributed to Ores and EasyConso applications as UX/UI Designer and Frontend Developer. Created UI mockups, responsive interfaces, and data visualization.",
+                "nl": "Bijgedragen aan Ores en EasyConso applicaties als UX/UI Designer en Frontend Developer. UI mockups gemaakt, responsieve interfaces en datavisualisatie."
+            },
+            "technologies": ["Adobe XD", "Angular", "SCSS", "Tailwind", "Highcharts", "GitLab", "Azure"],
+            "color": "#4ECDC4"
+        },
+        {
+            "period": "07/2022 – 11/2024",
+            "company": "IBA",
+            "role": "Frontend Developer & UX/UI Designer",
+            "description": {
+                "fr": "Conception et développement UI pour PRIDEx, mockups pour mesure en dosimétrie, éléments interactifs pour Akuracy.",
+                "en": "Designed and developed UI for PRIDEx, mockups for dosimetry measurement, interactive elements for Akuracy.",
+                "nl": "UI ontworpen en ontwikkeld voor PRIDEx, mockups voor dosimetrie metingen, interactieve elementen voor Akuracy."
+            },
+            "technologies": ["Figma", "Angular", "SCSS", "Tailwind", "Ionic", "Azure", "Jasmine/Cypress"],
+            "color": "#556270"
+        },
+        {
+            "period": "07/2021 – 06/2022",
+            "company": "CTG",
+            "role": "Frontend Developer (Web) & UX/UI Designer",
+            "description": {
+                "fr": "Création d’interfaces pixel-perfect et responsives pour le dashboard IHB Railroad. Intégration UI/UX avec Figma, Zeplin, Adobe XD.",
+                "en": "Created pixel-perfect, responsive interfaces for IHB Railroad dashboard. Integrated UI/UX with Figma, Zeplin, Adobe XD.",
+                "nl": "Pixel-perfect, responsieve interfaces ontworpen voor IHB Railroad dashboard. UI/UX geïntegreerd met Figma, Zeplin, Adobe XD."
+            },
+            "technologies": ["Figma", "Angular", "SCSS", "Bootstrap", "Azure", "Git", "Jasmine/Cypress"],
+            "color": "#FF6B6B"
+        },
+        {
+            "period": "05/2021 – 06/2021",
+            "company": "Customs4Trade",
+            "role": "Frontend Developer (Web)",
+            "description": {
+                "fr": "Création d'interfaces responsive pour le projet CAS SaaS, UX optimisée.",
+                "en": "Designed responsive interfaces for the CAS SaaS project, optimized UX.",
+                "nl": "Responsieve interfaces ontworpen voor CAS SaaS project, UX geoptimaliseerd."
+            },
+            "technologies": ["Angular", "SCSS", "Bootstrap", "Git"],
+            "color": "#FFD93D"
+        },
+        {
+            "period": "08/2020 – 04/2021",
+            "company": "Progressive (Client: Actiris)",
+            "role": "Frontend Developer",
+            "description": {
+                "fr": "Développement de composants UI pour le projet MAPE avec Angular, optimisation scrollbar et formulaires.",
+                "en": "Developed UI components for MAPE project using Angular, optimized scrollbars and forms.",
+                "nl": "UI-componenten ontwikkeld voor MAPE-project met Angular, scrollbars en formulieren geoptimaliseerd."
+            },
+            "technologies": ["Angular", "SCSS", "JavaScript", "HTML5", "Kendo UI"],
+            "color": "#4ECDC4"
+        },
+        {
+            "period": "12/2019 – 08/2020",
+            "company": "Sopra Steria",
+            "role": "Frontend Developer / Web Designer",
+            "description": {
+                "fr": "Création UI/UX pour Eurocontrol avec ReactJS.",
+                "en": "Designed UI/UX solutions for Eurocontrol using ReactJS.",
+                "nl": "UI/UX-oplossingen ontworpen voor Eurocontrol met ReactJS."
+            },
+            "technologies": ["ReactJS", "JavaScript", "Ant Design", "HTML5", "SCSS"],
+            "color": "#556270"
+        }
+    ],
+    "hobbies": {
+        "fr": ["Piano", "Chant", "Course", "Fitness"],
+        "en": ["Piano", "Singing", "Running", "Fitness"],
+        "nl": ["Piano", "Zang", "Hardlopen", "Fitness"]
+    },
+    "webProjects": [{
+            "title": "Ganesha",
+            "description": {
+                "fr": "Portfolio website",
+                "en": "Portfolio website",
+                "nl": "Portfolio website"
+            },
+            "link": "http://ganesha.ovh/"
+        },
+        {
+            "title": "Ganesha Games",
+            "description": {
+                "fr": "Jeux développés avec Angular/ReactJS",
+                "en": "Games developed using Angular/ReactJS",
+                "nl": "Games ontwikkeld met Angular/ReactJS"
+            },
+            "link": "http://ganesha.ovh/"
+        }
+    ],
+    "languages": [
+        { "name": { "fr": "Français", "en": "French", "nl": "Frans" }, "level": "C2", "stars": 5 },
+        { "name": { "fr": "Anglais", "en": "English", "nl": "Engels" }, "level": "C1", "stars": 4 },
+        { "name": { "fr": "Néerlandais", "en": "Dutch", "nl": "Nederlands" }, "level": "B2", "stars": 4 }
+    ]
+}

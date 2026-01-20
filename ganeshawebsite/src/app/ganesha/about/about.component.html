@@ -134,4 +134,28 @@
 
         </div>
     </div>
+
+    <div class="timeline-container">
+        <h3>{{ 'CV.title' | translate }}</h3>
+        <div class="timeline">
+            <div *ngFor="let item of cvData.experience; let i = index" class="timeline-item">
+                <!-- Ligne verticale colorée -->
+                <div class="timeline-line" [style.background]="item.color"></div>
+                <!-- Carte -->
+                <div class="timeline-content">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>{{ item.period }} - {{ item.company }}</h5>
+                            <h6>{{ item.role }}</h6>
+                            <p>{{ item.description[currentLang] }}</p>
+                            <div *ngIf="item.technologies && item.technologies.length">
+                                <small class="text-muted">Technologies: {{ item.technologies.join(', ') }}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
