@@ -82,6 +82,7 @@
         "desc-workshop-indesign": "Created a 4-page magazine, a flyer, and a poster — combining technique and creativity.",
 
         "title-workshop-illustrator": "Adobe Illustrator ",
+        "title-digital-draw": "Digital Draw",
         "desc-workshop-illustrator": "Created icons and vector illustrations — a blend of technical skill and creativity.",
 
         "title-games": "Games",
@@ -258,11 +259,11 @@
     "FIGMA": {
 
         "quote-figma": "Figma turns my ideas into living shapes — a space where creativity and collaboration come together.",
-        "alt-logos": "Logo design exercise made in Figma, inspired by a LinkedIn Learning course. I adapted a tutorial originally for Illustrator and recreated it fully in Figma, improving my precision, visual balance, and skills with shapes, gradients, and composition.",
+        "alt-logos": "Logo design exercise made in Figma, inspired by a LinkedIn Learning course.",
         "alt-qfdn": "Logo proposals for “Quelques Femmes du Numérique”, a website showcasing portraits of women in the digital field.",
-        "nick-wilde": "Vector drawing exercise of Nick Wilde from Zootopia. I first drew him by hand, then manually recreated him in Figma, which allowed me to practice precision and control over vector shapes.",
-        "ganesha-battlefield": "Design boards for Ganesha Battlefield, a game inspired by naval combat. I recreated the game design, highlighting the ships and making the interface user-friendly on both smartphone and desktop.",
-        "ganopoly-deal": "Design boards for Ganopoly Deal, the Monopoly parody inspired by Monopoly Deal. I recreated the game design, created the character Ganesha whose expression changes depending on winning or losing, and designed the cards to give a modern look & feel."
+        "nick-wilde": "Vector drawing exercise of Nick Wilde from Zootopia.",
+        "ganesha-battlefield": "Design boards for Ganesha Battlefield, a game inspired by naval combat.",
+        "ganopoly-deal": "Design boards for Ganopoly Deal, the Monopoly parody inspired by Monopoly Deal."
     },
     "INDESIGN": {
         "quote-vogue": "'Vogue' is the best of everything that fashion can offer, and I think we point the way. We are, you know, a glamorous girlfriend.",

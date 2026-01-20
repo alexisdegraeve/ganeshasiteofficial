@@ -83,6 +83,7 @@
         "desc-workshop-indesign": "Een tijdschrift van 4 pagina’s, een flyer en een poster ontworpen — een combinatie van techniek en creativiteit.",
 
         "title-workshop-illustrator": "Adobe Illustrator ",
+        "title-digital-draw": "Digital Draw",
         "desc-workshop-illustrator": "Ontwerpen van iconen en vectorillustraties — een mix van technische vaardigheid en creativiteit.",
 
         "title-games": "Games",
@@ -263,11 +264,11 @@
     },
     "FIGMA": {
         "quote-figma": "Figma verandert mijn ideeën in levende vormen — een plek waar creativiteit en samenwerking samenkomen.",
-        "alt-logos": "Logooefening gemaakt in Figma, geïnspireerd door een LinkedIn Learning-cursus. Ik paste een Illustrator-tutorial aan en maakte alles opnieuw in Figma, waardoor ik mijn nauwkeurigheid, visuele balans en vaardigheden met vormen, kleurverlopen en compositie verbeterde.",
+        "alt-logos": "Logooefening gemaakt in Figma, geïnspireerd door een LinkedIn Learning-cursus.",
         "alt-qfdn": "Logo-voorstellen voor “Quelques Femmes du Numérique”, een website die portretten van vrouwen in de digitale wereld toont.",
-        "nick-wilde": "Vectortekenoefening van Nick Wilde uit Zootopia. Ik heb hem eerst met de hand getekend en daarna handmatig opnieuw in Figma gemaakt, waardoor ik precisie en controle over vectorvormen heb geoefend.",
-        "ganesha-battlefield": "Designboards voor Ganesha Battlefield, een spel geïnspireerd op zeeslag. Ik heb het spelontwerp opnieuw gemaakt, waarbij de schepen duidelijk worden benadrukt en de interface gebruiksvriendelijk is op zowel smartphone als desktop.",
-        "ganopoly-deal": "Designboards voor Ganopoly Deal, de Monopoly-parodie geïnspireerd op Monopoly Deal. Ik heb het spelontwerp opnieuw gemaakt, het personage Ganesha gecreëerd dat van uitdrukking verandert afhankelijk van winst of verlies, en de kaarten ontworpen voor een moderne look & feel."
+        "nick-wilde": "Vectortekenoefening van Nick Wilde uit Zootopia.",
+        "ganesha-battlefield": "Designboards voor Ganesha Battlefield, een spel geïnspireerd op zeeslag.",
+        "ganopoly-deal": "Designboards voor Ganopoly Deal, de Monopoly-parodie geïnspireerd op Monopoly Deal."
     },
     "INDESIGN": {
         "quote-vogue": "'Vogue' is het beste van alles wat mode te bieden heeft, en ik denk dat wij de richting aangeven. We zijn, weet je, een glamoureuze vriendin.",

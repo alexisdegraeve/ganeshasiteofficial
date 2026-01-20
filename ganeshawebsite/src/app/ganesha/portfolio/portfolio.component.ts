@@ -45,11 +45,11 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
-      title: 'PORTFOLIO.title-workshop-figma',
-      description: 'PORTFOLIO.desc-workshop-figma',
-      image: 'assets/img/logos/qfdn_new.svg',
-      linkInternal: '/figma',
-      class: 'figma',
+      title: 'PORTFOLIO.title-digital-draw',
+      description: 'PORTFOLIO.desc-workshop-illustrator',
+      image: 'assets/img/illustrator/cat.svg',
+      class: 'logo-adobe',
+      linkInternal: '/illustrator',
       imageLoaded: false
     },
     {
@@ -72,14 +72,6 @@ export class PortfolioComponent {
       image: 'assets/img/logo_indesign.svg',
       linkInternal: '/indesign',
       class: 'logo-adobe',
-      imageLoaded: false
-    },
-    {
-      title: 'PORTFOLIO.title-workshop-illustrator',
-      description: 'PORTFOLIO.desc-workshop-illustrator',
-      image: 'assets/img/logo_illustrator.svg',
-      class: 'logo-adobe',
-      linkInternal: '/illustrator',
       imageLoaded: false
     },
     {

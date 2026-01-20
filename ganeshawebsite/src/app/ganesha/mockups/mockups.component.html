@@ -28,7 +28,7 @@
                     <img [src]="image.url" [alt]="image.alt" class="card-img-top rounded">
                 </div>
                 <div class="card-footer mt-auto text-end">
-                    <p class="card-text mb-2 text-center">{{ image.alt }}</p>
+                    <p class="card-text mb-2 text-center">{{ image.alt | translate }}</p>
 
                     <!-- Bouton PDF (optionnel) -->
                     <a *ngIf="image.pdf" [href]="image.pdf" download class="btn btn-outline-light btn-sm" (click)="$event.stopPropagation()">

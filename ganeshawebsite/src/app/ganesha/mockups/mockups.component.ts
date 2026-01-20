@@ -21,6 +21,8 @@ export class MockupsComponent {
       images: [
         { url: 'assets/img/wireframes/wireframe_sport.png', alt:  'Low-fidelity wireframe for a sports mobile application', pdf: 'assets/pdf/wireframe_application_sport_adg.pdf' },
         { url: 'assets/img/wireframes/mockup_wellness.png', alt:  'High-fidelity mockup for a wellness website redesign'  },
+                { url: 'assets/img/mockups/games/game_ganopolydeal.jpg', img: 'assets/img/mockups/games/game_ganopolydeal.jpg', alt: 'FIGMA.ganopoly-deal'},
+        { url: 'assets/img/mockups/games/battlefield_mockups.jpg', img: 'assets/img/mockups/games/battlefield_mockups.jpg', alt: 'FIGMA.ganesha-battlefield'},
         { url: 'assets/img/mockups/hackaton2024/priflex.jpeg', alt: 'Hackaton 2024' },
         // { url: 'assets/img/mockups/iba_pridex/pridex_logo.svg', alt: 'IBA Pridex' },
       ]

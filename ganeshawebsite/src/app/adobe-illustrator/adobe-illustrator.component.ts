@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PageHeaderComponent } from '../shared/page-header/page-header.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
 
@@ -8,7 +9,7 @@ declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstra
   selector: 'app-adobe-illustrator',
   templateUrl: './adobe-illustrator.component.html',
   styleUrl: './adobe-illustrator.component.scss',
-  imports: [CommonModule, PageHeaderComponent]
+  imports: [CommonModule, PageHeaderComponent, TranslateModule]
 })
 export class AdobeIllustratorComponent {
   selectedTab = 0;
@@ -33,6 +34,10 @@ export class AdobeIllustratorComponent {
         { url: 'assets/img/illustrator/ai_flashcard04.png', alt: 'Flashcard creation for Adobe Illustrator keyboard shortcuts.', class: 'ai_flash_card04' },
         { url: 'assets/img/illustrator/logo_chocolat_blanc_pot.png', alt: 'Logo creation and product mockup on a white chocolate jar.', class: 'logo_chocolat_blanc_pot' },
         { url: 'assets/img/illustrator/logo_chocolat_blanc_tshirt.png', alt: 'Logo creation and mockup on a t-shirt featuring white chocolate branding.', class: 'logo_chocolat_blanc_tshirt' },
+        { url: 'assets/img/draw/draw_nick_figma.jpg', img: 'assets/img/draw/raw_nick_figma.jpg', alt: 'FIGMA.nick-wilde', class: 'nick-wilde'},
+        { url: 'assets/img/logos/plank_qfdn.png', img: 'assets/img/logos/plank_qfdn.png', alt: 'FIGMA.alt-qfdn',  class: 'logos' },
+        { url: 'assets/img/plank_logos_adg.png', img: 'assets/img/plank_logos_adg.png', alt: 'FIGMA.alt-logos',  class: 'logos' },
+        { url: 'assets/img/plank_logos_2_adg.png', img: 'assets/img/plank_logos_2_adg.png', alt: 'FIGMA.alt-logos', class: 'logos'  }
       ]
     }
   ];
