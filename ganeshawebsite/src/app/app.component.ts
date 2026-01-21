@@ -8,17 +8,22 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit {
-  title = 'ganeshawebsite';
+export class AppComponent implements  AfterViewInit {
   darkTheme$ = this.themeService.darkThemeSource$;
   isWinterSeason = false;
   isLoading = true; // Affiche le spinner au début
 
-  ngOnInit() {
-    this.isLoading = true;
+  private hideLoader() {
+    if (!this.isLoading) return;
+    this.isLoading = false;
+    const loader = document.getElementById('app-loading');
+    if (loader) {
+      loader.remove();
+    }
+    this.cdr.detectChanges();
   }
 
-  constructor(private themeService: ThemeService, translate: TranslateService, private cdr: ChangeDetectorRef) {
+  constructor(private themeService: ThemeService,private translate: TranslateService, private cdr: ChangeDetectorRef) {
     // Vérifiez si la date actuelle est entre le 1er décembre et le 10 janvier
     const currentDate = new Date();
     const startDate = new Date(currentDate.getFullYear(), 11, 1); // 1er décembre
@@ -30,9 +35,19 @@ export class AppComponent implements OnInit, AfterViewInit {
     translate.use('en');
   }
   ngAfterViewInit(): void {
-    setTimeout(() => {
-      this.isLoading = false;
-      this.cdr.detectChanges(); // Déclenche un check manuel
+    // setTimeout(() => {
+    //   this.isLoading = false;
+    //   this.cdr.detectChanges(); // Déclenche un check manuel
+    // });
+
+        this.translate.use(this.translate.getBrowserLang() || 'en').subscribe({
+      next: () => { /* passe par ici après chargement */ },
+      complete: () => {
+        this.hideLoader();
+      },
+      error: () => {
+        this.hideLoader(); // même si échec
+      }
     });
   }
 
