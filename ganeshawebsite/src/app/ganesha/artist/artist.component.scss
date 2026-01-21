@@ -206,16 +206,6 @@ h1 {
     height: 20rem;
 }
 
-@media (max-width: 768px) {
-    .man {
-        height: 15rem;
-    }
-    .man-mask {
-        height: 100%;
-        width: 10rem;
-    }
-}
-
 .man-mask {
     height: 100%;
     width: 15rem;
@@ -249,5 +239,18 @@ h1 {
         max-width: 100%;
         align-self: flex-start;
         padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .falling-container {
+        width: auto;
+    }
+    .man {
+        height: auto;
+    }
+    .man-mask {
+        height: 100%;
+        width: 10rem;
     }
 }
