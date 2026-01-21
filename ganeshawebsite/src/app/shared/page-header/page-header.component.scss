@@ -5,7 +5,13 @@
     gap: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    .bi-chevron-left {
+    .title-text {
+        text-transform: lowercase;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    .title-text .bi-chevron-left {
         font-size: 1.25rem;
     }
     a {
@@ -13,6 +19,14 @@
         text-decoration: none;
         &:hover {
             color: $color-3;
+        }
+        &.bi-chevron-left {
+            font-size: 1.25rem;
+        }
+    }
+    @media (max-width: 768px) {
+        a.bi-chevron-left {
+            font-size: 1rem;
         }
     }
 }
