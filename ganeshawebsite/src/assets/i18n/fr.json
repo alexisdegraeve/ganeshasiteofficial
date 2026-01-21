@@ -304,10 +304,10 @@
         "parcours": "Depuis l’enfance, j’ai toujours dessiné et expérimenté avec le digital : de <em>crocodile en BASIC</em> à Paint, puis l’académie de musique. J’ai commencé ma carrière comme <strong>Graphic & Web Designer</strong> tout en poursuivant mes études. J’ai obtenu un <strong>Master en informatique avec distinction</strong>, avant d’évoluer comme <strong>UX/UI Designer et Frontend Developer</strong>, alliant la force des trois disciplines.",
         "technologiesTitle": "Technologies & outils",
         "technologies": [
-            "Angular 21+, ReactJS, Vue.js",
             "Figma, Zeplin, Adobe Creative Suite (XD, Photoshop, Illustrator)",
             "3D Modeling (Blender, 3DS Max)",
-            "Responsive Design & Design Systems"
+            "Responsive Design & Design Systems",
+            "Angular 21+, ReactJS, Vue.js"
         ]
     }
 

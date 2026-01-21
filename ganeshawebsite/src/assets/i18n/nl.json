@@ -308,10 +308,10 @@
         "parcours": "Sinds mijn kindertijd ben ik altijd bezig geweest met tekenen en experimenteren met digitale tools: van een <em>krokodil in BASIC</em> tot Paint, gevolgd door de muziekacademie. Ik begon mijn carrière als <strong>Graphic & Web Designer</strong> terwijl ik mijn studies voortzette. Ik behaalde een <strong>Master in Informatica met onderscheiding</strong>, waarna ik verder groeide als <strong>UX/UI Designer en Frontend Developer</strong>, waarbij ik de kracht van deze drie disciplines combineer.",
         "technologiesTitle": "Technologieën & tools",
         "technologies": [
-            "Angular 21+, ReactJS, Vue.js",
             "Figma, Zeplin, Adobe Creative Suite (XD, Photoshop, Illustrator)",
             "3D Modeling (Blender, 3DS Max)",
-            "Responsive Design & Design Systems"
+            "Responsive Design & Design Systems",
+            "Angular 21+, ReactJS, Vue.js"
         ]
     }
 
