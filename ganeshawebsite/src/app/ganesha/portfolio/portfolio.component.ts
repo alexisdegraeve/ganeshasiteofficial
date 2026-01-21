@@ -29,6 +29,13 @@ export class PortfolioComponent {
       imageLoaded: false
     },
     {
+      title: 'PORTFOLIO.title-uxcases',
+      description: 'PORTFOLIO.desc-uxcases',
+      image: 'assets/img/wireframes/wireframe_sport.png',
+      linkInternal: '/uxcases',
+      imageLoaded: false
+    },
+    {
       title: 'PORTFOLIO.title-workshop-draw',
       description: 'PORTFOLIO.desc-workshop-draw',
       image: 'assets/img/draw/draw_red_panda.jpg',

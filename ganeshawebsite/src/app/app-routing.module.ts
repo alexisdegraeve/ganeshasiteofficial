@@ -1,3 +1,4 @@
+import { UxCasesComponent } from './ux-cases/ux-cases.component';
 import { ArtistComponent } from './ganesha/artist/artist.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -47,6 +48,7 @@ const routes: Routes = [
   { path: 'draw', component: DrawComponent },
   { path: 'illustrator', component: AdobeIllustratorComponent },
   { path: 'brandguidelines', component: BrandGuidelinesComponent },
+  { path: 'uxcases', component: UxCasesComponent },
   { path: 'credits', component: CreditsComponent },
   { path: '**', component: NotfoundComponent } // Route 404 pour URL incorrecte
 ];
