@@ -302,6 +302,8 @@
     },
     "CV": {
         "title": "Mijn parcours",
+        "contactinfo": "Geïnteresseerd in een samenwerking of mijn volledige parcours? Neem gerust contact op.",
+        "contactButton": "Neem contact op",
         "downloadinfo": "Download mijn cv om mijn volledige parcours en projecten te ontdekken.",
         "download": "CV downloaden",
         "presentation": "<strong>Gepassioneerde Graphic Designer, UX/UI Designer en Frontend Developer</strong>, ik ontwerp heldere, toegankelijke en gebruiksgerichte interfaces. Ik heb meer dan <strong>16 jaar ervaring</strong> in web- en applicatieontwerp en -ontwikkeling, waarbij creativiteit, grafisch inzicht en technische expertise samenkomen.",

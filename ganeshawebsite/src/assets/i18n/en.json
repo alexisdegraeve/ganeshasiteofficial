@@ -296,6 +296,8 @@
     },
     "CV": {
         "title": "My journey",
+        "contactinfo": "Interested in a collaboration or my full career path? Feel free to contact me.",
+        "contactButton": "Contact Me",
         "downloadinfo": "Download my CV to discover my complete journey and projects.",
         "download": "Download CV",
         "presentation": "<strong>Passionate Graphic Designer, UX/UI Designer and Frontend Developer</strong>, I create clear, accessible and user-centered interfaces. I have over <strong>16 years of experience</strong> in web and application design and development, combining creativity, strong visual sensibility and technical expertise.",

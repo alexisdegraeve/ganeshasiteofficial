@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
 import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.component';
@@ -9,7 +10,7 @@ import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.comp
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
-  imports: [CommonModule, TranslateModule, PageHeaderComponent],
+  imports: [RouterModule, CommonModule, TranslateModule, PageHeaderComponent],
 })
 export class AboutComponent {
   isLoadingAlexis = true; // Etat de chargement de l'image d'Alexis

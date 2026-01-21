@@ -298,6 +298,8 @@
     },
     "CV": {
         "title": "Mon parcours",
+        "contactinfo": "Intéressé par une collaboration ou mon parcours complet ? N’hésitez pas à me contacter.",
+        "contactButton": "Contactez-moi",
         "downloadinfo": "Téléchargez mon CV pour découvrir mon parcours complet et mes projets.",
         "download": "Télécharger le CV",
         "presentation": "<strong>Graphic Designer, UX/UI Designer et Frontend Developer passionné</strong>, je crée des interfaces claires, accessibles et orientées utilisateur. J’ai plus de <strong>16 ans d’expérience</strong> dans le design et le développement web et applications, combinant créativité, sens graphique et maîtrise technique.",
