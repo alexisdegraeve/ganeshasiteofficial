@@ -36,6 +36,9 @@
             margin-left: auto !important;
             margin-right: 1rem !important;
             border: unset;
+            &:focus {
+                box-shadow: unset;
+            }
         }
 
         @media screen and (max-width: 700px) {

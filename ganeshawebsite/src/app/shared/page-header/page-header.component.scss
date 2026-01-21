@@ -27,6 +27,10 @@
     @media (max-width: 768px) {
         a.bi-chevron-left {
             font-size: 1rem;
+            padding: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
