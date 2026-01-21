@@ -46,15 +46,30 @@
                                 <div class="invalid-feedback " [innerHTML]="( 'CONTACT.email' | translate) "></div>
                             </div>
                             <!-- Sujet -->
-                            <div class="mt-3 ">
-                                <select formControlName="subject " class="form-select " [class.is-invalid]="contactForm.get( 'subject')?.touched && contactForm.get( 'subject')?.invalid ">
-          <option value=" " disabled selected  [innerHTML]="( 'CONTACT.subject' | translate) "></option>
-          <option value="new-website " [innerHTML]="( 'CONTACT.website' | translate) "></option>
-          <option value="design " [innerHTML]="( 'CONTACT.design' | translate) "></option>
-          <option value="other " [innerHTML]="( 'CONTACT.other' | translate) "></option>
-        </select>
-                                <div class="invalid-feedback " [innerHTML]="( 'CONTACT.subjectselect' | translate) "></div>
+                            <div class="mt-3">
+                                <label class="form-label" [innerHTML]="('CONTACT.subject' | translate)"></label>
+
+                                <div class="btn-group d-flex flex-column" role="group" aria-label="Subject selection">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" formControlName="subject" id="subjectWebsite" value="new-website" />
+                                        <label class="form-check-label" for="subjectWebsite" [innerHTML]="('CONTACT.website' | translate)"></label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" formControlName="subject" id="subjectDesign" value="design" />
+                                        <label class="form-check-label" for="subjectDesign" [innerHTML]="('CONTACT.design' | translate)"></label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" formControlName="subject" id="subjectOther" value="other" />
+                                        <label class="form-check-label" for="subjectOther" [innerHTML]="('CONTACT.other' | translate)"></label>
+                                    </div>
+                                </div>
+
+                                <div class="invalid-feedback d-block" *ngIf="contactForm.get('subject')?.touched && contactForm.get('subject')?.invalid" [innerHTML]="('CONTACT.subjectselect' | translate)">
+                                </div>
                             </div>
+
                             <!-- Message -->
                             <div class="mt-3 ">
                                 <textarea formControlName="message " class="form-control " rows="5 " maxlength="500 " [placeholder]="( 'CONTACT.phyourmessage' | translate) " (input)="updateCharacterCount() " [class.is-invalid]="contactForm.get(
