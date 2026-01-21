@@ -346,6 +346,25 @@
 
         "deployment.title": "6) Deployment",
         "deployment.desc": "Static build via Vite (npm run build) ready for OVH hosting. Option to use SSR with Next.js for extension."
+    },
+    "UX_CASE_GANESHA_BATTLEFIELD": {
+        "pageTitle": "Ganesha Battlefield — UX Case Study",
+        "intro": "UX analysis for the Battleship game design, crafted for intuitive gameplay and engaging interaction against an AI opponent.",
+
+        "objective.title": "🎯 UX Objective",
+        "objective.desc": "Design an intuitive experience with two distinct grids and clear interactions: player places ships, then battles the AI.",
+
+        "placement.title": "⚙️ Ship Placement Logic (AI)",
+        "placement.desc": "10×10 grid, ships of varied lengths. Randomized placement with checks for no overlap and no grid overflow.",
+
+        "backtracking.title": "🔁 Backtracking",
+        "backtracking.desc": "When placement fails repeatedly, previously placed ships are removed and retried to ensure a valid configuration.",
+
+        "flow.title": "🖥️ UX Flow (User vs AI)",
+        "flow.desc": "Preparation phase: player and AI place ships. Gameplay phase: two visible grids, player fires shots until victory.",
+
+        "uxpoints.title": "🎨 UX Key Points",
+        "uxpoints.desc": "Clear dual grids, “Ready” button, reliable AI placement, increased engagement via randomness, readable and simple interactions."
     }
 
 }

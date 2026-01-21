@@ -352,6 +352,25 @@
 
         "deployment.title": "6) Deployment",
         "deployment.desc": "Statische build met Vite (npm run build) klaar voor OVH‑hosting. Optie voor SSR met Next.js voor uitbreiding."
+    },
+    "UX_CASE_GANESHA_BATTLEFIELD": {
+        "pageTitle": "Ganesha Battlefield — UX Case Study",
+        "intro": "UX‑analyse van het Battleship‑spel, ontworpen voor intuïtieve gameplay en boeiende interactie tegen een AI‑tegenstander.",
+
+        "objective.title": "🎯 UX Doel",
+        "objective.desc": "Ontwerp een intuïtieve ervaring met twee duidelijke roosterweergaven en eenvoudige interacties: speler plaatst boten, dan vecht tegen AI.",
+
+        "placement.title": "⚙️ AI Bootplaatsing Logica",
+        "placement.desc": "10×10 rooster, boten van verschillende lengtes. Willekeurige plaatsing met controles voor geen overlap en binnen roostergrenzen.",
+
+        "backtracking.title": "🔁 Backtracking",
+        "backtracking.desc": "Bij herhaalde mislukte plaatsingen worden eerder geplaatste boten verwijderd en opnieuw geprobeerd om een geldige configuratie te garanderen.",
+
+        "flow.title": "🖥️ UX Flow (Gebruiker vs AI)",
+        "flow.desc": "Voorbereidingsfase: speler en AI plaatsen boten. Speelfase: twee zichtbare roosters, speler vuurt schoten af tot overwinning.",
+
+        "uxpoints.title": "🎨 UX Sleutelpunten",
+        "uxpoints.desc": "Duidelijke dubbele roosters, “Ready”‑knop, betrouwbare AI‑plaatsing, meer betrokkenheid door willekeur, leesbare en eenvoudige interacties."
     }
 
 

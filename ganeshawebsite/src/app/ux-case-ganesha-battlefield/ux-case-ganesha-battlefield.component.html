@@ -1,1 +1,18 @@
-<p>ux-case-ganesha-battlefield works!</p>
+<div class="container py-4">
+    <app-page-header [title]="'UX_CASE_GANESHA_BATTLEFIELD.pageTitle' | translate" [back]="'/ux-cases'">
+    </app-page-header>
+
+    <p class="lead text-center mb-4">
+        {{ 'UX_CASE_GANESHA_BATTLEFIELD.intro' | translate }}
+    </p>
+
+    <div class="timeline">
+        <div class="timeline-item" *ngFor="let item of timeline">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h5 class="timeline-title">{{ item.titleKey | translate }}</h5>
+                <p class="timeline-desc">{{ item.descKey | translate }}</p>
+            </div>
+        </div>
+    </div>
+</div>

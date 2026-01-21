@@ -349,6 +349,26 @@
 
         "deployment.title": "6) Déploiement",
         "deployment.desc": "Build statique Vite ready (npm run build) à déployer sur OVH. Possibilité de SSR avec Next.js pour évolution."
+    },
+
+    "UX_CASE_GANESHA_BATTLEFIELD": {
+        "pageTitle": "Ganesha Battlefield — Étude de cas UX",
+        "intro": "Analyse UX du jeu de Bataille Navale, conçue pour être intuitive, engageante et facilement jouable contre une IA.",
+
+        "objective.title": "🎯 Objectif UX",
+        "objective.desc": "Créer une expérience intuitive avec deux grilles distinctes et interactions simples : placement des bateaux, puis tir contre l’IA.",
+
+        "placement.title": "⚙️ Placement des bateaux (IA)",
+        "placement.desc": "Grille 10×10, bateaux de tailles variées. Position aléatoire + vérification des contraintes (pas de chevauchement, pas hors grille).",
+
+        "backtracking.title": "🔁 Backtracking",
+        "backtracking.desc": "Si un bateau ne peut pas être placé, on supprime et réessaie pour garantir une configuration valide même dans des cas bloquants.",
+
+        "flow.title": "🖥️ UX Flow (Utilisateur vs IA)",
+        "flow.desc": "Phase de préparation : placement des bateaux par le joueur et IA. Phase de jeu : deux grilles visibles, tir sur grille IA jusqu’à victoire.",
+
+        "uxpoints.title": "🎨 Points UX clés",
+        "uxpoints.desc": "Deux grilles claires, bouton “Ready”, IA fiable, engagement accru grâce au placement aléatoire, lisibilité et interactions simples."
     }
 
 }
