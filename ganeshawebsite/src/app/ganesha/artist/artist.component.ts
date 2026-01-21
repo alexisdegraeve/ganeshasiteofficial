@@ -36,7 +36,7 @@ export class ArtistComponent {
     },
     {
       icon: 'bi bi-heart-fill pulse-icon',
-      title: 'ARTIST.title-aboutme',
+      title: 'CV.title',
       description: 'ARTIST.resume-aboutme',
       url: '/about'
     },
