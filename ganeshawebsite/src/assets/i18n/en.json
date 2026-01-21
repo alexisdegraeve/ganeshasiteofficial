@@ -326,6 +326,9 @@
         }
     },
     "UX_CASE_GANESHA_SUDOKU": {
+        "backtrackingDiagram": {
+            "title": "Diagramme logique du backtracking"
+        },
         "pageTitle": "Ganesha Sudoku — UX Case Study",
         "intro": "In‑depth analysis and methods used to design the UX/UI of the interactive Ganesha Sudoku game, from concept to implementation.",
 
@@ -348,6 +351,7 @@
         "deployment.desc": "Static build via Vite (npm run build) ready for OVH hosting. Option to use SSR with Next.js for extension."
     },
     "UX_CASE_GANESHA_BATTLEFIELD": {
+
         "pageTitle": "Ganesha Battlefield — UX Case Study",
         "intro": "UX analysis for the Battleship game design, crafted for intuitive gameplay and engaging interaction against an AI opponent.",
 

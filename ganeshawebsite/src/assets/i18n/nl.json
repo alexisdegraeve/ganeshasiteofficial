@@ -332,6 +332,9 @@
         }
     },
     "UX_CASE_GANESHA_SUDOKU": {
+        "backtrackingDiagram": {
+            "title": "Diagramme logique du backtracking"
+        },
         "pageTitle": "Ganesha Sudoku — UX Case Study",
         "intro": "Diepgaande analyse en gebruikte methoden voor het ontwerpen van de UX/UI van de interactieve Ganesha Sudoku‑game, van concept tot implementatie.",
 
