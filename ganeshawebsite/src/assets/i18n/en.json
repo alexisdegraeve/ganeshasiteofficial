@@ -312,7 +312,18 @@
             "Responsive Design & Design Systems",
             "Angular 21+, ReactJS, Vue.js"
         ]
+    },
+    "UX_CASES": {
+        "title": "UX Case Studies",
+        "desc": "Select a case study to explore my in‑depth UX/UI process and analysis.",
+        "ganeshaSudoku": {
+            "title": "Analyze Game Ganesha Sudoku",
+            "subtitle": "Case study on the user experience of the interactive Sudoku"
+        },
+        "ganeshaBattlefield": {
+            "title": "Analyze Game Ganesha Battlefield",
+            "subtitle": "Case study on the user experience of Battlefield"
+        }
     }
-
 
 }

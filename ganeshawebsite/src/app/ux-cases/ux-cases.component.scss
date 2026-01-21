@@ -1,0 +1,8 @@
+.list-group-item {
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.list-group-item:hover {
+    background: rgba(0, 0, 0, .03);
+}
