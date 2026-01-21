@@ -14,12 +14,18 @@ import { PageHeaderComponent } from 'src/app/shared/page-header/page-header.comp
 export class AboutComponent {
   isLoadingAlexis = true; // Etat de chargement de l'image d'Alexis
   isLoading = true; // Etat de chargement du texte (par exemple les langues)
-  cvData: any = {};
-  currentLang: string = 'fr'; // default
   musicItems = [
     { name: 'Piano', title: 'Imaginarium', link: 'https://imaginarium-asbl.be/index.php/author/anais/' },
     { name: 'Singing', title: 'En avant la musique!', link: 'https://jmomusique.blog/tag/aurore-rinchon/' },
   ];
+
+  cvColors: string[] = [
+  '#ff6b6b', // rouge
+  '#feca57', // orange
+  '#48dbfb', // bleu clair
+  '#1dd1a1', // vert
+  '#5f27cd'  // violet
+];
 
   languages = [
     { name: 'ABOUT.french', level: 'ABOUT.native', stars: 5 },
@@ -39,12 +45,6 @@ export class AboutComponent {
     }, 2000); // Délai de 2 secondes pour simuler le chargement des données
   }
 
-    loadCV() {
-    this.http.get('assets/i18n/cv.json').subscribe((data) => {
-      this.cvData = data;
-    });
-  }
-
   constructor(
     private translate: TranslateService,
     private languageService: LanguageService,
@@ -52,11 +52,9 @@ export class AboutComponent {
   ) {
     // Mettre à jour la langue dans ngx-translate
     this.languageService.currentLang$.subscribe((lang) => {
-      this.currentLang = lang;
       this.translate.use(lang);
     });
 
     this.loadTextData(); // Charger les données textuelles (simuler ici)
-    this.loadCV();
   }
 }

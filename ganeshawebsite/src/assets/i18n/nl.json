@@ -299,6 +299,11 @@
 
         "info-title": "Extra informatie",
         "info-content": "Spellen zoals <strong>Ganopoly</strong> of <strong>Gano</strong> zijn originele creaties, geïnspireerd door bestaande concepten en bedoeld voor persoonlijk en didactisch gebruik. Er is geen commercieel doel."
+    },
+    "CV": {
+        "title": "Mon parcours",
+        "aboutMe": "UX/UI Designer et Frontend Developer passionné, je crée des interfaces claires, accessibles et orientées utilisateur. J’ai plus de 8 ans d’expérience dans le développement et le design pour le web et les applications, combinant créativité et maîtrise technique. Parmi mes réalisations : dashboards interactifs, wireframes haute fidélité, systèmes de design complets et projets 3D. J’utilise Angular, ReactJS, Figma, Zeplin et Adobe Creative Suite pour transformer des idées en expériences digitales fluides et engageantes. Téléchargez mon CV pour découvrir mon parcours complet et mes projets.",
+        "download": "Télécharger le CV"
     }
 
 }
