@@ -33,19 +33,21 @@
 
                 <!-- Colonne de droite : Texte -->
                 <div class="col-12 col-md-8 ">
-                    <h2 class="fw-bold ">Alexis Degraeve</h2>
-                    <p class="text-muted ">
-                        <span [innerHTML]="( 'ABOUT.titre' | translate) "></span> <br />
-                        <span class="text-info fw-bold ">
+                    <div class="info-top">
+                        <h2 class="fw-bold ">Alexis Degraeve</h2>
+                        <p class="text-muted">
+                            <span [innerHTML]="( 'ABOUT.titre' | translate) "></span> <br />
+                            <span class="text-info fw-bold ">
                     <a href="https://www.unamur.be/fr/info/etudes/info-hd " class="text-warning text-decoration-none " target="_blank " [innerHTML]="( 'ABOUT.master' | translate) ">
                     </a>
                 </span>
-                        <br /> {{'ABOUT.title-thesis' | translate }}: <em>
+                            <br /> {{'ABOUT.title-thesis' | translate }}: <em>
                     <a href="https://researchportal.unamur.be/fr/studentTheses/%C3%A9tude-pr%C3%A9liminaire-pour-lint%C3%A9gration-dun-chatbot-comme-dispenseur "
                         class="text-warning text-decoration-none " target="_blank " [innerHTML]="( 'ABOUT.thesis' | translate) ">
                     </a>
                 </em>
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
             <!-- Skills and Interests -->
@@ -136,7 +138,7 @@
 ========================== -->
             <div class="row g-4 mt-5">
                 <div class="col-12 col-lg-12">
-                    <div class="card h-100 shadow border-0 d-flex flex-row">
+                    <div class="card h-100 shadow border-0 d-flex flex-row  timeline-card">
 
                         <!-- Bande verticale arc-en-ciel -->
                         <div class="timeline-line"></div>

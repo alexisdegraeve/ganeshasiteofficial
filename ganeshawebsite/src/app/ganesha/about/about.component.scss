@@ -162,11 +162,24 @@ ul {
     /* Firefox */
 }
 
+.timeline-card {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 .timeline-line {
     width: 10px;
-    border-radius: 5px 0 0 5px;
     background: linear-gradient(to bottom, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
     margin-right: 20px;
+}
+
+.info-top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    p {
+        text-align: justify;
+    }
 }
 
 
@@ -175,5 +188,17 @@ ul {
 @media (max-width: 768px) {
     .timeline-line {
         width: 6px;
+        margin-right: auto;
+    }
+    .middle-content {
+        .row {
+            justify-content: center;
+        }
+    }
+    .info-top {
+        align-items: center;
+        p {
+            text-align: center;
+        }
     }
 }
