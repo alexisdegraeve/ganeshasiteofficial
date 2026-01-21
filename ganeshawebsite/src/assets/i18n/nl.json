@@ -301,9 +301,18 @@
         "info-content": "Spellen zoals <strong>Ganopoly</strong> of <strong>Gano</strong> zijn originele creaties, geïnspireerd door bestaande concepten en bedoeld voor persoonlijk en didactisch gebruik. Er is geen commercieel doel."
     },
     "CV": {
-        "title": "Mon parcours",
-        "aboutMe": "UX/UI Designer et Frontend Developer passionné, je crée des interfaces claires, accessibles et orientées utilisateur. J’ai plus de 8 ans d’expérience dans le développement et le design pour le web et les applications, combinant créativité et maîtrise technique. Parmi mes réalisations : dashboards interactifs, wireframes haute fidélité, systèmes de design complets et projets 3D. J’utilise Angular, ReactJS, Figma, Zeplin et Adobe Creative Suite pour transformer des idées en expériences digitales fluides et engageantes. Téléchargez mon CV pour découvrir mon parcours complet et mes projets.",
-        "download": "Télécharger le CV"
+        "title": "Mijn parcours",
+        "aboutMe": "Passievolle UX/UI Designer en Frontend Developer, ik creëer duidelijke, toegankelijke en gebruiksvriendelijke interfaces. Ik heb meer dan 16 jaar ervaring in web- en app-ontwikkeling en design, met een combinatie van creativiteit en technische kennis. Sinds mijn jeugd teken ik en experimenteer ik met digitale tools: van crocodile in BASIC tot Paint, daarna de muziekacademie. Ik begon mijn carrière als webdesigner terwijl ik mijn studie afrondde. Ik behaalde een master in computerwetenschappen met onderscheiding en evolueerde daarna als UX/UI Designer en Frontend Developer, waarbij ik beide vaardigheden combineerde. Tot mijn prestaties behoren interactieve dashboards, high-fidelity wireframes, complete design systems en 3D-projecten. Ik gebruik Angular, ReactJS, Figma, Zeplin en Adobe Creative Suite om ideeën om te zetten in vloeiende en boeiende digitale ervaringen. Download mijn CV om mijn volledige parcours en projecten te ontdekken.",
+        "download": "Download CV",
+        "presentation": "UX/UI Designer et Frontend Developer passionné, je crée des interfaces claires, accessibles et orientées utilisateur. J’ai plus de <strong>16 ans d’expérience</strong> dans le design et le développement web et applications, combinant créativité et maîtrise technique.",
+        "parcours": "Depuis l’enfance, j’ai toujours dessiné et expérimenté avec le digital : de <em>crocodile en BASIC</em> à Paint, puis l’académie de musique. J’ai commencé ma carrière comme <strong>webdesigner</strong> tout en poursuivant mes études. J’ai obtenu un <strong>Master en informatique avec distinction</strong> et j’ai ensuite évolué comme <strong>UX/UI Designer et Frontend Developer</strong>, alliant la force des deux disciplines.",
+        "technologiesTitle": "Technologies & outils",
+        "technologies": [
+            "Angular, ReactJS, Vue.js",
+            "Figma, Zeplin, Adobe Creative Suite (XD, Photoshop, Illustrator)",
+            "3D Modeling (Blender, 3DS Max)",
+            "Responsive Design & Design Systems"
+        ]
     }
 
 }

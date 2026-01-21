@@ -143,10 +143,23 @@
 
                         <div class="card-body">
                             <h5 class="card-title">{{ 'CV.title' | translate }}</h5>
-                            <p class="mt-3">{{ 'CV.aboutMe' | translate }}</p>
+
+                            <p class="mt-3" [innerHTML]="'CV.presentation' | translate"></p>
+
+                            <!-- Parcours résumé -->
+                            <p [innerHTML]="'CV.parcours' | translate"></p>
+
+                            <!-- Technologies / Skills -->
+                            <div class="mt-3">
+                                <h6 class="fw-bold" [innerHTML]="'CV.technologiesTitle' | translate"></h6>
+                                <ul class="list-unstyled">
+                                    <li *ngFor="let tech of 'CV.technologies' | translate">{{ tech }}</li>
+                                </ul>
+                            </div>
+                            <p class="mt-3 fw-bold" [innerHTML]="'CV.downloadinfo' | translate"></p>
 
                             <!-- Bouton pour télécharger le CV -->
-                            <a href="assets/pdf/CV_AlexisDegraeve.pdf" download class="btn btn-outline-warning mt-3">
+                            <a href="assets/pdf/CV_AlexisDegraeve.pdf" download class="btn btn-outline-warning mt-1">
                                 <i class="fa fa-file-pdf me-2"></i> {{ 'CV.download' | translate }}
                             </a>
                         </div>

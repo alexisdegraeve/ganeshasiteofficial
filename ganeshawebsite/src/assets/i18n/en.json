@@ -295,8 +295,18 @@
         "info-content": "Games like <strong>Ganopoly</strong> and <strong>Gano</strong> are original creations inspired by known concepts, but redesigned for personal and educational use. None of the site’s content is for profit."
     },
     "CV": {
-        "title": "Mon parcours",
-        "aboutMe": "UX/UI Designer et Frontend Developer passionné, je crée des interfaces claires, accessibles et orientées utilisateur. J’ai plus de 8 ans d’expérience dans le développement et le design pour le web et les applications, combinant créativité et maîtrise technique. Parmi mes réalisations : dashboards interactifs, wireframes haute fidélité, systèmes de design complets et projets 3D. J’utilise Angular, ReactJS, Figma, Zeplin et Adobe Creative Suite pour transformer des idées en expériences digitales fluides et engageantes. Téléchargez mon CV pour découvrir mon parcours complet et mes projets.",
-        "download": "Télécharger le CV"
+        "title": "My Journey",
+        "aboutMe": "Passionate UX/UI Designer and Frontend Developer, I create clear, accessible, and user-focused interfaces. I have over 16 years of experience in web and app design and development, combining creativity and technical mastery. Since childhood, I have always drawn and experimented with digital tools: from crocodile in BASIC to Paint, then the music academy. I started my career as a web designer while completing my studies. I earned a Master’s degree in Computer Science with distinction and later evolved as a UX/UI Designer and Frontend Developer, combining both skills. Among my achievements: interactive dashboards, high-fidelity wireframes, complete design systems, and 3D projects. I use Angular, ReactJS, Figma, Zeplin, and Adobe Creative Suite to transform ideas into smooth and engaging digital experiences. Download my CV to explore my full journey and projects.",
+        "download": "Download CV",
+        "presentation": "Passionate UX/UI Designer and Frontend Developer, I create clear, accessible, and user-focused interfaces. I have over <strong>16 years of experience</strong> in web and app design and development, combining creativity and technical mastery.",
+        "parcours": "Since childhood, I have always drawn and experimented with digital tools: from <em>crocodile in BASIC</em> to Paint, then the music academy. I started my career as a <strong>web designer</strong> while completing my studies. I earned a <strong>Master’s degree in Computer Science with distinction</strong> and later evolved as a <strong>UX/UI Designer and Frontend Developer</strong>, combining both skills.",
+        "technologiesTitle": "Technologies & Tools",
+        "technologies": [
+            "Angular, ReactJS, Vue.js",
+            "Figma, Zeplin, Adobe Creative Suite (XD, Photoshop, Illustrator)",
+            "3D Modeling (Blender, 3DS Max)",
+            "Responsive Design & Design Systems"
+        ]
     }
+
 }

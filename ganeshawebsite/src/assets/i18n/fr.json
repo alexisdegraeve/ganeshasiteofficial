@@ -298,7 +298,17 @@
     },
     "CV": {
         "title": "Mon parcours",
-        "aboutMe": "UX/UI Designer et Frontend Developer passionné, je crée des interfaces claires, accessibles et orientées utilisateur. J’ai plus de 8 ans d’expérience dans le développement et le design pour le web et les applications, combinant créativité et maîtrise technique. Parmi mes réalisations : dashboards interactifs, wireframes haute fidélité, systèmes de design complets et projets 3D. J’utilise Angular, ReactJS, Figma, Zeplin et Adobe Creative Suite pour transformer des idées en expériences digitales fluides et engageantes. Téléchargez mon CV pour découvrir mon parcours complet et mes projets.",
-        "download": "Télécharger le CV"
+        "downloadinfo": "Téléchargez mon CV pour découvrir mon parcours complet et mes projets.",
+        "download": "Télécharger le CV",
+        "presentation": "<strong>Graphic Designer, UX/UI Designer et Frontend Developer passionné</strong>, je crée des interfaces claires, accessibles et orientées utilisateur. J’ai plus de <strong>16 ans d’expérience</strong> dans le design et le développement web et applications, combinant créativité, sens graphique et maîtrise technique.",
+        "parcours": "Depuis l’enfance, j’ai toujours dessiné et expérimenté avec le digital : de <em>crocodile en BASIC</em> à Paint, puis l’académie de musique. J’ai commencé ma carrière comme <strong>Graphic & Web Designer</strong> tout en poursuivant mes études. J’ai obtenu un <strong>Master en informatique avec distinction</strong>, avant d’évoluer comme <strong>UX/UI Designer et Frontend Developer</strong>, alliant la force des trois disciplines.",
+        "technologiesTitle": "Technologies & outils",
+        "technologies": [
+            "Angular 21+, ReactJS, Vue.js",
+            "Figma, Zeplin, Adobe Creative Suite (XD, Photoshop, Illustrator)",
+            "3D Modeling (Blender, 3DS Max)",
+            "Responsive Design & Design Systems"
+        ]
     }
+
 }
