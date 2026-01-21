@@ -66,7 +66,7 @@
     "PORTFOLIO": {
         "citation": "Simplicity is the principle of art.",
 
-        "title-workshop-draw": "Hand Drawing ",
+        "title-workshop-draw": "Drawing ",
         "desc-workshop-draw": "Skilled hand drawings showcasing precise proportions, artistic creativity, and attention to detail. Perfect for demonstrating visual storytelling and design talent to potential employers.",
 
         "title-brand-guidelines": "Charte graphique",
@@ -75,14 +75,14 @@
         "title-workshop-figma": "Figma ",
         "desc-workshop-figma": "Interactive mockups, web pages, logos, and design systems crafted with Figma, showcasing both creativity and precision.",
 
-        "title-workshop-photoshop": "Adobe Photoshop ",
+        "title-workshop-photoshop": "Digital Creation",
         "desc-workshop-photoshop": "Graphic creations from my training sessions, combining technique and creativity.",
 
-        "title-workshop-indesign": "Adobe InDesign ",
+        "title-workshop-indesign": "Publications",
         "desc-workshop-indesign": "Created a 4-page magazine, a flyer, and a poster — combining technique and creativity.",
 
         "title-workshop-illustrator": "Adobe Illustrator ",
-        "title-digital-draw": "Digital Draw",
+        "title-digital-draw": "Vector Illustrations",
         "desc-workshop-illustrator": "Created icons and vector illustrations — a blend of technical skill and creativity.",
 
         "title-games": "Games",

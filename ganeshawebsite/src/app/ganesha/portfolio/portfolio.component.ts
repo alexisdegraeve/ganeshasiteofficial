@@ -69,7 +69,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-workshop-indesign',
       description: 'PORTFOLIO.desc-workshop-indesign',
-      image: 'assets/img/logo_indesign.svg',
+      image: 'assets/img/preview_poster_jeux_video.jpg',
       linkInternal: '/indesign',
       class: 'logo-adobe',
       imageLoaded: false
@@ -108,14 +108,6 @@ export class PortfolioComponent {
       description: 'PORTFOLIO.desc-promockup',
       image: 'assets/img/portfolio.jpg',
       download: 'assets/pdf/portfolio_adg.pdf', // Lien pour télécharger le PDF
-      imageLoaded: false
-    },
-    {
-      title: 'PORTFOLIO.title-logodesign',
-      description: 'PORTFOLIO.desc-logodesign',
-      image: 'assets/img/logos/logo_folder.png',
-      linkInternal: '/gallerylogo',
-      class: 'logo',
       imageLoaded: false
     },
     {
