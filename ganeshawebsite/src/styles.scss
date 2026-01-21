@@ -326,9 +326,17 @@
 
     @media (max-width: 768px) {
         .container-radius {
-            border-top-right-radius: 1.125rem;
-            border-left: 0.25rem solid #fff;
-            height: 15rem;
+            // border-top-right-radius: 1.125rem;
+            // border-left: 0.25rem solid #fff;
+            // height: 15rem;
+            border: unset;
+            border-radius: unset;
+            padding: 0;
+            margin-left: -1rem;
+            overflow: auto;
+            /* height: 15rem; */
+            width: auto;
+            margin-right: -1rem;
         }
     }
 
