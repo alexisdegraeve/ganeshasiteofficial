@@ -324,6 +324,28 @@
             "title": "Analyze Game Ganesha Battlefield",
             "subtitle": "Case study on the user experience of Battlefield"
         }
+    },
+    "UX_CASE_GANESHA_SUDOKU": {
+        "pageTitle": "Ganesha Sudoku — UX Case Study",
+        "intro": "In‑depth analysis and methods used to design the UX/UI of the interactive Ganesha Sudoku game, from concept to implementation.",
+
+        "tech.title": "1) Technologies Used",
+        "tech.desc": "Frontend with React.js + TypeScript via Vite, and Chakra UI components for a cohesive and responsive interface.",
+
+        "structure.title": "2) Grid Structure",
+        "structure.desc": "Solution grid (solutionGrid) and player grid (playerGrid) managed by 2D arrays and compared for validation.",
+
+        "generation.title": "3) Sudoku Generation",
+        "generation.desc": "Backtracking algorithm used to fill the grid while enforcing rules: unique values in rows, columns, and blocks.",
+
+        "uiux.title": "4) UI / UX Design",
+        "uiux.desc": "Ganesha theme, clean design, clear distinction between editable and prefilled cells with visual feedback.",
+
+        "methods.title": "5) React + Chakra UI Methods",
+        "methods.desc": "useState for state management, map() for dynamic rendering, ChakraProvider for theme consistency.",
+
+        "deployment.title": "6) Deployment",
+        "deployment.desc": "Static build via Vite (npm run build) ready for OVH hosting. Option to use SSR with Next.js for extension."
     }
 
 }

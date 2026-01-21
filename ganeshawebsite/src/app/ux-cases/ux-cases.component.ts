@@ -22,13 +22,13 @@ interface UxCaseItem {
 export class UxCasesComponent {
     uxCases: UxCaseItem[] = [
     {
-      route: 'ux-cases/ganesha-sudoku',
+      route: '/ux-cases/ganesha-sudoku',
       titleKey: 'UX_CASES.ganeshaSudoku.title',
       subTitleKey: 'UX_CASES.ganeshaSudoku.subtitle',
       icon: 'bi-folder'
     },
     {
-      route: 'ux-cases/ganesha-battlefield',
+      route: '/ux-cases/ganesha-battlefield',
       titleKey: 'UX_CASES.ganeshaBattlefield.title',
       subTitleKey: 'UX_CASES.ganeshaBattlefield.subtitle',
       icon: 'bi-folder'

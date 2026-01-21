@@ -24,6 +24,8 @@ import { BrandGuidelinesComponent } from './brand-guidelines/brand-guidelines.co
 import { CreditsComponent } from './credits/credits.component';
 import { AdobeInDesignComponent } from './adobe-in-design/adobe-in-design.component';
 import { DrawComponent } from './draw/draw.component';
+import { UxCaseGaneshaSudokuComponent } from './ux-case-ganesha-sudoku/ux-case-ganesha-sudoku.component';
+import { UxCaseGaneshaBattlefieldComponent } from './ux-case-ganesha-battlefield/ux-case-ganesha-battlefield.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -48,7 +50,15 @@ const routes: Routes = [
   { path: 'draw', component: DrawComponent },
   { path: 'illustrator', component: AdobeIllustratorComponent },
   { path: 'brandguidelines', component: BrandGuidelinesComponent },
-  { path: 'uxcases', component: UxCasesComponent },
+  { path: 'ux-cases', component: UxCasesComponent },
+  {
+    path: 'ux-cases/ganesha-sudoku',
+    component: UxCaseGaneshaSudokuComponent
+  },
+  {
+    path: 'ux-cases/ganesha-battlefield',
+    component: UxCaseGaneshaBattlefieldComponent
+  },
   { path: 'credits', component: CreditsComponent },
   { path: '**', component: NotfoundComponent } // Route 404 pour URL incorrecte
 ];

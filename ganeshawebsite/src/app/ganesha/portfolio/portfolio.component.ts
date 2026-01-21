@@ -32,7 +32,7 @@ export class PortfolioComponent {
       title: 'PORTFOLIO.title-uxcases',
       description: 'PORTFOLIO.desc-uxcases',
       image: 'assets/img/wireframes/wireframe_sport.png',
-      linkInternal: '/uxcases',
+      linkInternal: '/ux-cases',
       imageLoaded: false
     },
     {
