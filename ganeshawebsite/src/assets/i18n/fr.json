@@ -369,23 +369,42 @@
 
 
     "UX_CASE_GANESHA_BATTLEFIELD": {
-        "pageTitle": "Ganesha Battlefield — Étude de cas UX",
-        "intro": "Analyse UX du jeu de Bataille Navale, conçue pour être intuitive, engageante et facilement jouable contre une IA.",
+        "pageTitle": "Bataille Navale – Étude de cas UX",
 
-        "objective.title": "🎯 Objectif UX",
-        "objective.desc": "Créer une expérience intuitive avec deux grilles distinctes et interactions simples : placement des bateaux, puis tir contre l’IA.",
+        "intro": "<p>Analyse UX du jeu interactif <strong class=\"highlight-text\">Bataille Navale</strong>, depuis l’inspiration initiale jusqu’à la conception visuelle et fonctionnelle, avec un focus sur l’identité marine immersive et l’expérience utilisateur.</p>",
 
-        "placement.title": "⚙️ Placement des bateaux (IA)",
-        "placement.desc": "Grille 10×10, bateaux de tailles variées. Position aléatoire + vérification des contraintes (pas de chevauchement, pas hors grille).",
+        "tech.title": "Contexte & Inspirations",
+        "tech.desc": "<p>Avant de concevoir l’interface, j’ai étudié plusieurs versions de <strong class=\"highlight-text\">Bataille Navale</strong> sur smartphone pour comprendre comment les joueurs interagissent avec les grilles et ressentent l’action. L’univers visuel s’inspire de l’océan et des sous‑marins, notamment l’effet de zoom et de flou autour du périscope pour renforcer l’immersion.</p>",
 
-        "backtracking.title": "🔁 Backtracking",
-        "backtracking.desc": "Si un bateau ne peut pas être placé, on supprime et réessaie pour garantir une configuration valide même dans des cas bloquants.",
+        "structure.title": "Interactions & Placement des Navires",
+        "structure.desc": "<p>L’expérience commence par le placement des navires. Pour éviter toute erreur, l’interface guide l’utilisateur avec des règles claires :</p><ul><li>Les navires ne doivent pas dépasser les bordures de la grille</li><li>Ils ne doivent pas se chevaucher</li><li>Une validation visuelle indique si une placement est valide</li></ul><p>Cette étape UX garantit une prise en main intuitive et sans frustration.</p>",
 
-        "flow.title": "🖥️ UX Flow (Utilisateur vs IA)",
-        "flow.desc": "Phase de préparation : placement des bateaux par le joueur et IA. Phase de jeu : deux grilles visibles, tir sur grille IA jusqu’à victoire.",
+        "generation.title": "Génération de la Grille IA",
+        "generation.desc": "<p>Contrairement au Sudoku, la grille de l’ordinateur n’utilise pas de backtracking. L’IA place ses navires en vérifiant les cases adjacentes dans les quatre directions (Nord, Sud, Est, Ouest) pour simuler une logique plus humaine et intelligente, tout en respectant les contraintes de jeu.</p><p>Cela garantit une disposition cohérente sans recouvrement ni sortie de cadre, tout en rendant chaque partie unique.</p>",
 
-        "uxpoints.title": "🎨 Points UX clés",
-        "uxpoints.desc": "Deux grilles claires, bouton “Ready”, IA fiable, engagement accru grâce au placement aléatoire, lisibilité et interactions simples."
+        "uiux.title": "Approche UI / Immersion",
+        "uiux.desc": "<p>Pour renforcer l’ambiance marine, j’ai incorporé des éléments visuels inspirés de l’univers des sous‑marins : </p><ul><li>Une palette de couleurs bleu profond et turquoise</li><li>Effets de flou autour du périscope pour suggérer le focus et l’exploration</li><li>Transitions et retours visuels renforcent le rythme du jeu</li></ul><p>Cela aide l’utilisateur à ressentir l’environnement tout en gardant une interface claire et lisible.</p>",
+
+        "methods.title": "Feedback & Itérations UX",
+        "methods.desc": "<p>Lors des premiers tests, j’ai observé comment les joueurs réagissaient aux placements et aux retours visuels. Les retours ont permis d’ajuster les animations, les couleurs d’indication (valide vs invalide), et d’introduire des micro‑interactions plus fluides.</p><p>Ces itérations renforcent l’engagement et aident à réduire les erreurs de placement.</p>",
+
+        "deployment.title": "Responsive & Multi‑plateforme",
+        "deployment.desc": "<p>L’interface a été pensée pour être pleinement responsive, garantissant une expérience fluide sur mobile et desktop sans perte de lisibilité ou de feedback interactif.</p>",
+
+        "testing.title": "Tests Utilisateurs & Améliorations",
+        "testing.desc": "<p>Des amis et plusieurs testeurs ont essayé le jeu sur différents appareils. Leurs commentaires ont permis :</p><ul><li>D’améliorer la logique de placement des bateaux</li><li>D’ajuster les zones interactives</li><li>De clarifier le passage d’un état de jeu à l’autre</li></ul><p>Ces retours ont été précieux pour améliorer la clarté et l’ergonomie globale.</p>",
+
+        "mockups": {
+            "title": "Maquettes & Explorations Visuelles",
+            "desc": "Ci‑dessous, quelques étapes visuelles montrant l'évolution du design du jeu Bataille Navale :",
+            "alt1": "Écran de démarrage - Bataille Navale",
+            "alt2": "Placement des navires - Vue initiale",
+            "alt3": "Périscope - Focus & Flou dynamique",
+            "alt4": "Vue de jeu active - Bataille en cours"
+        },
+
+        "openGameBtn": "Jouer à Bataille Navale"
     }
+
 
 }

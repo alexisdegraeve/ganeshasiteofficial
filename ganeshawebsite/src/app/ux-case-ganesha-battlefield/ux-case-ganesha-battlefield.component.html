@@ -1,19 +1,65 @@
-<div class="container py-4">
+<div class="container px-5 py-4">
+
     <app-page-header [title]="'UX_CASE_GANESHA_BATTLEFIELD.pageTitle' | translate" [back]="'/ux-cases'">
     </app-page-header>
 
-    <p class="lead text-center mb-4">
-        {{ 'UX_CASE_GANESHA_BATTLEFIELD.intro' | translate }}
-    </p>
+    <!-- Introduction -->
+    <div class="lead text-center mb-5" [innerHTML]="'UX_CASE_GANESHA_BATTLEFIELD.intro' | translate">
+    </div>
 
-    <div class="timeline">
-        <div class="timeline-item" *ngFor="let item of timeline">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-                <h5 class="timeline-title">{{ item.titleKey | translate }}</h5>
-                <p class="timeline-desc">{{ item.descKey | translate }}</p>
+    <!-- Timeline améliorée -->
+    <div class="timeline-modern">
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item" *ngFor="let item of timeline; let i = index">
+            <div class="timeline-circle">{{ i + 1 }}</div>
+            <div class="timeline-text">
+                <h5 class="timeline-title" [innerHTML]="item.titleKey | translate"></h5>
+
+                <div class="timeline-desc" [innerHTML]="item.descKey | translate"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Maquettes section -->
+    <section class="mockups-section container-fluid px-5">
+
+        <h3 class="mockups-title">{{ 'UX_CASE_GANESHA_BATTLEFIELD.mockups.title' | translate }}</h3>
+        <p class="mockups-desc">{{ 'UX_CASE_GANESHA_BATTLEFIELD.mockups.desc' | translate }}</p>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 text-center" *ngFor="let mock of mockups">
+                <div class="mockup-thumb" role="button" data-bs-toggle="modal" data-bs-target="#mockupModal" (click)="selectedMockup = mock">
+
+                    <img [src]="mock.thumb" [alt]="mock.alt | translate" class="img-fluid rounded">
+                </div>
+
+                <div class="mockup-label">{{ mock.label | translate }}</div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-end">
+            <a role="button" href="{{ gameLink }}" target="_blank" class="btn btn-lg btn-danger open-game-btn" rel="noopener noreferrer">
+        {{ 'UX_CASE_GANESHA_BATTLEFIELD.openGameBtn' | translate }}
+      </a>
+        </div>
+
+    </section>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="mockupModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark border-0">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img *ngIf="selectedMockup" [src]="selectedMockup.full" [alt]="selectedMockup.alt | translate" class="img-fluid rounded shadow-lg" />
             </div>
         </div>
     </div>
-
 </div>

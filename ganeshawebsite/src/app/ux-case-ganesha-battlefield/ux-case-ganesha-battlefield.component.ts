@@ -9,39 +9,77 @@ interface TimelineItem {
   titleKey: string;
   descKey: string;
 }
+
 @Component({
   selector: 'app-ux-case-ganesha-battlefield',
   imports: [CommonModule, RouterModule, TranslateModule, PageHeaderComponent],
   templateUrl: './ux-case-ganesha-battlefield.component.html',
-  styleUrl: './ux-case-ganesha-battlefield.component.scss'
+  styleUrls: ['./ux-case-ganesha-battlefield.component.scss']
 })
 export class UxCaseGaneshaBattlefieldComponent {
-  timeline: TimelineItem[] = [
+
+  selectedMockup: any = null;
+
+  // lien vers ton jeu — à remplacer si besoin
+  gameLink = 'https://www.ganopolydeal.ganesha.ovh/';
+
+  mockups = [
     {
-      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.objective.title',
-      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.objective.desc'
+      thumb: 'assets/img/ux/battlefield/battlefield_01.png',
+      full:  'assets/img/ux/battlefield/battlefield_01.png',
+      alt:   'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt1',
+      label: 'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt1'
     },
     {
-      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.placement.title',
-      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.placement.desc'
+      thumb: 'assets/img/ux/battlefield/battlefield_02.png',
+      full:  'assets/img/ux/battlefield/battlefield_02.png',
+      alt:   'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt2',
+      label: 'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt2'
     },
     {
-      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.backtracking.title',
-      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.backtracking.desc'
+      thumb: 'assets/img/ux/battlefield/battlefield_03.png',
+      full:  'assets/img/ux/battlefield/battlefield_03.png',
+      alt:   'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt3',
+      label: 'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt3'
     },
     {
-      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.flow.title',
-      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.flow.desc'
-    },
-    {
-      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.uxpoints.title',
-      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.uxpoints.desc'
+      thumb: 'assets/img/ux/battlefield/battlefield_04.png',
+      full:  'assets/img/ux/battlefield/battlefield_04.png',
+      alt:   'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt4',
+      label: 'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt4'
     }
   ];
 
-        constructor(private translate: TranslateService, private languageService: LanguageService) {
-          this.languageService.currentLang$.subscribe((lang) => {
-            this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
-          });
-        }
+  timeline: TimelineItem[] = [
+    {
+      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.tech.title',
+      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.tech.desc'
+    },
+    {
+      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.structure.title',
+      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.structure.desc'
+    },
+    {
+      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.generation.title',
+      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.generation.desc'
+    },
+    {
+      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.uiux.title',
+      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.uiux.desc'
+    },
+    {
+      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.methods.title',
+      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.methods.desc'
+    },
+    {
+      titleKey: 'UX_CASE_GANESHA_BATTLEFIELD.deployment.title',
+      descKey: 'UX_CASE_GANESHA_BATTLEFIELD.deployment.desc'
+    }
+  ];
+
+  constructor(private translate: TranslateService, private languageService: LanguageService) {
+    this.languageService.currentLang$.subscribe((lang) => {
+      this.translate.use(lang);
+    });
+  }
 }
