@@ -333,14 +333,14 @@
             "title": "Diagramme logique du backtracking"
         },
         "mockups": {
-            "title": "Maquettes & UI explorations",
-            "desc": "Cliquez sur une maquette pour la voir en grand.",
-            "alt1": "Maquette 1 – Vue générale",
-            "alt2": "Maquette 2 – Détails de l’interface",
-            "alt3": "Maquette 3 – Layout mobile",
-            "alt4": "Maquette 4 – Interactions UI"
+            "title": "Maquettes & Évolutions visuelles",
+            "desc": "Voici quelques étapes visuelles que j’ai créées lors du développement du jeu. Cliquez sur une vignette pour zoomer.",
+            "alt1": "Start - Maquette écran de démarrage",
+            "alt2": "Le Jeu - Interface principale",
+            "alt3": "You Win - Écran de victoire",
+            "alt4": "You Lose - Écran de défaite"
         },
-
+        "openGameBtn": "Ouvrir le jeu",
         "pageTitle": "Ganesha Sudoku — Étude de cas UX",
 
         "intro": "<p>Analyse UX du jeu interactif <strong class=\"highlight-text\">Ganesha Sudoku</strong>, du concept initial jusqu'à la conception visuelle et l'amélioration de l'expérience utilisateur.</p>",
