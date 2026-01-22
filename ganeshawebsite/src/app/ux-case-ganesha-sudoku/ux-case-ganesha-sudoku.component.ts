@@ -5,6 +5,7 @@ import { PageHeaderComponent } from '../shared/page-header/page-header.component
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
 
+declare var bootstrap: any; // Ajoutez cette déclaration pour utiliser Bootstrap JS
 interface TimelineItem {
   titleKey: string;
   descKey: string;
@@ -18,7 +19,32 @@ interface TimelineItem {
 })
 export class UxCaseGaneshaSudokuComponent {
 
-    timeline: TimelineItem[] = [
+  selectedMockup: any = null;
+
+  mockups = [
+    {
+      thumb: 'assets/img/ux/sudoku/sudoku_01.png',
+      full: 'assets/img/ux/sudoku/sudoku_01.png',
+      alt: 'UX_CASE_GANESHA_SUDOKU.mockups.alt1'
+    },
+    {
+      thumb: 'assets/img/ux/sudoku/sudoku_02.png',
+      full: 'assets/img/ux/sudoku/sudoku_02.png',
+      alt: 'UX_CASE_GANESHA_SUDOKU.mockups.alt2'
+    },{
+      thumb: 'assets/img/ux/sudoku/sudoku_03.png',
+      full: 'assets/img/ux/sudoku/sudoku_03.png',
+      alt: 'UX_CASE_GANESHA_SUDOKU.mockups.alt2'
+    },
+    {
+      thumb: 'assets/img/ux/sudoku/sudoku_04.png',
+      full: 'assets/img/ux/sudoku/sudoku_04.png',
+      alt: 'UX_CASE_GANESHA_SUDOKU.mockups.alt2'
+    },
+    // … tes 4 planches
+  ];
+
+  timeline: TimelineItem[] = [
     {
       titleKey: 'UX_CASE_GANESHA_SUDOKU.tech.title',
       descKey: 'UX_CASE_GANESHA_SUDOKU.tech.desc'
@@ -45,10 +71,18 @@ export class UxCaseGaneshaSudokuComponent {
     }
   ];
 
-      constructor(private translate: TranslateService, private languageService: LanguageService) {
-        this.languageService.currentLang$.subscribe((lang) => {
-          this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
-        });
-      }
+  constructor(private translate: TranslateService, private languageService: LanguageService) {
+    this.languageService.currentLang$.subscribe((lang) => {
+      this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+    });
+  }
 
+  openMockup(mock: any) {
+    this.selectedMockup = mock;
+    const modalEl = document.getElementById('mockupModal');
+    if (modalEl) {
+      const bsModal = new bootstrap.Modal(modalEl);
+      bsModal.show();
+    }
+  }
 }

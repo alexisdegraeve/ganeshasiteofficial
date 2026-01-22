@@ -332,6 +332,14 @@
         "backtrackingDiagram": {
             "title": "Diagramme logique du backtracking"
         },
+        "mockups": {
+            "title": "Maquettes & UI explorations",
+            "desc": "Cliquez sur une maquette pour la voir en grand.",
+            "alt1": "Maquette 1 – Vue générale",
+            "alt2": "Maquette 2 – Détails de l’interface",
+            "alt3": "Maquette 3 – Layout mobile",
+            "alt4": "Maquette 4 – Interactions UI"
+        },
 
         "pageTitle": "Ganesha Sudoku — Étude de cas UX",
 
