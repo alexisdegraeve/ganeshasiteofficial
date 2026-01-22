@@ -2,15 +2,21 @@
     <app-page-header [title]="'UX_CASES.title' | translate" [back]="'/portfolio'">
     </app-page-header>
 
-    <p class=" lead text-center mb-4 ">{{ 'UX_CASES.desc' | translate }}</p>
+    <p class="lead  mb-4">
+        {{ 'UX_CASES.desc' | translate }}
+    </p>
 
-    <div class="list-group ">
-        <button *ngFor="let item of uxCases " class="list-group-item list-group-item-action d-flex align-items-center " [routerLink]="item.route ">
-      <i class="bi me-3 " [class]="item.icon "></i>
-      <div>
-        <div class="fw-bold ">{{ item.titleKey | translate }}</div>
-        <small class="text-muted ">{{ item.subTitleKey | translate }}</small>
-      </div>
-    </button>
+    <div class="row gx-4 gy-4 ux-cases-grid">
+        <div class="col-12 col-sm-6 col-md-4" *ngFor="let item of uxCases">
+            <a [routerLink]="item.route" class="ux-case-card text-decoration-none">
+                <div class="card-body d-flex flex-column align-items-center text-center">
+                    <i class="bi folder-icon mb-3" [class]="item.icon"></i>
+                    <h5 class="card-title">{{ item.titleKey | translate }}</h5>
+                    <p class="card-text text-muted">
+                        {{ item.subTitleKey | translate }}
+                    </p>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
