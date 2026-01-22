@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
 import { PageHeaderComponent } from '../shared/page-header/page-header.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/shared/language.service';
 
 interface TimelineItem {
   titleKey: string;
@@ -37,4 +38,10 @@ export class UxCaseGaneshaBattlefieldComponent {
       descKey: 'UX_CASE_GANESHA_BATTLEFIELD.uxpoints.desc'
     }
   ];
+
+        constructor(private translate: TranslateService, private languageService: LanguageService) {
+          this.languageService.currentLang$.subscribe((lang) => {
+            this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+          });
+        }
 }

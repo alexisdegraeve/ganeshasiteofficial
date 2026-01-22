@@ -333,25 +333,31 @@
             "title": "Diagramme logique du backtracking"
         },
         "pageTitle": "Ganesha Sudoku — Étude de cas UX",
-        "intro": "Analyse et méthodes utilisées pour concevoir l’expérience UX/UI du jeu interactif Ganesha Sudoku, du concept à la mise en œuvre.",
+        "intro": "Analyse UX du jeu interactif Ganesha Sudoku, du concept initial jusqu'à la conception visuelle et l'amélioration de l'expérience utilisateur.",
 
-        "tech.title": "1) Technologies Utilisées",
-        "tech.desc": "Frontend avec React.js + TypeScript via Vite, et composants Chakra UI pour une interface cohérente et responsive.",
+        "tech.title": "1) Contexte & Motivation",
+        "tech.desc": "Après avoir testé plusieurs jeux de Sudoku sur smartphone, j'ai eu l'envie de recréer une version personnelle pour relever un défi de conception tout en explorant les aspects visuels et interactifs du jeu.",
 
-        "structure.title": "2) Structure des Grilles",
-        "structure.desc": "Grille solution (solutionGrid) et grille joueur (playerGrid) gérées par des tableaux 2D, comparées pour validation.",
+        "structure.title": "2) Fonctionnalité & Prototype initial",
+        "structure.desc": "Avant d’aborder le design, j’ai construit une version fonctionnelle du jeu. Mon objectif était d'assurer que le jeu soit jouable et logique avant de travailler l’esthétique.",
 
-        "generation.title": "3) Génération de Sudoku",
-        "generation.desc": "Algorithme de backtracking pour remplir la grille en respectant les règles : lignes, colonnes, blocs sans doublon.",
+        "generation.title": "3) Logique de validation de la grille",
+        "generation.desc": "La génération de la grille utilise une logique robuste qui empêche la création de grilles impossibles à résoudre. L’utilisateur remplit les cases manquantes et chaque entrée est validée pour vérifier sa pertinence, avec un nombre limité d’essais autorisés.",
 
-        "uiux.title": "4) UI / UX Design",
-        "uiux.desc": "Thème Ganesha, design épuré, distinction claire entre cellules éditables et non éditables avec feedback visuel.",
+        "uiux.title": "4) Niveaux & Progression",
+        "uiux.desc": "J’ai implémenté plusieurs niveaux de difficulté en augmentant le nombre de trous dans la grille pour différents niveaux, ce qui enrichit l'engagement utilisateur par une progression naturelle.",
 
-        "methods.title": "5) Méthodes React + Chakra UI",
-        "methods.desc": "Utilisation de useState pour gérer l’état, map() pour l’affichage dynamique, avec ChakraProvider pour le thème.",
+        "methods.title": "5) Approche Design UX/UI",
+        "methods.desc": "Une fois la fonctionnalité assurée, j’ai réalisé les maquettes dans Figma. Je me suis concentré sur un design clair et lisible, avec une attention particulière à la hiérarchie visuelle, aux interactions et aux retours utilisateur.",
 
-        "deployment.title": "6) Déploiement",
-        "deployment.desc": "Build statique Vite ready (npm run build) à déployer sur OVH. Possibilité de SSR avec Next.js pour évolution."
+        "deployment.title": "6) Améliorations UX",
+        "deployment.desc": "À partir des premiers retours, j’ai ajouté des éléments tels que le compteur de chiffres restants, une gestion du temps et une section de règles, ce qui améliore l'expérience globale et donne une meilleure compréhension du jeu.",
+
+        "responsive.title": "7) Responsive & Mobile-first",
+        "responsive.desc": "L’interface a été pensée en mobile-first et adaptée pour desktop, assurant une expérience fluide sur tous les appareils.",
+
+        "testing.title": "8) Tests Utilisateurs",
+        "testing.desc": "J’ai demandé à des amis de tester le jeu sur différents appareils. Leurs retours m'ont permis de corriger des bugs et d’ajuster des éléments visuels pour améliorer la clarté et l’intuitivité."
     },
 
     "UX_CASE_GANESHA_BATTLEFIELD": {

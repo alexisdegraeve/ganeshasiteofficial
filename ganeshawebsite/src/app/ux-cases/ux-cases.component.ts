@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from '../shared/header/header.component';
 import { PageHeaderComponent } from '../shared/page-header/page-header.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/shared/language.service';
 
 interface UxCaseItem {
   route: string;
@@ -34,5 +35,11 @@ export class UxCasesComponent {
       icon: 'bi-folder'
     }
   ];
+
+    constructor(private translate: TranslateService, private languageService: LanguageService) {
+      this.languageService.currentLang$.subscribe((lang) => {
+        this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+      });
+    }
 
 }
