@@ -21,7 +21,7 @@ export class UxCaseGaneshaBattlefieldComponent {
   selectedMockup: any = null;
 
   // lien vers ton jeu — à remplacer si besoin
-  gameLink = 'https://www.ganopolydeal.ganesha.ovh/';
+  gameLink = 'https://www.battleship.ganesha.ovh/';
 
   mockups = [
     {
@@ -47,6 +47,12 @@ export class UxCaseGaneshaBattlefieldComponent {
       full:  'assets/img/ux/battlefield/battlefield_04.png',
       alt:   'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt4',
       label: 'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt4'
+    },
+    {
+      thumb: 'assets/img/ux/battlefield/battlefield_05.png',
+      full:  'assets/img/ux/battlefield/battlefield_05.png',
+      alt:   'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt5',
+      label: 'UX_CASE_GANESHA_BATTLEFIELD.mockups.alt5'
     }
   ];
 

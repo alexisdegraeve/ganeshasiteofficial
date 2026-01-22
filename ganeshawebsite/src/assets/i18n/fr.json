@@ -397,10 +397,11 @@
         "mockups": {
             "title": "Maquettes & Explorations Visuelles",
             "desc": "Ci‑dessous, quelques étapes visuelles montrant l'évolution du design du jeu Bataille Navale :",
-            "alt1": "Écran de démarrage - Bataille Navale",
-            "alt2": "Placement des navires - Vue initiale",
-            "alt3": "Périscope - Focus & Flou dynamique",
-            "alt4": "Vue de jeu active - Bataille en cours"
+            "alt1": "Setup initial - Écran de configuration de Bataille Navale",
+            "alt2": "Placement des navires - Premier navire positionné sur la grille",
+            "alt3": "Placement des navires - Grille avec plusieurs navires positionnés",
+            "alt4": "Gagné - Écran de victoire après une partie réussie",
+            "alt5": "Perdu - Écran de défaite après une partie terminée"
         },
 
         "openGameBtn": "Jouer à Bataille Navale"
