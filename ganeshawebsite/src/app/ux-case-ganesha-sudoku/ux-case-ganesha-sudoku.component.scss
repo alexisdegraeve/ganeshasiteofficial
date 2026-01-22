@@ -1,43 +1,90 @@
-.container {
-    max-width: 700px;
+/* ===== Timeline Modern ===== */
+
+.timeline-modern {
+    position: relative;
+    margin-top: 2rem;
+    padding-left: 3rem;
 }
 
-.timeline {
-    position: relative;
-    margin: 2rem 0;
-    &::before {
-        content: '';
-        position: absolute;
-        left: 20px;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: #ccc;
+
+/* Ligne verticale arc-en-ciel */
+
+.timeline-line {
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    bottom: 0;
+    width: 0.25rem;
+    background: linear-gradient( 180deg, #ff0000, #ffa500, #ffff00, #00ff00, #0000ff, #4b0082, #ee82ee);
+    background-size: 400% 400%;
+    animation: rainbowShift 42s ease-in-out infinite;
+}
+
+@keyframes rainbowShift {
+    0% {
+        background-position: 0% 0%;
     }
-    .timeline-item {
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.timeline-desc strong,
+.timeline-title strong {
+    color: #ffc600;
+    /* jaune vif visible sur fond foncé */
+    font-weight: 700;
+}
+
+.timeline-title {
+    transition: color 0.35s ease;
+}
+
+.timeline-title:hover {
+    color: #ffc600;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    .timeline-circle {
+        flex-shrink: 0;
+        width: 2.25rem;
+        height: 2.25rem;
+        background: #fff;
+        color: #23384E;
+        font-weight: 700;
+        font-size: 1.2rem;
         display: flex;
-        position: relative;
-        margin-bottom: 2.5rem;
-        padding-left: 40px;
-        .timeline-dot {
-            position: absolute;
-            left: 10px;
-            width: 12px;
-            height: 12px;
-            background: #23384E;
-            border-radius: 50%;
-            border: 3px solid #ffc600;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .timeline-text {
+        flex: 1;
+        .timeline-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: .5rem;
+            color: #f8f9fa;
         }
-        .timeline-content {
-            .timeline-title {
-                font-size: 1.25rem;
-                font-weight: 600;
-                margin-bottom: .5rem;
+        .timeline-desc {
+            font-size: 1.05rem;
+            color: #e9ecef;
+            line-height: 1.7;
+            p {
+                margin-bottom: .8rem;
             }
-            .timeline-desc {
-                font-size: 1rem;
-                color: #fff;
-                line-height: 1.5;
+            ul {
+                margin-left: 1.2rem;
+                list-style-type: disc;
             }
         }
     }

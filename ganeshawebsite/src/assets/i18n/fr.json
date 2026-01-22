@@ -332,33 +332,33 @@
         "backtrackingDiagram": {
             "title": "Diagramme logique du backtracking"
         },
+
         "pageTitle": "Ganesha Sudoku — Étude de cas UX",
-        "intro": "Analyse UX du jeu interactif Ganesha Sudoku, du concept initial jusqu'à la conception visuelle et l'amélioration de l'expérience utilisateur.",
 
-        "tech.title": "1) Contexte & Motivation",
-        "tech.desc": "Après avoir testé plusieurs jeux de Sudoku sur smartphone, j'ai eu l'envie de recréer une version personnelle pour relever un défi de conception tout en explorant les aspects visuels et interactifs du jeu.",
+        "intro": "<p>Analyse UX du jeu interactif <strong class=\"highlight-text\">Ganesha Sudoku</strong>, du concept initial jusqu'à la conception visuelle et l'amélioration de l'expérience utilisateur.</p>",
 
-        "structure.title": "2) Fonctionnalité & Prototype initial",
-        "structure.desc": "Avant d’aborder le design, j’ai construit une version fonctionnelle du jeu. Mon objectif était d'assurer que le jeu soit jouable et logique avant de travailler l’esthétique.",
+        "tech.title": "Contexte & Motivation",
+        "tech.desc": "<p>Après avoir testé plusieurs jeux de Sudoku sur smartphone et observé ce qui fonctionnait ou non en termes d'ergonomie, j'ai voulu relever un <strong class=\"highlight-text\">défi personnel</strong> en créant ma propre version du jeu, tout en explorant les aspects visuels et interactifs.</p>",
 
-        "generation.title": "3) Logique de validation de la grille",
-        "generation.desc": "La génération de la grille utilise une logique robuste qui empêche la création de grilles impossibles à résoudre. L’utilisateur remplit les cases manquantes et chaque entrée est validée pour vérifier sa pertinence, avec un nombre limité d’essais autorisés.",
+        "structure.title": "Prototype Fonctionnel",
+        "structure.desc": "<p>Avant même de travailler le design, ma priorité a été de rendre le jeu <strong class=\"highlight-text\">fonctionnel</strong> :</p><ul><li>Génération de la grille</li><li>Validation des entrées utilisateur</li><li>Respect des règles du Sudoku</li></ul><p>Cette démarche garantit une base solide avant l’habillage visuel.</p>",
 
-        "uiux.title": "4) Niveaux & Progression",
-        "uiux.desc": "J’ai implémenté plusieurs niveaux de difficulté en augmentant le nombre de trous dans la grille pour différents niveaux, ce qui enrichit l'engagement utilisateur par une progression naturelle.",
+        "generation.title": "Logique de génération des grilles",
+        "generation.desc": "<p>Pour garantir des grilles toujours <strong class=\"highlight-text\">valables et résolubles</strong>, j’ai utilisé une approche algorithmique connue sous le nom de <strong class=\"highlight-text\">backtracking</strong>. Cette méthode :</p><ul><li>Construit progressivement la grille</li><li>Teste chaque placement de chiffre</li><li>Reviens en arrière dès qu'une contrainte n’est pas respectée</li></ul><p>Ce principe est comparable à un labyrinthe : on avance si le chemin est valide et on recule lorsqu’on rencontre une impasse, assurant ainsi une solution complète sans conflit.</p>",
 
-        "methods.title": "5) Approche Design UX/UI",
-        "methods.desc": "Une fois la fonctionnalité assurée, j’ai réalisé les maquettes dans Figma. Je me suis concentré sur un design clair et lisible, avec une attention particulière à la hiérarchie visuelle, aux interactions et aux retours utilisateur.",
+        "uiux.title": "Approche UX/UI",
+        "uiux.desc": "<p>Une fois la logique fonctionnelle assurée, j’ai conçu les maquettes dans <strong class=\"highlight-text\">Figma</strong>, en m’inspirant d’une esthétique moderne et intuitive. Des influences visuelles inspirées de <strong class=\"highlight-text\">Squid Game</strong> ont été adaptées pour un rendu à la fois audacieux et clair.</p><p>L’accent a été mis sur :</p><ul><li>La lisibilité des cellules</li><li>La hiérarchie visuelle</li><li>Les retours interactifs lors des actions du joueur</li></ul>",
 
-        "deployment.title": "6) Améliorations UX",
-        "deployment.desc": "À partir des premiers retours, j’ai ajouté des éléments tels que le compteur de chiffres restants, une gestion du temps et une section de règles, ce qui améliore l'expérience globale et donne une meilleure compréhension du jeu.",
+        "methods.title": "Amélioration de l'interaction",
+        "methods.desc": "<p>À partir des premiers tests, j’ai ajouté des éléments destinés à renforcer l’expérience :</p><ul><li>Un compteur de chiffres restants</li><li>Une gestion du temps pour l’immersion</li><li>Une section de règles explicatives</li></ul><p>Ces ajouts offrent un meilleur guidage et renforcent l’engagement du joueur.</p>",
 
-        "responsive.title": "7) Responsive & Mobile-first",
-        "responsive.desc": "L’interface a été pensée en mobile-first et adaptée pour desktop, assurant une expérience fluide sur tous les appareils.",
+        "deployment.title": "Responsive & Mobile‑First",
+        "deployment.desc": "<p>L’interface a été pensée en <strong class=\"highlight-text\">mobile‑first</strong> pour assurer une expérience fluide sur smartphone, puis adaptée pour desktop tout en conservant une navigation simple et intuitive.</p>",
 
-        "testing.title": "8) Tests Utilisateurs",
-        "testing.desc": "J’ai demandé à des amis de tester le jeu sur différents appareils. Leurs retours m'ont permis de corriger des bugs et d’ajuster des éléments visuels pour améliorer la clarté et l’intuitivité."
+        "responsive.title": "Tests Utilisateurs & Iterations",
+        "responsive.desc": "<p>Des amis ont testé le jeu sur différents appareils. Leurs retours m'ont permis :</p><ul><li>De corriger des bugs</li><li>D’ajuster des éléments visuels</li><li>D’améliorer la clarté des interactions</li></ul><p>Ces itérations ont permis une expérience plus agréable et sans friction.</p>"
     },
+
 
     "UX_CASE_GANESHA_BATTLEFIELD": {
         "pageTitle": "Ganesha Battlefield — Étude de cas UX",
