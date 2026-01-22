@@ -327,48 +327,80 @@
     },
     "UX_CASE_GANESHA_SUDOKU": {
         "backtrackingDiagram": {
-            "title": "Diagramme logique du backtracking"
+            "title": "Backtracking Logic Diagram"
         },
+        "mockups": {
+            "title": "Mockups & Visual Evolution",
+            "desc": "Here are some visual stages I created during the development of the game. Click a thumbnail to zoom in.",
+            "alt1": "Start - Initial screen mockup",
+            "alt2": "The Game - Main interface",
+            "alt3": "You Win - Victory screen",
+            "alt4": "You Lose - Defeat screen"
+        },
+        "openGameBtn": "Open Game",
         "pageTitle": "Ganesha Sudoku — UX Case Study",
-        "intro": "In‑depth analysis and methods used to design the UX/UI of the interactive Ganesha Sudoku game, from concept to implementation.",
 
-        "tech.title": "1) Technologies Used",
-        "tech.desc": "Frontend with React.js + TypeScript via Vite, and Chakra UI components for a cohesive and responsive interface.",
+        "intro": "<p>UX analysis of the interactive game <strong class=\"highlight-text\">Ganesha Sudoku</strong>, from initial concept to visual design and overall experience improvements.</p>",
 
-        "structure.title": "2) Grid Structure",
-        "structure.desc": "Solution grid (solutionGrid) and player grid (playerGrid) managed by 2D arrays and compared for validation.",
+        "tech.title": "Context & Motivation",
+        "tech.desc": "<p>After testing various Sudoku games on smartphones and observing what worked (or didn’t) in terms of usability, I took on a <strong class=\"highlight-text\">personal challenge</strong> to create my own version, exploring both visual and interaction aspects.</p>",
 
-        "generation.title": "3) Sudoku Generation",
-        "generation.desc": "Backtracking algorithm used to fill the grid while enforcing rules: unique values in rows, columns, and blocks.",
+        "structure.title": "Functional Prototype",
+        "structure.desc": "<p>Before focusing on aesthetics, my priority was to make the game fully <strong class=\"highlight-text\">functional</strong> :</p><ul><li>Grid generation</li><li>Player input validation</li><li>Rule compliance checking</li></ul><p>This approach ensured a solid foundation before the visual layer was added.</p>",
 
-        "uiux.title": "4) UI / UX Design",
-        "uiux.desc": "Ganesha theme, clean design, clear distinction between editable and prefilled cells with visual feedback.",
+        "generation.title": "Grid Generation Logic",
+        "generation.desc": "<p>To ensure that all grids were always <strong class=\"highlight-text\">valid and solvable</strong>, I used an algorithmic approach known as <strong class=\"highlight-text\">backtracking</strong>. This method :</p><ul><li>Builds the grid step by step</li><li>Tests each number placement</li><li>Backtracks whenever a constraint isn’t met</li></ul><p>This process is like navigating a maze: moving forward when possible and stepping back when blocked, ensuring a conflict‑free solution.</p>",
 
-        "methods.title": "5) React + Chakra UI Methods",
-        "methods.desc": "useState for state management, map() for dynamic rendering, ChakraProvider for theme consistency.",
+        "uiux.title": "UX/UI Approach",
+        "uiux.desc": "<p>Once the core logic was established, I designed the mocks in <strong class=\"highlight-text\">Figma</strong>, using a modern and intuitive aesthetic. Visual influences borrowed from <strong class=\"highlight-text\">Squid Game</strong> were adapted for a bold yet clear presentation.</p><p>Key focus areas included :</p><ul><li>Cell readability</li><li>Visual hierarchy</li><li>Interactive feedback for player actions</li></ul>",
 
-        "deployment.title": "6) Deployment",
-        "deployment.desc": "Static build via Vite (npm run build) ready for OVH hosting. Option to use SSR with Next.js for extension."
+        "methods.title": "Interaction Enhancements",
+        "methods.desc": "<p>From early tests I added features to enhance the experience :</p><ul><li>A remaining numbers counter</li><li>Time tracking for immersion</li><li>A rules section for guidance</li></ul><p>These additions improve clarity and increase player engagement.</p>",
+
+        "deployment.title": "Responsive & Mobile‑First",
+        "deployment.desc": "<p>The interface was designed with a <strong class=\"highlight-text\">mobile‑first</strong> mindset to ensure a smooth experience on phones, then adapted for desktop while maintaining simple and intuitive navigation.</p>",
+
+        "responsive.title": "User Testing & Iterations",
+        "responsive.desc": "<p>Friends tested the game on various devices. Their feedback helped :</p><ul><li>Fix bugs</li><li>Adjust visual elements</li><li>Improve clarity of interactions</li></ul><p>These iterations delivered a more seamless, friction‑free experience.</p>"
     },
+
     "UX_CASE_GANESHA_BATTLEFIELD": {
+        "pageTitle": "Battleship – UX Case Study",
 
-        "pageTitle": "Ganesha Battlefield — UX Case Study",
-        "intro": "UX analysis for the Battleship game design, crafted for intuitive gameplay and engaging interaction against an AI opponent.",
+        "intro": "<p>UX analysis of the interactive game <strong class=\"highlight-text\">Battleship</strong>, from initial inspiration to visual and functional design, focusing on an immersive maritime identity and experience.</p>",
 
-        "objective.title": "🎯 UX Objective",
-        "objective.desc": "Design an intuitive experience with two distinct grids and clear interactions: player places ships, then battles the AI.",
+        "tech.title": "Context & Inspirations",
+        "tech.desc": "<p>Before designing the interface, I reviewed multiple smartphone versions of <strong class=\"highlight-text\">Battleship</strong> to understand how players interact with grids and perceive action. The visual theme draws from the ocean and submarines, including a zoom/blur effect around the periscope to reinforce immersion.</p>",
 
-        "placement.title": "⚙️ Ship Placement Logic (AI)",
-        "placement.desc": "10×10 grid, ships of varied lengths. Randomized placement with checks for no overlap and no grid overflow.",
+        "structure.title": "Ship Placement & Interaction",
+        "structure.desc": "<p>The experience begins with ship placement. To prevent errors, the interface guides the user with clear rules :</p><ul><li>Ships cannot extend beyond grid borders</li><li>They must not overlap</li><li>Visual indicators validate placements</li></ul><p>This UX step ensures intuitive and frustration‑free interaction.</p>",
 
-        "backtracking.title": "🔁 Backtracking",
-        "backtracking.desc": "When placement fails repeatedly, previously placed ships are removed and retried to ensure a valid configuration.",
+        "generation.title": "AI Grid Generation",
+        "generation.desc": "<p>Unlike Sudoku, the computer grid in this game doesn’t use backtracking. The AI places ships by checking adjacent cells in four directions (North, South, East, West) to simulate more human‑like and intelligent logic while respecting game constraints.</p><p>This ensures coherent placement without overlaps or off‑grid positions and keeps each game unique.</p>",
 
-        "flow.title": "🖥️ UX Flow (User vs AI)",
-        "flow.desc": "Preparation phase: player and AI place ships. Gameplay phase: two visible grids, player fires shots until victory.",
+        "uiux.title": "UI / Immersion Approach",
+        "uiux.desc": "<p>To strengthen the maritime atmosphere, I incorporated visuals inspired by submarine themes :</p><ul><li>A deep blue and turquoise color palette</li><li>Blur effects around the periscope to evoke focus and exploration</li><li>Smooth transitions and visual feedback throughout play</li></ul><p>This helps players feel the environment while keeping the interface clear and readable.</p>",
 
-        "uxpoints.title": "🎨 UX Key Points",
-        "uxpoints.desc": "Clear dual grids, “Ready” button, reliable AI placement, increased engagement via randomness, readable and simple interactions."
+        "methods.title": "Feedback & UX Iterations",
+        "methods.desc": "<p>During early tests I observed player reactions to placements and visual feedback. Insights led to improvements in animations, indication colors (valid vs invalid), and the introduction of smoother micro‑interactions.</p><p>These iterations improved engagement and reduced placement errors.</p>",
+
+        "deployment.title": "Responsive & Cross‑Platform",
+        "deployment.desc": "<p>The interface was designed to be fully responsive, delivering a smooth experience on both mobile and desktop without loss of readability or interactive feedback.</p>",
+
+        "testing.title": "User Testing & Refinements",
+        "testing.desc": "<p>Friend testers and several participants tried the game on multiple devices. Their feedback helped :</p><ul><li>Improve the ship placement logic</li><li>Adjust interactive areas</li><li>Clarify transitions between game states</li></ul><p>These insights were invaluable in improving clarity and overall ergonomics.</p>",
+
+        "mockups": {
+            "title": "Mockups & Visual Explorations",
+            "desc": "Below are a few visual stages showing the design evolution of the Battleship game:",
+            "alt1": "Initial Setup – Battleship configuration screen",
+            "alt2": "Ship Placement – First ship positioned",
+            "alt3": "Ship Placement – Multiple ships positioned",
+            "alt4": "Victory – Win screen after a successful game",
+            "alt5": "Defeat – Loss screen after a finished game"
+        },
+
+        "openGameBtn": "Play Battleship"
     }
 
 }

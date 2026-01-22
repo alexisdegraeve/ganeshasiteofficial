@@ -331,49 +331,83 @@
             "subtitle": "Case study over de gebruikerservaring van Battlefield"
         }
     },
+
     "UX_CASE_GANESHA_SUDOKU": {
         "backtrackingDiagram": {
-            "title": "Diagramme logique du backtracking"
+            "title": "Backtracking‑logica diagram"
         },
+        "mockups": {
+            "title": "Mockups & Visuele Evolutie",
+            "desc": "Hier zijn enkele visuele stappen die ik tijdens de ontwikkeling van het spel heb gemaakt. Klik op een miniatuur om in te zoomen.",
+            "alt1": "Start – Eerste scherm mockup",
+            "alt2": "Het Spel – Hoofdinterface",
+            "alt3": "You Win – Overwinningsscherm",
+            "alt4": "You Lose – Verlies scherm"
+        },
+        "openGameBtn": "Open Spel",
         "pageTitle": "Ganesha Sudoku — UX Case Study",
-        "intro": "Diepgaande analyse en gebruikte methoden voor het ontwerpen van de UX/UI van de interactieve Ganesha Sudoku‑game, van concept tot implementatie.",
 
-        "tech.title": "1) Gebruikte technologieën",
-        "tech.desc": "Frontend met React.js + TypeScript via Vite, en Chakra UI componenten voor een consistente en responsive interface.",
+        "intro": "<p>UX‑analyse van het interactieve spel <strong class=\"highlight-text\">Ganesha Sudoku</strong>, van het eerste concept tot visueel ontwerp en verbetering van de gebruikerservaring.</p>",
 
-        "structure.title": "2) Roosterstructuur",
-        "structure.desc": "Oplossingsrooster (solutionGrid) en spelersrooster (playerGrid) beheerd via 2D‑arrays en vergeleken voor validatie.",
+        "tech.title": "Context & Motivatie",
+        "tech.desc": "<p>Na het testen van verschillende Sudoku‑spellen op smartphones en het observeren wat wel (of niet) werkte in termen van bruikbaarheid, heb ik een <strong class=\"highlight-text\">persoonlijke uitdaging</strong> aangegaan om mijn eigen versie te maken, waarbij ik zowel visuele als interactieve aspecten heb verkend.</p>",
 
-        "generation.title": "3) Sudoku Generatie",
-        "generation.desc": "Backtracking‑algoritme om het rooster in te vullen met unieke waarden in rijen, kolommen en blokken.",
+        "structure.title": "Functioneel Prototype",
+        "structure.desc": "<p>Voordat de focus op esthetiek kwam, was mijn prioriteit om het spel volledig <strong class=\"highlight-text\">functioneel</strong> te maken :</p><ul><li>Grid‑generatie</li><li>Validatie van spelersinvoer</li><li>Regelcontrole</li></ul><p>Deze aanpak zorgde voor een stevige basis voordat de visuele laag werd toegevoegd.</p>",
 
-        "uiux.title": "4) UI / UX Ontwerp",
-        "uiux.desc": "Ganesha‑thema, strak ontwerp, duidelijke scheiding tussen bewerkbare en vooraf ingevulde cellen met visuele feedback.",
+        "generation.title": "Logica van Grid‑generatie",
+        "generation.desc": "<p>Om ervoor te zorgen dat alle grids altijd <strong class=\"highlight-text\">geldig en oplosbaar</strong> waren, gebruikte ik een algoritmische benadering die bekend staat als <strong class=\"highlight-text\">backtracking</strong>. Deze methode :</p><ul><li>Bouwt de grid stap voor stap</li><li>Test elke nummerplaatsing</li><li>Gaat terug zodra een beperking niet wordt gehaald</li></ul><p>Dit proces is als het navigeren door een doolhof: vooruit bewegen waar mogelijk en terugstappen bij een blokkade, wat een conflictvrije oplossing garandeert.</p>",
 
-        "methods.title": "5) React + Chakra UI Methodes",
-        "methods.desc": "useState voor statusbeheer, map() voor dynamische rendering, ChakraProvider voor thema consistentie.",
+        "uiux.title": "UX/UI Aanpak",
+        "uiux.desc": "<p>Nadat de kernlogica was vastgesteld, ontwierp ik de mockups in <strong class=\"highlight-text\">Figma</strong>, met een moderne en intuïtieve esthetiek. Visuele invloeden uit <strong class=\"highlight-text\">Squid Game</strong> werden aangepast voor een gedurfde maar duidelijke presentatie.</p><p>Belangrijke aandachtspunten:</p><ul><li>Leesbaarheid van cellen</li><li>Visuele hiërarchie</li><li>Interactieve feedback bij speleracties</li></ul>",
 
-        "deployment.title": "6) Deployment",
-        "deployment.desc": "Statische build met Vite (npm run build) klaar voor OVH‑hosting. Optie voor SSR met Next.js voor uitbreiding."
+        "methods.title": "Interactieve Verbeteringen",
+        "methods.desc": "<p>Vanaf vroege tests heb ik functies toegevoegd om de ervaring te verbeteren :</p><ul><li>Een teller voor resterende cijfers</li><li>Tijdregistratie voor onderdompeling</li><li>Een regelssectie voor begeleiding</li></ul><p>Deze toevoegingen verbeteren duidelijkheid en verhogen de betrokkenheid van de speler.</p>",
+
+        "deployment.title": "Responsive & Mobile‑First",
+        "deployment.desc": "<p>De interface is ontworpen met een <strong class=\"highlight-text\">mobile‑first</strong> benadering om een soepele ervaring op telefoons te garanderen, daarna aangepast voor desktop met simpele en intuïtieve navigatie.</p>",
+
+        "responsive.title": "Gebruikerstests & Iteraties",
+        "responsive.desc": "<p>Vrienden testten het spel op verschillende apparaten. Hun feedback hielp bij :</p><ul><li>Het oplossen van bugs</li><li>Aanpassen van visuele elementen</li><li>Het verbeteren van interactie‑duidelijkheid</li></ul><p>Deze iteraties leverden een meer naadloze ervaring zonder wrijving.</p>"
     },
+
     "UX_CASE_GANESHA_BATTLEFIELD": {
-        "pageTitle": "Ganesha Battlefield — UX Case Study",
-        "intro": "UX‑analyse van het Battleship‑spel, ontworpen voor intuïtieve gameplay en boeiende interactie tegen een AI‑tegenstander.",
+        "pageTitle": "Battleship – UX Case Study",
 
-        "objective.title": "🎯 UX Doel",
-        "objective.desc": "Ontwerp een intuïtieve ervaring met twee duidelijke roosterweergaven en eenvoudige interacties: speler plaatst boten, dan vecht tegen AI.",
+        "intro": "<p>UX‑analyse van het interactieve spel <strong class=\"highlight-text\">Battleship</strong>, van eerste inspiratie tot visueel en functioneel ontwerp, met focus op een meeslepende maritieme identiteit en ervaring.</p>",
 
-        "placement.title": "⚙️ AI Bootplaatsing Logica",
-        "placement.desc": "10×10 rooster, boten van verschillende lengtes. Willekeurige plaatsing met controles voor geen overlap en binnen roostergrenzen.",
+        "tech.title": "Context & Inspiratie",
+        "tech.desc": "<p>Voor het ontwerpen van de interface heb ik meerdere smartphoneversies van <strong class=\"highlight-text\">Battleship</strong> bekeken om te begrijpen hoe spelers met grids omgaan en actie ervaren. Het visuele thema is geïnspireerd op de oceaan en onderzeeërs, inclusief een zoom‑/blur‑effect rond de periscoop om de onderdompeling te versterken.</p>",
 
-        "backtracking.title": "🔁 Backtracking",
-        "backtracking.desc": "Bij herhaalde mislukte plaatsingen worden eerder geplaatste boten verwijderd en opnieuw geprobeerd om een geldige configuratie te garanderen.",
+        "structure.title": "Scheepsplaatsing & Interactie",
+        "structure.desc": "<p>De ervaring begint met het plaatsen van schepen. Om fouten te voorkomen begeleidt de interface de gebruiker met duidelijke regels :</p><ul><li>Schepen mogen niet buiten de roostergrenzen komen</li><li>Ze mogen niet overlappen</li><li>Visuele indicatoren valideren de plaatsingen</li></ul><p>Deze UX‑stap zorgt voor intuïtieve en frustratievrije interactie.</p>",
 
-        "flow.title": "🖥️ UX Flow (Gebruiker vs AI)",
-        "flow.desc": "Voorbereidingsfase: speler en AI plaatsen boten. Speelfase: twee zichtbare roosters, speler vuurt schoten af tot overwinning.",
+        "generation.title": "AI Grid‑generatie",
+        "generation.desc": "<p>In tegenstelling tot Sudoku gebruikt de computerschema in dit spel geen backtracking. De AI plaatst schepen door aangrenzende cellen in vier richtingen te controleren (Noord, Zuid, Oost, West) om meer menselijke en intelligente logica te simuleren terwijl spelbeperkingen worden gerespecteerd.</p><p>Dit zorgt voor een samenhangende plaatsing zonder overlappingen of ongeldige posities en houdt elk spel uniek.</p>",
 
-        "uxpoints.title": "🎨 UX Sleutelpunten",
-        "uxpoints.desc": "Duidelijke dubbele roosters, “Ready”‑knop, betrouwbare AI‑plaatsing, meer betrokkenheid door willekeur, leesbare en eenvoudige interacties."
+        "uiux.title": "UI / Immersie Aanpak",
+        "uiux.desc": "<p>Om de maritieme sfeer te versterken heb ik visuals geïncorporeerd geïnspireerd op onderzeeënthema’s :</p><ul><li>Een diepblauwe en turquoise kleurenpalet</li><li>Blur‑effecten rond de periscoop om focus en verkenning op te roepen</li><li>Gladde overgangen en visuele feedback tijdens het spel</li></ul><p>Dit helpt spelers de omgeving te voelen terwijl de interface leesbaar blijft.</p>",
+
+        "methods.title": "Feedback & UX‑Iteraties",
+        "methods.desc": "<p>Tijdens vroege tests observeerde ik hoe spelers reageerden op plaatsingen en visuele feedback. Inzichten leidden tot verbeteringen in animaties, indicator‑kleuren (geldig versus ongeldig) en de introductie van soepelere micro‑interacties.</p><p>Deze iteraties verhoogden de betrokkenheid en verminderden plaatsingsfouten.</p>",
+
+        "deployment.title": "Responsive & Cross‑Platform",
+        "deployment.desc": "<p>De interface is ontworpen om volledig responsief te zijn, wat zorgt voor een vloeiende ervaring op zowel mobiel als desktop zonder verlies aan leesbaarheid of interactieve feedback.</p>",
+
+        "testing.title": "Gebruikerstests & Verbeteringen",
+        "testing.desc": "<p>Testers en vrienden hebben het spel op meerdere apparaten geprobeerd. Hun feedback hielp bij :</p><ul><li>Verbetering van de scheepsplaatsingslogica</li><li>Aanpassing van interactieve zones</li><li>Verduidelijking van de overgang tussen spelstatussen</li></ul><p>Deze inzichten waren van onschatbare waarde bij het verbeteren van de duidelijkheid en algehele ergonomie.</p>",
+
+        "mockups": {
+            "title": "Mockups & Visuele Exploraties",
+            "desc": "Hieronder enkele visuele stappen die de ontwerp evolutie van het Battleship spel laten zien:",
+            "alt1": "Beginopstelling – Battleship configuratiescherm",
+            "alt2": "Scheepsplaatsing – Eerste schip geplaatst",
+            "alt3": "Scheepsplaatsing – Meerdere schepen geplaatst",
+            "alt4": "Overwinning – Win scherm na succesvolle game",
+            "alt5": "Nederlaag – Verlies scherm na beëindigde game"
+        },
+
+        "openGameBtn": "Speel Battleship"
     }
 
 
