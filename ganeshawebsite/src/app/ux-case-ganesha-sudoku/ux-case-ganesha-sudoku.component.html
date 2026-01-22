@@ -24,36 +24,40 @@
         </div>
 
     </div>
-
     <section class="mockups-section container-fluid px-5">
-        <h3 class="mockups-title">{{ 'UX_CASE_GANESHA_SUDOKU.mockups.title' | translate }}</h3>
-        <p class="mockups-desc ">{{ 'UX_CASE_GANESHA_SUDOKU.mockups.desc' | translate }}</p>
 
-        <div class="row g-4 justify-content-center ">
-            <div class="col-6 col-sm-4 col-md-3 text-center" *ngFor="let mock of mockups ">
-                <div class="card mockup‑thumb " (click)="openMockup(mock) ">
-                    <img [src]="mock.thumb " [alt]="mock.alt | translate " class="img‑fluid rounded ">
+        <h3 class="mockups-title">{{ 'UX_CASE_GANESHA_SUDOKU.mockups.title' | translate }}</h3>
+        <p class="mockups-desc">{{ 'UX_CASE_GANESHA_SUDOKU.mockups.desc' | translate }}</p>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 text-center" *ngFor="let mock of mockups">
+                <div class="mockup-thumb" role="button" data-bs-toggle="modal" data-bs-target="#mockupModal" (click)="selectedMockup = mock">
+
+                    <img [src]="mock.thumb" [alt]="mock.alt | translate" class="img-fluid rounded">
                 </div>
+
+                <div class="mockup-label">{{ mock.alt | translate }}</div>
             </div>
         </div>
 
-        <a href="https://…tonjeu… " target="_blank " class="btn btn-primary open-game-btn " rel="noopener noreferrer ">
-    {{ 'UX_CASE_GANESHA_SUDOKU.openGameBtn' | translate }}
-  </a>
+        <a role="button" href="https://www.ganopolydeal.ganesha.ovh/" target="_blank " class="ms-auto my-4 btn btn-lg  btn-danger" rel="noopener noreferrer "> {{ 'GAMES.play' | translate }} </a>
+
     </section>
+
+
 
 </div>
 
 
 <!-- Modal -->
-<div class="modal fade " id="mockupModal " tabindex="-1 " aria‑hidden="true ">
-    <div class="modal-dialog modal‑dialog‑centered modal‑xl ">
-        <div class="modal-content bg‑dark ">
-            <div class="modal-header border‑0 ">
-                <button type="button " class="btn‑close btn‑close‑white " data‑bs‑dismiss="modal "></button>
+<div class="modal fade" id="mockupModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark border-0">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
             </div>
-            <div class="modal-body text‑center ">
-                <img [src]="selectedMockup?.full " [alt]="selectedMockup?.alt | translate " class="img‑fluid rounded ">
+            <div class="modal-body text-center">
+                <img *ngIf="selectedMockup" [src]="selectedMockup.full" [alt]="selectedMockup.alt | translate" class="img-fluid rounded shadow-lg" />
             </div>
         </div>
     </div>

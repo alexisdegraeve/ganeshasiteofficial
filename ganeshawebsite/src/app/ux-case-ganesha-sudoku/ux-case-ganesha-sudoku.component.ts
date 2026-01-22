@@ -34,12 +34,12 @@ export class UxCaseGaneshaSudokuComponent {
     },{
       thumb: 'assets/img/ux/sudoku/sudoku_03.png',
       full: 'assets/img/ux/sudoku/sudoku_03.png',
-      alt: 'UX_CASE_GANESHA_SUDOKU.mockups.alt2'
+      alt: 'UX_CASE_GANESHA_SUDOKU.mockups.alt3'
     },
     {
       thumb: 'assets/img/ux/sudoku/sudoku_04.png',
       full: 'assets/img/ux/sudoku/sudoku_04.png',
-      alt: 'UX_CASE_GANESHA_SUDOKU.mockups.alt2'
+      alt: 'UX_CASE_GANESHA_SUDOKU.mockups.alt4'
     },
     // … tes 4 planches
   ];
