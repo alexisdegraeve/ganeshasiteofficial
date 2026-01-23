@@ -305,13 +305,15 @@
         "contactButton": "Contactez-moi",
         "downloadinfo": "Téléchargez mon CV pour découvrir mon parcours complet et mes projets.",
         "download": "Télécharger le CV",
-        "presentation": "<strong>Graphic Designer, UX/UI Designer et Frontend Developer passionné</strong>, je crée des interfaces claires, accessibles et orientées utilisateur. J’ai plus de <strong>16 ans d’expérience</strong> dans le design et le développement web et applications, combinant créativité, sens graphique et maîtrise technique.",
-        "parcours": "Depuis l’enfance, j’ai toujours dessiné et expérimenté avec le digital : de <em>crocodile en BASIC</em> à Paint, puis l’académie de musique. J’ai commencé ma carrière comme <strong>Graphic & Web Designer</strong> tout en poursuivant mes études. J’ai obtenu un <strong>Master en informatique avec distinction</strong>, avant d’évoluer comme <strong>UX/UI Designer et Frontend Developer</strong>, alliant la force des trois disciplines.",
+        "presentation": "<strong>Graphiste passionné, UX/UI Designer et Développeur Frontend</strong>, je crée des interfaces claires, accessibles et centrées sur l'utilisateur. Avec <strong>plus de 15 ans d'expérience</strong> dans la conception et le développement web et applicatif, je combine créativité, sensibilité visuelle et expertise technique.",
+        "parcours": "Depuis mon enfance, j'ai toujours dessiné et expérimenté avec les outils numériques : du <em>crocodile en BASIC</em> à Paint, puis l'académie de musique. J'ai commencé ma carrière comme <strong>Graphiste & Web Designer</strong> tout en poursuivant mes études. J'ai obtenu un <strong>Master en Informatique avec distinction</strong>, avant d'évoluer en tant que <strong>UX/UI Designer et Développeur Frontend</strong>, combinant ainsi les forces de ces trois disciplines.",
         "technologiesTitle": "Technologies & outils",
         "technologies": [
-            "Figma, Zeplin, Adobe Creative Suite (XD, Photoshop, Illustrator)",
-            "3D Modeling (Blender, 3DS Max)",
-            "Responsive Design & Design Systems",
+            "Figma, Zeplin",
+            "Adobe Creative Suite (XD, Photoshop, Illustrator)",
+            "Design Systems, Prototypage, Accessibilité (WCAG)",
+            "Responsive Design",
+            "Modélisation 3D (Blender, 3DS Max)",
             "Angular 21+, ReactJS, Vue.js"
         ]
     },

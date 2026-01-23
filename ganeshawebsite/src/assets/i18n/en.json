@@ -303,13 +303,15 @@
         "contactButton": "Contact Me",
         "downloadinfo": "Download my CV to discover my complete journey and projects.",
         "download": "Download CV",
-        "presentation": "<strong>Passionate Graphic Designer, UX/UI Designer and Frontend Developer</strong>, I create clear, accessible and user-centered interfaces. I have over <strong>16 years of experience</strong> in web and application design and development, combining creativity, strong visual sensibility and technical expertise.",
+        "presentation": "<strong>Passionate Graphic Designer, UX/UI Designer and Frontend Developer</strong>, I create clear, accessible and user-centered interfaces. With <strong>+15 years of experience</strong> in web and application design and development, combining creativity, strong visual sensibility and technical expertise.",
         "parcours": "Since childhood, I have always been drawing and experimenting with digital tools: from a <em>crocodile in BASIC</em> to Paint, then music academy. I started my career as a <strong>Graphic & Web Designer</strong> while continuing my studies. I obtained a <strong>Master’s degree in Computer Science with distinction</strong>, before evolving as a <strong>UX/UI Designer and Frontend Developer</strong>, combining the strengths of all three disciplines.",
         "technologiesTitle": "Technologies & tools",
         "technologies": [
-            "Figma, Zeplin, Adobe Creative Suite (XD, Photoshop, Illustrator)",
+            "Figma, Zeplin",
+            "Adobe Creative Suite (XD, Photoshop, Illustrator)",
+            "Design Systems, Prototyping, Accessibility (WCAG)",
+            "Responsive Design",
             "3D Modeling (Blender, 3DS Max)",
-            "Responsive Design & Design Systems",
             "Angular 21+, ReactJS, Vue.js"
         ]
     },
