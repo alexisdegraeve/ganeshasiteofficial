@@ -16,16 +16,16 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-games',
       description: 'PORTFOLIO.desc-games',
-      image: 'assets/img/games.jpg',
+      image: 'assets/img/portfolio/preview/games.png',
       linkInternal: '/games',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-brand-guidelines',
       description: 'PORTFOLIO.desc-brand-guidelines',
-      image: 'assets/ganesha-logo-h-02.svg',
+      image: 'assets/img/portfolio/preview/graphical_chart.png',
       linkInternal: '/brandguidelines',
-      class: 'guidelines',
+      class: '',
       imageLoaded: false
     },
     {
@@ -38,60 +38,56 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-workshop-draw',
       description: 'PORTFOLIO.desc-workshop-draw',
-      image: 'assets/img/draw/draw_red_panda.jpg',
+      image: 'assets/img/portfolio/preview/drawing.png',
       linkInternal: '/draw',
-      class: 'draw',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-3D',
       description: 'PORTFOLIO.desc-3D',
-      image: 'assets/img/3d/blender/blender_stairs.png',
+      image: 'assets/img/portfolio/preview/3d.png',
       linkInternal: '/gallery3D',
-      class: 'threed',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-digital-draw',
       description: 'PORTFOLIO.desc-workshop-illustrator',
-      image: 'assets/img/illustrator/cat.svg',
-      class: 'logo-digital',
+      image: 'assets/img/portfolio/preview/vector.png',
       linkInternal: '/illustrator',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-mockups',
       description: 'PORTFOLIO.desc-mockups',
-      image: 'assets/img/wireframes/wireframe_sport.png',
+      image: 'assets/img/portfolio/preview/wireframes.png',
       linkInternal: '/mockups',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-workshop-photoshop',
       description: 'PORTFOLIO.desc-workshop-photoshop',
-      image: 'assets/img/workshop/workshop_ninja.jpg',
+      image: 'assets/img/portfolio/preview/digital_creation.png',
       linkInternal: '/photoshop',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-workshop-indesign',
       description: 'PORTFOLIO.desc-workshop-indesign',
-      image: 'assets/img/preview_poster_jeux_video.jpg',
+      image: 'assets/img/portfolio/preview/publications.png',
       linkInternal: '/indesign',
-      class: 'logo-adobe',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-architecture',
       description: 'PORTFOLIO.desc-architecture',
-      image: 'assets/img/flat_02.jpg',
+      image: 'assets/img/portfolio/preview/architecture.png',
       linkInternal: '/galleryarch',
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-businesscards',
       description: 'PORTFOLIO.desc-businesscards',
-      image: 'assets/img/card_visit_bert02.jpg',
+      image: 'assets/img/portfolio/preview/business_cards.png',
       gallery: [
         'assets/img/card_visit_bert.jpg',
       ],
@@ -100,7 +96,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-marcovigna',
       description: 'PORTFOLIO.desc-marcovigna',
-      image: 'assets/img/vigna_container.jpg',
+      image: 'assets/img/portfolio/preview/marco_vigna.png',
       link: 'http://vigna.be',
       imageLoaded: false
     },
@@ -113,14 +109,14 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-promockup',
       description: 'PORTFOLIO.desc-promockup',
-      image: 'assets/img/portfolio.jpg',
+      image: 'assets/img/portfolio/preview/mockup.png',
       download: 'assets/pdf/portfolio_adg.pdf', // Lien pour télécharger le PDF
       imageLoaded: false
     },
     {
       title: 'PORTFOLIO.title-ganeshalearning',
       description: 'PORTFOLIO.desc-ganeshalearning',
-      image: 'assets/img/youtube_ganesha_learning.jpg',
+      image: 'assets/img/portfolio/preview/ganesha_learning.png',
       link: 'https://www.youtube.com/@alexisdegraeve5',
       imageLoaded: false
     },
