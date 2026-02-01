@@ -54,11 +54,11 @@ export class UxCaseGaneshaFitComponent {
   ];
 
   highFidelity = [
-    { id:1, title: 'Menu', img: 'assets/ganesha-fit/high-menu.png' },
-    { id:2, title: 'Club', img: 'assets/ganesha-fit/high-club.png' },
-    { id:3,  title: 'Contact', img: 'assets/ganesha-fit/high-contact.png' },
-    { id:4, title: 'Coaching', img: 'assets/ganesha-fit/high-coaching.png', desktop: true },
-    { id:5, title: 'Machines', img: 'assets/ganesha-fit/high-machines.png', desktop: true }
+    { id:1, title: 'Menu', img: 'assets/img/ux/ganesha-fit/high-menu.png' },
+    { id:2, title: 'Club', img: 'assets/img/ux//ganesha-fit/high-club.png' },
+    { id:3, title: 'Contact', img: 'assets/img/ux//ganesha-fit/high-contact.png' },
+    { id:4, title: 'Coaching', img: 'assets/img/ux//ganesha-fit/high-coaching.png', desktop: true },
+    { id:5, title: 'Machines', img: 'assets/img/ux//ganesha-fit/high-machines.png', desktop: true }
   ];
 
   tasks = [

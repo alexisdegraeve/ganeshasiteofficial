@@ -83,7 +83,7 @@
     <!-- High Fidelity Mockups -->
     <h2 class="mt-5">High Fidelity Mockups</h2>
     <div class="row gx-4 gy-4"> @for (wf of highFidelity; track wf.id){
-        <div class="wireframe-card desktop col-12">
+        <div class="wireframe-card col-12  col-md-6 col-lg-6" [ngClass]="{'desktop': wf.desktop}">
             <div class="card h-100 text-center">
                 <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
                 <div class="card-body">
