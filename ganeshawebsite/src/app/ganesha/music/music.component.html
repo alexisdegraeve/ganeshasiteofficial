@@ -1,12 +1,15 @@
+<div class="general-container">
+    <div class="card-header-icon">
+        <i class="bi bi-music-note-beamed central-icon" *ngIf="translationsLoaded"></i>
+        <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
+    </div>
+</div>
 <div class="container py-4">
-    <div class="general-container">
-        <div class="card-header-icon">
-            <i class="bi bi-music-note-beamed central-icon" *ngIf="translationsLoaded"></i>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
-        </div>
+    <div class="title-quote">
+        <app-page-header [title]="'ARTIST.title-music'" [back]="'/artist'"></app-page-header>
+
     </div>
     <div class="middle-content mt-4">
-        <h5 class="mb-4" *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-music' | translate)"></h5>
         <div *ngIf="!translationsLoaded" class="skeleton skeleton-title mb-4"></div>
         <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.music' | translate)"></p>
         <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>

@@ -18,6 +18,8 @@ export class ContactComponent {
   remainingCharacters = 500;
   isSubmitted = false;
   isLoadingAlexis = true;
+  translationsLoaded = false;
+  currentLang: string = 'en';
 
   constructor(private fb: FormBuilder, private http: HttpClient, private translate: TranslateService, private languageService: LanguageService) { // Injectez HttpClient
     this.contactForm = this.fb.group({
@@ -27,8 +29,20 @@ export class ContactComponent {
       subject: ['', Validators.required],
       message: ['', [Validators.required, Validators.minLength(20), Validators.maxLength(500)]],
     });
+    this.translationsLoaded = false;
     this.languageService.currentLang$.subscribe((lang) => {
+      this.currentLang = lang;
+      this.translationsLoaded = false;
       this.translate.use(lang); // Mettre à jour la langue dans ngx-translate
+    });
+
+    this.translate.get('MENU.contact').subscribe(() => {
+      this.translationsLoaded = true;
+    });
+
+
+    this.translate.onLangChange.subscribe(() => {
+      this.translationsLoaded = true;
     });
   }
 

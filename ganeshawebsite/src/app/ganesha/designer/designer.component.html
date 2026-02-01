@@ -1,11 +1,16 @@
-<div class="container py-4">
-    <app-page-header [title]="'ARTIST.title-expert'" [back]="'/artist'"></app-page-header>
-    <div class="general-container">
-        <div class="card-header-icon">
-            <i class="bi bi-brush-fill central-icon anm-fadein" *ngIf="translationsLoaded"></i>
-            <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
-        </div>
+<div class="general-container">
+    <div class="card-header-icon">
+        <i class="bi bi-brush-fill central-icon anm-fadein" *ngIf="translationsLoaded"></i>
+        <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
     </div>
+</div>
+<div class="container py-4">
+    <div class="title-quote">
+        <app-page-header [title]="'ARTIST.title-expert'" [back]="'/artist'"></app-page-header>
+
+    </div>
+
+
     <div class="middle-content mt-4">
 
         <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.expert-ux' | translate)">

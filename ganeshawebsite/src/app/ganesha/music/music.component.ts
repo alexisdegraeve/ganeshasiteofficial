@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
+import { PageHeaderComponent } from '../../shared/page-header/page-header.component';
 
 @Component({
   selector: 'app-music',
-  imports: [CommonModule, TranslateModule, RouterModule],
+  imports: [CommonModule, TranslateModule, RouterModule, PageHeaderComponent],
   templateUrl: './music.component.html',
   styleUrl: './music.component.scss'
 })

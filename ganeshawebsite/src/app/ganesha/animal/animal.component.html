@@ -1,14 +1,15 @@
-<div class="container py-4">
-    <app-page-header [title]="'ARTIST.title-animal'" [back]="'/artist'"></app-page-header>
-    <div class="general-container">
-        <div class="cat">
-            <div class="cat-mask">
-                <div *ngIf="translationsLoaded" class="animated-bg"></div>
-                <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
-            </div>
+<div class="general-container">
+    <div class="cat">
+        <div class="cat-mask">
+            <div *ngIf="translationsLoaded" class="animated-bg"></div>
+            <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
         </div>
     </div>
-    <div class="cat-container">
+</div>
+
+<div class="container py-4">
+    <div class="title-quote">
+        <app-page-header [title]="'ARTIST.title-animal'" [back]="'/artist'"></app-page-header>
         <blockquote class="quote">
             <p *ngIf="translationsLoaded">{{ 'ARTIST.citation-cat' | translate }}</p>
             <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>

@@ -1,13 +1,15 @@
-<div class="container py-4">
-    <div class="general-container">
-        <div class="human">
-            <div class="human-mask">
-                <div *ngIf="translationsLoaded" class="animated-bg"></div>
-                <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
-            </div>
+<div class="general-container">
+    <div class="human">
+        <div class="human-mask">
+            <div *ngIf="translationsLoaded" class="animated-bg"></div>
+            <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
         </div>
     </div>
-    <div class="human-container">
+</div>
+<div class="container py-4">
+
+    <div class="title-quote">
+        <app-page-header [title]="'ARTIST.title-human'" [back]="'/artist'"></app-page-header>
         <blockquote class="quote">
             <p *ngIf="translationsLoaded">{{ 'ARTIST.citation-human' | translate }}</p>
             <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
@@ -15,8 +17,8 @@
             <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
         </blockquote>
     </div>
+
     <div class="middle-content mt-0">
-        <h5 *ngIf="translationsLoaded" [innerHTML]="('ARTIST.title-human' | translate)"></h5>
         <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
         <p *ngIf="translationsLoaded" class="mt-4" [innerHTML]="('ARTIST.human-1' | translate)"></p>
         <div *ngIf="!translationsLoaded" class="skeleton skeleton-text mt-4"></div>
