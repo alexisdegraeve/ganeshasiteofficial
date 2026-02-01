@@ -56,7 +56,7 @@
     <h2 class="mt-5">Wireframe Low Fidelity</h2>
     <p>After discussing with the product owner and team, we arrived at the following wireframes after several iterations. Mobile first.</p>
     <div class="row gx-4 gy-4"> @for (wf of wireframes; track wf.id){
-        <div class="wireframe-card col-6 col-md-6 col-lg-6">
+        <div class="wireframe-card col-12  col-md-6 col-lg-6" [ngClass]="{'desktop': wf.desktop}">
             <div class="card h-100 text-center">
                 <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
                 <div class="card-body">

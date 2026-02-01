@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 interface Persona {
@@ -11,7 +12,7 @@ interface Persona {
 
 @Component({
   selector: 'app-ux-case-ganesha-fit',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './ux-case-ganesha-fit.component.html',
   styleUrl: './ux-case-ganesha-fit.component.scss'
 })

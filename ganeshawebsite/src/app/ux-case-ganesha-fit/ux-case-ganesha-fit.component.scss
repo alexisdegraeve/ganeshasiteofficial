@@ -54,22 +54,18 @@ img.card-img-top {
 
 .wireframe-card img.card-img-top {
     max-height: 50rem;
+    width: 100%;
     object-fit: contain;
-    width: 100%;
-    /* mobile : légèrement plus petit */
-    width: 100%;
+    background-color: rgb(51, 85, 119);
 }
 
 
 /* Desktop full-width versions */
 
 .wireframe-card.desktop img.card-img-top {
-    max-height: 350px;
+    max-height: 45rem;
     /* un peu plus grand pour desktop */
 }
-
-
-/* Responsive grid */
 
 @media (min-width: 768px) {
     .wireframe-card:not(.desktop) {
