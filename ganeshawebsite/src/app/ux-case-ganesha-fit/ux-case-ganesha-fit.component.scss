@@ -48,3 +48,40 @@ img.card-img-top {
     font-style: italic;
     color: rgba(255, 255, 255, 0.7);
 }
+
+
+/* Wireframes Low Fidelity */
+
+.wireframe-card img.card-img-top {
+    max-height: 50rem;
+    object-fit: contain;
+    width: 100%;
+    /* mobile : légèrement plus petit */
+    width: 100%;
+}
+
+
+/* Desktop full-width versions */
+
+.wireframe-card.desktop img.card-img-top {
+    max-height: 350px;
+    /* un peu plus grand pour desktop */
+}
+
+
+/* Responsive grid */
+
+@media (min-width: 768px) {
+    .wireframe-card:not(.desktop) {
+        flex: 0 0 50%;
+        /* 2 par 2 */
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .wireframe-card.desktop {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

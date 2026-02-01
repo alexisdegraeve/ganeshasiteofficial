@@ -56,13 +56,15 @@
     <h2 class="mt-5">Wireframe Low Fidelity</h2>
     <p>After discussing with the product owner and team, we arrived at the following wireframes after several iterations. Mobile first.</p>
     <div class="row gx-4 gy-4"> @for (wf of wireframes; track wf.id){
-        <div class="col-12 col-md-4">
-            <div class="card h-100 text-center"> <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
+        <div class="wireframe-card col-6 col-md-6 col-lg-6">
+            <div class="card h-100 text-center">
+                <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
                 <div class="card-body">
                     <h6 class="card-title">{{ wf.title }}</h6>
                 </div>
             </div>
-        </div> } </div>
+        </div>
+        } </div>
     <!-- Personas -->
     <h2 class="mt-5">Personas</h2>
     <div class="row gx-4 gy-4"> @for (persona of personas; track persona.id){
@@ -80,14 +82,15 @@
     <p>Users provided feedback which was incorporated. They are satisfied, and we can proceed to high-fidelity mockups.</p>
     <!-- High Fidelity Mockups -->
     <h2 class="mt-5">High Fidelity Mockups</h2>
-    <div class="row gx-4 gy-4"> @for (hf of highFidelity; track hf.id){
-        <div class="col-12 col-md-4">
-            <div class="card h-100 text-center"> <img [src]="hf.img" [alt]="hf.title" class="img-fluid card-img-top">
+    <div class="row gx-4 gy-4"> @for (wf of highFidelity; track wf.id){
+        <div class="wireframe-card desktop col-12">
+            <div class="card h-100 text-center">
+                <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
                 <div class="card-body">
-                    <h6 class="card-title">{{ hf.title }}</h6>
+                    <h6 class="card-title">{{ wf.title }}</h6>
                 </div>
             </div>
-        </div> } </div>
+        </div>} </div>
     <!-- Conclusion -->
     <h2 class="mt-5">Conclusion</h2>
     <p>The client is happy with their new website which was designed with the user experience in mind. The site is not only functional but also practical and enjoyable to use.</p>
