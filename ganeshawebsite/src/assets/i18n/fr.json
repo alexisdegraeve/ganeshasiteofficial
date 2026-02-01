@@ -328,6 +328,10 @@
         "ganeshaBattlefield": {
             "title": "Game Ganesha Battlefield",
             "subtitle": "Expérience utilisateur du Battlefield"
+        },
+        "ganeshaFit": {
+            "title": "Ganesha Fit",
+            "subtitle": "Conception d'un site web pour un concept de salle de sport, du wireframe à la présentation finale"
         }
     },
     "UX_CASE_GANESHA_SUDOKU": {

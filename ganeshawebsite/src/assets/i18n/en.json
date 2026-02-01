@@ -325,6 +325,10 @@
         "ganeshaBattlefield": {
             "title": "Game Ganesha Battlefield",
             "subtitle": "User experience of Battlefield"
+        },
+        "ganeshaFit": {
+            "title": "Ganesha Fit",
+            "subtitle": "Designing a website for a fitness concept, from wireframes to final presentation"
         }
     },
     "UX_CASE_GANESHA_SUDOKU": {
