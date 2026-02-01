@@ -1,21 +1,24 @@
-<div class="container py-4">
-    <!-- Citation -->
-    <app-page-header [title]="'MENU.about'" [back]="'/artist'"></app-page-header>
-    <div class="general-container">
+<div class="general-container">
 
-        <div class="pipe">
-        </div>
-        <div class="smoke-container">
-            <div class="smoke"></div>
-            <div class="smoke"></div>
-            <div class="smoke"></div>
-            <div class="smoke"></div>
-        </div>
+    <div class="pipe">
+    </div>
+    <div class="smoke-container">
+        <div class="smoke"></div>
+        <div class="smoke"></div>
+        <div class="smoke"></div>
+        <div class="smoke"></div>
+    </div>
+</div>
+
+
+<div class="container py-4">
+
+    <div class="title-quote">
+        <app-page-header [title]="'MENU.about'" [back]="'/artist'"></app-page-header>
         <blockquote class="quote">
             <p [innerHTML]="('ABOUT.citation' | translate)"></p>
             <cite>— {{ 'ABOUT.magritte' | translate }}</cite>
         </blockquote>
-
     </div>
 
 
