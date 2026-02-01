@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { PageHeaderComponent } from '../shared/page-header/page-header.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/shared/language.service';
 
@@ -12,7 +11,7 @@ interface TimelineItem {
 
 @Component({
   selector: 'app-ux-case-ganesha-battlefield',
-  imports: [CommonModule, RouterModule, TranslateModule, PageHeaderComponent],
+  imports: [CommonModule, RouterModule, TranslateModule],
   templateUrl: './ux-case-ganesha-battlefield.component.html',
   styleUrls: ['./ux-case-ganesha-battlefield.component.scss']
 })
