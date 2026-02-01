@@ -1,6 +1,4 @@
-<div class="container py-4">
-
-    <app-page-header [title]="'MENU.artist'" [back]="'/welcome'"></app-page-header>
+<div>
     <div class="man">
         <div class="falling-container-mask" *ngIf="!figuresLoaded">
             <div class="man-mask skeleton-mask"></div>
@@ -11,14 +9,23 @@
             </div>
         </div>
     </div>
-
-    <div class="man-container">
+    <div class="man-container"></div>
+</div>
+<div class="container py-4">
+    <div class="title-quote">
+        <app-page-header [title]="'MENU.artist'" [back]="'/welcome'"></app-page-header>
         <blockquote class="quote">
             <p *ngIf="translationsLoaded">{{ 'ARTIST.citation' | translate }}</p>
             <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
             <cite>— Walt Disney</cite>
         </blockquote>
     </div>
+
+
+
+
+
+
 
     <div class="middle-content">
         <div class="row">
