@@ -1,19 +1,29 @@
-<div class="container py-4">
-    <app-page-header [title]="'MENU.portfolio'" [back]="'/artist'"></app-page-header>
-    <div class="general-container">
-        <div class="moon">
-            <div class="eclipse">
+<div class="general-container">
 
-            </div>
+
+    <div class="moon">
+        <div class="eclipse">
+
         </div>
-
     </div>
 
-    <blockquote class="quote">
-        <p [innerHTML]="('PORTFOLIO.citation' | translate)"></p>
-        <cite>— Bruce Lee</cite>
-    </blockquote>
 
+
+</div>
+
+
+
+
+<div class="container py-4">
+
+    <div class="title-quote">
+        <app-page-header [title]="'MENU.portfolio'" [back]="'/artist'"></app-page-header>
+
+        <blockquote class="quote">
+            <p [innerHTML]="('PORTFOLIO.citation' | translate)"></p>
+            <cite>— Bruce Lee</cite>
+        </blockquote>
+    </div>
     <div class="middle-content pt-4">
         <div class=" row g-4 ">
             <!-- Card Template -->

@@ -31,7 +31,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-uxcases',
       description: 'PORTFOLIO.desc-uxcases',
-      image: 'assets/img/portfolio/preview/ux_design_analyse.png',
+      image: 'assets/img/portfolio/preview/ux_designer.png',
       linkInternal: '/ux-cases',
       imageLoaded: false
     },
