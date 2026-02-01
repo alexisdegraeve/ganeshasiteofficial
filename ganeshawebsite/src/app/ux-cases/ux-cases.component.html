@@ -2,21 +2,32 @@
     <app-page-header [title]="'UX_CASES.title' | translate" [back]="'/portfolio'">
     </app-page-header>
 
-    <p class="lead  mb-4">
+    <p class="lead mb-4">
         {{ 'UX_CASES.desc' | translate }}
     </p>
 
-    <div class="row gx-4 gy-4 ux-cases-grid">
-        <div class="col-12 col-sm-6 col-md-4" *ngFor="let item of uxCases">
-            <a [routerLink]="item.route" class="ux-case-card text-decoration-none">
-                <div class="card-body d-flex flex-column align-items-center text-center">
-                    <i class="bi folder-icon mb-3" [class]="item.icon"></i>
-                    <h5 class="card-title">{{ item.titleKey | translate }}</h5>
-                    <p class="card-text text-muted">
-                        {{ item.subTitleKey | translate }}
-                    </p>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let item of uxCases">
+            <div class="card h-100 ux-case-card">
+                <!-- HEADER (comme Artist) -->
+                <div class="card-header d-flex align-items-center justify-content-center">
+                    <div class="circle-header">
+                        <i *ngIf="item.icon" [class]="item.icon" class="circle-icon"></i>
+                    </div>
                 </div>
-            </a>
+
+                <!-- BODY -->
+                <div class="card-body artist-body text-center">
+                    <h5 class="card-title" [innerHTML]="item.titleKey | translate"></h5>
+
+                    <p class="card-text" [innerHTML]="item.subTitleKey | translate"></p>
+
+                    <a *ngIf="item.route" [routerLink]="item.route" class="btn btn-outline-light mt-3 mb-4">
+                        <span>{{ 'ARTIST.btn-know-more' | translate }}</span>
+                        <i class="bi bi-chevron-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

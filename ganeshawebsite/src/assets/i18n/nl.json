@@ -325,12 +325,12 @@
         "title": "UX‑case‑studies",
         "desc": "Selecteer een case study om mijn diepgaande UX/UI‑proces en analyse te bekijken.",
         "ganeshaSudoku": {
-            "title": "Analyse Game Ganesha Sudoku",
-            "subtitle": "Case study over de gebruikerservaring van de interactieve Sudoku"
+            "title": "Game Ganesha Sudoku",
+            "subtitle": "De gebruikerservaring van de interactieve Sudoku"
         },
         "ganeshaBattlefield": {
-            "title": "Analyse Game Ganesha Battlefield",
-            "subtitle": "Case study over de gebruikerservaring van Battlefield"
+            "title": "Game Ganesha Battlefield",
+            "subtitle": "De gebruikerservaring van Battlefield"
         }
     },
 

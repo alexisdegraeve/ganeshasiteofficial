@@ -1,55 +1,110 @@
-/* ===== UX Cases Cards ===== */
+/* =========================================================
+   UX CASES – SAME DESIGN AS ARTIST
+   ========================================================= */
 
-.ux-cases-grid {
-    margin-top: 1rem;
-}
+
+/* On réutilise exactement les styles Artist existants
+   + une ombre légère supplémentaire */
+
+
+/* ----- Card ----- */
 
 .ux-case-card {
-    display: block;
-    border: 4px solid #fff;
-    background-color: #3b648b;
-    border-radius: 12px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-    padding: 1.75rem 1.25rem;
-    transition: transform .25s ease, box-shadow .25s ease, border-color .2s ease;
-    color: inherit;
-    &:hover {
-        transform: translateY(-4px);
-        border-color: #23384e;
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
-        text-decoration: none;
-    }
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); // shadow ajoutée
+    transition: box-shadow 0.25s ease;
 }
 
-.folder-icon {
-    font-size: 3rem;
+.ux-case-card:hover {
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ----- Card header (copié de Artist) ----- */
+
+.ux-case-card .card-header {
+    background: transparent;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.75rem;
+    padding-bottom: 1.25rem;
+}
+
+
+/* Cercle icône – IDENTIQUE à Artist */
+
+.circle-header {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-icon {
+    font-size: 1.75rem;
+    color: #ffc600;
+}
+
+
+/* ----- Card body (Artist) ----- */
+
+.artist-body {
+    padding: 1.5rem 1.25rem 1.75rem;
+    text-align: center;
 }
 
 
 /* Titre */
 
 .ux-case-card .card-title {
-    margin-top: .5rem;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #ffc600;
+    color: #fffdee;
+    margin-bottom: 0.5rem;
 }
 
 
 /* Description */
 
 .ux-case-card .card-text {
-    font-size: 1rem;
-    margin-top: .25rem;
-    color: #6c757d;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
 }
 
 
-/* Responsive gap */
+/* ----- Bouton (IDENTIQUE Artist) ----- */
 
-@media (min-width: 576px) {
-    .ux-cases-grid>div {
-        padding-left: .75rem;
-        padding-right: .75rem;
+.ux-case-card .btn {
+    border-radius: 999px;
+    padding: 0.45rem 1.25rem;
+    font-weight: 500;
+}
+
+.ux-case-card .btn i {
+    transition: transform 0.2s ease;
+}
+
+.ux-case-card .btn:hover i {
+    transform: translateX(2px);
+}
+
+
+/* ----- Responsive ----- */
+
+@media (max-width: 768px) {
+    .circle-header {
+        width: 56px;
+        height: 56px;
+    }
+    .circle-icon {
+        font-size: 1.5rem;
     }
 }
