@@ -1,125 +1,95 @@
-<div class="container py-4">
+<div class="container py-4 pb-5">
     <!-- Note -->
-    <p class="fst-italic text-muted">*This UX case study is only in english available here*</p>
+    <p class="fst-italic text-muted">*This UX case study is only available in English*</p>
 
     <!-- Scenario -->
-    <h2 class="mt-4">Scenario</h2>
-    <div class="mt-3">
-        <h5>1️⃣ User / Scenario</h5>
-        <p><strong>Who / User:</strong> Gym member / fitness enthusiast. Someone who wants to explore gym facilities, join classes, manage subscription, and contact a coach.</p>
-        <p><strong>Wants / Needs:</strong></p>
-        <ul>
-            <li>See the different machines available at the gym</li>
-            <li>Browse group classes</li>
-            <li>Manage their subscription</li>
-            <li>Book a personal coach</li>
-            <li>Find a club nearby</li>
-            <li>Contact the gym or staff</li>
-        </ul>
+    <h1 class="mt-4">Scenario</h1>
+    <p>
+        Ganesha Fit is a web application concept for a fitness club. It helps users explore gym facilities, join classes, manage subscriptions, and book personal coaching sessions. Designed for simplicity and practical UX, it ensures users can quickly find what
+        they need.
+    </p>
 
-        <h5 class="mt-3">2️⃣ Tasks / Features (SCRUM style)</h5>
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>User Story</th>
-                    <th>Task / Feature</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Explore machines</td>
-                    <td>List of machines, descriptions, usage tips</td>
-                </tr>
-                <tr>
-                    <td>Browse classes</td>
-                    <td>Schedule, class info, sign up / cancel</td>
-                </tr>
-                <tr>
-                    <td>Manage subscription</td>
-                    <td>View plan, upgrade/downgrade, payment info</td>
-                </tr>
-                <tr>
-                    <td>Book a coach</td>
-                    <td>List available coaches, book session, calendar integration</td>
-                </tr>
-                <tr>
-                    <td>Find a club</td>
-                    <td>Search clubs by location, map, details</td>
-                </tr>
-                <tr>
-                    <td>Contact</td>
-                    <td>Contact form, email, phone, chat option</td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- User -->
+    <h2 class="mt-4">User</h2>
+    <p>
+        <strong>Who:</strong> Gym member / fitness enthusiast. Someone who wants to explore gym facilities, join classes, manage subscriptions, and contact a coach.
+    </p>
 
-        <h5 class="mt-3">3️⃣ Optional: Acceptance Criteria / UX Notes</h5>
-        <ul>
-            <li>Machines → Filter by type, highlight availability</li>
-            <li>Classes → Responsive schedule, clear signup process</li>
-            <li>Subscription → Update plan easily, confirmation of changes</li>
-            <li>Coach → Book sessions with confirmation and calendar integration</li>
-            <li>Find a club → Search bar + map view, responsive</li>
-            <li>Contact → Form or direct email/phone link, easy to access</li>
-        </ul>
+    <!-- Needs -->
+    <h2 class="mt-4">Needs</h2>
+    <ul>
+        <li>See the different machines available at the gym</li>
+        <li>Browse group classes</li>
+        <li>Manage their subscription</li>
+        <li>Book a personal coach</li>
+        <li>Find a club nearby</li>
+        <li>Contact the gym or staff</li>
+    </ul>
+
+    <!-- Tasks -->
+    <h2 class="mt-4">Tasks</h2>
+    <div class="row gx-4 gy-4">
+        @for (task of tasks; track task.id){
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title">{{ task.title }}</h5>
+                    <p class="card-text">{{ task.description }}</p>
+                </div>
+            </div>
+        </div>
+        }
     </div>
+
+    <!-- Acceptance Criteria -->
+    <h3 class="mt-4">Acceptance Criteria / UX Notes</h3>
+    <ul>
+        <li>Machines → Filter by type, highlight availability</li>
+        <li>Classes → Responsive schedule, clear signup process</li>
+        <li>Subscription → Update plan easily, confirmation of changes</li>
+        <li>Coach → Book sessions with confirmation and calendar integration</li>
+        <li>Find a club → Search bar + map view, responsive</li>
+        <li>Contact → Form or direct email/phone link, easy to access</li>
+    </ul>
 
     <!-- Wireframe Low Fidelity -->
     <h2 class="mt-5">Wireframe Low Fidelity</h2>
     <p>After discussing with the product owner and team, we arrived at the following wireframes after several iterations. Mobile first.</p>
-    <div class="row gx-4 gy-4">
-        @for (wf of wireframes; track wf.id){
+    <div class="row gx-4 gy-4"> @for (wf of wireframes; track wf.id){
         <div class="col-12 col-md-4">
-            <div class="card h-100 text-center">
-                <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
+            <div class="card h-100 text-center"> <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
                 <div class="card-body">
                     <h6 class="card-title">{{ wf.title }}</h6>
                 </div>
             </div>
-        </div>
-        }
-    </div>
-
+        </div> } </div>
     <!-- Personas -->
     <h2 class="mt-5">Personas</h2>
-    <div class="row gx-4 gy-4">
-        @for (persona of personas; track persona.id){
+    <div class="row gx-4 gy-4"> @for (persona of personas; track persona.id){
         <div class="col-12 col-md-4">
             <div class="card h-100 text-center">
-                <div class="card-header d-flex justify-content-center align-items-center">
-                    <i class="bi fs-1" [class]="persona.icon"></i>
-                </div>
+                <div class="card-header d-flex justify-content-center align-items-center"> <i class="bi fs-1" [class]="persona.icon"></i> </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ persona.name }}</h5>
-                    <p class="card-text">
-                        Age: {{ persona.age }} <br> Profession: {{ persona.profession }} <br> Goals: {{ persona.goals }}
-                    </p>
+                    <p class="card-text"> Age: {{ persona.age }} <br> Profession: {{ persona.profession }} <br> Goals: {{ persona.goals }} </p>
                 </div>
             </div>
-        </div>
-        }
-    </div>
-
+        </div> } </div>
     <!-- Test -->
     <h2 class="mt-5">Test</h2>
     <p>Users provided feedback which was incorporated. They are satisfied, and we can proceed to high-fidelity mockups.</p>
-
     <!-- High Fidelity Mockups -->
     <h2 class="mt-5">High Fidelity Mockups</h2>
-    <div class="row gx-4 gy-4">
-        @for (hf of highFidelity; track hf.id){
+    <div class="row gx-4 gy-4"> @for (hf of highFidelity; track hf.id){
         <div class="col-12 col-md-4">
-            <div class="card h-100 text-center">
-                <img [src]="hf.img" [alt]="hf.title" class="img-fluid card-img-top">
+            <div class="card h-100 text-center"> <img [src]="hf.img" [alt]="hf.title" class="img-fluid card-img-top">
                 <div class="card-body">
                     <h6 class="card-title">{{ hf.title }}</h6>
                 </div>
             </div>
-        </div>
-        }
-    </div>
-
+        </div> } </div>
     <!-- Conclusion -->
     <h2 class="mt-5">Conclusion</h2>
     <p>The client is happy with their new website which was designed with the user experience in mind. The site is not only functional but also practical and enjoyable to use.</p>
+
 </div>

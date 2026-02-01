@@ -59,4 +59,13 @@ export class UxCaseGaneshaFitComponent {
     { id:4, title: 'Coaching', img: 'assets/ganesha-fit/high-coaching.png', desktop: true },
     { id:5, title: 'Machines', img: 'assets/ganesha-fit/high-machines.png', desktop: true }
   ];
+
+  tasks = [
+      {id:1, title:'Explore machines', description:'List of machines, descriptions, usage tips'},
+      {id:2, title:'Browse classes', description:'Schedule, class info, sign up / cancel'},
+      {id:3, title:'Manage subscription', description:'View plan, upgrade/downgrade, payment info'},
+      {id:4, title:'Book a coach', description:'List available coaches, book session, calendar integration'},
+      {id:5, title:'Find a club', description:'Search clubs by location, map, details'},
+      {id:6, title:'Contact', description:'Contact form, email, phone, chat option'}
+    ]
 }
