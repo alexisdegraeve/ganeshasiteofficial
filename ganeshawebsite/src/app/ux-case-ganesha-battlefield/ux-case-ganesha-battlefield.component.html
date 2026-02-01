@@ -1,11 +1,9 @@
 <div class="container px-5 py-4">
 
-    <app-page-header [title]="'UX_CASE_GANESHA_BATTLEFIELD.pageTitle' | translate" [back]="'/ux-cases'">
-    </app-page-header>
-
-    <!-- Introduction -->
-    <div class="lead mb-5" [innerHTML]="'UX_CASE_GANESHA_BATTLEFIELD.intro' | translate">
-    </div>
+    <!-- Scenario -->
+    <h1 class="mt-4">Scenario</h1>
+    <p [innerHTML]="'UX_CASE_GANESHA_BATTLEFIELD.intro' | translate">
+    </p>
 
     <div class="timeline-simplified">
         <div *ngFor="let item of timeline" class="mb-4">

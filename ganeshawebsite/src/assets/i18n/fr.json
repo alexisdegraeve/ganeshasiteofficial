@@ -388,7 +388,7 @@
         "generation.title": "Génération de la Grille IA",
         "generation.desc": "<p>Contrairement au Sudoku, la grille de l’ordinateur n’utilise pas de backtracking. L’IA place ses navires en vérifiant les cases adjacentes dans les quatre directions (Nord, Sud, Est, Ouest) pour simuler une logique plus humaine et intelligente, tout en respectant les contraintes de jeu.</p><p>Cela garantit une disposition cohérente sans recouvrement ni sortie de cadre, tout en rendant chaque partie unique.</p>",
 
-        "uiux.title": "Approche UI / Immersion",
+        "uiux.title": "Approche UI",
         "uiux.desc": "<p>Pour renforcer l’ambiance marine, j’ai incorporé des éléments visuels inspirés de l’univers des sous‑marins : </p><ul><li>Une palette de couleurs bleu profond et turquoise</li><li>Effets de flou autour du périscope pour suggérer le focus et l’exploration</li><li>Transitions et retours visuels renforcent le rythme du jeu</li></ul><p>Cela aide l’utilisateur à ressentir l’environnement tout en gardant une interface claire et lisible.</p>",
 
         "methods.title": "Feedback & Itérations UX",

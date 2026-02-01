@@ -391,7 +391,7 @@
         "generation.title": "AI Grid‑generatie",
         "generation.desc": "<p>In tegenstelling tot Sudoku gebruikt de computerschema in dit spel geen backtracking. De AI plaatst schepen door aangrenzende cellen in vier richtingen te controleren (Noord, Zuid, Oost, West) om meer menselijke en intelligente logica te simuleren terwijl spelbeperkingen worden gerespecteerd.</p><p>Dit zorgt voor een samenhangende plaatsing zonder overlappingen of ongeldige posities en houdt elk spel uniek.</p>",
 
-        "uiux.title": "UI / Immersie Aanpak",
+        "uiux.title": "UI Aanpak",
         "uiux.desc": "<p>Om de maritieme sfeer te versterken heb ik visuals geïncorporeerd geïnspireerd op onderzeeënthema’s :</p><ul><li>Een diepblauwe en turquoise kleurenpalet</li><li>Blur‑effecten rond de periscoop om focus en verkenning op te roepen</li><li>Gladde overgangen en visuele feedback tijdens het spel</li></ul><p>Dit helpt spelers de omgeving te voelen terwijl de interface leesbaar blijft.</p>",
 
         "methods.title": "Feedback & UX‑Iteraties",

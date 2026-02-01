@@ -384,7 +384,7 @@
         "generation.title": "AI Grid Generation",
         "generation.desc": "<p>Unlike Sudoku, the computer grid in this game doesn’t use backtracking. The AI places ships by checking adjacent cells in four directions (North, South, East, West) to simulate more human‑like and intelligent logic while respecting game constraints.</p><p>This ensures coherent placement without overlaps or off‑grid positions and keeps each game unique.</p>",
 
-        "uiux.title": "UI / Immersion Approach",
+        "uiux.title": "UI Approach",
         "uiux.desc": "<p>To strengthen the maritime atmosphere, I incorporated visuals inspired by submarine themes :</p><ul><li>A deep blue and turquoise color palette</li><li>Blur effects around the periscope to evoke focus and exploration</li><li>Smooth transitions and visual feedback throughout play</li></ul><p>This helps players feel the environment while keeping the interface clear and readable.</p>",
 
         "methods.title": "Feedback & UX Iterations",
