@@ -45,11 +45,11 @@ export class UxCaseGaneshaFitComponent {
 
   // Images / wireframes
   wireframes = [
-    { id:1, title: 'Menu', img: 'assets/ganesha-fit/wireframe-menu.png' },
-    { id:2, title: 'Club', img: 'assets/ganesha-fit/wireframe-club.png' },
-    { id:3, title: 'Contact', img: 'assets/ganesha-fit/wireframe-contact.png' },
-    { id:4, title: 'Coaching', img: 'assets/ganesha-fit/wireframe-coaching.png', desktop: true },
-    { id:5, title: 'Machines', img: 'assets/ganesha-fit/wireframe-machines.png', desktop: true }
+    { id:1, title: 'Menu', img: 'assets/img/ux/ganesha-fit/wireframe-menu.png' },
+    { id:2, title: 'Club', img: 'assets/img/ux//ganesha-fit/wireframe-club.png' },
+    { id:3, title: 'Contact', img: 'assets/img/ux//ganesha-fit/wireframe-contact.png' },
+    { id:4, title: 'Coaching', img: 'assets/img/ux//ganesha-fit/wireframe-coaching.png', desktop: true },
+    { id:5, title: 'Machines', img: 'assets/img/ux//ganesha-fit/wireframe-machines.png', desktop: true }
   ];
 
   highFidelity = [
