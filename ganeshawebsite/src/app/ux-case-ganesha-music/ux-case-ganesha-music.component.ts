@@ -44,22 +44,65 @@ export class UxCaseGaneshaMusicComponent {
     }
   ];
   // Images / wireframes
-  wireframes = [
-    { id:1, title: 'Menu', img: 'assets/img/ux/ganesha-fit/wireframe-menu.png' },
-    { id:2, title: 'Club', img: 'assets/img/ux//ganesha-fit/wireframe-club.png' },
-    { id:3, title: 'Contact', img: 'assets/img/ux//ganesha-fit/wireframe-contact.png' },
-    { id:4, title: 'Coaching', img: 'assets/img/ux//ganesha-fit/wireframe-coaching.png', desktop: true },
-    { id:5, title: 'Machines', img: 'assets/img/ux//ganesha-fit/wireframe-machines.png', desktop: true }
-  ];
+wireframes = [
+  {
+    id: 1,
+    title: 'Menu (Mobile)',
+    img: 'assets/img/ux/ganesha-music/wireframe-menu.png'
+  },
+  {
+    id: 2,
+    title: 'Artists (Mobile)',
+    img: 'assets/img/ux/ganesha-music/wireframe-artists.png'
+  },
+  {
+    id: 3,
+    title: 'Live (Mobile)',
+    img: 'assets/img/ux/ganesha-music/wireframe-live.png'
+  },
+  {
+    id: 4,
+    title: 'Videos (Desktop)',
+    img: 'assets/img/ux/ganesha-music/wireframe-videos.png',
+    desktop: true
+  },
+  {
+    id: 5,
+    title: 'Memberships (Desktop)',
+    img: 'assets/img/ux/ganesha-music/wireframe-memberships.png',
+    desktop: true
+  }
+];
 
-  highFidelity = [
-    { id:1, title: 'Menu', img: 'assets/img/ux/ganesha-fit/high-menu.png' },
-    { id:2, title: 'Club', img: 'assets/img/ux//ganesha-fit/high-club.png' },
-    { id:3, title: 'Contact', img: 'assets/img/ux//ganesha-fit/high-contact.png' },
-    { id:4, title: 'Coaching', img: 'assets/img/ux//ganesha-fit/high-coaching.png', desktop: true },
-    { id:5, title: 'Machines', img: 'assets/img/ux//ganesha-fit/high-machines.png', desktop: true }
-  ];
-
+highFidelity = [
+  {
+    id: 1,
+    title: 'Menu (Mobile)',
+    img: 'assets/img/ux/ganesha-music/high-menu.png'
+  },
+  {
+    id: 2,
+    title: 'Artists (Mobile)',
+    img: 'assets/img/ux/ganesha-music/high-artists.png'
+  },
+  {
+    id: 3,
+    title: 'Live (Mobile)',
+    img: 'assets/img/ux/ganesha-music/high-live.png'
+  },
+  {
+    id: 4,
+    title: 'Videos (Desktop)',
+    img: 'assets/img/ux/ganesha-music/high-videos.png',
+    desktop: true
+  },
+  {
+    id: 5,
+    title: 'Memberships (Desktop)',
+    img: 'assets/img/ux/ganesha-music/high-memberships.png',
+    desktop: true
+  }
+];
 tasks = [
   {
     id: 1,
