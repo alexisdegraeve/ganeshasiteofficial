@@ -1,1 +1,108 @@
-<p>ux-case-ganesha-music works!</p>
+<div class="container py-4">
+    <!-- Note -->
+    <p class="fst-italic text-muted">*This UX case study is only available in English*</p>
+
+    <!-- Scenario -->
+    <h1 class="mt-4">Scenario</h1>
+    <p>
+        Ganesha Music is a responsive web-based music streaming platform inspired by modern audio services. It allows users to explore artists, listen to live radio streams, watch music videos, and choose a membership based on their budget and listening habits.
+        The platform focuses on accessibility, simplicity, and immersive audio experience.
+
+    </p>
+
+    <!-- User -->
+    <h2 class="mt-4">User</h2>
+    <p>
+        <strong>Who:</strong> Music lovers who enjoy discovering artists, listening to live radio, watching music videos, and managing subscriptions easily across mobile and desktop devices.
+    </p>
+
+    <!-- Needs -->
+    <h2 class="mt-4">Needs</h2>
+    <ul>
+        <li>Discover artists and browse music easily</li>
+        <li>Listen to live radio streaming</li>
+        <li>Search and switch between radio stations</li>
+        <li>Save favorite radio stations</li>
+        <li>Watch music videos on desktop</li>
+        <li>Choose a membership adapted to their budget</li>
+    </ul>
+
+    <!-- Tasks -->
+    <h2 class="mt-4">Tasks</h2>
+    <div class="row gx-4 gy-4">
+        @for (task of tasks; track task.id){
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title">{{ task.title }}</h5>
+                    <p class="card-text">{{ task.description }}</p>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+
+    <!-- Acceptance Criteria -->
+    <h3 class="mt-4">Acceptance Criteria</h3>
+    <ul>
+        <li>Menu → Clear navigation with footer always accessible</li>
+        <li>Artists → Search and alphabetical filtering</li>
+        <li>Live → Play/pause, next station, waveform visualization</li>
+        <li>Favorites → Save up to 5 radio stations</li>
+        <li>Videos → Desktop-focused layout with search and artist filter</li>
+        <li>Memberships → Clear pricing, visual hierarchy, WCAG-compliant differentiation</li>
+    </ul>
+
+    <!-- Wireframe Low Fidelity -->
+    <h2 class="mt-5">Wireframe Low Fidelity</h2>
+    <p>
+        After several iterations and UX discussions, low-fidelity wireframes were created. The design follows a mobile-first approach, with desktop enhancements for video content and memberships.
+    </p>
+    <div class="row gx-4 gy-4"> @for (wf of wireframes; track wf.id){
+        <div class="wireframe-card col-12  col-md-6 col-lg-6" [ngClass]="{'desktop': wf.desktop}">
+            <div class="card h-100 text-center">
+                <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
+                <div class="card-body">
+                    <h6 class="card-title">{{ wf.title }}</h6>
+                </div>
+            </div>
+        </div>
+        } </div>
+    <!-- Personas -->
+    <h2 class="mt-5">Personas</h2>
+    <div class="row gx-4 gy-4"> @for (persona of personas; track persona.id){
+        <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+                <div class="card-header d-flex justify-content-center align-items-center"> <i class="bi fs-1" [class]="persona.icon"></i> </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ persona.name }}</h5>
+                    <p class="card-text"> Age: {{ persona.age }} <br> Profession: {{ persona.profession }} <br> Goals: {{ persona.goals }} </p>
+                </div>
+            </div>
+        </div> } </div>
+
+    <h2 class="mt-5">Memberships</h2>
+    <p>
+        Three subscription plans are available: Comfort, Premium, and Ultimate. Trophies of different sizes are used to visually differentiate plans, ensuring accessibility for users with visual impairments, in compliance with WCAG guidelines.
+    </p>
+    <!-- Test -->
+    <h2 class="mt-5">Test</h2>
+    <p>Users provided feedback which was incorporated. They are satisfied, and we can proceed to high-fidelity mockups.</p>
+    <!-- High Fidelity Mockups -->
+    <h2 class="mt-5">High Fidelity Mockups</h2>
+    <div class="row gx-4 gy-4"> @for (wf of highFidelity; track wf.id){
+        <div class="wireframe-card col-12  col-md-6 col-lg-6" [ngClass]="{'desktop': wf.desktop}">
+            <div class="card h-100 text-center">
+                <img [src]="wf.img" [alt]="wf.title" class="img-fluid card-img-top">
+                <div class="card-body">
+                    <h6 class="card-title">{{ wf.title }}</h6>
+                </div>
+            </div>
+        </div>} </div>
+    <!-- Conclusion -->
+    <h2 class="mt-5">Conclusion</h2>
+    <p class="pb-5 mb-5"> Ganesha Music demonstrates a user-centered design approach focused on accessibility, clarity, and immersive music experience. The platform balances simplicity and functionality, making it easy for users to enjoy music across devices while managing
+        their subscriptions effortlessly.
+    </p>
+
+</div>

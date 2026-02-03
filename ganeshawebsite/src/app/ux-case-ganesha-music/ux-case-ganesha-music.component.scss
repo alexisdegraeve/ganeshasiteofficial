@@ -1,0 +1,83 @@
+/* =================================================
+   Ganesha Fit Component – Artist style cards
+   ================================================= */
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.25s ease;
+}
+
+.card:hover {
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+}
+
+.card-header {
+    background: transparent;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.card-body {
+    padding: 1rem 1.25rem 1.5rem;
+}
+
+.card-title {
+    font-weight: 700;
+    color: #fffdee;
+}
+
+.card-text {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+img.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    object-fit: cover;
+}
+
+.bi {
+    color: #ffc600;
+}
+
+.fst-italic {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Wireframes Low Fidelity */
+
+.wireframe-card img.card-img-top {
+    max-height: 50rem;
+    width: 100%;
+    object-fit: contain;
+    background-color: rgb(51, 85, 119);
+}
+
+
+/* Desktop full-width versions */
+
+.wireframe-card.desktop img.card-img-top {
+    max-height: 45rem;
+    /* un peu plus grand pour desktop */
+}
+
+@media (min-width: 768px) {
+    .wireframe-card:not(.desktop) {
+        flex: 0 0 50%;
+        /* 2 par 2 */
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .wireframe-card.desktop {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

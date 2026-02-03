@@ -27,6 +27,7 @@ import { DrawComponent } from './draw/draw.component';
 import { UxCaseGaneshaSudokuComponent } from './ux-case-ganesha-sudoku/ux-case-ganesha-sudoku.component';
 import { UxCaseGaneshaBattlefieldComponent } from './ux-case-ganesha-battlefield/ux-case-ganesha-battlefield.component';
 import { UxCaseGaneshaFitComponent } from './ux-case-ganesha-fit/ux-case-ganesha-fit.component';
+import { UxCaseGaneshaMusicComponent } from './ux-case-ganesha-music/ux-case-ganesha-music.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent }, // Redirige vers Welcome par défaut
@@ -52,6 +53,10 @@ const routes: Routes = [
   { path: 'illustrator', component: AdobeIllustratorComponent },
   { path: 'brandguidelines', component: BrandGuidelinesComponent },
   { path: 'ux-cases', component: UxCasesComponent },
+  {
+    path: 'ux-cases/ganesha-music',
+    component: UxCaseGaneshaMusicComponent
+  },
     {
     path: 'ux-cases/ganesha-fit',
     component: UxCaseGaneshaFitComponent

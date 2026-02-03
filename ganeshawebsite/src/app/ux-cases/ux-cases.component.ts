@@ -23,6 +23,12 @@ interface UxCaseItem {
 export class UxCasesComponent {
     uxCases: UxCaseItem[] = [
     {
+      route: '/ux-cases/ganesha-music',
+      titleKey: 'UX_CASES.ganeshaMusic.title',
+      subTitleKey: 'UX_CASES.ganeshaMusic.subtitle',
+      icon: 'bi-folder'
+    },
+    {
       route: '/ux-cases/ganesha-fit',
       titleKey: 'UX_CASES.ganeshaFit.title',
       subTitleKey: 'UX_CASES.ganeshaFit.subtitle',
