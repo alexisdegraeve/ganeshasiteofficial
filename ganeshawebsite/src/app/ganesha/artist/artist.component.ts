@@ -16,6 +16,12 @@ export class ArtistComponent {
   translationsLoaded = false;
 
   cardsData = [
+        {
+      icon: 'bi bi-heart-fill pulse-icon',
+      title: 'CV.title',
+      description: 'ARTIST.resume-aboutme',
+      url: '/about'
+    },
     {
       icon: 'bi bi-briefcase-fill', // Exemple d'icône FontAwesome
       title: 'ARTIST.title-portfolio',
@@ -34,12 +40,7 @@ export class ArtistComponent {
       description: 'ARTIST.resume-music',
       url: '/music'
     },
-    {
-      icon: 'bi bi-heart-fill pulse-icon',
-      title: 'CV.title',
-      description: 'ARTIST.resume-aboutme',
-      url: '/about'
-    },
+
     {
       title: 'ARTIST.title-animal',
       image: 'assets/icons/animal.svg',

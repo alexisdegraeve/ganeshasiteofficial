@@ -15,7 +15,6 @@
                 </div>
             </div>
 
-
             <!-- Citation avec Skeleton -->
             <blockquote class="quote">
                 <p *ngIf="translationsLoaded">{{ 'CITATION.GANESH' | translate }}</p>
@@ -23,6 +22,10 @@
                 <cite *ngIf="translationsLoaded">— {{ 'CITATION.MAGRITTE' | translate }}</cite>
                 <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
             </blockquote>
+            <div class="d-flex justify-content-end">
+                <a [routerLink]="['/artist']" class="btn btn-lg btn-outline-light mt-3 mb-4 " [innerHTML]="( 'PORTFOLIO.btn-visit' | translate) "></a>
+            </div>
+
         </a>
     </div>
 </div>

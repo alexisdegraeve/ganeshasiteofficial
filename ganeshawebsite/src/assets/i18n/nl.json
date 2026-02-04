@@ -10,7 +10,7 @@
         "artist-description": "Verken de artiestenpagina",
         "portfolio": "Portfolio",
         "portfolio-description": "Bekijk mijn geweldige projecten",
-        "about": "Mijn Loopbaan",
+        "about": "Wie ben ik?",
         "about-description": "Leer meer over mij",
         "contact": "Contact",
         "contact-description": "Neem contact met mij op"
@@ -121,6 +121,7 @@
         "desc-ganeshalearning": "🎓 Op dit kanaal bieden we uitgebreide tutorials over Angular 19 en andere essentiële frontend-onderwerpen. Beheers HTML, CSS en het krachtige Angular-framework om moderne webapplicaties te bouwen.",
 
         "btn-visit": "Bezoeken",
+        "btn-explore": "Explore",
         "btn-download": "Downloaden",
         "btn-viewgallery": "Galerij bekijken",
         "btn-view": "Bekijken"
@@ -304,7 +305,7 @@
         "info-content": "Spellen zoals <strong>Ganopoly</strong> of <strong>Gano</strong> zijn originele creaties, geïnspireerd door bestaande concepten en bedoeld voor persoonlijk en didactisch gebruik. Er is geen commercieel doel."
     },
     "CV": {
-        "title": "Mijn parcours",
+        "title": "Wie ben ik?",
         "contactinfo": "Geïnteresseerd in een samenwerking of mijn volledige parcours? Neem gerust contact op.",
         "contactButton": "Neem contact op",
         "downloadinfo": "Download mijn cv om mijn volledige parcours en projecten te ontdekken.",

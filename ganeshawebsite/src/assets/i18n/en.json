@@ -10,7 +10,7 @@
         "artist-description": "Explore the artist page",
         "portfolio": "Portfolio",
         "portfolio-description": "Check my amazing projects",
-        "about": "My Journey",
+        "about": "Who I Am ?",
         "about-description": "Learn more about me",
         "contact": "Contact",
         "contact-description": "Get in touch with me"
@@ -120,6 +120,7 @@
         "desc-ganeshalearning": "🎓 On this channel, we provide comprehensive tutorials on Angular 19 and other essential frontend topics. Master HTML, CSS, and Angular's powerful framework to build modern web applications.",
 
         "btn-visit": "Visit",
+        "btn-explore": "Explore",
         "btn-download": "Download",
         "btn-viewgallery": "View Gallery",
         "btn-view": "View"
@@ -298,7 +299,7 @@
         "info-content": "Games like <strong>Ganopoly</strong> and <strong>Gano</strong> are original creations inspired by known concepts, but redesigned for personal and educational use. None of the site’s content is for profit."
     },
     "CV": {
-        "title": "My journey",
+        "title": "Who I Am ?",
         "contactinfo": "Interested in a collaboration or my full career path? Feel free to contact me.",
         "contactButton": "Contact Me",
         "downloadinfo": "Download my CV to discover my complete journey and projects.",

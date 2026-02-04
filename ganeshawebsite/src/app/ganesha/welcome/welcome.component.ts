@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import Rellax from 'rellax';
 import { LanguageService } from 'src/app/shared/language.service';
@@ -7,7 +8,7 @@ import { LanguageService } from 'src/app/shared/language.service';
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterModule],
   styleUrl: './welcome.component.scss'
 })
 export class WelcomeComponent implements OnInit {
