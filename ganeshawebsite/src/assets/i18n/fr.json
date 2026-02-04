@@ -125,6 +125,8 @@
         "btn-view": "Voir"
     },
     "ABOUT": {
+        "university": "Université de Namur",
+        "my-journey": "Mon parcours",
         "citation": "Ceci n'est pas une pipe !",
         "magritte": "Inspiré par l'univers de Magritte",
         "titre": "Designer | Ingénieur Logiciel Frontend",
@@ -306,16 +308,16 @@
         "contactButton": "Contactez-moi",
         "downloadinfo": "Téléchargez mon CV pour découvrir mon parcours complet et mes projets.",
         "download": "Télécharger le CV",
-        "presentation": "<strong>Graphiste passionné, UX/UI Designer et Développeur Frontend</strong>, je crée des interfaces claires, accessibles et centrées sur l'utilisateur. Avec <strong>plus de 15 ans d'expérience</strong> dans la conception et le développement web et applicatif, je combine créativité, sensibilité visuelle et expertise technique.",
-        "parcours": "Depuis mon enfance, j'ai toujours dessiné et expérimenté avec les outils numériques : du <em>crocodile en BASIC</em> à Paint, puis l'académie de musique. J'ai commencé ma carrière comme <strong>Graphiste & Web Designer</strong> tout en poursuivant mes études. J'ai obtenu un <strong>Master en Informatique avec distinction</strong>, avant d'évoluer en tant que <strong>UX/UI Designer et Développeur Frontend</strong>, combinant ainsi les forces de ces trois disciplines.",
-        "technologiesTitle": "Technologies & outils",
+        "presentation": "<strong>Graphiste passionné, UX/UI Designer et Développeur Frontend</strong>, créant des expériences digitales immersives et pixel-perfect. Inspiré par l’univers surréaliste de Magritte, je combine créativité, visuels 2D/3D et expertise technique pour livrer des interfaces claires, accessibles et centrées sur l’utilisateur, avec précision et sens artistique.",
+        "parcours": "Depuis mon enfance, j’explore la créativité digitale — d’un <em>crocodile en BASIC</em> à Paint, l’académie de musique et diverses expériences de design. J’ai commencé ma carrière comme <strong>Graphiste & Web Designer</strong> tout en poursuivant mes études. J’ai obtenu un <strong>Master en Informatique avec distinction</strong>, avant d’évoluer vers <strong>UX/UI Designer et Développeur Frontend</strong>, combinant design, développement et créativité en un ensemble de compétences cohérent.",
+        "technologiesTitle": "Compétences clés & Technologies",
         "technologies": [
-            "Figma, Zeplin",
-            "Adobe Creative Suite (XD, Photoshop, Illustrator)",
-            "Design Systems, Prototypage, Accessibilité (WCAG)",
-            "Responsive Design",
-            "Modélisation 3D (Blender, 3DS Max)",
-            "Angular 21+, ReactJS, Vue.js"
+            "UX/UI Design : interfaces centrées utilisateur, interactives et esthétiques",
+            "Prototypage interactif : Figma, Adobe XD, Zeplin, Illustrator",
+            "Design 2D & 3D : création de logos, modélisation 3D, expériences visuelles immersives (Blender, 3DS Max)",
+            "Développement Frontend : Angular, ReactJS, Vue.js, TypeScript, SCSS, SASS",
+            "UI Responsive & Animée : interactions fluides sur tous les appareils",
+            "Systèmes de Design, Accessibilité (WCAG) et Prototypage"
         ]
     },
 

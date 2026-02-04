@@ -61,6 +61,12 @@
                         <div class="timeline-line"></div>
 
                         <div class="card-body">
+
+                            <h5 *ngIf="!isLoading; else skeleton " class="card-title mb-4" [innerHTML]="( 'ABOUT.my-journey' | translate) "></h5>
+                            <ng-template #skeleton>
+                                <div class="skeleton-text skeleton-title "></div>
+                                <!-- Skeleton loader pour le titre -->
+                            </ng-template>
                             <p [innerHTML]="'CV.presentation' | translate"></p>
 
                             <!-- Parcours résumé -->
@@ -88,13 +94,66 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-12">
+                    <div class="card h-100 shadow border-0 d-flex flex-row  timeline-card">
+
+                        <!-- Bande verticale arc-en-ciel -->
+                        <div class="timeline-line"></div>
+
+                        <div class="card-body">
+
+                            <h5 *ngIf="!isLoading; else skeleton " class="card-title mb-4" [innerHTML]="( 'ABOUT.university' | translate) "></h5>
+                            <ng-template #skeleton>
+                                <div class="skeleton-text skeleton-title "></div>
+                                <!-- Skeleton loader pour le titre -->
+                            </ng-template>
+
+                            <p *ngIf="!isLoading" [innerHTML]="('ARTIST.expert-last' | translate)"></p>
+                            <div *ngIf="isLoading" class="skeleton skeleton-text"></div>
+
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4" *ngFor="let card of musicData">
+                                    <div class="card h-100">
+                                        <div class="card-header d-flex align-items-center">
+                                            <div [class]="card.class">
+                                                <img [src]="card.image" class="img-preview" [alt]="card.title" *ngIf="card.image && !isLoading ">
+                                                <i [class]="card?.icon" class="circle-icon" *ngIf="card.icon && !isLoading"></i>
+                                                <div *ngIf="isLoading" class="skeleton skeleton-image-square"></div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body artist-body">
+                                            <h5 class="card-title" *ngIf="isLoading" [innerHTML]="card.title | translate"></h5>
+                                            <div *ngIf="isLoading" class="skeleton skeleton-title"></div>
+                                            <div *ngIf="!isLoading" class="card-info">
+                                                <p class="card-text" [innerHTML]="card.description | translate"></p>
+                                                <a *ngIf="card.href" [href]="card.href" target="_blank" class="btn btn-outline-light mt-3 mb-4">
+                                                    <span>{{ 'ARTIST.btn-know-more' | translate }}</span> <i class="bi bi-chevron-right ms-2"></i>
+                                                </a>
+                                            </div>
+                                            <div *ngIf="isLoading">
+                                                <div class="skeleton skeleton-text"></div>
+                                                <div class="skeleton skeleton-button"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
             <!-- Skills and Interests -->
-            <div class="row g-4 ">
+            <div class=" row g-4 ">
                 <!-- Languages -->
                 <div class="col-lg-4 col-sm-6 ">
                     <div class="card h-100 shadow border-0 ">
                         <div class="card-body ">
-                            <h5 *ngIf="!isLoading; else skeleton " class="card-title ">{{ 'ABOUT.languages' | translate }}</h5>
+                            <h5 *ngIf="!isLoading; else skeleton " class="card-title mb-4">{{ 'ABOUT.languages' | translate }}</h5>
                             <ng-template #skeleton>
                                 <div class="skeleton-text skeleton-title "></div>
                                 <!-- Skeleton loader pour le titre -->
@@ -123,7 +182,7 @@
                 <div class="col-lg-4 col-sm-6 ">
                     <div class="card h-100 shadow border-0 ">
                         <div class="card-body ">
-                            <h5 *ngIf="!isLoading; else skeleton " class="card-title " [innerHTML]="( 'ABOUT.SocialMedia' | translate) "></h5>
+                            <h5 *ngIf="!isLoading; else skeleton " class="card-title mb-4" [innerHTML]="( 'ABOUT.SocialMedia' | translate) "></h5>
                             <ng-template #skeleton>
                                 <div class="skeleton-text skeleton-title "></div>
                                 <!-- Skeleton loader pour le titre -->
@@ -152,7 +211,7 @@
                 <div class="col-lg-4 col-sm-6 ">
                     <div class="card h-100 shadow border-0 ">
                         <div class="card-body ">
-                            <h5 *ngIf="!isLoading; else skeleton " class="card-title " [innerHTML]="( 'ABOUT.Music' | translate) "></h5>
+                            <h5 *ngIf="!isLoading; else skeleton " class="card-title mb-4" [innerHTML]="( 'ABOUT.Music' | translate) "></h5>
                             <ng-template #skeleton>
                                 <div class="skeleton-text skeleton-title "></div>
                                 <!-- Skeleton loader pour le titre -->

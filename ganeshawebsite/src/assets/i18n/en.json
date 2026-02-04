@@ -40,7 +40,7 @@
         "skill-3": "<strong>2D & 3D Design</strong>: Logo creation, 3D modeling, and immersive visual experiences with <strong>3ds Max</strong>.",
         "skill-4": "<strong>Front-End Development</strong>: Expertise in <strong>Angular, React.js, Vue.js, TypeScript, SCSS, SASS</strong>.",
         "skill-5": "<strong>Responsive & Animated UI</strong>: Ensuring smooth interactions and seamless performance across devices.",
-        "expert-last": "I hold a <strong>Master’s degree in Computer Science</strong> from <a href='https://www.unamur.be/fr/info/etudes/info-hd' class='text-unamur text-decoration-none' target='_blank'><strong>the University of Namur</strong></a> (graduated with distinction), combining technical expertise with a deep understanding of design.<br/><br/> One of my most exciting projects was developing a <strong><a href='https://researchportal.unamur.be/fr/studentTheses/%C3%A9tude-pr%C3%A9liminaire-pour-lint%C3%A9gration-dun-chatbot-comme-dispenseur' class='text-warning text-decoration-none' target='_blank'>chatbot for an escape game</a></strong> as part of my Master’s thesis—demonstrating my ability to merge <strong>design</strong> and <strong>technology</strong> to create engaging digital experiences.",
+        "expert-last": "I hold a <strong>Master’s degree in Computer Science</strong> from <a href='https://www.unamur.be/fr/info/etudes/info-hd' class='text-warning text-decoration-none' target='_blank'><strong>the University of Namur</strong></a> (graduated with distinction), combining technical expertise with a deep understanding of design.<br/><br/> One of my most exciting projects was developing a <strong><a href='https://researchportal.unamur.be/fr/studentTheses/%C3%A9tude-pr%C3%A9liminaire-pour-lint%C3%A9gration-dun-chatbot-comme-dispenseur' class='text-warning text-decoration-none' target='_blank'>chatbot for an escape game</a></strong> as part of my Master’s thesis—demonstrating my ability to merge <strong>design</strong> and <strong>technology</strong> to create engaging digital experiences.",
         "music": "Music is my passion, and I've been playing piano since I was 10. As a singer, I’m lucky to be coached by <strong>Aurore Sorce</strong>, a talented artist who excelled at the conservatory and closely guides me on my vocal journey.<br/><br/> I love performing covers of artists like <strong>Lana Del Rey</strong>, <strong>Lady Gaga</strong>, and <strong>Céline Dion</strong>, bringing emotion and creativity to every note.<br/><br/> You can find some of my covers on <strong>Instagram</strong> and <strong>YouTube</strong>. Check the link in the footer!",
         "aboutme": "Curious about who I am? Explore my journey, the languages I speak, and my passion for music through piano and singing. Dive deeper into what drives me and how it influences both my work and creativity.",
         "writetome": "Feel free to get in touch with me for collaboration opportunities or inquiries. I'm always open to discuss new projects and share ideas. Let's create something amazing together!",
@@ -126,6 +126,8 @@
         "btn-view": "View"
     },
     "ABOUT": {
+        "university": "University of Namur",
+        "my-journey": "My journey",
         "citation": "This is not a pipe!",
         "magritte": "Inspired by Magritte's universe",
         "titre": "Designer | Frontend Software Engineer",
@@ -304,16 +306,16 @@
         "contactButton": "Contact Me",
         "downloadinfo": "Download my CV to discover my complete journey and projects.",
         "download": "Download CV",
-        "presentation": "<strong>Passionate Graphic Designer, UX/UI Designer and Frontend Developer</strong>, I create clear, accessible and user-centered interfaces. With <strong>+15 years of experience</strong> in web and application design and development, combining creativity, strong visual sensibility and technical expertise.",
-        "parcours": "Since childhood, I have always been drawing and experimenting with digital tools: from a <em>crocodile in BASIC</em> to Paint, then music academy. I started my career as a <strong>Graphic & Web Designer</strong> while continuing my studies. I obtained a <strong>Master’s degree in Computer Science with distinction</strong>, before evolving as a <strong>UX/UI Designer and Frontend Developer</strong>, combining the strengths of all three disciplines.",
-        "technologiesTitle": "Technologies & tools",
+        "presentation": "<strong>Passionate Graphic Designer, UX/UI Designer, and Frontend Developer</strong> crafting immersive, pixel-perfect digital experiences. Inspired by the surreal universe of Magritte, I blend creativity, 2D/3D visuals, and technical expertise to deliver clear, accessible, and user-centered interfaces with precision and artistic flair.",
+        "parcours": "Since childhood, I have been exploring digital creativity — from a <em>crocodile in BASIC</em> to Paint, music academy, and design experiments. I began my career as a <strong>Graphic & Web Designer</strong> while continuing my studies. I obtained a <strong>Master’s degree in Computer Science with distinction</strong>, before evolving into a <strong>UX/UI Designer and Frontend Developer</strong>, combining design, development, and creativity into a cohesive skill set.",
+        "technologiesTitle": "Key Skills & Technologies",
         "technologies": [
-            "Figma, Zeplin",
-            "Adobe Creative Suite (XD, Photoshop, Illustrator)",
-            "Design Systems, Prototyping, Accessibility (WCAG)",
-            "Responsive Design",
-            "3D Modeling (Blender, 3DS Max)",
-            "Angular 21+, ReactJS, Vue.js"
+            "UX/UI Design: user-centered, interactive, and aesthetic interfaces",
+            "Interactive Prototyping: Figma, Adobe XD, Zeplin, Illustrator",
+            "2D & 3D Design: logo creation, 3D modeling, immersive visual experiences (Blender, 3DS Max)",
+            "Frontend Development: Angular, ReactJS, Vue.js, TypeScript, SCSS, SASS",
+            "Responsive & Animated UI: smooth interactions across devices",
+            "Design Systems, Accessibility (WCAG), and Prototyping"
         ]
     },
     "UX_CASES": {
