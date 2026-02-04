@@ -29,12 +29,6 @@ export class ArtistComponent {
       url: '/portfolio'
     },
     {
-      icon: 'bi bi-brush-fill', // Exemple d'icône FontAwesome
-      title: 'ARTIST.title-expert',
-      description: 'ARTIST.resume-expert',
-      url: '/designer'
-    },
-    {
       icon: 'bi bi-music-note-beamed',
       title: 'ARTIST.title-music',
       description: 'ARTIST.resume-music',
@@ -52,12 +46,6 @@ export class ArtistComponent {
       image: 'assets/icons/human.svg',
       description: 'ARTIST.resume-human',
       url: '/human'
-    },
-    {
-      icon: 'bi bi-envelope-at-fill',
-      title: 'ARTIST.title-writetome',
-      description: 'ARTIST.resume-contact',
-      url: '/contact'
     }
   ];
 
