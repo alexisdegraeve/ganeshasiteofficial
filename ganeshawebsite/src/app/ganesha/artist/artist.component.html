@@ -43,8 +43,10 @@
                     <div class="card-body artist-body">
                         <h5 class="card-title" *ngIf="translationsLoaded" [innerHTML]="card.title | translate"></h5>
                         <div *ngIf="!translationsLoaded" class="skeleton skeleton-title"></div>
-                        <div *ngIf="translationsLoaded">
+                        <div *ngIf="translationsLoaded" class="flex-grow-1">
                             <p class="card-text" [innerHTML]="card.description | translate"></p>
+                        </div>
+                        <div *ngIf="translationsLoaded">
                             <a *ngIf="card.url" [routerLink]="card.url" class="btn btn-outline-light mt-3 mb-4">
                                 <span>{{ 'ARTIST.btn-know-more' | translate }}</span> <i class="bi bi-chevron-right ms-2"></i>
                             </a>
