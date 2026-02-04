@@ -56,10 +56,20 @@
         "MAGRITTE": "Inspired by Magritte's universe",
         "title-human": "Empathy",
         "resume-human": "<p>Caring for people and animals on our blue planet is part of my core values.</p><ul><li>Respect and mutual support</li><li>Animal welfare and responsible adoption</li><li>Care for the environment</li><li>Everyday responsibility</li></ul><p><em>Small actions today shape the world of tomorrow.</em></p>",
-        "human-1": "A simple smile costs nothing and can brighten someone's day. 😊 <br /><br /> In a world where many struggle with poverty and injustice, every action counts. <br /> It is essential to think of others and take action, even in small ways, to create a more compassionate future.",
-        "human-2": "Thousands of organizations work every day to improve the lives of those in need. <br /> Even a small donation can make a real difference. Here are some organizations striving for a better world:\n\n<ul>\n<li><a href='https://act.unicef.be/' target='_blank' class='text-warning text-decoration-none'>UNICEF</a> - Supporting children and their rights.</li>\n<li><a href='https://www.sos-villages-enfants.be/' target='_blank' class='text-warning text-decoration-none'>SOS Children's Villages</a> - Protecting and educating vulnerable children.</li>\n<li><a href='https://www.croix-rouge.be/' target='_blank' class='text-warning text-decoration-none'>Red Cross</a> - Emergency relief and humanitarian aid.</li>\n</ul>",
-        "human-3": "Our planet also needs us. 🌍 Small, simple actions can have a big impact: <ul>\n<li>Throwing waste in the bin instead of littering.</li>\n<li>Turning off the water while soaping up in the shower to avoid waste.</li>\n<li>Reducing food waste by adjusting portion sizes.</li>\n</ul>",
-        "human-4": "Helping others and protecting the environment isn’t difficult. Let’s work together to be kinder and more responsible. <br /><br /> ❤️\n\nThank you for these small actions that, combined, can change the world.",
+        "human-1": "Empathy often begins with simple gestures. 😊<br /><br />A smile, attentive listening, or a discreet helping hand can brighten someone’s day.<br />In a world marked by inequality, every action — even a small one — helps build a more supportive society.",
+
+        "human-2": "Many organizations work every day to support the most vulnerable people.<br />Making a donation, even a small one, can truly make a difference:<ul><li><a href='https://act.unicef.be/' target='_blank' class='text-warning text-decoration-none'>UNICEF</a> — Defending children’s rights.</li><li><a href='https://www.sos-villages-enfants.be/' target='_blank' class='text-warning text-decoration-none'>SOS Children’s Villages</a> — Protection and care for vulnerable children.</li><li><a href='https://www.croix-rouge.be/' target='_blank' class='text-warning text-decoration-none'>Red Cross</a> — Emergency humanitarian aid and solidarity actions.</li></ul>",
+
+        "human-3": "This care for others also extends to animals. 🐾<br /><br />Animal welfare is particularly close to my heart. Every day, associations and volunteers fight to give abandoned animals a second chance. Their commitment is admirable, yet overpopulation remains a major challenge.",
+
+        "human-4": "Sterilization is one of the essential solutions to limit the proliferation of stray cats and reduce animal suffering.<br />It is also important to rethink certain practices, such as using horses for tourist rides, when motorized alternatives exist.",
+
+        "human-5": "Animals are sensitive beings. They feel fear and pain and deserve our respect.<br />On a personal note, I share my daily life with two adopted cats, Batman and Lisa, who bring me immense joy.<br /><br />I also recommend the film <i>Flow</i>, a wordless yet deeply moving work that poetically illustrates animal sensitivity.",
+
+        "human-6": "Our planet also needs our attention. 🌍<br />Simple actions can make a real difference:<ul><li>Respect nature and never leave waste behind.</li><li>Reduce water and energy consumption.</li><li>Limit food waste.</li></ul>Acting with kindness toward others, animals, and the environment helps build a more balanced future.<br /><br />❤️ Thank you for these small gestures which, together, can change the world.",
+
+        "human-7": "To learn more about feline overpopulation and GAIA’s initiatives: <a href='https://www.gaia.be/fr/actualites/gaia-lance-une-campagne-contre-la-surpopulation-feline' target='_blank' class='text-warning text-decoration-none'><strong>GAIA Campaign</strong></a>",
+
         "citation-human": "This is not a human!",
         "resume-contact": "Feel free to reach out for collaborations or questions. Let’s create something amazing together!"
     },
