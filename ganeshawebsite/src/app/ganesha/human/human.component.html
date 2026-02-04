@@ -28,8 +28,26 @@
 
         <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.human-3' | translate)"></p>
         <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
+        <div>
+            <div class="cat">
+                <div class="cat-mask">
+                    <div *ngIf="translationsLoaded" class="animated-bg"></div>
+                    <div *ngIf="!translationsLoaded" class="skeleton skeleton-image"></div>
+                </div>
+            </div>
+        </div>
+
+
 
         <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.human-4' | translate)"></p>
+        <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
+
+
+        <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.human-5' | translate)"></p>
+        <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
+        <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.human-6' | translate)"></p>
+        <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
+        <p *ngIf="translationsLoaded" [innerHTML]="('ARTIST.human-7' | translate)"></p>
         <div *ngIf="!translationsLoaded" class="skeleton skeleton-text"></div>
     </div>
 </div>
