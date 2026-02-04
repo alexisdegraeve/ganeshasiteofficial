@@ -1,227 +1,219 @@
-.card-info {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    p {
-        flex-grow: 1;
-    }
-}
+        .card-info {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            p {
+                flex-grow: 1;
+            }
+        }
 
-.unamur {
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 11rem;
-    align-items: center;
-    img {
-        height: 8rem;
-    }
-}
-
-.chatbot {
-    background-color: #000;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 11rem;
-    align-items: center;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.text-warning {
-    font-size: 1rem;
-}
-
-.portrait {
-    border-radius: 1rem;
-    height: 12rem;
-    width: 21rem;
-    object-fit: cover;
-    object-position: 0rem 35%;
-}
-
-.placeholder {
-    height: 12rem;
-    width: 21rem;
-}
-
-.general-container {
-    //background: #000;
-    padding-top: 5rem;
-    display: block;
-}
-
-.pipe {
-    height: 12rem;
-    mask: url('/assets/pipe.png') no-repeat center;
-    -webkit-mask: url('/assets/pipe.png') no-repeat center;
-    mask-size: 15rem;
-    -webkit-mask-size: 15rem;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 80% 80%;
-    -webkit-animation: Animation 5s ease infinite;
-    -moz-animation: Animation 5s ease infinite;
-    animation: Animation 5s ease infinite;
-    z-index: 100;
-    -webkit-transform: scale(-1, 1);
-    -moz-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    transform: scale(-1, 1);
-    /* Ajouter un trou en forme de cercle */
-}
-
-
-/* Fumée */
-
-
-/* Conteneur de la fumée */
-
-.smoke-container {
-    /* Positionner la fumée juste sous la pipe */
-    transform: translateX(-50%);
-    z-index: 2;
-    /* La fumée doit être au-dessus de la pipe */
-    margin-top: -5rem;
-    margin-left: 43%;
-}
-
-@media (max-width: 768px) {
-    .smoke-container {
-        margin-left: 30%;
-    }
-}
-
-
-/* Fumée */
-
-.smoke {
-    position: absolute;
-    bottom: 100%;
-    /* Position de départ juste sous la pipe */
-    left: 50%;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.7);
-    /* Couleur de la fumée */
-    border-radius: 50%;
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateX(-50%);
-    animation: smokeAnimation 4s ease-out infinite;
-}
-
-
-/* Animation de la fumée */
-
-@keyframes smokeAnimation {
-    0% {
-        transform: translateX(-50%) translateY(0);
-        opacity: 0.2;
-        filter: blur(10px);
-    }
-    20% {
-        transform: translateX(-30%) translateY(-40px);
-        opacity: 0.3;
-        filter: blur(12px);
-    }
-    40% {
-        transform: translateX(10%) translateY(-80px);
-        opacity: 0.4;
-        filter: blur(14px);
-    }
-    60% {
-        transform: translateX(30%) translateY(-120px);
-        opacity: 0.5;
-        filter: blur(16px);
-    }
-    80% {
-        transform: translateX(50%) translateY(-160px);
-        opacity: 0.3;
-        filter: blur(18px);
-    }
-    100% {
-        transform: translateX(60%) translateY(-200px);
-        opacity: 0;
-        filter: blur(20px);
-    }
-}
-
-
-/* Animation différée pour des effets de fumée différents */
-
-.smoke:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.smoke:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.smoke:nth-child(3) {
-    animation-delay: 2s;
-}
-
-.smoke:nth-child(4) {
-    animation-delay: 3s;
-}
-
-.quote {
-    margin-top: 1.5rem;
-}
-
-.avatar-alexis {
-    object-fit: cover;
-    width: 10rem;
-    height: 10rem;
-    z-index: 100;
-    position: relative;
-    -webkit-filter: grayscale(100%);
-    /* Pour les navigateurs Chrome, Safari, Opera */
-    filter: grayscale(100%);
-    /* Firefox */
-}
-
-.timeline-card {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.timeline-line {
-    width: 10px;
-    background: linear-gradient(to bottom, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
-}
-
-.info-top {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    p {
-        text-align: justify;
-    }
-}
-
-
-/* Responsive */
-
-@media (max-width: 768px) {
-    .timeline-line {
-        width: 6px;
-        margin-right: auto;
-    }
-    .middle-content {
-        .row {
+        .unamur {
+            background-color: #fff;
+            width: 100%;
+            display: flex;
             justify-content: center;
+            height: 11rem;
+            align-items: center;
+            img {
+                height: 8rem;
+            }
         }
-    }
-    .info-top {
-        align-items: center;
-        p {
-            text-align: center;
+
+        .chatbot {
+            background-color: #000;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 11rem;
+            align-items: center;
         }
-    }
-}
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .text-warning {
+            font-size: 1rem;
+        }
+
+        .portrait {
+            border-radius: 1rem;
+            height: 12rem;
+            width: 21rem;
+            object-fit: cover;
+            object-position: 0rem 35%;
+        }
+
+        .placeholder {
+            height: 12rem;
+            width: 21rem;
+        }
+
+        .general-container {
+            //background: #000;
+            padding-top: 5rem;
+            display: block;
+        }
+
+        .pipe {
+            height: 12rem;
+            mask: url('/assets/pipe.png') no-repeat center;
+            -webkit-mask: url('/assets/pipe.png') no-repeat center;
+            mask-size: 15rem;
+            -webkit-mask-size: 15rem;
+            background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+            background-size: 80% 80%;
+            -webkit-animation: Animation 5s ease infinite;
+            -moz-animation: Animation 5s ease infinite;
+            animation: Animation 5s ease infinite;
+            z-index: 100;
+            -webkit-transform: scale(-1, 1);
+            -moz-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+            /* Ajouter un trou en forme de cercle */
+        }
+        /* Fumée */
+        /* Conteneur de la fumée */
+
+        .smoke-container {
+            /* Positionner la fumée juste sous la pipe */
+            transform: translateX(-50%);
+            z-index: 2;
+            /* La fumée doit être au-dessus de la pipe */
+            margin-top: -5rem;
+            margin-left: 43%;
+        }
+
+        @media (max-width: 768px) {
+            .smoke-container {
+                margin-left: 30%;
+            }
+        }
+        /* Fumée */
+
+        .smoke {
+            position: absolute;
+            bottom: 100%;
+            /* Position de départ juste sous la pipe */
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.7);
+            /* Couleur de la fumée */
+            border-radius: 50%;
+            opacity: 0;
+            filter: blur(10px);
+            transform: translateX(-50%);
+            animation: smokeAnimation 4s ease-out infinite;
+        }
+        /* Animation de la fumée */
+
+        @keyframes smokeAnimation {
+            0% {
+                transform: translateX(-50%) translateY(0);
+                opacity: 0.2;
+                filter: blur(10px);
+            }
+            20% {
+                transform: translateX(-30%) translateY(-40px);
+                opacity: 0.3;
+                filter: blur(12px);
+            }
+            40% {
+                transform: translateX(10%) translateY(-80px);
+                opacity: 0.4;
+                filter: blur(14px);
+            }
+            60% {
+                transform: translateX(30%) translateY(-120px);
+                opacity: 0.5;
+                filter: blur(16px);
+            }
+            80% {
+                transform: translateX(50%) translateY(-160px);
+                opacity: 0.3;
+                filter: blur(18px);
+            }
+            100% {
+                transform: translateX(60%) translateY(-200px);
+                opacity: 0;
+                filter: blur(20px);
+            }
+        }
+        /* Animation différée pour des effets de fumée différents */
+
+        .smoke:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .smoke:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .smoke:nth-child(3) {
+            animation-delay: 2s;
+        }
+
+        .smoke:nth-child(4) {
+            animation-delay: 3s;
+        }
+
+        .quote {
+            margin-top: 1.5rem;
+        }
+
+        .avatar-alexis {
+            object-fit: cover;
+            width: 10rem;
+            height: 10rem;
+            z-index: 100;
+            position: relative;
+            -webkit-filter: grayscale(100%);
+            /* Pour les navigateurs Chrome, Safari, Opera */
+            filter: grayscale(100%);
+            /* Firefox */
+        }
+
+        .timeline-card {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .timeline-line {
+            width: 10px;
+            background: linear-gradient(to bottom, #ff6b6b, #feca57, #48dbfb, #1dd1a1, #5f27cd);
+        }
+
+        .info-top {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            p {
+                text-align: justify;
+            }
+        }
+        /* Responsive */
+
+        @media (max-width: 768px) {
+            .timeline-line {
+                width: 6px;
+                margin-right: auto;
+            }
+            .middle-content {
+                .row {
+                    justify-content: center;
+                }
+            }
+            .info-top {
+                align-items: center;
+                p {
+                    text-align: center;
+                }
+            }
+            .unamur,
+            .chatbot {
+                height: 8rem;
+            }
+        }
