@@ -34,13 +34,6 @@ export class ArtistComponent {
       description: 'ARTIST.resume-music',
       url: '/music'
     },
-
-    {
-      title: 'ARTIST.title-animal',
-      image: 'assets/icons/animal.svg',
-      description: 'ARTIST.resume-animal',
-      url: '/animal'
-    },
     {
       title: 'ARTIST.title-human',
       image: 'assets/icons/human.svg',
