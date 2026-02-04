@@ -59,7 +59,7 @@ export class PortfolioComponent {
     {
       title: 'PORTFOLIO.title-mockups',
       description: 'PORTFOLIO.desc-mockups',
-      image: 'assets/img/portfolio/preview/wireframes.png',
+      image: 'assets/img/portfolio/preview/highmockup.png',
       linkInternal: '/mockups',
       imageLoaded: false
     },

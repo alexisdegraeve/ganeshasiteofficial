@@ -11,14 +11,6 @@
         </blockquote>
     </div>
 
-    <!-- Onglets -->
-    <ul class="nav nav-tabs mb-4">
-        <li class="nav-item" *ngFor="let tab of archGallery; let i = index">
-            <button class="nav-link bg-transparent" [class.active]="selectedTab === i" (click)="selectTab(i)">
-        {{ tab.title }}
-    </button>
-        </li>
-    </ul>
 
     <!-- Galerie d'images -->
     <div class="row g-4">
@@ -30,10 +22,6 @@
                 <div class="card-footer mt-auto text-end">
                     <p class="card-text mb-2 text-center">{{ image.alt | translate }}</p>
 
-                    <!-- Bouton PDF (optionnel) -->
-                    <a *ngIf="image.pdf" [href]="image.pdf" download class="btn btn-outline-light btn-sm" (click)="$event.stopPropagation()">
-                        <i class="fa fa-file-pdf me-2"></i> <span [innerHTML]="( 'PORTFOLIO.btn-download' | translate) "></span>
-                    </a>
                 </div>
             </div>
         </div>
