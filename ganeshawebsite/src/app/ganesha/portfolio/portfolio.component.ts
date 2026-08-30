@@ -97,7 +97,7 @@ export class PortfolioComponent {
       title: 'PORTFOLIO.title-marcovigna',
       description: 'PORTFOLIO.desc-marcovigna',
       image: 'assets/img/portfolio/preview/marco_vigna.png',
-      link: 'http://vigna.be',
+      link: 'http://www.vigna2024.ganesha.ovh/',
       imageLoaded: false
     },
     // {
